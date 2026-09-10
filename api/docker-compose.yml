@@ -1,0 +1,203 @@
+# WARNING: Default secrets below are for local development ONLY.
+# Override all passwords via .env file or environment variables before deploying to any shared environment.
+services:
+  minio:
+    profiles: ["minimal", "full"]
+    image: minio/minio:latest
+    command: server /data --console-address ":9001"
+    restart: unless-stopped
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:-minioadmin}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:?SET_FOR_LOCAL_REVIEW}
+    ports:
+      - "${MINIO_PORT:-9000}:9000"
+      - "${MINIO_CONSOLE_PORT:-9002}:9001"
+    volumes:
+      - /mnt/DockerVolmes/minio_data:/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - internal
+
+  postgres:
+    profiles: ["minimal", "full"]
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-product_graph}
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?SET_FOR_LOCAL_REVIEW}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - internal
+
+  redis:
+    profiles: ["minimal", "full"]
+    image: redis:7-alpine
+    restart: unless-stopped
+    ports:
+      - "${REDIS_PORT:-6379}:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - internal
+
+  rabbitmq:
+    profiles: ["minimal", "full"]
+    image: rabbitmq:4-management-alpine
+    restart: unless-stopped
+    ports:
+      - "${RABBITMQ_PORT:-5672}:5672"
+    environment:
+      RABBITMQ_DEFAULT_USER: ${RABBITMQ_USER:-guest}
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_PASSWORD:?SET_FOR_LOCAL_REVIEW}
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "check_port_connectivity"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - internal
+
+  api:
+    profiles: ["full"]
+    build:
+      context: .
+      target: dev
+    ports:
+      - "${API_PORT:-8000}:${API_PORT:-8000}"
+    environment:
+      DATABASE_URL: postgresql+asyncpg://<REDACTED>@localhost/portfolio
+      DATABASE_URL_SYNC: postgresql://<REDACTED>@localhost/portfolio
+      REDIS_URL: redis://redis:6379/0
+      RABBITMQ_URL: amqp://<REDACTED>@localhost/portfolio
+      SECRET_KEY: ${API_SECRET_KEY:?SET_FOR_LOCAL_REVIEW}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY:?SET_FOR_LOCAL_REVIEW}
+      API_KEY: ${API_KEY:?SET_FOR_LOCAL_REVIEW}
+      AI_ENGINE_URL: http://ai-engine:8001
+      MINIO_ENDPOINT: minio:9000
+      MINIO_ACCESS_KEY: ${MINIO_ROOT_USER:-minioadmin}
+      MINIO_SECRET_KEY: ${MINIO_ROOT_PASSWORD:?SET_FOR_LOCAL_REVIEW}
+      MINIO_BUCKET: ${MINIO_BUCKET:-product-graph}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+      minio:
+        condition: service_healthy
+    networks:
+      - internal
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 512M
+
+  pgadmin:
+    profiles: ["minimal", "full"]
+    image: dpage/pgadmin4:8.14
+    restart: unless-stopped
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL:-admin@example.com}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD:?SET_FOR_LOCAL_REVIEW}
+    ports:
+      - "${PGADMIN_PORT:-5050}:80"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    networks:
+      - internal
+
+  redisinsight:
+    profiles: ["minimal", "full"]
+    image: redis/redisinsight:3.8.0
+    restart: unless-stopped
+    ports:
+      - "${REDISINSIGHT_PORT:-5540}:5540"
+    depends_on:
+      redis:
+        condition: service_healthy
+    volumes:
+      - redisinsight_data:/data
+    networks:
+      - internal
+
+  caddy:
+    profiles: ["minimal", "full"]
+    image: ghcr.io/caddybuilds/caddy-cloudflare:alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    environment:
+      API_PORT: ${API_PORT:-8000}
+      DASHBOARD_PORT: ${DASHBOARD_PORT:-8001}
+      CLOUDFLARE_API_TOKEN: ${CLOUDFLARE_API_TOKEN}
+      CLOUDFLARE_EMAIL: ${CLOUDFLARE_EMAIL}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./certs:/etc/caddy/certs:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    networks:
+      internal:
+        ipv4_address: 192.0.2.10
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  dnsproxy:
+    profiles: ["minimal", "full", "cloudflared"]
+    image: coredns/coredns:latest
+    restart: unless-stopped
+    command: ["-conf", "/Corefile"]
+    volumes:
+      - ./cloudflare/Corefile:/Corefile:ro
+    networks:
+      internal:
+        ipv4_address: 192.0.2.10
+
+  cloudflared:
+    profiles: ["cloudflared"]
+    image: cloudflare/cloudflared:latest
+    restart: unless-stopped
+    network_mode: "host"
+    command: ["tunnel", "--no-prechecks", "--config", "/etc/cloudflared/config.yml", "run", "portfolio-review"]
+    environment:
+      TUNNEL_CREDENTIALS: /etc/cloudflared/263cfac2-0885-4611-977a-da9e17380738.json
+      TZ: Asia/Tehran
+    volumes:
+      - ./cloudflare/development:/etc/cloudflared
+
+volumes:
+  pgdata:
+  pgadmin_data:
+  redisinsight_data:
+  caddy_data:
+  caddy_config:
+
+networks:
+  internal:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.0.2.10/24

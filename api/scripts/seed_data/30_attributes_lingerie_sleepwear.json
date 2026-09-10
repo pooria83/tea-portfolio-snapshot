@@ -1,0 +1,734 @@
+{
+  "attributes": [
+    {
+      "group_code": "lingerie-specs",
+      "code": "lingerie_neckline",
+      "name_ar": "نوع الياقة",
+      "name_en": "Neckline",
+      "name_fa": "یقه",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiNecklace",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "round",
+          "value_ar": "دائري",
+          "value_en": "Round Neck",
+          "value_fa": "یقه گرد",
+          "sort_order": 1
+        },
+        {
+          "code": "v_neck",
+          "value_ar": "V",
+          "value_en": "V-Neck",
+          "value_fa": "یقه V",
+          "sort_order": 2
+        },
+        {
+          "code": "sweetheart",
+          "value_ar": "قلب",
+          "value_en": "Sweetheart",
+          "value_fa": "قلبی",
+          "sort_order": 3
+        },
+        {
+          "code": "high_neck",
+          "value_ar": "ياقة عالية",
+          "value_en": "High Neck",
+          "value_fa": "یقه بلند",
+          "sort_order": 4
+        },
+        {
+          "code": "plunge",
+          "value_ar": "عميق",
+          "value_en": "Plunge",
+          "value_fa": "عمیق",
+          "sort_order": 5
+        },
+        {
+          "code": "halter",
+          "value_ar": "هالتر",
+          "value_en": "Halter",
+          "value_fa": "هالتر",
+          "sort_order": 6
+        },
+        {
+          "code": "strapless",
+          "value_ar": "بدون حمالة",
+          "value_en": "Strapless",
+          "value_fa": "بدون بند",
+          "sort_order": 7
+        }
+      ]
+    },
+    {
+      "group_code": "lingerie-specs",
+      "code": "lingerie_sleeve_style",
+      "name_ar": "نمط الكم",
+      "name_en": "Sleeve Style",
+      "name_fa": "سبک آستین",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiArmoredPants",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "long",
+          "value_ar": "طويل",
+          "value_en": "Long Sleeve",
+          "value_fa": "آستین بلند",
+          "sort_order": 1
+        },
+        {
+          "code": "short",
+          "value_ar": "قصير",
+          "value_en": "Short Sleeve",
+          "value_fa": "آستین کوتاه",
+          "sort_order": 2
+        },
+        {
+          "code": "sleeveless",
+          "value_ar": "بدون أكمام",
+          "value_en": "Sleeveless",
+          "value_fa": "بدون آستین",
+          "sort_order": 3
+        },
+        {
+          "code": "spaghetti_strap",
+          "value_ar": "حمالة رفيعة",
+          "value_en": "Spaghetti Strap",
+          "value_fa": "بند اسپاگتی",
+          "sort_order": 4
+        },
+        {
+          "code": "strapless",
+          "value_ar": "بدون حمالة",
+          "value_en": "Strapless",
+          "value_fa": "بدون بند",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "group_code": "lingerie-specs",
+      "code": "bra_style",
+      "name_ar": "نوع الصدرية",
+      "name_en": "Bra Style",
+      "name_fa": "سبک سوتین",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiBra",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "balconette",
+          "value_ar": "بالكونيت",
+          "value_en": "Balconette",
+          "value_fa": "بالکنتی",
+          "sort_order": 1
+        },
+        {
+          "code": "bandeau",
+          "value_ar": "باندو",
+          "value_en": "Bandeau",
+          "value_fa": "باندو",
+          "sort_order": 2
+        },
+        {
+          "code": "bralette",
+          "value_ar": "براليت",
+          "value_en": "Bralette",
+          "value_fa": "برالیت",
+          "sort_order": 3
+        },
+        {
+          "code": "halter",
+          "value_ar": "هالتر",
+          "value_en": "Halter",
+          "value_fa": "هالتر",
+          "sort_order": 4
+        },
+        {
+          "code": "plunge",
+          "value_ar": "عميق",
+          "value_en": "Plunge",
+          "value_fa": "عمیق",
+          "sort_order": 5
+        },
+        {
+          "code": "push_up",
+          "value_ar": "رافع",
+          "value_en": "Push-Up",
+          "value_fa": "پوش آپ",
+          "sort_order": 6
+        },
+        {
+          "code": "racerback",
+          "value_ar": "راكر باك",
+          "value_en": "Racerback",
+          "value_fa": "ریسر بک",
+          "sort_order": 7
+        },
+        {
+          "code": "strapless",
+          "value_ar": "بدون حمالة",
+          "value_en": "Strapless",
+          "value_fa": "بدون بند",
+          "sort_order": 8
+        },
+        {
+          "code": "t_shirt",
+          "value_ar": "تيشيرت",
+          "value_en": "T-Shirt",
+          "value_fa": "تیشرتی",
+          "sort_order": 9
+        },
+        {
+          "code": "triangle",
+          "value_ar": "مثلث",
+          "value_en": "Triangle",
+          "value_fa": "مثلثی",
+          "sort_order": 10
+        },
+        {
+          "code": "underwire",
+          "value_ar": "سلكي",
+          "value_en": "Underwire",
+          "value_fa": "سیم دار",
+          "sort_order": 11
+        },
+        {
+          "code": "wireless",
+          "value_ar": "بدون سلك",
+          "value_en": "Wireless",
+          "value_fa": "بدون سیم",
+          "sort_order": 12
+        },
+        {
+          "code": "adhesive",
+          "value_ar": "لاصق",
+          "value_en": "Adhesive",
+          "value_fa": "چسبی",
+          "sort_order": 13
+        },
+        {
+          "code": "convertible",
+          "value_ar": "قابل تحويل",
+          "value_en": "Convertible",
+          "value_fa": "تبدیل‌شونده",
+          "sort_order": 14
+        },
+        {
+          "code": "longline",
+          "value_ar": "طويل",
+          "value_en": "Longline",
+          "value_fa": "بلند",
+          "sort_order": 15
+        },
+        {
+          "code": "molded",
+          "value_ar": "مقولب",
+          "value_en": "Molded",
+          "value_fa": "قالبی",
+          "sort_order": 16
+        }
+      ]
+    },
+    {
+      "group_code": "lingerie-specs",
+      "code": "bra_support_level",
+      "name_ar": "مستوى الدعم",
+      "name_en": "Support Level",
+      "name_fa": "میزان حمایت",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiBodyHeight",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 4,
+      "options": [
+        {
+          "code": "low",
+          "value_ar": "منخفض",
+          "value_en": "Low",
+          "value_fa": "کم",
+          "sort_order": 1
+        },
+        {
+          "code": "medium",
+          "value_ar": "متوسط",
+          "value_en": "Medium",
+          "value_fa": "متوسط",
+          "sort_order": 2
+        },
+        {
+          "code": "high",
+          "value_ar": "عالي",
+          "value_en": "High",
+          "value_fa": "زیاد",
+          "sort_order": 3
+        }
+      ]
+    },
+    {
+      "group_code": "lingerie-specs",
+      "code": "cup_size",
+      "name_ar": "قياس الكوب",
+      "name_en": "Cup Size",
+      "name_fa": "سایز کاپ",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiRuler",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 5,
+      "options": [
+        {
+          "code": "aa",
+          "value_ar": "AA",
+          "value_en": "AA",
+          "value_fa": "AA",
+          "sort_order": 1
+        },
+        {
+          "code": "a",
+          "value_ar": "A",
+          "value_en": "A",
+          "value_fa": "A",
+          "sort_order": 2
+        },
+        {
+          "code": "b",
+          "value_ar": "B",
+          "value_en": "B",
+          "value_fa": "B",
+          "sort_order": 3
+        },
+        {
+          "code": "c",
+          "value_ar": "C",
+          "value_en": "C",
+          "value_fa": "C",
+          "sort_order": 4
+        },
+        {
+          "code": "d",
+          "value_ar": "D",
+          "value_en": "D",
+          "value_fa": "D",
+          "sort_order": 5
+        },
+        {
+          "code": "dd",
+          "value_ar": "DD",
+          "value_en": "DD",
+          "value_fa": "DD",
+          "sort_order": 6
+        },
+        {
+          "code": "ddd",
+          "value_ar": "DDD",
+          "value_en": "DDD",
+          "value_fa": "DDD",
+          "sort_order": 7
+        },
+        {
+          "code": "e",
+          "value_ar": "E",
+          "value_en": "E",
+          "value_fa": "E",
+          "sort_order": 8
+        },
+        {
+          "code": "f",
+          "value_ar": "F",
+          "value_en": "F",
+          "value_fa": "F",
+          "sort_order": 9
+        },
+        {
+          "code": "ff",
+          "value_ar": "FF",
+          "value_en": "FF",
+          "value_fa": "FF",
+          "sort_order": 10
+        },
+        {
+          "code": "g",
+          "value_ar": "G",
+          "value_en": "G",
+          "value_fa": "G",
+          "sort_order": 11
+        },
+        {
+          "code": "gg",
+          "value_ar": "GG",
+          "value_en": "GG",
+          "value_fa": "GG",
+          "sort_order": 12
+        },
+        {
+          "code": "h",
+          "value_ar": "H",
+          "value_en": "H",
+          "value_fa": "H",
+          "sort_order": 13
+        },
+        {
+          "code": "i",
+          "value_ar": "I",
+          "value_en": "I",
+          "value_fa": "I",
+          "sort_order": 14
+        },
+        {
+          "code": "j",
+          "value_ar": "J",
+          "value_en": "J",
+          "value_fa": "J",
+          "sort_order": 15
+        },
+        {
+          "code": "k",
+          "value_ar": "K",
+          "value_en": "K",
+          "value_fa": "K",
+          "sort_order": 16
+        }
+      ]
+    },
+    {
+      "group_code": "lingerie-specs",
+      "code": "bra_closure_type",
+      "name_ar": "نوع إغلاق الصدرية",
+      "name_en": "Bra Closure",
+      "name_fa": "نوع بسته شدن سوتین",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiClothes",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 6,
+      "options": [
+        {
+          "code": "back_closure",
+          "value_ar": "إغلاق خلفي",
+          "value_en": "Back Closure",
+          "value_fa": "بسته شدن پشت",
+          "sort_order": 1
+        },
+        {
+          "code": "front_closure",
+          "value_ar": "إغلاق أمامي",
+          "value_en": "Front Closure",
+          "value_fa": "بسته شدن جلو",
+          "sort_order": 2
+        },
+        {
+          "code": "pull_over",
+          "value_ar": "لبس",
+          "value_en": "Pull-Over",
+          "value_fa": "پوشیدنی",
+          "sort_order": 3
+        },
+        {
+          "code": "adjustable_straps",
+          "value_ar": "أشرطة قابلة للتعديل",
+          "value_en": "Adjustable Straps",
+          "value_fa": "بند قابل تنظیم",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "group_code": "lingerie-specs",
+      "code": "underwear_style",
+      "name_ar": "نمط الملابس الداخلية",
+      "name_en": "Underwear Style",
+      "name_fa": "سبک لباس زیر",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiUnderwear",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 7,
+      "options": [
+        {
+          "code": "classic_briefs",
+          "value_ar": "كلاسيك",
+          "value_en": "Classic Briefs",
+          "value_fa": "کلاسیک",
+          "sort_order": 1
+        },
+        {
+          "code": "hipster",
+          "value_ar": "هيبستر",
+          "value_en": "Hipster",
+          "value_fa": "هیپستر",
+          "sort_order": 2
+        },
+        {
+          "code": "boyshorts",
+          "value_ar": "بوي شورت",
+          "value_en": "Boyshorts",
+          "value_fa": "پسرانه",
+          "sort_order": 3
+        },
+        {
+          "code": "bikini",
+          "value_ar": "بيكيني",
+          "value_en": "Bikini",
+          "value_fa": "بیکینی",
+          "sort_order": 4
+        },
+        {
+          "code": "thong",
+          "value_ar": "ثونغ",
+          "value_en": "Thong",
+          "value_fa": "تونگ",
+          "sort_order": 5
+        },
+        {
+          "code": "g_string",
+          "value_ar": "G-ستيرنغ",
+          "value_en": "G-String",
+          "value_fa": "جی استرینگ",
+          "sort_order": 6
+        },
+        {
+          "code": "high_cut",
+          "value_ar": "قص عالي",
+          "value_en": "High Cut",
+          "value_fa": "برش بلند",
+          "sort_order": 7
+        },
+        {
+          "code": "control",
+          "value_ar": "تحكم",
+          "value_en": "Control",
+          "value_fa": "کنترل",
+          "sort_order": 8
+        },
+        {
+          "code": "boxer_briefs",
+          "value_ar": "بوكسر",
+          "value_en": "Boxer Briefs",
+          "value_fa": "باکسر",
+          "sort_order": 9
+        },
+        {
+          "code": "boxers",
+          "value_ar": "بوكسر فضفاض",
+          "value_en": "Boxers",
+          "value_fa": "باکسر گشاد",
+          "sort_order": 10
+        },
+        {
+          "code": "trunk",
+          "value_ar": "ترنك",
+          "value_en": "Trunk",
+          "value_fa": "ترانک",
+          "sort_order": 11
+        }
+      ]
+    },
+    {
+      "group_code": "lingerie-specs",
+      "code": "sleepwear_type",
+      "name_ar": "نوع ملابس النوم",
+      "name_en": "Sleepwear Type",
+      "name_fa": "نوع لباس خواب",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiNightSleep",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 8,
+      "options": [
+        {
+          "code": "nightgown",
+          "value_ar": "ثوب نوم",
+          "value_en": "Nightgown",
+          "value_fa": "پیراهن خواب",
+          "sort_order": 1
+        },
+        {
+          "code": "pajama_set",
+          "value_ar": "بيجامة",
+          "value_en": "Pajama Set",
+          "value_fa": "پیژاما",
+          "sort_order": 2
+        },
+        {
+          "code": "nightshirt",
+          "value_ar": "قميص نوم",
+          "value_en": "Nightshirt",
+          "value_fa": "تیشرت خواب",
+          "sort_order": 3
+        },
+        {
+          "code": "chemise",
+          "value_ar": "شيميز",
+          "value_en": "Chemise",
+          "value_fa": "شیمیز",
+          "sort_order": 4
+        },
+        {
+          "code": "robe",
+          "value_ar": "رداء",
+          "value_en": "Robe",
+          "value_fa": "روپوش",
+          "sort_order": 5
+        },
+        {
+          "code": "onesie",
+          "value_ar": "أونسي",
+          "value_en": "Onesie",
+          "value_fa": "یک تکه",
+          "sort_order": 6
+        },
+        {
+          "code": "lounge_set",
+          "value_ar": "طقم استرخاء",
+          "value_en": "Lounge Set",
+          "value_fa": "ست استراحت",
+          "sort_order": 7
+        }
+      ]
+    },
+    {
+      "group_code": "lingerie-specs",
+      "code": "lingerie_set_pieces",
+      "name_ar": "قطع الطقم",
+      "name_en": "Set Pieces",
+      "name_fa": "قطعات ست",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiPackage",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 9,
+      "options": [
+        {
+          "code": "bra",
+          "value_ar": "صدرية",
+          "value_en": "Bra",
+          "value_fa": "سوتین",
+          "sort_order": 1
+        },
+        {
+          "code": "panties",
+          "value_ar": "كلوت",
+          "value_en": "Panties",
+          "value_fa": "شورت",
+          "sort_order": 2
+        },
+        {
+          "code": "garter_belt",
+          "value_ar": "حزام رباط",
+          "value_en": "Garter Belt",
+          "value_fa": "بند جوراب",
+          "sort_order": 3
+        },
+        {
+          "code": "stockings",
+          "value_ar": "جوارب",
+          "value_en": "Stockings",
+          "value_fa": "جوراب",
+          "sort_order": 4
+        },
+        {
+          "code": "bodysuit",
+          "value_ar": "بدي",
+          "value_en": "Bodysuit",
+          "value_fa": "بدی",
+          "sort_order": 5
+        },
+        {
+          "code": "suspender",
+          "value_ar": "معلق",
+          "value_en": "Suspender",
+          "value_fa": "بند شلوار",
+          "sort_order": 6
+        }
+      ]
+    },
+    {
+      "group_code": "lingerie-specs",
+      "code": "robe_style",
+      "name_ar": "نمط الرداء",
+      "name_en": "Robe Style",
+      "name_fa": "سبک روپوش",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiClothes",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 10,
+      "options": [
+        {
+          "code": "kimono",
+          "value_ar": "كيمونو",
+          "value_en": "Kimono",
+          "value_fa": "کیمونو",
+          "sort_order": 1
+        },
+        {
+          "code": "wrap",
+          "value_ar": "ملتف",
+          "value_en": "Wrap",
+          "value_fa": "چهارخونه",
+          "sort_order": 2
+        },
+        {
+          "code": "bathrobe",
+          "value_ar": "رداء حمام",
+          "value_en": "Bathrobe",
+          "value_fa": "حمام",
+          "sort_order": 3
+        },
+        {
+          "code": "silk_robe",
+          "value_ar": "رداء حرير",
+          "value_en": "Silk Robe",
+          "value_fa": "ابریشمی",
+          "sort_order": 4
+        },
+        {
+          "code": "hooded",
+          "value_ar": "بقلنسوة",
+          "value_en": "Hooded",
+          "value_fa": "هودی‌دار",
+          "sort_order": 5
+        }
+      ]
+    }
+  ]
+}

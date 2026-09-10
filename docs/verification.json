@@ -1,0 +1,11 @@
+{
+  "source_files": 1066,
+  "excluded_files": 116,
+  "sanitized_files": 48,
+  "python_parsed": 402,
+  "json_parsed": 78,
+  "metric_behavior_cases": 3,
+  "full_application_suites": "not run",
+  "root_document_links": "passed",
+  "manifest_hashes": "passed"
+}

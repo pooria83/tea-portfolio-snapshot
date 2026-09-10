@@ -1,0 +1,12 @@
+{
+  "favorites": "Favorites",
+  "addToFavorites": "Add to favorites",
+  "removeFromFavorites": "Remove from favorites",
+  "home": "Home",
+  "profile": "Profile",
+  "addedToFavorites": "Added to favorites",
+  "removedFromFavorites": "Removed from favorites",
+  "removeFavoriteTitle": "Remove from favorites?",
+  "removeFavoriteMessage": "This removes the product from your saved list.",
+  "remove": "Remove"
+}

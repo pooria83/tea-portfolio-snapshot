@@ -1,0 +1,219 @@
+---
+- name: Provision TEA Assist Server
+  hosts: all
+  become: yes
+  vars:
+    docker_version: "5:27.5.1-1~ubuntu.24.04~noble"
+    swap_size_mb: 2048
+
+  tasks:
+    - name: Remove stale Docker repo file (old runs had wrong distro)
+      file:
+        path: /etc/apt/sources.list.d/docker.sources
+        state: absent
+
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+        cache_valid_time: 3600
+
+    - name: Install required packages
+      apt:
+        name:
+          - ca-certificates
+          - curl
+          - gnupg
+          - ufw
+          - fail2ban
+          - unattended-upgrades
+          - git
+          - htop
+          - nethogs
+          - rsync
+          - wget
+          - tmux
+          - vnstat
+          - ncdu
+          - jq
+          - mtr
+          - lsof
+          - tree
+          - ansible-core
+          - shellcheck
+          - yamllint
+          - python3-pip
+        state: present
+
+    - name: Add tea user to sudo group (NOPASSWD for automation)
+      user:
+        name: tea
+        groups: sudo
+        append: yes
+
+    - name: Configure sudo NOPASSWD for tea user
+      copy:
+        dest: /etc/sudoers.d/tea-nopasswd
+        content: |
+          tea ALL=(ALL) NOPASSWD: ALL
+        mode: "0440"
+        validate: /usr/sbin/visudo -cf %s
+
+    # Reset UFW so the playbook is idempotent regardless of previous state
+    - name: Reset UFW
+      shell: /usr/sbin/ufw --force reset
+      changed_when: false
+      ignore_errors: yes
+
+    - name: Download Docker GPG key
+      get_url:
+        url: https://download.docker.com/linux/ubuntu/gpg
+        dest: /usr/share/keyrings/docker.asc
+        mode: "0644"
+
+    - name: Add Docker repository (DEB822 format)
+      copy:
+        dest: /etc/apt/sources.list.d/docker.sources
+        content: |
+          Types: deb
+          URIs: https://download.docker.com/linux/{{ ansible_facts["distribution"] | lower }}
+          Suites: {{ ansible_facts["distribution_release"] }}
+          Components: stable
+          Architectures: amd64
+          Signed-By: /usr/share/keyrings/docker.asc
+        mode: "0644"
+
+    - name: Install Docker
+      apt:
+        name:
+          - docker-ce
+          - docker-ce-cli
+          - containerd.io
+          - docker-compose-plugin
+        state: present
+        update_cache: yes
+
+    - name: Configure Docker daemon (log rotation)
+      copy:
+        dest: /etc/docker/daemon.json
+        content: |
+          {
+            "log-driver": "json-file",
+            "log-opts": {
+              "max-size": "10m",
+              "max-file": "3"
+            }
+          }
+        mode: "0644"
+      notify: restart docker
+
+    - name: Enable and start Docker
+      systemd:
+        name: docker
+        enabled: yes
+        state: started
+
+    - name: Configure fail2ban SSH jail
+      copy:
+        dest: /etc/fail2ban/jail.local
+        content: |
+          [sshd]
+          enabled = true
+          port = 22
+          maxretry = 5
+          bantime = 600
+        mode: "0644"
+      notify: restart fail2ban
+
+    - name: Enable unattended security upgrades
+      dpkg_selections:
+        name: unattended-upgrades
+        selection: install
+
+    - name: Configure unattended-upgrades
+      copy:
+        dest: /etc/apt/apt.conf.d/20auto-upgrades
+        content: |
+          APT::Periodic::Update-Package-Lists "1";
+          APT::Periodic::Download-Upgradeable-Packages "1";
+          APT::Periodic::AutocleanInterval "7";
+          APT::Periodic::Unattended-Upgrade "1";
+        mode: "0644"
+
+    - name: Create /opt/tea-assist directory
+      file:
+        path: /opt/tea-assist
+        state: directory
+        mode: "0755"
+
+    # Files are copied from runner to server via rsync in CI (before Ansible runs)
+
+    - name: Initialize Docker Swarm
+      shell: |
+        {% raw %}
+        if ! docker info --format '{{.Swarm.LocalNodeState}}' | grep -q active; then
+          docker swarm init --advertise-addr eth0
+        fi
+        {% endraw %}
+      register: swarm_init
+      changed_when: '"Swarm initialized" in swarm_init.stdout'
+
+    - name: Create Swarm network
+      shell: |
+        {% raw %}
+        if ! docker network ls --filter name=tea-infra-net --format '{{.Name}}' | grep -q tea-infra-net; then
+          docker network create --driver overlay --attachable tea-infra-net
+        fi
+        {% endraw %}
+      register: net_create
+      changed_when: '"created" in net_create.stdout'
+
+    - name: Create Docker secrets
+      shell: |
+        secret_name="{{ item.name }}"
+        if ! docker secret ls --filter name="$secret_name" -q | grep -q .; then
+          echo "{{ item.value }}" | docker secret create "$secret_name" -
+        fi
+      loop:
+        - { name: postgres_password, value: "{{ postgres_password | default('postgres') }}" }
+        - { name: rabbitmq_password, value: "{{ rabbitmq_password | default('guest') }}" }
+        - { name: minio_root_password, value: "{{ minio_root_password | default('minioadmin') }}" }
+        - { name: pgadmin_email, value: "{{ pgadmin_email | default('admin@portfolio.example.invalid') }}" }
+        - { name: pgadmin_password, value: "{{ pgadmin_password | default('admin') }}" }
+        - { name: api_secret_key, value: "{{ api_secret_key | default('change-me') }}" }
+        - { name: api_jwt_secret_key, value: "{{ api_jwt_secret_key | default('change-me') }}" }
+        - { name: api_api_key, value: "{{ api_api_key | default('change-me') }}" }
+        - { name: cloudflare_api_token, value: "{{ cloudflare_api_token | default('') }}" }
+        - { name: grafana_admin_password, value: "{{ grafana_admin_password | default('admin') }}" }
+
+    - name: Login to GHCR
+      shell: |
+        echo "{{ ghcr_token }}" | docker login ghcr.io -u TEA-assist --password-stdin
+      when: ghcr_token is defined and ghcr_token | length > 0
+
+    - name: Configure UFW rules
+      shell: |
+        /usr/sbin/ufw default deny incoming
+        /usr/sbin/ufw default deny outgoing
+        /usr/sbin/ufw allow 22/tcp
+        /usr/sbin/ufw allow 80/tcp
+        /usr/sbin/ufw allow 443/tcp
+        /usr/sbin/ufw allow 2377/tcp
+        /usr/sbin/ufw allow out 22/tcp
+        /usr/sbin/ufw allow out 80/tcp
+        /usr/sbin/ufw allow out 443/tcp
+        /usr/sbin/ufw allow out 53/udp
+        /usr/sbin/ufw allow out 53/tcp
+        /usr/sbin/ufw allow out 27017/tcp
+        /usr/sbin/ufw --force enable
+      changed_when: false
+
+  handlers:
+    - name: restart docker
+      systemd:
+        name: docker
+        state: restarted
+
+    - name: restart fail2ban
+      systemd:
+        name: fail2ban
+        state: restarted

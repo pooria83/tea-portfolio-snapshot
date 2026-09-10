@@ -1,0 +1,12 @@
+{
+  "favorites": "المفضلة",
+  "addToFavorites": "إضافة إلى المفضلة",
+  "removeFromFavorites": "إزالة من المفضلة",
+  "home": "الرئيسية",
+  "profile": "الملف الشخصي",
+  "addedToFavorites": "أُضيف إلى المفضلة",
+  "removedFromFavorites": "أُزيل من المفضلة",
+  "removeFavoriteTitle": "إزالة من المفضلة؟",
+  "removeFavoriteMessage": "سيتم حذف المنتج من قائمتك المحفوظة.",
+  "remove": "إزالة"
+}

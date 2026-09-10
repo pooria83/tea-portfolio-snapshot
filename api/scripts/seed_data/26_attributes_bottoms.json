@@ -1,0 +1,407 @@
+{
+  "attributes": [
+    {
+      "group_code": "bottom-specs",
+      "code": "waist_rise",
+      "name_ar": "ارتفاع الخصر",
+      "name_en": "Waist Rise",
+      "name_fa": "قد کمر",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiBodyHeight",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "high_waist",
+          "value_ar": "خصر عالي",
+          "value_en": "High Waist",
+          "value_fa": "کمر بلند",
+          "sort_order": 1
+        },
+        {
+          "code": "mid_rise",
+          "value_ar": "وسط",
+          "value_en": "Mid Rise",
+          "value_fa": "متوسط",
+          "sort_order": 2
+        },
+        {
+          "code": "low_rise",
+          "value_ar": "خصر منخفض",
+          "value_en": "Low Rise",
+          "value_fa": "کمر کوتاه",
+          "sort_order": 3
+        }
+      ]
+    },
+    {
+      "group_code": "bottom-specs",
+      "code": "pants_length",
+      "name_ar": "طول البنطلون",
+      "name_en": "Pants Length",
+      "name_fa": "قد شلوار",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiRuler",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "mini",
+          "value_ar": "قصير جدا",
+          "value_en": "Mini",
+          "value_fa": "میکرو",
+          "sort_order": 1
+        },
+        {
+          "code": "above_knee",
+          "value_ar": "فوق الركبة",
+          "value_en": "Above Knee",
+          "value_fa": "بالای زانو",
+          "sort_order": 2
+        },
+        {
+          "code": "knee",
+          "value_ar": "طول الركبة",
+          "value_en": "Knee Length",
+          "value_fa": "قد زانو",
+          "sort_order": 3
+        },
+        {
+          "code": "capri",
+          "value_ar": "كابري",
+          "value_en": "Capri",
+          "value_fa": "کاپری",
+          "sort_order": 4
+        },
+        {
+          "code": "cropped",
+          "value_ar": "مقصوص",
+          "value_en": "Cropped",
+          "value_fa": "کوتاه",
+          "sort_order": 5
+        },
+        {
+          "code": "ankle",
+          "value_ar": "طول الكاحل",
+          "value_en": "Ankle Length",
+          "value_fa": "قد مچ پا",
+          "sort_order": 6
+        },
+        {
+          "code": "long",
+          "value_ar": "طويل",
+          "value_en": "Long",
+          "value_fa": "بلند",
+          "sort_order": 7
+        },
+        {
+          "code": "full",
+          "value_ar": "كامل",
+          "value_en": "Full Length",
+          "value_fa": "تمام قد",
+          "sort_order": 8
+        }
+      ]
+    },
+    {
+      "group_code": "bottom-specs",
+      "code": "bottom_fit_type",
+      "name_ar": "نوع القصة",
+      "name_en": "Fit Type",
+      "name_fa": "مدل اندام",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiBodyHeight",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "skinny",
+          "value_ar": "ضيق جدا",
+          "value_en": "Skinny",
+          "value_fa": "چسبان",
+          "sort_order": 1
+        },
+        {
+          "code": "slim",
+          "value_ar": "ضيق",
+          "value_en": "Slim",
+          "value_fa": "نسبتاً چسبان",
+          "sort_order": 2
+        },
+        {
+          "code": "straight",
+          "value_ar": "مستقيم",
+          "value_en": "Straight Leg",
+          "value_fa": "راست",
+          "sort_order": 3
+        },
+        {
+          "code": "bootcut",
+          "value_ar": "جينز واسع",
+          "value_en": "Bootcut",
+          "value_fa": "گشاد از پایین",
+          "sort_order": 4
+        },
+        {
+          "code": "wide",
+          "value_ar": "واسع",
+          "value_en": "Wide Leg",
+          "value_fa": "گشاد",
+          "sort_order": 5
+        },
+        {
+          "code": "relaxed",
+          "value_ar": "مريح",
+          "value_en": "Relaxed",
+          "value_fa": "آزاد",
+          "sort_order": 6
+        },
+        {
+          "code": "tapered",
+          "value_ar": "مدبب",
+          "value_en": "Tapered",
+          "value_fa": "مخروطی",
+          "sort_order": 7
+        },
+        {
+          "code": "boyfriend",
+          "value_ar": "بوي فرند",
+          "value_en": "Boyfriend",
+          "value_fa": "پسری",
+          "sort_order": 8
+        },
+        {
+          "code": "mom",
+          "value_ar": "أم",
+          "value_en": "Mom",
+          "value_fa": "مادرانه",
+          "sort_order": 9
+        }
+      ]
+    },
+    {
+      "group_code": "bottom-specs",
+      "code": "bottom_closure_type",
+      "name_ar": "نوع الإغلاق",
+      "name_en": "Closure Type",
+      "name_fa": "نوع بسته شدن",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiClothes",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 4,
+      "options": [
+        {
+          "code": "zipper",
+          "value_ar": "سحاب",
+          "value_en": "Zipper",
+          "value_fa": "زیپ",
+          "sort_order": 1
+        },
+        {
+          "code": "buttons",
+          "value_ar": "أزرار",
+          "value_en": "Buttons",
+          "value_fa": "دکمه",
+          "sort_order": 2
+        },
+        {
+          "code": "drawstring",
+          "value_ar": "رباط",
+          "value_en": "Drawstring",
+          "value_fa": "بند",
+          "sort_order": 3
+        },
+        {
+          "code": "elastic",
+          "value_ar": "مطاط",
+          "value_en": "Elastic",
+          "value_fa": "کش",
+          "sort_order": 4
+        },
+        {
+          "code": "snap",
+          "value_ar": "كبسول",
+          "value_en": "Snap",
+          "value_fa": "دکمه فشاری",
+          "sort_order": 5
+        },
+        {
+          "code": "pull_on",
+          "value_ar": "لبس",
+          "value_en": "Pull-On",
+          "value_fa": "پوشیدنی",
+          "sort_order": 6
+        }
+      ]
+    },
+    {
+      "group_code": "bottom-specs",
+      "code": "pocket_style",
+      "name_ar": "نمط الجيوب",
+      "name_en": "Pocket Style",
+      "name_fa": "سبک جیب",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiPocket",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 5,
+      "options": [
+        {
+          "code": "cargo",
+          "value_ar": "كارغو",
+          "value_en": "Cargo",
+          "value_fa": "کارگو",
+          "sort_order": 1
+        },
+        {
+          "code": "coin",
+          "value_ar": "عملات",
+          "value_en": "Coin",
+          "value_fa": "سکه",
+          "sort_order": 2
+        },
+        {
+          "code": "flap",
+          "value_ar": "غطاء",
+          "value_en": "Flap",
+          "value_fa": "چفت‌دار",
+          "sort_order": 3
+        },
+        {
+          "code": "patch",
+          "value_ar": "رقعة",
+          "value_en": "Patch",
+          "value_fa": "وصله‌ای",
+          "sort_order": 4
+        },
+        {
+          "code": "side_seam",
+          "value_ar": "الدرز الجانبي",
+          "value_en": "Side Seam",
+          "value_fa": "درز کناری",
+          "sort_order": 5
+        },
+        {
+          "code": "slash",
+          "value_ar": "شق",
+          "value_en": "Slash",
+          "value_fa": "شکافی",
+          "sort_order": 6
+        },
+        {
+          "code": "welt",
+          "value_ar": "لحام",
+          "value_en": "Welt",
+          "value_fa": "جیب فرنچ",
+          "sort_order": 7
+        },
+        {
+          "code": "zippered",
+          "value_ar": "مسحاب",
+          "value_en": "Zippered",
+          "value_fa": "زیپ‌دار",
+          "sort_order": 8
+        },
+        {
+          "code": "no_pockets",
+          "value_ar": "بدون جيوب",
+          "value_en": "No Pockets",
+          "value_fa": "بدون جیب",
+          "sort_order": 9
+        }
+      ]
+    },
+    {
+      "group_code": "bottom-specs",
+      "code": "waistband_style",
+      "name_ar": "نمط حزام الخصر",
+      "name_en": "Waistband Style",
+      "name_fa": "سبک کمر",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiBelt",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 6,
+      "options": [
+        {
+          "code": "elastic",
+          "value_ar": "مطاط",
+          "value_en": "Elastic",
+          "value_fa": "کش",
+          "sort_order": 1
+        },
+        {
+          "code": "drawstring",
+          "value_ar": "رباط",
+          "value_en": "Drawstring",
+          "value_fa": "بند دار",
+          "sort_order": 2
+        },
+        {
+          "code": "belt_loops",
+          "value_ar": "حلقات حزام",
+          "value_en": "Belt Loops",
+          "value_fa": "کمربند",
+          "sort_order": 3
+        },
+        {
+          "code": "pull_on",
+          "value_ar": "لبس",
+          "value_en": "Pull-On",
+          "value_fa": "پوشیدنی",
+          "sort_order": 4
+        },
+        {
+          "code": "fold_over",
+          "value_ar": "مطوي",
+          "value_en": "Fold-Over",
+          "value_fa": "تا خورده",
+          "sort_order": 5
+        },
+        {
+          "code": "paperbag",
+          "value_ar": "ورق",
+          "value_en": "Paperbag",
+          "value_fa": "کاغذی",
+          "sort_order": 6
+        },
+        {
+          "code": "adjustable",
+          "value_ar": "قابل تعديل",
+          "value_en": "Adjustable",
+          "value_fa": "قابل تنظیم",
+          "sort_order": 7
+        },
+        {
+          "code": "smocked",
+          "value_ar": "مكرمش",
+          "value_en": "Smocked",
+          "value_fa": "چین دار",
+          "sort_order": 8
+        }
+      ]
+    }
+  ]
+}

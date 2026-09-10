@@ -1,0 +1,151 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [main, develop, staging]
+  pull_request:
+    branches: [main]
+
+env:
+  UV_VERSION: "0.11"
+  PYTHON_VERSION: "3.13"
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ghcr.io/tea-assist/product-graph-ai-engine
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  quality:
+    runs-on: [self-hosted, tea-server]
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v10.0.1
+        with:
+          version: ${{ env.UV_VERSION }}
+
+      - name: Set up Python
+        run: uv python install ${{ env.PYTHON_VERSION }}
+
+      - name: Restore uv cache
+        uses: actions/cache@v6
+        with:
+          path: ~/.cache/uv
+          key: uv-${{ runner.os }}-${{ hashFiles('uv.lock') }}
+          restore-keys: |
+            uv-${{ runner.os }}-
+
+      - name: Install dependencies
+        run: uv sync --extra dev
+
+      - name: Lint
+        run: uv run ruff check app/
+
+      - name: Format check
+        run: uv run ruff format app/ --check
+
+      - name: Type check
+        run: uv run mypy app/
+
+      - name: Test
+        run: uv run pytest --cov-fail-under=50
+
+  build-and-push:
+    runs-on: [self-hosted, tea-server]
+    needs: quality
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v4
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v4
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push Docker image
+        shell: bash
+        run: |
+          set -e
+          for attempt in 1 2 3; do
+            if docker buildx build --file Dockerfile --target production \
+                --push --tag "$IMAGE_NAME:main" \
+                --cache-from type=gha --cache-to type=gha,mode=max \
+                .; then
+              exit 0
+            fi
+            echo "Build failed (attempt $attempt/3) - retrying after 30s"
+            sleep 30
+            docker system prune -af >/dev/null 2>&1 || true
+          done
+          exit 1
+
+  docker:
+    runs-on: [self-hosted, tea-server]
+    needs: quality
+    if: github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/staging'
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v4
+
+      - name: Build Docker image
+        shell: bash
+        run: |
+          set -e
+          for attempt in 1 2 3; do
+            if docker buildx build --file Dockerfile --target production \
+                --tag "product-graph-ai-engine:${{ github.sha }}" \
+                --cache-from type=gha --cache-to type=gha,mode=max \
+                .; then
+              exit 0
+            fi
+            echo "Build failed (attempt $attempt/3) - retrying after 30s"
+            sleep 30
+            docker system prune -af >/dev/null 2>&1 || true
+          done
+          exit 1
+
+  deploy:
+    runs-on: [self-hosted, tea-server]
+    needs: build-and-push
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Deploy stack via SSH
+        uses: appleboy/ssh-action@v1.2.5
+        with:
+          host: 192.0.2.10
+          username: tea
+          password: ${{ secrets.SERVER_PASSWORD }}
+          command_timeout: 300s
+          script: |
+            printf '%s\n' '${{ secrets.SERVER_PASSWORD }}' | su -c '
+              set -a && source /opt/tea-assist/product-graph-infra/.env && set +a
+              echo "Logging in to ghcr.io..."
+              echo "${{ secrets.GHCR_PULL_TOKEN }}" | docker login ghcr.io -u radiophp --password-stdin || { echo "FATAL: ghcr.io login failed - check GHCR_PULL_TOKEN secret"; exit 1; }
+              echo "Pulling images (a failed pull must abort the deploy, otherwise stale containers keep running)..."
+              for img in product-graph-ai-engine product-graph-api product-graph-web-ui; do
+                docker pull "ghcr.io/tea-assist/$img:main" || { echo "FATAL: docker pull of $img:main failed - aborting deploy"; exit 1; }
+              done
+              DEPLOYED=0
+              for attempt in 1 2 3 4 5; do
+                if flock -w 300 /tmp/tea-stack-deploy.lock docker stack deploy -c /opt/tea-assist/product-graph-infra/stacks/tea-app/compose.yml tea-app; then
+                  DEPLOYED=1
+                  break
+                fi
+                echo "stack deploy lock busy (attempt $attempt/5) - retrying in 30s"
+                sleep 30
+              done
+              if [ "$DEPLOYED" != "1" ]; then
+                echo "stack deploy failed after 5 attempts"
+                exit 1
+              fi
+            ' -s /bin/bash tea

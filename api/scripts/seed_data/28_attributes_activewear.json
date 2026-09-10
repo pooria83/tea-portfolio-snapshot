@@ -1,0 +1,306 @@
+{
+  "attributes": [
+    {
+      "group_code": "activewear-specs",
+      "code": "activity",
+      "name_ar": "النشاط الرياضي",
+      "name_en": "Activity",
+      "name_fa": "فعالیت",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiRunningShoe",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "yoga",
+          "value_ar": "يوغا",
+          "value_en": "Yoga",
+          "value_fa": "یوگا",
+          "sort_order": 1
+        },
+        {
+          "code": "pilates",
+          "value_ar": "بيلاتس",
+          "value_en": "Pilates",
+          "value_fa": "پیلاتس",
+          "sort_order": 2
+        },
+        {
+          "code": "running",
+          "value_ar": "جري",
+          "value_en": "Running",
+          "value_fa": "دویدن",
+          "sort_order": 3
+        },
+        {
+          "code": "gym_training",
+          "value_ar": "تمارين رياضية",
+          "value_en": "Gym Training",
+          "value_fa": "باشگاه",
+          "sort_order": 4
+        },
+        {
+          "code": "cycling",
+          "value_ar": "دراجة",
+          "value_en": "Cycling",
+          "value_fa": "دوچرخه",
+          "sort_order": 5
+        },
+        {
+          "code": "dance",
+          "value_ar": "رقص",
+          "value_en": "Dance",
+          "value_fa": "رقص",
+          "sort_order": 6
+        },
+        {
+          "code": "walking",
+          "value_ar": "مشي",
+          "value_en": "Walking",
+          "value_fa": "پیاده‌روی",
+          "sort_order": 7
+        },
+        {
+          "code": "hiking",
+          "value_ar": "تنزه",
+          "value_en": "Hiking",
+          "value_fa": "کوهنوردی",
+          "sort_order": 8
+        },
+        {
+          "code": "swimming",
+          "value_ar": "سباحة",
+          "value_en": "Swimming",
+          "value_fa": "شنا",
+          "sort_order": 9
+        },
+        {
+          "code": "aerobics",
+          "value_ar": "إيروبيك",
+          "value_en": "Aerobics",
+          "value_fa": "ایروبیک",
+          "sort_order": 10
+        },
+        {
+          "code": "basketball",
+          "value_ar": "كرة سلة",
+          "value_en": "Basketball",
+          "value_fa": "بسکتبال",
+          "sort_order": 11
+        },
+        {
+          "code": "tennis",
+          "value_ar": "تنس",
+          "value_en": "Tennis",
+          "value_fa": "تنیس",
+          "sort_order": 12
+        },
+        {
+          "code": "boxing",
+          "value_ar": "ملاكمة",
+          "value_en": "Boxing",
+          "value_fa": "بوکس",
+          "sort_order": 13
+        },
+        {
+          "code": "soccer",
+          "value_ar": "كرة قدم",
+          "value_en": "Soccer",
+          "value_fa": "فوتبال",
+          "sort_order": 14
+        },
+        {
+          "code": "gymnastics",
+          "value_ar": "جمباز",
+          "value_en": "Gymnastics",
+          "value_fa": "ژیمناستیک",
+          "sort_order": 15
+        },
+        {
+          "code": "universal",
+          "value_ar": "عام",
+          "value_en": "Universal",
+          "value_fa": "عمومی",
+          "sort_order": 16
+        }
+      ]
+    },
+    {
+      "group_code": "activewear-specs",
+      "code": "activewear_sleeve_style",
+      "name_ar": "نمط الكم",
+      "name_en": "Sleeve Style",
+      "name_fa": "سبک آستین",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiArmoredPants",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "long",
+          "value_ar": "طويل",
+          "value_en": "Long Sleeve",
+          "value_fa": "آستین بلند",
+          "sort_order": 1
+        },
+        {
+          "code": "short",
+          "value_ar": "قصير",
+          "value_en": "Short Sleeve",
+          "value_fa": "آستین کوتاه",
+          "sort_order": 2
+        },
+        {
+          "code": "sleeveless",
+          "value_ar": "بدون أكمام",
+          "value_en": "Sleeveless",
+          "value_fa": "بدون آستین",
+          "sort_order": 3
+        },
+        {
+          "code": "cap",
+          "value_ar": "كاب",
+          "value_en": "Cap Sleeve",
+          "value_fa": "آستین کاپی",
+          "sort_order": 4
+        },
+        {
+          "code": "raglan",
+          "value_ar": "رغلان",
+          "value_en": "Raglan Sleeve",
+          "value_fa": "آستین راگلان",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "group_code": "activewear-specs",
+      "code": "activewear_fit_type",
+      "name_ar": "نوع القصة",
+      "name_en": "Fit Type",
+      "name_fa": "مدل اندام",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiBodyHeight",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "slim_fit",
+          "value_ar": "ضيق",
+          "value_en": "Slim Fit",
+          "value_fa": "چسبان",
+          "sort_order": 1
+        },
+        {
+          "code": "regular_fit",
+          "value_ar": "عادي",
+          "value_en": "Regular Fit",
+          "value_fa": "معمولی",
+          "sort_order": 2
+        },
+        {
+          "code": "loose_fit",
+          "value_ar": "واسع",
+          "value_en": "Loose Fit",
+          "value_fa": "گشاد",
+          "sort_order": 3
+        },
+        {
+          "code": "compression",
+          "value_ar": "ضاغط",
+          "value_en": "Compression",
+          "value_fa": "فشاری",
+          "sort_order": 4
+        },
+        {
+          "code": "relaxed",
+          "value_ar": "مريح",
+          "value_en": "Relaxed",
+          "value_fa": "آزاد",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "group_code": "activewear-specs",
+      "code": "moisture_wicking",
+      "name_ar": "ممتص للعرق",
+      "name_en": "Moisture Wicking",
+      "name_fa": "جذب رطوبت",
+      "value_type": "boolean",
+      "input_type": "boolean",
+      "icon": "GiWaterDrop",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 4,
+      "options": [
+        {
+          "code": "yes",
+          "value_ar": "نعم",
+          "value_en": "Yes",
+          "value_fa": "بله",
+          "sort_order": 1
+        },
+        {
+          "code": "no",
+          "value_ar": "لا",
+          "value_en": "No",
+          "value_fa": "خیر",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "group_code": "activewear-specs",
+      "code": "athletic_set_pieces",
+      "name_ar": "قطع الطقم الرياضي",
+      "name_en": "Set Pieces Included",
+      "name_fa": "قطعات ست ورزشی",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiClothes",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 5,
+      "options": [
+        {
+          "code": "top",
+          "value_ar": "قميص",
+          "value_en": "Top",
+          "value_fa": "بالاتنه",
+          "sort_order": 1
+        },
+        {
+          "code": "pants",
+          "value_ar": "بنطلون",
+          "value_en": "Pants",
+          "value_fa": "شلوار",
+          "sort_order": 2
+        },
+        {
+          "code": "jacket",
+          "value_ar": "جاكيت",
+          "value_en": "Jacket",
+          "value_fa": "ژاکت",
+          "sort_order": 3
+        }
+      ]
+    }
+  ]
+}

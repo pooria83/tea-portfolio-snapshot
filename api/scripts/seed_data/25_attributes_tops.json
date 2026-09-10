@@ -1,0 +1,435 @@
+{
+  "attributes": [
+    {
+      "group_code": "top-specs",
+      "code": "top_neckline",
+      "name_ar": "نوع الياقة",
+      "name_en": "Neckline",
+      "name_fa": "یقه",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiNecklace",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "round",
+          "value_ar": "دائري",
+          "value_en": "Round Neck",
+          "value_fa": "یقه گرد",
+          "sort_order": 1
+        },
+        {
+          "code": "v_neck",
+          "value_ar": "V",
+          "value_en": "V-Neck",
+          "value_fa": "یقه V",
+          "sort_order": 2
+        },
+        {
+          "code": "crew",
+          "value_ar": "طاقية",
+          "value_en": "Crew Neck",
+          "value_fa": "یقه گرد ساده",
+          "sort_order": 3
+        },
+        {
+          "code": "mandarin",
+          "value_ar": "مندارين",
+          "value_en": "Mandarin",
+          "value_fa": "مندارین",
+          "sort_order": 4
+        },
+        {
+          "code": "mock_neck",
+          "value_ar": "ياقة وهمية",
+          "value_en": "Mock Neck",
+          "value_fa": "یقه خزری",
+          "sort_order": 5
+        },
+        {
+          "code": "turtle",
+          "value_ar": "ياقة مدورة",
+          "value_en": "Turtleneck",
+          "value_fa": "یقه اسکی",
+          "sort_order": 6
+        },
+        {
+          "code": "collar",
+          "value_ar": "ياقة",
+          "value_en": "Collar",
+          "value_fa": "یقه دار",
+          "sort_order": 7
+        },
+        {
+          "code": "boat",
+          "value_ar": "قارب",
+          "value_en": "Boat Neck",
+          "value_fa": "یقه قایقی",
+          "sort_order": 8
+        },
+        {
+          "code": "high_neck",
+          "value_ar": "ياقة عالية",
+          "value_en": "High Neck",
+          "value_fa": "یقه بلند",
+          "sort_order": 9
+        },
+        {
+          "code": "off_shoulder",
+          "value_ar": "مكشوف الكتفين",
+          "value_en": "Off-Shoulder",
+          "value_fa": "شانه‌باز",
+          "sort_order": 10
+        },
+        {
+          "code": "sweetheart",
+          "value_ar": "قلب",
+          "value_en": "Sweetheart",
+          "value_fa": "قلبی",
+          "sort_order": 11
+        },
+        {
+          "code": "halter",
+          "value_ar": "هالتر",
+          "value_en": "Halter",
+          "value_fa": "هالتر",
+          "sort_order": 12
+        },
+        {
+          "code": "wrap",
+          "value_ar": "ملتف",
+          "value_en": "Wrap",
+          "value_fa": "چهارخونه",
+          "sort_order": 13
+        },
+        {
+          "code": "square",
+          "value_ar": "مربع",
+          "value_en": "Square Neck",
+          "value_fa": "مربعی",
+          "sort_order": 14
+        },
+        {
+          "code": "one_shoulder",
+          "value_ar": "كتف واحد",
+          "value_en": "One-Shoulder",
+          "value_fa": "یک‌شانه",
+          "sort_order": 15
+        }
+      ]
+    },
+    {
+      "group_code": "top-specs",
+      "code": "top_sleeve_style",
+      "name_ar": "نمط الكم",
+      "name_en": "Sleeve Style",
+      "name_fa": "سبک آستین",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiArmoredPants",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "long",
+          "value_ar": "طويل",
+          "value_en": "Long Sleeve",
+          "value_fa": "آستین بلند",
+          "sort_order": 1
+        },
+        {
+          "code": "three_quarter",
+          "value_ar": "ثلاثة أرباع",
+          "value_en": "3/4 Sleeve",
+          "value_fa": "سه چهارم",
+          "sort_order": 2
+        },
+        {
+          "code": "short",
+          "value_ar": "قصير",
+          "value_en": "Short Sleeve",
+          "value_fa": "آستین کوتاه",
+          "sort_order": 3
+        },
+        {
+          "code": "sleeveless",
+          "value_ar": "بدون أكمام",
+          "value_en": "Sleeveless",
+          "value_fa": "بدون آستین",
+          "sort_order": 4
+        },
+        {
+          "code": "cap",
+          "value_ar": "كاب",
+          "value_en": "Cap Sleeve",
+          "value_fa": "آستین کاپی",
+          "sort_order": 5
+        },
+        {
+          "code": "puff",
+          "value_ar": "منفوش",
+          "value_en": "Puff Sleeve",
+          "value_fa": "آستین پفی",
+          "sort_order": 6
+        },
+        {
+          "code": "raglan",
+          "value_ar": "رغلان",
+          "value_en": "Raglan Sleeve",
+          "value_fa": "آستین راگلان",
+          "sort_order": 7
+        },
+        {
+          "code": "bell",
+          "value_ar": "جرس",
+          "value_en": "Bell Sleeve",
+          "value_fa": "آستین زنگی",
+          "sort_order": 8
+        },
+        {
+          "code": "bishop",
+          "value_ar": "بيشوب",
+          "value_en": "Bishop Sleeve",
+          "value_fa": "آستین اسقفی",
+          "sort_order": 9
+        },
+        {
+          "code": "butterfly",
+          "value_ar": "فراشة",
+          "value_en": "Butterfly Sleeve",
+          "value_fa": "آستین پروانه‌ای",
+          "sort_order": 10
+        },
+        {
+          "code": "dolman",
+          "value_ar": "دولمان",
+          "value_en": "Dolman Sleeve",
+          "value_fa": "آستین دولمن",
+          "sort_order": 11
+        }
+      ]
+    },
+    {
+      "group_code": "top-specs",
+      "code": "top_length",
+      "name_ar": "طول القميص",
+      "name_en": "Top Length",
+      "name_fa": "قد تاپ",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiRuler",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "crop",
+          "value_ar": "قصير",
+          "value_en": "Crop Top",
+          "value_fa": "تاپ کوتاه",
+          "sort_order": 1
+        },
+        {
+          "code": "waist_length",
+          "value_ar": "طول الخصر",
+          "value_en": "Waist Length",
+          "value_fa": "قد کمر",
+          "sort_order": 2
+        },
+        {
+          "code": "hip_length",
+          "value_ar": "طول الورك",
+          "value_en": "Hip Length",
+          "value_fa": "قد باسن",
+          "sort_order": 3
+        },
+        {
+          "code": "tunic",
+          "value_ar": "تونيك",
+          "value_en": "Tunic",
+          "value_fa": "تونیک",
+          "sort_order": 4
+        },
+        {
+          "code": "bodysuit",
+          "value_ar": "بدي",
+          "value_en": "Bodysuit",
+          "value_fa": "بدی",
+          "sort_order": 5
+        },
+        {
+          "code": "long",
+          "value_ar": "طويل",
+          "value_en": "Long",
+          "value_fa": "بلند",
+          "sort_order": 6
+        }
+      ]
+    },
+    {
+      "group_code": "top-specs",
+      "code": "top_fit_type",
+      "name_ar": "نوع القصة",
+      "name_en": "Fit Type",
+      "name_fa": "مدل اندام",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiBodyHeight",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 4,
+      "options": [
+        {
+          "code": "slim_fit",
+          "value_ar": "ضيق",
+          "value_en": "Slim Fit",
+          "value_fa": "چسبان",
+          "sort_order": 1
+        },
+        {
+          "code": "regular_fit",
+          "value_ar": "عادي",
+          "value_en": "Regular Fit",
+          "value_fa": "معمولی",
+          "sort_order": 2
+        },
+        {
+          "code": "loose_fit",
+          "value_ar": "واسع",
+          "value_en": "Loose Fit",
+          "value_fa": "گشاد",
+          "sort_order": 3
+        },
+        {
+          "code": "oversized",
+          "value_ar": "أوفرサイズ",
+          "value_en": "Oversized",
+          "value_fa": "اورسایز",
+          "sort_order": 4
+        },
+        {
+          "code": "relaxed",
+          "value_ar": "مريح",
+          "value_en": "Relaxed Fit",
+          "value_fa": "آزاد",
+          "sort_order": 5
+        },
+        {
+          "code": "fitted",
+          "value_ar": "مضبوط",
+          "value_en": "Fitted",
+          "value_fa": "نسبتاً چسبان",
+          "sort_order": 6
+        }
+      ]
+    },
+    {
+      "group_code": "top-specs",
+      "code": "top_closure_type",
+      "name_ar": "نوع الإغلاق",
+      "name_en": "Closure Type",
+      "name_fa": "نوع بسته شدن",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiClothes",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 5,
+      "options": [
+        {
+          "code": "buttons",
+          "value_ar": "أزرار",
+          "value_en": "Buttons",
+          "value_fa": "دکمه",
+          "sort_order": 1
+        },
+        {
+          "code": "zipper",
+          "value_ar": "سحاب",
+          "value_en": "Zipper",
+          "value_fa": "زیپ",
+          "sort_order": 2
+        },
+        {
+          "code": "pull_over",
+          "value_ar": "لبس",
+          "value_en": "Pull-Over",
+          "value_fa": "پوشیدنی",
+          "sort_order": 3
+        },
+        {
+          "code": "snap",
+          "value_ar": "كبسول",
+          "value_en": "Snap",
+          "value_fa": "دکمه فشاری",
+          "sort_order": 4
+        },
+        {
+          "code": "none",
+          "value_ar": "بدون",
+          "value_en": "None",
+          "value_fa": "بدون",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "group_code": "top-specs",
+      "code": "stretch_level",
+      "name_ar": "مستوى التمدد",
+      "name_en": "Stretch Level",
+      "name_fa": "میزان کشسانی",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiElastic",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 6,
+      "options": [
+        {
+          "code": "none",
+          "value_ar": "بدون",
+          "value_en": "None",
+          "value_fa": "بدون",
+          "sort_order": 1
+        },
+        {
+          "code": "slight",
+          "value_ar": "خفيف",
+          "value_en": "Slight",
+          "value_fa": "کم",
+          "sort_order": 2
+        },
+        {
+          "code": "moderate",
+          "value_ar": "متوسط",
+          "value_en": "Moderate",
+          "value_fa": "متوسط",
+          "sort_order": 3
+        },
+        {
+          "code": "high",
+          "value_ar": "عالي",
+          "value_en": "High",
+          "value_fa": "زیاد",
+          "sort_order": 4
+        }
+      ]
+    }
+  ]
+}

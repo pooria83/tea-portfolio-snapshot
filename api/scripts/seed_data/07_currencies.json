@@ -1,0 +1,17 @@
+[
+  { "code": "SAR", "name_ar": "ريال سعودي", "name_en": "Saudi Riyal", "name_fa": "ریال سعودی", "symbol": "﷼" },
+  { "code": "AED", "name_ar": "درهم إماراتي", "name_en": "UAE Dirham", "name_fa": "درهم امارات", "symbol": "د.إ" },
+  { "code": "KWD", "name_ar": "دينار كويتي", "name_en": "Kuwaiti Dinar", "name_fa": "دینار کویت", "symbol": "د.ك" },
+  { "code": "QAR", "name_ar": "ريال قطري", "name_en": "Qatari Riyal", "name_fa": "ریال قطر", "symbol": "ر.ق" },
+  { "code": "BHD", "name_ar": "دينار بحريني", "name_en": "Bahraini Dinar", "name_fa": "دینار بحرین", "symbol": "د.ب" },
+  { "code": "OMR", "name_ar": "ريال عماني", "name_en": "Omani Rial", "name_fa": "ریال عمان", "symbol": "ر.ع." },
+  { "code": "EGP", "name_ar": "جنيه مصري", "name_en": "Egyptian Pound", "name_fa": "پوند مصر", "symbol": "ج.م" },
+  { "code": "JOD", "name_ar": "دينار أردني", "name_en": "Jordanian Dinar", "name_fa": "دینار اردن", "symbol": "د.ا" },
+  { "code": "LBP", "name_ar": "ليرة لبنانية", "name_en": "Lebanese Pound", "name_fa": "لیره لبنان", "symbol": "ل.ل" },
+  { "code": "IQD", "name_ar": "دينار عراقي", "name_en": "Iraqi Dinar", "name_fa": "دینار عراق", "symbol": "د.ع" },
+  { "code": "YER", "name_ar": "ريال يمني", "name_en": "Yemeni Rial", "name_fa": "ریال یمن", "symbol": "ر.ي" },
+  { "code": "USD", "name_ar": "دولار أمريكي", "name_en": "US Dollar", "name_fa": "دلار آمریکا", "symbol": "$" },
+  { "code": "EUR", "name_ar": "يورو", "name_en": "Euro", "name_fa": "یورو", "symbol": "€" },
+  { "code": "GBP", "name_ar": "جنيه إسترليني", "name_en": "British Pound", "name_fa": "پوند بریتانیا", "symbol": "£" },
+  { "code": "TRY", "name_ar": "ليرة تركية", "name_en": "Turkish Lira", "name_fa": "لیره ترکیه", "symbol": "₺" }
+]

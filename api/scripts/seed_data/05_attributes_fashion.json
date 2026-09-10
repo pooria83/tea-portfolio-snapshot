@@ -1,0 +1,2414 @@
+{
+  "attributes": [
+    {
+      "group_code": "colors-pattern",
+      "code": "primary_color",
+      "name_ar": "اللون الأساسي",
+      "name_en": "Primary Color",
+      "name_fa": "رنگ اصلی",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiDroplet",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "black",
+          "value_ar": "أسود",
+          "value_en": "Black",
+          "value_fa": "مشکی",
+          "color_hex": "#000000",
+          "sort_order": 1,
+          "color_family": "blacks-grays",
+          "is_major": true
+        },
+        {
+          "code": "charcoal",
+          "value_ar": "فحمي",
+          "value_en": "Charcoal",
+          "value_fa": "زغالی",
+          "color_hex": "#36454F",
+          "sort_order": 2,
+          "color_family": "blacks-grays",
+          "is_major": true
+        },
+        {
+          "code": "graphite",
+          "value_ar": "جرافيت",
+          "value_en": "Graphite",
+          "value_fa": "گرافیت",
+          "color_hex": "#41424C",
+          "sort_order": 3,
+          "color_family": "blacks-grays",
+          "is_major": false
+        },
+        {
+          "code": "gunmetal",
+          "value_ar": "رصاصي داكن",
+          "value_en": "Gunmetal",
+          "value_fa": "تفنگ‌رنگ",
+          "color_hex": "#2C3539",
+          "sort_order": 4,
+          "color_family": "blacks-grays",
+          "is_major": false
+        },
+        {
+          "code": "dark_gray",
+          "value_ar": "رمادي غامق",
+          "value_en": "Dark Gray",
+          "value_fa": "خاکستری تیره",
+          "color_hex": "#A9A9A9",
+          "sort_order": 5,
+          "color_family": "blacks-grays",
+          "is_major": false
+        },
+        {
+          "code": "gray",
+          "value_ar": "رمادي",
+          "value_en": "Gray",
+          "value_fa": "خاکستری",
+          "color_hex": "#808080",
+          "sort_order": 6,
+          "color_family": "blacks-grays",
+          "is_major": false
+        },
+        {
+          "code": "silver",
+          "value_ar": "فضي",
+          "value_en": "Silver",
+          "value_fa": "نقره‌ای",
+          "color_hex": "#C0C0C0",
+          "sort_order": 7,
+          "color_family": "metallics",
+          "is_major": false
+        },
+        {
+          "code": "light_gray",
+          "value_ar": "رمادي فاتح",
+          "value_en": "Light Gray",
+          "value_fa": "خاکستری روشن",
+          "color_hex": "#D3D3D3",
+          "sort_order": 8,
+          "color_family": "blacks-grays",
+          "is_major": false
+        },
+        {
+          "code": "pewter",
+          "value_ar": "بيوتر",
+          "value_en": "Pewter",
+          "value_fa": "پیوتر",
+          "color_hex": "#899499",
+          "sort_order": 9,
+          "color_family": "blacks-grays",
+          "is_major": false
+        },
+        {
+          "code": "slate",
+          "value_ar": "أردوازي",
+          "value_en": "Slate",
+          "value_fa": "اسلیت",
+          "color_hex": "#708090",
+          "sort_order": 10,
+          "color_family": "blacks-grays",
+          "is_major": false
+        },
+        {
+          "code": "white",
+          "value_ar": "أبيض",
+          "value_en": "White",
+          "value_fa": "سفید",
+          "color_hex": "#FFFFFF",
+          "sort_order": 11,
+          "color_family": "whites-creams",
+          "is_major": true
+        },
+        {
+          "code": "ivory",
+          "value_ar": "عاجي",
+          "value_en": "Ivory",
+          "value_fa": "عاجی",
+          "color_hex": "#FFFFF0",
+          "sort_order": 12,
+          "color_family": "whites-creams",
+          "is_major": true
+        },
+        {
+          "code": "cream",
+          "value_ar": "كريمي",
+          "value_en": "Cream",
+          "value_fa": "کرم",
+          "color_hex": "#FFFDD0",
+          "sort_order": 13,
+          "color_family": "whites-creams",
+          "is_major": false
+        },
+        {
+          "code": "off_white",
+          "value_ar": "أبيض مائل",
+          "value_en": "Off White",
+          "value_fa": "آف وایت",
+          "color_hex": "#FAF9F6",
+          "sort_order": 14,
+          "color_family": "whites-creams",
+          "is_major": false
+        },
+        {
+          "code": "pearl",
+          "value_ar": "لؤلؤي",
+          "value_en": "Pearl",
+          "value_fa": "مرواریدی",
+          "color_hex": "#F0EAD6",
+          "sort_order": 15,
+          "color_family": "whites-creams",
+          "is_major": false
+        },
+        {
+          "code": "linen",
+          "value_ar": "كتاني",
+          "value_en": "Linen",
+          "value_fa": "کتانی",
+          "color_hex": "#FAF0E6",
+          "sort_order": 16,
+          "color_family": "whites-creams",
+          "is_major": false
+        },
+        {
+          "code": "beige",
+          "value_ar": "بيج",
+          "value_en": "Beige",
+          "value_fa": "بژ",
+          "color_hex": "#F5F5DC",
+          "sort_order": 17,
+          "color_family": "beiges-browns",
+          "is_major": true
+        },
+        {
+          "code": "nude",
+          "value_ar": "نude",
+          "value_en": "Nude",
+          "value_fa": "نود",
+          "color_hex": "#E8C5A0",
+          "sort_order": 18,
+          "color_family": "beiges-browns",
+          "is_major": false
+        },
+        {
+          "code": "sand",
+          "value_ar": "رملي",
+          "value_en": "Sand",
+          "value_fa": "شنی",
+          "color_hex": "#C2B280",
+          "sort_order": 19,
+          "color_family": "beiges-browns",
+          "is_major": false
+        },
+        {
+          "code": "tan",
+          "value_ar": "أسمر",
+          "value_en": "Tan",
+          "value_fa": "برنزه",
+          "color_hex": "#D2B48C",
+          "sort_order": 20,
+          "color_family": "beiges-browns",
+          "is_major": false
+        },
+        {
+          "code": "camel",
+          "value_ar": "كاميل",
+          "value_en": "Camel",
+          "value_fa": "شتری",
+          "color_hex": "#C19A6B",
+          "sort_order": 21,
+          "color_family": "beiges-browns",
+          "is_major": false
+        },
+        {
+          "code": "caramel",
+          "value_ar": "كراميل",
+          "value_en": "Caramel",
+          "value_fa": "کاراملی",
+          "color_hex": "#AF6E4D",
+          "sort_order": 22,
+          "color_family": "beiges-browns",
+          "is_major": false
+        },
+        {
+          "code": "khaki",
+          "value_ar": "كاكي",
+          "value_en": "Khaki",
+          "value_fa": "خاکی",
+          "color_hex": "#C3B091",
+          "sort_order": 23,
+          "color_family": "beiges-browns",
+          "is_major": false
+        },
+        {
+          "code": "taupe",
+          "value_ar": "توب",
+          "value_en": "Taupe",
+          "value_fa": "تاوپ",
+          "color_hex": "#483C32",
+          "sort_order": 24,
+          "color_family": "beiges-browns",
+          "is_major": false
+        },
+        {
+          "code": "brown",
+          "value_ar": "بني",
+          "value_en": "Brown",
+          "value_fa": "قهوه‌ای",
+          "color_hex": "#8B4513",
+          "sort_order": 25,
+          "color_family": "beiges-browns",
+          "is_major": true
+        },
+        {
+          "code": "chocolate",
+          "value_ar": "شوكولاتة",
+          "value_en": "Chocolate",
+          "value_fa": "شکلاتی",
+          "color_hex": "#7B3F00",
+          "sort_order": 26,
+          "color_family": "beiges-browns",
+          "is_major": false
+        },
+        {
+          "code": "coffee",
+          "value_ar": "قهوة",
+          "value_en": "Coffee",
+          "value_fa": "قهوه‌ای",
+          "color_hex": "#6F4E37",
+          "sort_order": 27,
+          "color_family": "beiges-browns",
+          "is_major": false
+        },
+        {
+          "code": "mocha",
+          "value_ar": "موكا",
+          "value_en": "Mocha",
+          "value_fa": "موکا",
+          "color_hex": "#8B7355",
+          "sort_order": 28,
+          "color_family": "beiges-browns",
+          "is_major": false
+        },
+        {
+          "code": "espresso",
+          "value_ar": "إسبريسو",
+          "value_en": "Espresso",
+          "value_fa": "اسپرسو",
+          "color_hex": "#5C3A21",
+          "sort_order": 29,
+          "color_family": "beiges-browns",
+          "is_major": false
+        },
+        {
+          "code": "cocoa",
+          "value_ar": "كاكاو",
+          "value_en": "Cocoa",
+          "value_fa": "کاکائو",
+          "color_hex": "#7B5B3A",
+          "sort_order": 30,
+          "color_family": "beiges-browns",
+          "is_major": false
+        },
+        {
+          "code": "terracotta",
+          "value_ar": "تراكوتا",
+          "value_en": "Terracotta",
+          "value_fa": "سفالی",
+          "color_hex": "#E2725B",
+          "sort_order": 31,
+          "color_family": "beiges-browns",
+          "is_major": false
+        },
+        {
+          "code": "sienna",
+          "value_ar": "سيينا",
+          "value_en": "Sienna",
+          "value_fa": "سینا",
+          "color_hex": "#A0522D",
+          "sort_order": 32,
+          "color_family": "beiges-browns",
+          "is_major": false
+        },
+        {
+          "code": "navy",
+          "value_ar": "كحلي",
+          "value_en": "Navy",
+          "value_fa": "سرمه‌ای",
+          "color_hex": "#000080",
+          "sort_order": 33,
+          "color_family": "blues",
+          "is_major": true
+        },
+        {
+          "code": "midnight_blue",
+          "value_ar": "أزرق منتصف الليل",
+          "value_en": "Midnight Blue",
+          "value_fa": "آبی نیمه‌شب",
+          "color_hex": "#191970",
+          "sort_order": 34,
+          "color_family": "blues",
+          "is_major": false
+        },
+        {
+          "code": "royal_blue",
+          "value_ar": "أزرق ملكي",
+          "value_en": "Royal Blue",
+          "value_fa": "آبی سلطنتی",
+          "color_hex": "#4169E1",
+          "sort_order": 35,
+          "color_family": "blues",
+          "is_major": false
+        },
+        {
+          "code": "cobalt_blue",
+          "value_ar": "أزرق كوبالت",
+          "value_en": "Cobalt Blue",
+          "value_fa": "آبی کبالت",
+          "color_hex": "#0047AB",
+          "sort_order": 36,
+          "color_family": "blues",
+          "is_major": false
+        },
+        {
+          "code": "sapphire",
+          "value_ar": "ياقوتي",
+          "value_en": "Sapphire",
+          "value_fa": "یاقوتی",
+          "color_hex": "#0F52BA",
+          "sort_order": 37,
+          "color_family": "blues",
+          "is_major": false
+        },
+        {
+          "code": "blue",
+          "value_ar": "أزرق",
+          "value_en": "Blue",
+          "value_fa": "آبی",
+          "color_hex": "#0000FF",
+          "sort_order": 38,
+          "color_family": "blues",
+          "is_major": true
+        },
+        {
+          "code": "steel_blue",
+          "value_ar": "أزرق فولاذي",
+          "value_en": "Steel Blue",
+          "value_fa": "آبی فولادی",
+          "color_hex": "#4682B4",
+          "sort_order": 39,
+          "color_family": "blues",
+          "is_major": false
+        },
+        {
+          "code": "sky_blue",
+          "value_ar": "أزرق سماوي",
+          "value_en": "Sky Blue",
+          "value_fa": "آبی آسمانی",
+          "color_hex": "#87CEEB",
+          "sort_order": 40,
+          "color_family": "blues",
+          "is_major": false
+        },
+        {
+          "code": "baby_blue",
+          "value_ar": "أزرق فاتح",
+          "value_en": "Baby Blue",
+          "value_fa": "آبی بچگانه",
+          "color_hex": "#89CFF0",
+          "sort_order": 41,
+          "color_family": "blues",
+          "is_major": false
+        },
+        {
+          "code": "powder_blue",
+          "value_ar": "أزرق بودرة",
+          "value_en": "Powder Blue",
+          "value_fa": "آبی پودری",
+          "color_hex": "#B6D0E2",
+          "sort_order": 42,
+          "color_family": "blues",
+          "is_major": false
+        },
+        {
+          "code": "cornflower_blue",
+          "value_ar": "أزرق ردة الذرة",
+          "value_en": "Cornflower Blue",
+          "value_fa": "آبی گل ذرت",
+          "color_hex": "#6495ED",
+          "sort_order": 43,
+          "color_family": "blues",
+          "is_major": false
+        },
+        {
+          "code": "denim",
+          "value_ar": "دينيم",
+          "value_en": "Denim",
+          "value_fa": "جین",
+          "color_hex": "#1560BD",
+          "sort_order": 44,
+          "color_family": "blues",
+          "is_major": false
+        },
+        {
+          "code": "teal",
+          "value_ar": "شرشي",
+          "value_en": "Teal",
+          "value_fa": "سبز آبی",
+          "color_hex": "#008080",
+          "sort_order": 45,
+          "color_family": "blues",
+          "is_major": false
+        },
+        {
+          "code": "turquoise",
+          "value_ar": "فيروزي",
+          "value_en": "Turquoise",
+          "value_fa": "فیروزه‌ای",
+          "color_hex": "#40E0D0",
+          "sort_order": 46,
+          "color_family": "blues",
+          "is_major": false
+        },
+        {
+          "code": "aqua",
+          "value_ar": "أكوا",
+          "value_en": "Aqua",
+          "value_fa": "آبی",
+          "color_hex": "#00FFFF",
+          "sort_order": 47,
+          "color_family": "blues",
+          "is_major": false
+        },
+        {
+          "code": "cerulean",
+          "value_ar": "أزرق سيروليان",
+          "value_en": "Cerulean",
+          "value_fa": "آبی سرولین",
+          "color_hex": "#007BA7",
+          "sort_order": 48,
+          "color_family": "blues",
+          "is_major": false
+        },
+        {
+          "code": "azure",
+          "value_ar": "أزرق أزوري",
+          "value_en": "Azure",
+          "value_fa": "لاجوردی",
+          "color_hex": "#007FFF",
+          "sort_order": 49,
+          "color_family": "blues",
+          "is_major": false
+        },
+        {
+          "code": "red",
+          "value_ar": "أحمر",
+          "value_en": "Red",
+          "value_fa": "قرمز",
+          "color_hex": "#FF0000",
+          "sort_order": 50,
+          "color_family": "reds-pinks",
+          "is_major": true
+        },
+        {
+          "code": "scarlet",
+          "value_ar": "قرمزي",
+          "value_en": "Scarlet",
+          "value_fa": "آل",
+          "color_hex": "#FF2400",
+          "sort_order": 51,
+          "color_family": "reds-pinks",
+          "is_major": false
+        },
+        {
+          "code": "crimson",
+          "value_ar": "قرمزي داكن",
+          "value_en": "Crimson",
+          "value_fa": "زرشکی",
+          "color_hex": "#DC143C",
+          "sort_order": 52,
+          "color_family": "reds-pinks",
+          "is_major": false
+        },
+        {
+          "code": "burgundy",
+          "value_ar": "بورجوندي",
+          "value_en": "Burgundy",
+          "value_fa": "شرابی",
+          "color_hex": "#800020",
+          "sort_order": 53,
+          "color_family": "reds-pinks",
+          "is_major": false
+        },
+        {
+          "code": "maroon",
+          "value_ar": "كستنائي",
+          "value_en": "Maroon",
+          "value_fa": "بلوطی",
+          "color_hex": "#800000",
+          "sort_order": 54,
+          "color_family": "reds-pinks",
+          "is_major": false
+        },
+        {
+          "code": "wine",
+          "value_ar": "نبيذي",
+          "value_en": "Wine",
+          "value_fa": "شرابی",
+          "color_hex": "#722F37",
+          "sort_order": 55,
+          "color_family": "reds-pinks",
+          "is_major": false
+        },
+        {
+          "code": "merlot",
+          "value_ar": "ميرلو",
+          "value_en": "Merlot",
+          "value_fa": "مرلو",
+          "color_hex": "#73343A",
+          "sort_order": 56,
+          "color_family": "reds-pinks",
+          "is_major": false
+        },
+        {
+          "code": "rosewood",
+          "value_ar": "خشب الورد",
+          "value_en": "Rosewood",
+          "value_fa": "چوب رز",
+          "color_hex": "#65000B",
+          "sort_order": 57,
+          "color_family": "reds-pinks",
+          "is_major": false
+        },
+        {
+          "code": "raspberry",
+          "value_ar": "توتي",
+          "value_en": "Raspberry",
+          "value_fa": "تمشکی",
+          "color_hex": "#E30B5D",
+          "sort_order": 58,
+          "color_family": "reds-pinks",
+          "is_major": false
+        },
+        {
+          "code": "rose",
+          "value_ar": "وردي غامق",
+          "value_en": "Rose",
+          "value_fa": "رز",
+          "color_hex": "#FF0080",
+          "sort_order": 59,
+          "color_family": "reds-pinks",
+          "is_major": false
+        },
+        {
+          "code": "pink",
+          "value_ar": "وردي",
+          "value_en": "Pink",
+          "value_fa": "صورتی",
+          "color_hex": "#FFC0CB",
+          "sort_order": 60,
+          "color_family": "reds-pinks",
+          "is_major": true
+        },
+        {
+          "code": "hot_pink",
+          "value_ar": "وردي فاقع",
+          "value_en": "Hot Pink",
+          "value_fa": "صورتی تند",
+          "color_hex": "#FF69B4",
+          "sort_order": 61,
+          "color_family": "reds-pinks",
+          "is_major": false
+        },
+        {
+          "code": "fuchsia",
+          "value_ar": "فوشيا",
+          "value_en": "Fuchsia",
+          "value_fa": "فوشیا",
+          "color_hex": "#FF00FF",
+          "sort_order": 62,
+          "color_family": "reds-pinks",
+          "is_major": false
+        },
+        {
+          "code": "blush",
+          "value_ar": "خدودي",
+          "value_en": "Blush",
+          "value_fa": "صورتی ملایم",
+          "color_hex": "#DE5D83",
+          "sort_order": 63,
+          "color_family": "reds-pinks",
+          "is_major": false
+        },
+        {
+          "code": "salmon",
+          "value_ar": "سلموني",
+          "value_en": "Salmon",
+          "value_fa": "سالمونی",
+          "color_hex": "#FA8072",
+          "sort_order": 64,
+          "color_family": "reds-pinks",
+          "is_major": false
+        },
+        {
+          "code": "coral",
+          "value_ar": "مرجاني",
+          "value_en": "Coral",
+          "value_fa": "مرجانی",
+          "color_hex": "#FF7F50",
+          "sort_order": 65,
+          "color_family": "reds-pinks",
+          "is_major": false
+        },
+        {
+          "code": "brick_red",
+          "value_ar": "أحمر طوبي",
+          "value_en": "Brick Red",
+          "value_fa": "آجری",
+          "color_hex": "#CB4154",
+          "sort_order": 66,
+          "color_family": "reds-pinks",
+          "is_major": false
+        },
+        {
+          "code": "purple",
+          "value_ar": "بنفسجي",
+          "value_en": "Purple",
+          "value_fa": "بنفش",
+          "color_hex": "#800080",
+          "sort_order": 67,
+          "color_family": "purples",
+          "is_major": true
+        },
+        {
+          "code": "lavender",
+          "value_ar": "لافندر",
+          "value_en": "Lavender",
+          "value_fa": "اسطوخودوس",
+          "color_hex": "#E6E6FA",
+          "sort_order": 68,
+          "color_family": "purples",
+          "is_major": true
+        },
+        {
+          "code": "violet",
+          "value_ar": "بنفسجي فاتح",
+          "value_en": "Violet",
+          "value_fa": "بنفش",
+          "color_hex": "#8F00FF",
+          "sort_order": 69,
+          "color_family": "purples",
+          "is_major": false
+        },
+        {
+          "code": "amethyst",
+          "value_ar": "جمشت",
+          "value_en": "Amethyst",
+          "value_fa": "آمیتیست",
+          "color_hex": "#9966CC",
+          "sort_order": 70,
+          "color_family": "purples",
+          "is_major": false
+        },
+        {
+          "code": "plum",
+          "value_ar": "برقوقي",
+          "value_en": "Plum",
+          "value_fa": "آلوچه‌ای",
+          "color_hex": "#DDA0DD",
+          "sort_order": 71,
+          "color_family": "purples",
+          "is_major": false
+        },
+        {
+          "code": "lilac",
+          "value_ar": "ليلكي",
+          "value_en": "Lilac",
+          "value_fa": "یاسی",
+          "color_hex": "#C8A2C8",
+          "sort_order": 72,
+          "color_family": "purples",
+          "is_major": false
+        },
+        {
+          "code": "mauve",
+          "value_ar": "موف",
+          "value_en": "Mauve",
+          "value_fa": "موو",
+          "color_hex": "#E0B0FF",
+          "sort_order": 73,
+          "color_family": "purples",
+          "is_major": false
+        },
+        {
+          "code": "orchid",
+          "value_ar": "أوركيد",
+          "value_en": "Orchid",
+          "value_fa": "ارکیده",
+          "color_hex": "#DA70D6",
+          "sort_order": 74,
+          "color_family": "purples",
+          "is_major": false
+        },
+        {
+          "code": "eggplant",
+          "value_ar": "باذنجاني",
+          "value_en": "Eggplant",
+          "value_fa": "بادمجانی",
+          "color_hex": "#614051",
+          "sort_order": 75,
+          "color_family": "purples",
+          "is_major": false
+        },
+        {
+          "code": "grape",
+          "value_ar": "عنبي",
+          "value_en": "Grape",
+          "value_fa": "انگوری",
+          "color_hex": "#6F2DA8",
+          "sort_order": 76,
+          "color_family": "purples",
+          "is_major": false
+        },
+        {
+          "code": "indigo",
+          "value_ar": "نيلي",
+          "value_en": "Indigo",
+          "value_fa": "نیلی",
+          "color_hex": "#4B0082",
+          "sort_order": 77,
+          "color_family": "purples",
+          "is_major": false
+        },
+        {
+          "code": "green",
+          "value_ar": "أخضر",
+          "value_en": "Green",
+          "value_fa": "سبز",
+          "color_hex": "#008000",
+          "sort_order": 78,
+          "color_family": "greens",
+          "is_major": true
+        },
+        {
+          "code": "olive",
+          "value_ar": "زيتي",
+          "value_en": "Olive",
+          "value_fa": "زیتونی",
+          "color_hex": "#808000",
+          "sort_order": 79,
+          "color_family": "greens",
+          "is_major": true
+        },
+        {
+          "code": "emerald",
+          "value_ar": "زمردي",
+          "value_en": "Emerald",
+          "value_fa": "زمرّدی",
+          "color_hex": "#50C878",
+          "sort_order": 80,
+          "color_family": "greens",
+          "is_major": false
+        },
+        {
+          "code": "forest_green",
+          "value_ar": "أخضر غابي",
+          "value_en": "Forest Green",
+          "value_fa": "سبز جنگلی",
+          "color_hex": "#228B22",
+          "sort_order": 81,
+          "color_family": "greens",
+          "is_major": false
+        },
+        {
+          "code": "hunter_green",
+          "value_ar": "أخضر صياد",
+          "value_en": "Hunter Green",
+          "value_fa": "سبز شکارچی",
+          "color_hex": "#355E3B",
+          "sort_order": 82,
+          "color_family": "greens",
+          "is_major": false
+        },
+        {
+          "code": "pine_green",
+          "value_ar": "أخضر صنوبري",
+          "value_en": "Pine Green",
+          "value_fa": "سبز کاجی",
+          "color_hex": "#01796F",
+          "sort_order": 83,
+          "color_family": "greens",
+          "is_major": false
+        },
+        {
+          "code": "sage",
+          "value_ar": "مريمية",
+          "value_en": "Sage",
+          "value_fa": "حکیم",
+          "color_hex": "#BCB88A",
+          "sort_order": 84,
+          "color_family": "greens",
+          "is_major": false
+        },
+        {
+          "code": "army_green",
+          "value_ar": "أخضر عسكري",
+          "value_en": "Army Green",
+          "value_fa": "سبز نظامی",
+          "color_hex": "#4B5320",
+          "sort_order": 85,
+          "color_family": "greens",
+          "is_major": false
+        },
+        {
+          "code": "moss_green",
+          "value_ar": "أخضر طحلبي",
+          "value_en": "Moss Green",
+          "value_fa": "سبز خزه‌ای",
+          "color_hex": "#8A9A5B",
+          "sort_order": 86,
+          "color_family": "greens",
+          "is_major": false
+        },
+        {
+          "code": "mint",
+          "value_ar": "نعناعي",
+          "value_en": "Mint",
+          "value_fa": "نعنایی",
+          "color_hex": "#98FF98",
+          "sort_order": 87,
+          "color_family": "greens",
+          "is_major": false
+        },
+        {
+          "code": "pistachio",
+          "value_ar": "فستقي",
+          "value_en": "Pistachio",
+          "value_fa": "پسته‌ای",
+          "color_hex": "#93C572",
+          "sort_order": 88,
+          "color_family": "greens",
+          "is_major": false
+        },
+        {
+          "code": "lime",
+          "value_ar": "لايم",
+          "value_en": "Lime",
+          "value_fa": "لیمویی",
+          "color_hex": "#32CD32",
+          "sort_order": 89,
+          "color_family": "greens",
+          "is_major": false
+        },
+        {
+          "code": "chartreuse",
+          "value_ar": "شارتروز",
+          "value_en": "Chartreuse",
+          "value_fa": "شارتروز",
+          "color_hex": "#7FFF00",
+          "sort_order": 90,
+          "color_family": "greens",
+          "is_major": false
+        },
+        {
+          "code": "spring_green",
+          "value_ar": "أخضر ربيعي",
+          "value_en": "Spring Green",
+          "value_fa": "سبز بهاری",
+          "color_hex": "#00FF7F",
+          "sort_order": 91,
+          "color_family": "greens",
+          "is_major": false
+        },
+        {
+          "code": "sea_green",
+          "value_ar": "أخضر بحري",
+          "value_en": "Sea Green",
+          "value_fa": "سبز دریایی",
+          "color_hex": "#2E8B57",
+          "sort_order": 92,
+          "color_family": "greens",
+          "is_major": false
+        },
+        {
+          "code": "jade",
+          "value_ar": "يشمي",
+          "value_en": "Jade",
+          "value_fa": "یشمی",
+          "color_hex": "#00A86B",
+          "sort_order": 93,
+          "color_family": "greens",
+          "is_major": false
+        },
+        {
+          "code": "celadon",
+          "value_ar": "سيلادون",
+          "value_en": "Celadon",
+          "value_fa": "سلادون",
+          "color_hex": "#ACE1AF",
+          "sort_order": 94,
+          "color_family": "greens",
+          "is_major": false
+        },
+        {
+          "code": "fern",
+          "value_ar": "سرخسي",
+          "value_en": "Fern",
+          "value_fa": "سرخسی",
+          "color_hex": "#4F7942",
+          "sort_order": 95,
+          "color_family": "greens",
+          "is_major": false
+        },
+        {
+          "code": "gold",
+          "value_ar": "ذهبي",
+          "value_en": "Gold",
+          "value_fa": "طلایی",
+          "color_hex": "#FFD700",
+          "sort_order": 96,
+          "color_family": "yellows-oranges",
+          "is_major": true
+        },
+        {
+          "code": "yellow",
+          "value_ar": "أصفر",
+          "value_en": "Yellow",
+          "value_fa": "زرد",
+          "color_hex": "#FFFF00",
+          "sort_order": 97,
+          "color_family": "yellows-oranges",
+          "is_major": true
+        },
+        {
+          "code": "canary",
+          "value_ar": "كناري",
+          "value_en": "Canary",
+          "value_fa": "قناری",
+          "color_hex": "#FFFF99",
+          "sort_order": 98,
+          "color_family": "yellows-oranges",
+          "is_major": false
+        },
+        {
+          "code": "lemon",
+          "value_ar": "ليموني",
+          "value_en": "Lemon",
+          "value_fa": "لیمویی",
+          "color_hex": "#FFF700",
+          "sort_order": 99,
+          "color_family": "yellows-oranges",
+          "is_major": false
+        },
+        {
+          "code": "saffron",
+          "value_ar": "زعفراني",
+          "value_en": "Saffron",
+          "value_fa": "زعفرانی",
+          "color_hex": "#F4C430",
+          "sort_order": 100,
+          "color_family": "yellows-oranges",
+          "is_major": false
+        },
+        {
+          "code": "mustard",
+          "value_ar": "خردلي",
+          "value_en": "Mustard",
+          "value_fa": "خردلی",
+          "color_hex": "#FFDB58",
+          "sort_order": 101,
+          "color_family": "yellows-oranges",
+          "is_major": false
+        },
+        {
+          "code": "marigold",
+          "value_ar": "قطيفة",
+          "value_en": "Marigold",
+          "value_fa": "ماریگلد",
+          "color_hex": "#EAA221",
+          "sort_order": 102,
+          "color_family": "yellows-oranges",
+          "is_major": false
+        },
+        {
+          "code": "honey",
+          "value_ar": "عسلي",
+          "value_en": "Honey",
+          "value_fa": "عسلی",
+          "color_hex": "#FFC300",
+          "sort_order": 103,
+          "color_family": "yellows-oranges",
+          "is_major": false
+        },
+        {
+          "code": "amber",
+          "value_ar": "عنبر",
+          "value_en": "Amber",
+          "value_fa": "کهربایی",
+          "color_hex": "#FFBF00",
+          "sort_order": 104,
+          "color_family": "yellows-oranges",
+          "is_major": false
+        },
+        {
+          "code": "peach",
+          "value_ar": "خوخي",
+          "value_en": "Peach",
+          "value_fa": "هلویی",
+          "color_hex": "#FFE5B4",
+          "sort_order": 105,
+          "color_family": "yellows-oranges",
+          "is_major": false
+        },
+        {
+          "code": "apricot",
+          "value_ar": "مشمشي",
+          "value_en": "Apricot",
+          "value_fa": "زردآلوئی",
+          "color_hex": "#FBCEB1",
+          "sort_order": 106,
+          "color_family": "yellows-oranges",
+          "is_major": false
+        },
+        {
+          "code": "orange",
+          "value_ar": "برتقالي",
+          "value_en": "Orange",
+          "value_fa": "نارنجی",
+          "color_hex": "#FFA500",
+          "sort_order": 107,
+          "color_family": "yellows-oranges",
+          "is_major": false
+        },
+        {
+          "code": "tangerine",
+          "value_ar": "يوسفي",
+          "value_en": "Tangerine",
+          "value_fa": "نارنجی",
+          "color_hex": "#FFCC00",
+          "sort_order": 108,
+          "color_family": "yellows-oranges",
+          "is_major": false
+        },
+        {
+          "code": "burnt_orange",
+          "value_ar": "برتقالي محروق",
+          "value_en": "Burnt Orange",
+          "value_fa": "نارنجی سوخته",
+          "color_hex": "#CC5500",
+          "sort_order": 109,
+          "color_family": "yellows-oranges",
+          "is_major": false
+        },
+        {
+          "code": "bronze",
+          "value_ar": "برونزي",
+          "value_en": "Bronze",
+          "value_fa": "برنز",
+          "color_hex": "#CD7F32",
+          "sort_order": 110,
+          "color_family": "metallics",
+          "is_major": true
+        },
+        {
+          "code": "copper",
+          "value_ar": "نحاسي",
+          "value_en": "Copper",
+          "value_fa": "مسی",
+          "color_hex": "#B87333",
+          "sort_order": 111,
+          "color_family": "metallics",
+          "is_major": false
+        },
+        {
+          "code": "rose_gold",
+          "value_ar": "وردي ذهبي",
+          "value_en": "Rose Gold",
+          "value_fa": "رز گلد",
+          "color_hex": "#B76E79",
+          "sort_order": 112,
+          "color_family": "metallics",
+          "is_major": true
+        },
+        {
+          "code": "chrome",
+          "value_ar": "كروم",
+          "value_en": "Chrome",
+          "value_fa": "کروم",
+          "color_hex": "#D4D4D4",
+          "sort_order": 113,
+          "color_family": "metallics",
+          "is_major": false
+        },
+        {
+          "code": "brass",
+          "value_ar": "نحاسي أصفر",
+          "value_en": "Brass",
+          "value_fa": "برنجی",
+          "color_hex": "#B5A642",
+          "sort_order": 114,
+          "color_family": "metallics",
+          "is_major": false
+        },
+        {
+          "code": "multicolor",
+          "value_ar": "متعدد الألوان",
+          "value_en": "Multicolor",
+          "value_fa": "چند رنگ",
+          "color_hex": "#FF00FF",
+          "sort_order": 115,
+          "color_family": "specialty",
+          "is_major": true
+        },
+        {
+          "code": "antique_gold",
+          "value_ar": "ذهبي عتيق",
+          "value_en": "Antique Gold",
+          "value_fa": "طلای کهنه",
+          "color_hex": "#CFB53B",
+          "sort_order": 116,
+          "color_family": "metallics",
+          "is_major": false
+        },
+        {
+          "code": "antique_silver",
+          "value_ar": "فضي عتيق",
+          "value_en": "Antique Silver",
+          "value_fa": "نقره کهنه",
+          "color_hex": "#918E8C",
+          "sort_order": 117,
+          "color_family": "metallics",
+          "is_major": false
+        },
+        {
+          "code": "champagne",
+          "value_ar": "شمبانيا",
+          "value_en": "Champagne",
+          "value_fa": "شامپاین",
+          "color_hex": "#F7E7CE",
+          "sort_order": 118,
+          "color_family": "metallics",
+          "is_major": false
+        }
+      ],
+      "validation_rules": [
+        {
+          "type": "min_select",
+          "value": 1,
+          "message": {
+            "en": "Select at least one primary color",
+            "ar": "اختر لونًا أساسيًا واحدًا على الأقل",
+            "fa": "حداقل یک رنگ اصلی انتخاب کنید"
+          }
+        }
+      ]
+    },
+    {
+      "group_code": "colors-pattern",
+      "code": "pattern",
+      "name_ar": "النقشة",
+      "name_en": "Pattern",
+      "name_fa": "طرح پارچه",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiAbstract",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "solid",
+          "value_ar": "سادة",
+          "value_en": "Solid",
+          "value_fa": "ساده",
+          "sort_order": 1
+        },
+        {
+          "code": "floral",
+          "value_ar": "ورود",
+          "value_en": "Floral",
+          "value_fa": "گلدار",
+          "sort_order": 2
+        },
+        {
+          "code": "striped",
+          "value_ar": "مخطط",
+          "value_en": "Striped",
+          "value_fa": "راه‌راه",
+          "sort_order": 3
+        },
+        {
+          "code": "checked",
+          "value_ar": "مربعات",
+          "value_en": "Checked",
+          "value_fa": "خانه‌خانه",
+          "sort_order": 4
+        },
+        {
+          "code": "polka_dot",
+          "value_ar": "منقط",
+          "value_en": "Polka Dot",
+          "value_fa": "خال‌خالی",
+          "sort_order": 5
+        },
+        {
+          "code": "geometric",
+          "value_ar": "هندسي",
+          "value_en": "Geometric",
+          "value_fa": "هندسی",
+          "sort_order": 6
+        },
+        {
+          "code": "abstract",
+          "value_ar": "تجريدي",
+          "value_en": "Abstract",
+          "value_fa": "آبستره",
+          "sort_order": 7
+        },
+        {
+          "code": "animal_print",
+          "value_ar": "طبع حيواني",
+          "value_en": "Animal Print",
+          "value_fa": "طرح حیوانی",
+          "sort_order": 8
+        },
+        {
+          "code": "lace",
+          "value_ar": "دانتيل",
+          "value_en": "Lace",
+          "value_fa": "دانتل",
+          "sort_order": 9
+        },
+        {
+          "code": "embroidered",
+          "value_ar": "مطرز",
+          "value_en": "Embroidered",
+          "value_fa": "گلدوزی",
+          "sort_order": 10
+        },
+        {
+          "code": "sequined",
+          "value_ar": "ترتر",
+          "value_en": "Sequined",
+          "value_fa": "پولکی",
+          "sort_order": 11
+        },
+        {
+          "code": "printed",
+          "value_ar": "مطبوع",
+          "value_en": "Printed",
+          "value_fa": "چاپی",
+          "sort_order": 12
+        }
+      ],
+      "validation_rules": null
+    },
+    {
+      "group_code": "materials",
+      "code": "main_material",
+      "name_ar": "الخامة الرئيسية",
+      "name_en": "Main Material",
+      "name_fa": "جنس اصلی پارچه",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiCottonFlower",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "cotton",
+          "value_ar": "قطن",
+          "value_en": "Cotton",
+          "value_fa": "پنبه",
+          "sort_order": 1
+        },
+        {
+          "code": "polyester",
+          "value_ar": "بوليستر",
+          "value_en": "Polyester",
+          "value_fa": "پلی‌استر",
+          "sort_order": 2
+        },
+        {
+          "code": "silk",
+          "value_ar": "حرير",
+          "value_en": "Silk",
+          "value_fa": "ابریشم",
+          "sort_order": 3
+        },
+        {
+          "code": "wool",
+          "value_ar": "صوف",
+          "value_en": "Wool",
+          "value_fa": "پشم",
+          "sort_order": 4
+        },
+        {
+          "code": "linen",
+          "value_ar": "كتان",
+          "value_en": "Linen",
+          "value_fa": "کتان",
+          "sort_order": 5
+        },
+        {
+          "code": "denim",
+          "value_ar": "جينز",
+          "value_en": "Denim",
+          "value_fa": "جین",
+          "sort_order": 6
+        },
+        {
+          "code": "leather",
+          "value_ar": "جلد",
+          "value_en": "Leather",
+          "value_fa": "چرم",
+          "sort_order": 7
+        },
+        {
+          "code": "velvet",
+          "value_ar": "مخمل",
+          "value_en": "Velvet",
+          "value_fa": "مخمل",
+          "sort_order": 8
+        },
+        {
+          "code": "chiffon",
+          "value_ar": "شيفون",
+          "value_en": "Chiffon",
+          "value_fa": "شیفون",
+          "sort_order": 9
+        },
+        {
+          "code": "lace",
+          "value_ar": "دانتيل",
+          "value_en": "Lace",
+          "value_fa": "دانتل",
+          "sort_order": 10
+        },
+        {
+          "code": "satin",
+          "value_ar": "ساتان",
+          "value_en": "Satin",
+          "value_fa": "ساتن",
+          "sort_order": 11
+        },
+        {
+          "code": "jersey",
+          "value_ar": "جيرسي",
+          "value_en": "Jersey",
+          "value_fa": "جرسی",
+          "sort_order": 12
+        },
+        {
+          "code": "crepe",
+          "value_ar": "كريب",
+          "value_en": "Crepe",
+          "value_fa": "کرپ",
+          "sort_order": 13
+        },
+        {
+          "code": "organza",
+          "value_ar": "أورجانزا",
+          "value_en": "Organza",
+          "value_fa": "ارگانزا",
+          "sort_order": 14
+        },
+        {
+          "code": "tulle",
+          "value_ar": "تول",
+          "value_en": "Tulle",
+          "value_fa": "تول",
+          "sort_order": 15
+        },
+        {
+          "code": "nylon",
+          "value_ar": "نايلون",
+          "value_en": "Nylon",
+          "value_fa": "نایلون",
+          "sort_order": 16
+        },
+        {
+          "code": "spandex",
+          "value_ar": "سباندكس",
+          "value_en": "Spandex",
+          "value_fa": "اسپندکس",
+          "sort_order": 17
+        },
+        {
+          "code": "viscose",
+          "value_ar": "فسكوز",
+          "value_en": "Viscose",
+          "value_fa": "ویسکوز",
+          "sort_order": 18
+        },
+        {
+          "code": "polyamide",
+          "value_ar": "بولي أميد",
+          "value_en": "Polyamide",
+          "value_fa": "پلی‌آمید",
+          "sort_order": 19
+        },
+        {
+          "code": "elastane",
+          "value_ar": "إيلاستين",
+          "value_en": "Elastane",
+          "value_fa": "الاستان",
+          "sort_order": 20
+        },
+        {
+          "code": "lyocell",
+          "value_ar": "ليوسيل",
+          "value_en": "Lyocell",
+          "value_fa": "لیوسل",
+          "sort_order": 21
+        },
+        {
+          "code": "polyurethane",
+          "value_ar": "بولي يوريثان",
+          "value_en": "Polyurethane",
+          "value_fa": "پلی‌یورتان",
+          "sort_order": 22
+        },
+        {
+          "code": "raffia",
+          "value_ar": "رافيا",
+          "value_en": "Raffia",
+          "value_fa": "رافیا",
+          "sort_order": 23
+        },
+        {
+          "code": "acrylic",
+          "value_ar": "أكريليك",
+          "value_en": "Acrylic",
+          "value_fa": "اکریلیک",
+          "sort_order": 24
+        }
+      ],
+      "validation_rules": [
+        {
+          "type": "required",
+          "message": {
+            "en": "Select the main material",
+            "ar": "اختر المادة الرئيسية",
+            "fa": "جنس اصلی را انتخاب کنید"
+          }
+        }
+      ]
+    },
+    {
+      "group_code": "materials",
+      "code": "fabric_composition",
+      "name_ar": "تركيبة القماش",
+      "name_en": "Fabric Composition",
+      "name_fa": "ترکیب پارچه",
+      "value_type": "composition",
+      "input_type": "composition",
+      "icon": "GiCottonFlower",
+      "is_required": false,
+      "is_filterable": false,
+      "is_searchable": true,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "cotton",
+          "value_ar": "قطن",
+          "value_en": "Cotton",
+          "value_fa": "پنبه",
+          "sort_order": 1
+        },
+        {
+          "code": "polyester",
+          "value_ar": "بوليستر",
+          "value_en": "Polyester",
+          "value_fa": "پلی‌استر",
+          "sort_order": 2
+        },
+        {
+          "code": "elastane",
+          "value_ar": "إيلاستين",
+          "value_en": "Elastane",
+          "value_fa": "الاستان",
+          "sort_order": 3
+        },
+        {
+          "code": "wool",
+          "value_ar": "صوف",
+          "value_en": "Wool",
+          "value_fa": "پشم",
+          "sort_order": 4
+        },
+        {
+          "code": "viscose",
+          "value_ar": "فسكوز",
+          "value_en": "Viscose",
+          "value_fa": "ویسکوز",
+          "sort_order": 5
+        },
+        {
+          "code": "nylon",
+          "value_ar": "نايلون",
+          "value_en": "Nylon",
+          "value_fa": "نایلون",
+          "sort_order": 6
+        },
+        {
+          "code": "linen",
+          "value_ar": "كتان",
+          "value_en": "Linen",
+          "value_fa": "کتان",
+          "sort_order": 7
+        },
+        {
+          "code": "silk",
+          "value_ar": "حرير",
+          "value_en": "Silk",
+          "value_fa": "ابریشم",
+          "sort_order": 8
+        },
+        {
+          "code": "cashmere",
+          "value_ar": "كشمير",
+          "value_en": "Cashmere",
+          "value_fa": "کشمیر",
+          "sort_order": 9
+        },
+        {
+          "code": "acrylic",
+          "value_ar": "أكريليك",
+          "value_en": "Acrylic",
+          "value_fa": "اکریلیک",
+          "sort_order": 10
+        },
+        {
+          "code": "spandex",
+          "value_ar": "سباندكس",
+          "value_en": "Spandex",
+          "value_fa": "اسپاندکس",
+          "sort_order": 11
+        },
+        {
+          "code": "rayon",
+          "value_ar": "ريون",
+          "value_en": "Rayon",
+          "value_fa": "ریون",
+          "sort_order": 12
+        },
+        {
+          "code": "modal",
+          "value_ar": "مودال",
+          "value_en": "Modal",
+          "value_fa": "مودال",
+          "sort_order": 13
+        },
+        {
+          "code": "polyamide",
+          "value_ar": "بولي أميد",
+          "value_en": "Polyamide",
+          "value_fa": "پلی‌آمید",
+          "sort_order": 14
+        },
+        {
+          "code": "leather",
+          "value_ar": "جلد",
+          "value_en": "Leather",
+          "value_fa": "چرم",
+          "sort_order": 15
+        },
+        {
+          "code": "suede",
+          "value_ar": "سويد",
+          "value_en": "Suede",
+          "value_fa": "جیر",
+          "sort_order": 16
+        },
+        {
+          "code": "denim",
+          "value_ar": "دينيم",
+          "value_en": "Denim",
+          "value_fa": "جین",
+          "sort_order": 17
+        },
+        {
+          "code": "lace",
+          "value_ar": "دانتيل",
+          "value_en": "Lace",
+          "value_fa": "توری",
+          "sort_order": 18
+        },
+        {
+          "code": "lyocell",
+          "value_ar": "ليوسيل",
+          "value_en": "Lyocell",
+          "value_fa": "لیوسل",
+          "sort_order": 19
+        },
+        {
+          "code": "bamboo",
+          "value_ar": "خيزران",
+          "value_en": "Bamboo",
+          "value_fa": "بامبو",
+          "sort_order": 20
+        },
+        {
+          "code": "cupro",
+          "value_ar": "كوبرو",
+          "value_en": "Cupro",
+          "value_fa": "کوپرو",
+          "sort_order": 21
+        },
+        {
+          "code": "acetate",
+          "value_ar": "أسيتات",
+          "value_en": "Acetate",
+          "value_fa": "استات",
+          "sort_order": 22
+        },
+        {
+          "code": "angora",
+          "value_ar": "أنغورا",
+          "value_en": "Angora",
+          "value_fa": "آنگورا",
+          "sort_order": 23
+        },
+        {
+          "code": "mohair",
+          "value_ar": "موهير",
+          "value_en": "Mohair",
+          "value_fa": "موهر",
+          "sort_order": 24
+        },
+        {
+          "code": "mesh",
+          "value_ar": "مش",
+          "value_en": "Mesh",
+          "value_fa": "مش",
+          "sort_order": 25
+        },
+        {
+          "code": "satin",
+          "value_ar": "ساتان",
+          "value_en": "Satin",
+          "value_fa": "ساتن",
+          "sort_order": 26
+        },
+        {
+          "code": "chiffon",
+          "value_ar": "شيفون",
+          "value_en": "Chiffon",
+          "value_fa": "شیفون",
+          "sort_order": 27
+        },
+        {
+          "code": "organza",
+          "value_ar": "أورجانزا",
+          "value_en": "Organza",
+          "value_fa": "ارگانزا",
+          "sort_order": 28
+        },
+        {
+          "code": "tulle",
+          "value_ar": "تول",
+          "value_en": "Tulle",
+          "value_fa": "تول",
+          "sort_order": 29
+        },
+        {
+          "code": "jersey",
+          "value_ar": "جيرسي",
+          "value_en": "Jersey",
+          "value_fa": "جرسی",
+          "sort_order": 30
+        },
+        {
+          "code": "crepe",
+          "value_ar": "كريب",
+          "value_en": "Crepe",
+          "value_fa": "کرپ",
+          "sort_order": 31
+        },
+        {
+          "code": "velvet",
+          "value_ar": "مخمل",
+          "value_en": "Velvet",
+          "value_fa": "مخمل",
+          "sort_order": 32
+        }
+      ],
+      "validation_rules": [
+        {
+          "type": "max_entries",
+          "value": 2,
+          "message": {
+            "en": "Maximum 2 materials allowed",
+            "ar": "الحد الأقصى 2 خامات",
+            "fa": "حداکثر 2 ماده مجاز است"
+          }
+        }
+      ],
+      "is_variant_defining": false
+    },
+    {
+      "group_code": "materials",
+      "code": "care_instructions",
+      "name_ar": "تعليمات العناية",
+      "name_en": "Care Instructions",
+      "name_fa": "دستورالعمل مراقبت",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiWashingMachine",
+      "is_required": false,
+      "is_filterable": false,
+      "is_searchable": false,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "machine_wash",
+          "value_ar": "غسيل آلي",
+          "value_en": "Machine Wash",
+          "value_fa": "قابل شستشو در ماشین",
+          "sort_order": 1
+        },
+        {
+          "code": "hand_wash",
+          "value_ar": "غسيل يدوي",
+          "value_en": "Hand Wash Only",
+          "value_fa": "شستشوی دستی",
+          "sort_order": 2
+        },
+        {
+          "code": "dry_clean",
+          "value_ar": "تنظيف جاف",
+          "value_en": "Dry Clean",
+          "value_fa": "خشکشویی",
+          "sort_order": 3
+        },
+        {
+          "code": "no_bleach",
+          "value_ar": "لا يُستخدم المبيض",
+          "value_en": "Do Not Bleach",
+          "value_fa": "از سفیدکننده استفاده نشود",
+          "sort_order": 4
+        },
+        {
+          "code": "no_tumble",
+          "value_ar": "لا يُنشف في النشافة",
+          "value_en": "Do Not Tumble Dry",
+          "value_fa": "در خشک‌کن قرار نگیرد",
+          "sort_order": 5
+        },
+        {
+          "code": "iron_low",
+          "value_ar": "كوي بدرجة حرارة منخفضة",
+          "value_en": "Iron Low Heat",
+          "value_fa": "اتو با حرارت کم",
+          "sort_order": 6
+        }
+      ],
+      "validation_rules": null
+    },
+    {
+      "group_code": "style-occasion",
+      "code": "style",
+      "name_ar": "الستايل",
+      "name_en": "Style",
+      "name_fa": "استایل",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "FiTrello",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "classic",
+          "value_ar": "كلاسيك",
+          "value_en": "Classic",
+          "value_fa": "کلاسیک",
+          "sort_order": 1
+        },
+        {
+          "code": "modern",
+          "value_ar": "حديث",
+          "value_en": "Modern",
+          "value_fa": "مدرن",
+          "sort_order": 2
+        },
+        {
+          "code": "bohemian",
+          "value_ar": "بوهيمي",
+          "value_en": "Bohemian",
+          "value_fa": "بوهمین",
+          "sort_order": 3
+        },
+        {
+          "code": "minimalist",
+          "value_ar": "بسيط",
+          "value_en": "Minimalist",
+          "value_fa": "مینیمال",
+          "sort_order": 4
+        },
+        {
+          "code": "luxury",
+          "value_ar": "فاخر",
+          "value_en": "Luxury",
+          "value_fa": "لوکس",
+          "sort_order": 5
+        },
+        {
+          "code": "casual",
+          "value_ar": "كاجوال",
+          "value_en": "Casual",
+          "value_fa": "کژوال",
+          "sort_order": 6
+        },
+        {
+          "code": "sporty",
+          "value_ar": "رياضي",
+          "value_en": "Sporty",
+          "value_fa": "ورزشی",
+          "sort_order": 7
+        },
+        {
+          "code": "romantic",
+          "value_ar": "رومانسي",
+          "value_en": "Romantic",
+          "value_fa": "رمانتیک",
+          "sort_order": 8
+        },
+        {
+          "code": "edgy",
+          "value_ar": "جريء",
+          "value_en": "Edgy",
+          "value_fa": "جسورانه",
+          "sort_order": 9
+        },
+        {
+          "code": "traditional",
+          "value_ar": "تقليدي",
+          "value_en": "Traditional",
+          "value_fa": "سنتی",
+          "sort_order": 10
+        },
+        {
+          "code": "streetwear",
+          "value_ar": "ستريت وير",
+          "value_en": "Streetwear",
+          "value_fa": "خیابانی",
+          "sort_order": 11
+        },
+        {
+          "code": "business",
+          "value_ar": "عملي",
+          "value_en": "Business",
+          "value_fa": "اداری",
+          "sort_order": 12
+        }
+      ],
+      "validation_rules": null
+    },
+    {
+      "group_code": "style-occasion",
+      "code": "occasion",
+      "name_ar": "المناسبة",
+      "name_en": "Occasion",
+      "name_fa": "مناسبت",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiPartyPopper",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "daily",
+          "value_ar": "يومي",
+          "value_en": "Daily Wear",
+          "value_fa": "روزمره",
+          "sort_order": 1
+        },
+        {
+          "code": "work",
+          "value_ar": "دوام",
+          "value_en": "Work",
+          "value_fa": "محل کار",
+          "sort_order": 2
+        },
+        {
+          "code": "evening",
+          "value_ar": "سهرة",
+          "value_en": "Evening",
+          "value_fa": "مجلسی",
+          "sort_order": 3
+        },
+        {
+          "code": "wedding",
+          "value_ar": "زفاف",
+          "value_en": "Wedding",
+          "value_fa": "عروسی",
+          "sort_order": 4
+        },
+        {
+          "code": "party",
+          "value_ar": "حفلة",
+          "value_en": "Party",
+          "value_fa": "مهمانی",
+          "sort_order": 5
+        },
+        {
+          "code": "casual_outing",
+          "value_ar": "خروج",
+          "value_en": "Casual Outing",
+          "value_fa": "گردش",
+          "sort_order": 6
+        },
+        {
+          "code": "formal",
+          "value_ar": "رسمي",
+          "value_en": "Formal",
+          "value_fa": "رسمی",
+          "sort_order": 7
+        },
+        {
+          "code": "sport",
+          "value_ar": "رياضة",
+          "value_en": "Sports",
+          "value_fa": "ورزش",
+          "sort_order": 8
+        },
+        {
+          "code": "beach",
+          "value_ar": "شاطئ",
+          "value_en": "Beach",
+          "value_fa": "ساحل",
+          "sort_order": 9
+        },
+        {
+          "code": "travel",
+          "value_ar": "سفر",
+          "value_en": "Travel",
+          "value_fa": "مسافرت",
+          "sort_order": 10
+        },
+        {
+          "code": "ramadan",
+          "value_ar": "رمضان",
+          "value_en": "Ramadan",
+          "value_fa": "رمضان",
+          "sort_order": 11
+        },
+        {
+          "code": "eid",
+          "value_ar": "عيد",
+          "value_en": "Eid",
+          "value_fa": "عید",
+          "sort_order": 12
+        }
+      ],
+      "validation_rules": null
+    },
+    {
+      "group_code": "style-occasion",
+      "code": "season",
+      "name_ar": "الموسم",
+      "name_en": "Season",
+      "name_fa": "فصل",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiSun",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "spring",
+          "value_ar": "ربيع",
+          "value_en": "Spring",
+          "value_fa": "بهار",
+          "sort_order": 1
+        },
+        {
+          "code": "summer",
+          "value_ar": "صيف",
+          "value_en": "Summer",
+          "value_fa": "تابستان",
+          "sort_order": 2
+        },
+        {
+          "code": "autumn",
+          "value_ar": "خريف",
+          "value_en": "Autumn",
+          "value_fa": "پاییز",
+          "sort_order": 3
+        },
+        {
+          "code": "winter",
+          "value_ar": "شتاء",
+          "value_en": "Winter",
+          "value_fa": "زمستان",
+          "sort_order": 4
+        }
+      ],
+      "validation_rules": null
+    },
+    {
+      "group_code": "style-occasion",
+      "code": "modesty_level",
+      "name_ar": "مستوى الاحتشام",
+      "name_en": "Modesty Level",
+      "name_fa": "میزان پوشش",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiHijab",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "sort_order": 4,
+      "options": [
+        {
+          "code": "full_coverage",
+          "value_ar": "تغطية كاملة",
+          "value_en": "Full Coverage",
+          "value_fa": "پوشش کامل",
+          "sort_order": 1
+        },
+        {
+          "code": "moderate",
+          "value_ar": "متوسط",
+          "value_en": "Moderate",
+          "value_fa": "متوسط",
+          "sort_order": 2
+        },
+        {
+          "code": "minimal",
+          "value_ar": "خفيف",
+          "value_en": "Minimal",
+          "value_fa": "کم",
+          "sort_order": 3
+        },
+        {
+          "code": "revealing",
+          "value_ar": "مكشوف",
+          "value_en": "Revealing",
+          "value_fa": "باز",
+          "sort_order": 4
+        }
+      ],
+      "validation_rules": null
+    },
+    {
+      "group_code": "style-occasion",
+      "code": "target_customer",
+      "name_ar": "الفئة المستهدفة",
+      "name_en": "Target Customer",
+      "name_fa": "گروه هدف",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiUsers",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "sort_order": 5,
+      "options": [
+        {
+          "code": "women",
+          "value_ar": "نساء",
+          "value_en": "Women",
+          "value_fa": "بانوان",
+          "sort_order": 1
+        },
+        {
+          "code": "men",
+          "value_ar": "رجال",
+          "value_en": "Men",
+          "value_fa": "آقایان",
+          "sort_order": 2
+        },
+        {
+          "code": "girls",
+          "value_ar": "بنات",
+          "value_en": "Girls",
+          "value_fa": "دخترانه",
+          "sort_order": 3
+        },
+        {
+          "code": "boys",
+          "value_ar": "أولاد",
+          "value_en": "Boys",
+          "value_fa": "پسرانه",
+          "sort_order": 4
+        },
+        {
+          "code": "babies",
+          "value_ar": "أطفال",
+          "value_en": "Babies",
+          "value_fa": "نوزاد",
+          "sort_order": 5
+        },
+        {
+          "code": "unisex",
+          "value_ar": "للجنسين",
+          "value_en": "Unisex",
+          "value_fa": "مشترک",
+          "sort_order": 6
+        }
+      ],
+      "validation_rules": null
+    },
+    {
+      "group_code": "features-tags",
+      "code": "features",
+      "name_ar": "الميزات",
+      "name_en": "Features",
+      "name_fa": "ویژگی‌ها",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiStar",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "pockets",
+          "value_ar": "جيوب",
+          "value_en": "Pockets",
+          "value_fa": "جیب دار",
+          "sort_order": 1
+        },
+        {
+          "code": "zip",
+          "value_ar": "سحاب",
+          "value_en": "Zipper",
+          "value_fa": "زیپ دار",
+          "sort_order": 2
+        },
+        {
+          "code": "buttons",
+          "value_ar": "أزرار",
+          "value_en": "Buttons",
+          "value_fa": "دکمه دار",
+          "sort_order": 3
+        },
+        {
+          "code": "belt",
+          "value_ar": "حزام",
+          "value_en": "Belt",
+          "value_fa": "کمربند دار",
+          "sort_order": 4
+        },
+        {
+          "code": "hood",
+          "value_ar": "قلنسوة",
+          "value_en": "Hood",
+          "value_fa": "هودی",
+          "sort_order": 5
+        },
+        {
+          "code": "adjustable_straps",
+          "value_ar": "أشرطة قابلة للتعديل",
+          "value_en": "Adjustable Straps",
+          "value_fa": "بند قابل تنظیم",
+          "sort_order": 6
+        },
+        {
+          "code": "elastic_waist",
+          "value_ar": "خصر مطاطي",
+          "value_en": "Elastic Waist",
+          "value_fa": "کش دار",
+          "sort_order": 7
+        },
+        {
+          "code": "lined",
+          "value_ar": "مبطن",
+          "value_en": "Lined",
+          "value_fa": "آستردار",
+          "sort_order": 8
+        },
+        {
+          "code": "sheer",
+          "value_ar": "شفاف",
+          "value_en": "Sheer",
+          "value_fa": "نازک",
+          "sort_order": 9
+        },
+        {
+          "code": "padding",
+          "value_ar": "حشوة",
+          "value_en": "Padded",
+          "value_fa": "پد دار",
+          "sort_order": 10
+        },
+        {
+          "code": "reversible",
+          "value_ar": "قابل للقلب",
+          "value_en": "Reversible",
+          "value_fa": "قابل برگشت",
+          "sort_order": 11
+        },
+        {
+          "code": "waterproof",
+          "value_ar": "مقاوم للماء",
+          "value_en": "Waterproof",
+          "value_fa": "ضد آب",
+          "sort_order": 12
+        },
+        {
+          "code": "breathable",
+          "value_ar": "قابل للتنفس",
+          "value_en": "Breathable",
+          "value_fa": "تنفس‌پذیر",
+          "sort_order": 13
+        },
+        {
+          "code": "stretchable",
+          "value_ar": "مطاطي",
+          "value_en": "Stretchable",
+          "value_fa": "کشسان",
+          "sort_order": 14
+        },
+        {
+          "code": "removable_hood",
+          "value_ar": "قلنسوة قابلة للإزالة",
+          "value_en": "Removable Hood",
+          "value_fa": "هودی جداشونده",
+          "sort_order": 15
+        }
+      ],
+      "validation_rules": null
+    },
+    {
+      "group_code": "features-tags",
+      "code": "fashion_tags",
+      "name_ar": "علامات أزياء",
+      "name_en": "Fashion Tags",
+      "name_fa": "برچسب‌های مد",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiTag",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "trendy",
+          "value_ar": "موضة",
+          "value_en": "Trendy",
+          "value_fa": "ترند",
+          "sort_order": 1
+        },
+        {
+          "code": "timeless",
+          "value_ar": "كلاسيكي",
+          "value_en": "Timeless",
+          "value_fa": "کلاسیک",
+          "sort_order": 2
+        },
+        {
+          "code": "handmade",
+          "value_ar": "يدوي",
+          "value_en": "Handmade",
+          "value_fa": "دست‌ساز",
+          "sort_order": 3
+        },
+        {
+          "code": "designer",
+          "value_ar": "مصمم",
+          "value_en": "Designer",
+          "value_fa": "طراح",
+          "sort_order": 4
+        },
+        {
+          "code": "sustainable",
+          "value_ar": "مستدام",
+          "value_en": "Sustainable",
+          "value_fa": "پایدار",
+          "sort_order": 5
+        },
+        {
+          "code": "eco_friendly",
+          "value_ar": "صديق للبيئة",
+          "value_en": "Eco-Friendly",
+          "value_fa": "دوستدار محیط زیست",
+          "sort_order": 6
+        },
+        {
+          "code": "vintage",
+          "value_ar": "قديم",
+          "value_en": "Vintage",
+          "value_fa": "وینتیج",
+          "sort_order": 7
+        },
+        {
+          "code": "limited_edition",
+          "value_ar": "إصدار محدود",
+          "value_en": "Limited Edition",
+          "value_fa": "نسخه محدود",
+          "sort_order": 8
+        },
+        {
+          "code": "luxury",
+          "value_ar": "فاخر",
+          "value_en": "Luxury",
+          "value_fa": "لوکس",
+          "sort_order": 9
+        },
+        {
+          "code": "modest_fashion",
+          "value_ar": "أزياء محتشمة",
+          "value_en": "Modest Fashion",
+          "value_fa": "مد محجبه",
+          "sort_order": 10
+        },
+        {
+          "code": "plus_size",
+          "value_ar": "مقاسات كبيرة",
+          "value_en": "Plus Size",
+          "value_fa": "سایز بزرگ",
+          "sort_order": 11
+        },
+        {
+          "code": "maternity",
+          "value_ar": "حمل",
+          "value_en": "Maternity",
+          "value_fa": "بارداری",
+          "sort_order": 12
+        },
+        {
+          "code": "petite",
+          "value_ar": "قصير",
+          "value_en": "Petite",
+          "value_fa": "قد کوتاه",
+          "sort_order": 13
+        },
+        {
+          "code": "tall",
+          "value_ar": "طويل",
+          "value_en": "Tall",
+          "value_fa": "قد بلند",
+          "sort_order": 14
+        },
+        {
+          "code": "bridal",
+          "value_ar": "زفاف",
+          "value_en": "Bridal",
+          "value_fa": "عروس",
+          "sort_order": 15
+        }
+      ],
+      "validation_rules": null
+    }
+  ]
+}

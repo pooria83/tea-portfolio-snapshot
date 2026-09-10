@@ -1,0 +1,92 @@
+{
+  "name": "TEA",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android --mode=devDebug --appIdSuffix dev --active-arch-only",
+    "android:dev": "react-native run-android --mode=devDebug --appIdSuffix dev --active-arch-only",
+    "ios": "react-native run-ios",
+    "start": "ELECTRON_DISABLE_SANDBOX=1 react-native start",
+    "test": "jest",
+    "lint": "eslint src __tests__",
+    "lint:fix": "eslint src __tests__ --fix",
+    "format": "prettier --write \"src/**/*.{ts,tsx,json}\" \"__tests__/**/*.{ts,tsx}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,json}\" \"__tests__/**/*.{ts,tsx}\"",
+    "typecheck": "tsc --noEmit",
+    "prepare": "husky",
+    "clean": "cd android && ./gradlew clean && cd ../ios && xcodebuild clean",
+    "postinstall": "patch-package"
+  },
+  "dependencies": {
+    "@d11/react-native-fast-image": "^8.13.0",
+    "@maplibre/maplibre-react-native": "^11.3.6",
+    "@react-native-async-storage/async-storage": "^3.1.1",
+    "@react-native-clipboard/clipboard": "^1.16.3",
+    "@react-native-community/geolocation": "^3.4.0",
+    "@react-native-google-signin/google-signin": "^16.1.4",
+    "@react-native/new-app-screen": "0.86.0",
+    "@react-navigation/bottom-tabs": "^7.18.16",
+    "@react-navigation/native": "^7.1.0",
+    "@react-navigation/native-stack": "^7.18.8",
+    "@ronradtke/react-native-markdown-display": "^9.0.3",
+    "@sentry/react-native": "^8.23.0",
+    "@tanstack/react-query": "^5.101.4",
+    "axios": "^1.19.0",
+    "i18next": "^26.3.6",
+    "react": "19.2.3",
+    "react-error-boundary": "^6.1.2",
+    "react-i18next": "^15.4.0",
+    "react-native": "0.86.0",
+    "react-native-bootsplash": "^7.3.2",
+    "react-native-config": "^1.5.0",
+    "react-native-image-crop-picker": "^0.51.1",
+    "react-native-keychain": "^10.0.0",
+    "react-native-logs": "^5.6.0",
+    "react-native-paper": "^5.15.3",
+    "react-native-permissions": "^5.6.1",
+    "react-native-safe-area-context": "^5.9.0",
+    "react-native-screens": "^4.27.0",
+    "react-native-vector-icons": "^10.2.0",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.3",
+    "@babel/runtime": "^8.0.0",
+    "@react-native-community/cli": "20.1.0",
+    "@react-native-community/cli-platform-android": "20.1.0",
+    "@react-native-community/cli-platform-ios": "20.1.0",
+    "@react-native/babel-preset": "0.86.0",
+    "@react-native/jest-preset": "^0.86.0",
+    "@react-native/metro-config": "0.86.0",
+    "@react-native/typescript-config": "0.86.0",
+    "@testing-library/react-native": "^14.0.1",
+    "@types/jest": "^29.5.13",
+    "@types/react": "^19.2.18",
+    "@types/react-test-renderer": "^19.1.0",
+    "axios-mock-adapter": "^2.1.0",
+    "eslint": "^9.39.5",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "husky": "^9.0.0",
+    "jest": "^29.6.3",
+    "lint-staged": "^17.3.0",
+    "patch-package": "^8.0.1",
+    "prettier": "3.9.6",
+    "react-test-renderer": "19.2.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.67.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
+  },
+  "engines": {
+    "node": ">= 22.11.0"
+  }
+}

@@ -1,0 +1,33 @@
+{
+	email radiophp@gmail.com
+}
+
+portfolio.example.invalid {
+	tls {
+		dns cloudflare {env.CLOUDFLARE_API_TOKEN}
+	}
+
+	reverse_proxy host.docker.internal:8000 {
+		header_up X-Forwarded-Proto https
+	}
+}
+
+portfolio.example.invalid {
+	tls {
+		dns cloudflare {env.CLOUDFLARE_API_TOKEN}
+	}
+
+	reverse_proxy host.docker.internal:8001 {
+		header_up X-Forwarded-Proto https
+	}
+}
+
+portfolio.example.invalid {
+	tls {
+		dns cloudflare {env.CLOUDFLARE_API_TOKEN}
+	}
+
+	reverse_proxy host.docker.internal:9000 {
+		header_up X-Forwarded-Proto https
+	}
+}

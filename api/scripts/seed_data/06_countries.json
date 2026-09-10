@@ -1,0 +1,14 @@
+[
+  { "code": "SA", "name_ar": "المملكة العربية السعودية", "name_en": "Saudi Arabia", "name_fa": "عربستان سعودی" },
+  { "code": "AE", "name_ar": "الإمارات العربية المتحدة", "name_en": "United Arab Emirates", "name_fa": "امارات متحده عربی" },
+  { "code": "KW", "name_ar": "الكويت", "name_en": "Kuwait", "name_fa": "کویت" },
+  { "code": "QA", "name_ar": "قطر", "name_en": "Qatar", "name_fa": "قطر" },
+  { "code": "BH", "name_ar": "البحرين", "name_en": "Bahrain", "name_fa": "بحرین" },
+  { "code": "OM", "name_ar": "عمان", "name_en": "Oman", "name_fa": "عمان" },
+  { "code": "EG", "name_ar": "مصر", "name_en": "Egypt", "name_fa": "مصر" },
+  { "code": "JO", "name_ar": "الأردن", "name_en": "Jordan", "name_fa": "اردن" },
+  { "code": "LB", "name_ar": "لبنان", "name_en": "Lebanon", "name_fa": "لبنان" },
+  { "code": "IQ", "name_ar": "العراق", "name_en": "Iraq", "name_fa": "عراق" },
+  { "code": "YE", "name_ar": "اليمن", "name_en": "Yemen", "name_fa": "یمن" },
+  { "code": "TR", "name_ar": "تركيا", "name_en": "Turkey", "name_fa": "ترکیه" }
+]

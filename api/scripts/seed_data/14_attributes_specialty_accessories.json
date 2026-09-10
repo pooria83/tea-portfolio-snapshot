@@ -1,0 +1,554 @@
+{
+  "product_type_code": "specialty_accessories",
+  "attributes": [
+    {
+      "group_code": "colors-pattern",
+      "code": "primary_color",
+      "name_ar": "اللون الأساسي",
+      "name_en": "Primary Color",
+      "name_fa": "رنگ اصلی",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiDroplet",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": [],
+      "validation_rules": [
+        {
+          "type": "min_select",
+          "value": 1,
+          "message": {
+            "en": "Select at least one color",
+            "ar": "اختر لونًا واحدًا على الأقل",
+            "fa": "حداقل یک رنگ انتخاب کنید"
+          }
+        }
+      ]
+    },
+    {
+      "group_code": "colors-pattern",
+      "code": "pattern",
+      "name_ar": "النقشة",
+      "name_en": "Pattern",
+      "name_fa": "طرح",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiAbstract",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2,
+      "options": []
+    },
+    {
+      "group_code": "specialty-specs",
+      "code": "material_specialty",
+      "name_ar": "الخامة",
+      "name_en": "Material",
+      "name_fa": "جنس",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiCottonFlower",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "stainless_steel",
+          "value_ar": "فولاذ مقاوم",
+          "value_en": "Stainless Steel",
+          "value_fa": "استیل",
+          "sort_order": 1
+        },
+        {
+          "code": "titanium",
+          "value_ar": "تيتانيوم",
+          "value_en": "Titanium",
+          "value_fa": "تیتانیوم",
+          "sort_order": 2
+        },
+        {
+          "code": "silicone",
+          "value_ar": "سيليكون",
+          "value_en": "Silicone",
+          "value_fa": "سیلیکون",
+          "sort_order": 3
+        },
+        {
+          "code": "plastic",
+          "value_ar": "بلاستيك",
+          "value_en": "Plastic",
+          "value_fa": "پلاستیک",
+          "sort_order": 4
+        },
+        {
+          "code": "metal",
+          "value_ar": "معدن",
+          "value_en": "Metal",
+          "value_fa": "فلز",
+          "sort_order": 5
+        },
+        {
+          "code": "leather",
+          "value_ar": "جلد",
+          "value_en": "Leather",
+          "value_fa": "چرم",
+          "sort_order": 6
+        },
+        {
+          "code": "rubber",
+          "value_ar": "مطاط",
+          "value_en": "Rubber",
+          "value_fa": "لاستیک",
+          "sort_order": 7
+        },
+        {
+          "code": "glass",
+          "value_ar": "زجاج",
+          "value_en": "Glass",
+          "value_fa": "شیشه",
+          "sort_order": 8
+        },
+        {
+          "code": "ceramic",
+          "value_ar": "سيراميك",
+          "value_en": "Ceramic",
+          "value_fa": "سرامیک",
+          "sort_order": 9
+        },
+        {
+          "code": "carbon_fiber",
+          "value_ar": "ألياف كربون",
+          "value_en": "Carbon Fiber",
+          "value_fa": "فیبر کربن",
+          "sort_order": 10
+        }
+      ],
+      "validation_rules": [
+        {
+          "type": "min_select",
+          "value": 1,
+          "message": {
+            "en": "Select at least one material",
+            "ar": "اختر خامة واحدة على الأقل",
+            "fa": "حداقل یک جنس انتخاب کنید"
+          }
+        }
+      ]
+    },
+    {
+      "group_code": "specialty-specs",
+      "code": "movement_type",
+      "name_ar": "نوع الحركة",
+      "name_en": "Movement Type",
+      "name_fa": "نوع موتور",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiWatch",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "quartz",
+          "value_ar": "كوارتز",
+          "value_en": "Quartz",
+          "value_fa": "کوارتز",
+          "sort_order": 1
+        },
+        {
+          "code": "automatic",
+          "value_ar": "أوتوماتيكي",
+          "value_en": "Automatic",
+          "value_fa": "اتوماتیک",
+          "sort_order": 2
+        },
+        {
+          "code": "mechanical",
+          "value_ar": "ميكانيكي",
+          "value_en": "Mechanical",
+          "value_fa": "مکانیکی",
+          "sort_order": 3
+        },
+        {
+          "code": "digital",
+          "value_ar": "رقمي",
+          "value_en": "Digital",
+          "value_fa": "دیجیتال",
+          "sort_order": 4
+        },
+        {
+          "code": "smart",
+          "value_ar": "ذكي",
+          "value_en": "Smart",
+          "value_fa": "هوشمند",
+          "sort_order": 5
+        },
+        {
+          "code": "solar",
+          "value_ar": "شمسي",
+          "value_en": "Solar",
+          "value_fa": "خورشیدی",
+          "sort_order": 6
+        }
+      ]
+    },
+    {
+      "group_code": "specialty-specs",
+      "code": "case_diameter",
+      "name_ar": "قطر العلبة",
+      "name_en": "Case Diameter (mm)",
+      "name_fa": "قطر بدنه (میلی‌متر)",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiRuler",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "under_36",
+          "value_ar": "أقل من 36 مم",
+          "value_en": "Under 36mm",
+          "value_fa": "کمتر از ۳۶ میلی‌متر",
+          "sort_order": 1
+        },
+        {
+          "code": "36_40",
+          "value_ar": "36-40 مم",
+          "value_en": "36-40mm",
+          "value_fa": "۳۶-۴۰ میلی‌متر",
+          "sort_order": 2
+        },
+        {
+          "code": "40_44",
+          "value_ar": "40-44 مم",
+          "value_en": "40-44mm",
+          "value_fa": "۴۰-۴۴ میلی‌متر",
+          "sort_order": 3
+        },
+        {
+          "code": "44_48",
+          "value_ar": "44-48 مم",
+          "value_en": "44-48mm",
+          "value_fa": "۴۴-۴۸ میلی‌متر",
+          "sort_order": 4
+        },
+        {
+          "code": "over_48",
+          "value_ar": "أكثر من 48 مم",
+          "value_en": "Over 48mm",
+          "value_fa": "بیشتر از ۴۸ میلی‌متر",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "group_code": "specialty-specs",
+      "code": "specialty_water_resistance",
+      "name_ar": "مقاومة الماء",
+      "name_en": "Water Resistance",
+      "name_fa": "مقاومت در برابر آب",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "FiUmbrella",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 4,
+      "options": [
+        {
+          "code": "splash",
+          "value_ar": "مقاوم للرذاذ",
+          "value_en": "Splash Resistant",
+          "value_fa": "مقاوم در برابر پاشش",
+          "sort_order": 1
+        },
+        {
+          "code": "3atm",
+          "value_ar": "3 ATM",
+          "value_en": "3 ATM",
+          "value_fa": "۳ اتمسفر",
+          "sort_order": 2
+        },
+        {
+          "code": "5atm",
+          "value_ar": "5 ATM",
+          "value_en": "5 ATM",
+          "value_fa": "۵ اتمسفر",
+          "sort_order": 3
+        },
+        {
+          "code": "10atm",
+          "value_ar": "10 ATM",
+          "value_en": "10 ATM",
+          "value_fa": "۱۰ اتمسفر",
+          "sort_order": 4
+        },
+        {
+          "code": "20atm",
+          "value_ar": "20 ATM",
+          "value_en": "20 ATM",
+          "value_fa": "۲۰ اتمسفر",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "group_code": "specialty-specs",
+      "code": "phone_case_type",
+      "name_ar": "نوع غطاء الهاتف",
+      "name_en": "Phone Case Type",
+      "name_fa": "نوع قاب موبایل",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiSmartphone",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 5,
+      "options": [
+        {
+          "code": "slim",
+          "value_ar": "رفيع",
+          "value_en": "Slim",
+          "value_fa": "نازک",
+          "sort_order": 1
+        },
+        {
+          "code": "rugged",
+          "value_ar": "متين",
+          "value_en": "Rugged",
+          "value_fa": "محکم",
+          "sort_order": 2
+        },
+        {
+          "code": "wallet",
+          "value_ar": "محفظة",
+          "value_en": "Wallet Case",
+          "value_fa": "کیف پول",
+          "sort_order": 3
+        },
+        {
+          "code": "bumper",
+          "value_ar": "حامي",
+          "value_en": "Bumper",
+          "value_fa": "ضربه‌گیر",
+          "sort_order": 4
+        },
+        {
+          "code": "flip",
+          "value_ar": "قلاب",
+          "value_en": "Flip Case",
+          "value_fa": "فلپ",
+          "sort_order": 5
+        },
+        {
+          "code": "clear",
+          "value_ar": "شفاف",
+          "value_en": "Clear Case",
+          "value_fa": "شفاف",
+          "sort_order": 6
+        }
+      ]
+    },
+    {
+      "group_code": "specialty-specs",
+      "code": "compatible_brand",
+      "name_ar": "العلامة التجارية المتوافقة",
+      "name_en": "Compatible Brand",
+      "name_fa": "برند سازگار",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiSmartphone",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 6,
+      "options": [
+        {
+          "code": "iphone",
+          "value_ar": "آيفون",
+          "value_en": "iPhone",
+          "value_fa": "آیفون",
+          "sort_order": 1
+        },
+        {
+          "code": "samsung",
+          "value_ar": "سامسونج",
+          "value_en": "Samsung",
+          "value_fa": "سامسونگ",
+          "sort_order": 2
+        },
+        {
+          "code": "huawei",
+          "value_ar": "هواوي",
+          "value_en": "Huawei",
+          "value_fa": "هواوی",
+          "sort_order": 3
+        },
+        {
+          "code": "xiaomi",
+          "value_ar": "شاومي",
+          "value_en": "Xiaomi",
+          "value_fa": "شیائومی",
+          "sort_order": 4
+        },
+        {
+          "code": "oppo",
+          "value_ar": "أوبو",
+          "value_en": "OPPO",
+          "value_fa": "اوپو",
+          "sort_order": 5
+        },
+        {
+          "code": "google",
+          "value_ar": "غوغل",
+          "value_en": "Google Pixel",
+          "value_fa": "گوگل پیکسل",
+          "sort_order": 6
+        },
+        {
+          "code": "universal",
+          "value_ar": "عالمي",
+          "value_en": "Universal",
+          "value_fa": "جهانی",
+          "sort_order": 7
+        }
+      ]
+    },
+    {
+      "group_code": "specialty-specs",
+      "code": "umbrella_size",
+      "name_ar": "حجم المظلة",
+      "name_en": "Umbrella Size",
+      "name_fa": "سایز چتر",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiUmbrella",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 7,
+      "options": [
+        {
+          "code": "compact",
+          "value_ar": "صغير قابل للطي",
+          "value_en": "Compact",
+          "value_fa": "جیبی",
+          "sort_order": 1
+        },
+        {
+          "code": "medium",
+          "value_ar": "متوسط",
+          "value_en": "Medium",
+          "value_fa": "متوسط",
+          "sort_order": 2
+        },
+        {
+          "code": "large",
+          "value_ar": "كبير",
+          "value_en": "Large",
+          "value_fa": "بزرگ",
+          "sort_order": 3
+        },
+        {
+          "code": "golf",
+          "value_ar": "جولف",
+          "value_en": "Golf",
+          "value_fa": "گلف",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "group_code": "specialty-specs",
+      "code": "auto_open",
+      "name_ar": "فتح تلقائي",
+      "name_en": "Auto Open",
+      "name_fa": "بازشو خودکار",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiZap",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 8
+    },
+    {
+      "group_code": "specialty-specs",
+      "code": "windproof",
+      "name_ar": "مقاوم للرياح",
+      "name_en": "Windproof",
+      "name_fa": "ضد باد",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiWind",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 9
+    },
+    {
+      "group_code": "specialty-specs",
+      "code": "scratch_resistant",
+      "name_ar": "مقاوم للخدوش",
+      "name_en": "Scratch Resistant",
+      "name_fa": "ضد خش",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiShield",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 10
+    },
+    {
+      "group_code": "specialty-specs",
+      "code": "specialty_one_size",
+      "name_ar": "مقاس واحد",
+      "name_en": "One Size",
+      "name_fa": "یک سایز",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiCheck",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 11
+    },
+    {
+      "group_code": "specialty-specs",
+      "code": "specialty_weight_g",
+      "name_ar": "الوزن (غم)",
+      "name_en": "Weight (g)",
+      "name_fa": "وزن (گرم)",
+      "value_type": "number",
+      "input_type": "number",
+      "icon": "FiFeather",
+      "is_required": false,
+      "is_filterable": false,
+      "is_searchable": false,
+      "is_variant_defining": false,
+      "sort_order": 12
+    }
+  ]
+}

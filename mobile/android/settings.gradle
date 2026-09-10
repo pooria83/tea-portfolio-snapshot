@@ -1,0 +1,87 @@
+pluginManagement {
+    includeBuild("../node_modules/@react-native/gradle-plugin")
+}
+
+plugins {
+    id("com.facebook.react.settings")
+}
+
+// ---- Iranian Maven mirrors -------------------------------------------------
+// Repos are declared by RN's root-project plugin (google()/mavenCentral()/
+// plugins.gradle.org) and are slow or blocked from inside Iran. We rewrite
+// those URLs at registration time to the Iranian mirrors below, and add a
+// fallback mirror repo for anything the primary misses.
+//
+// GitHub Actions runners have direct access to google()/mavenCentral() and are
+// faster with the defaults, so the rewrite is auto-disabled there
+// (GITHUB_ACTIONS=true). Force a specific mode with
+// `-PuseIranMirrors=true|false` (e.g. local build on a non-Iran network, or a
+// CI that needs the mirrors).
+def forcedMirrors = gradle.startParameter.projectProperties['useIranMirrors']
+def useIranMirrors = forcedMirrors != null
+    ? Boolean.parseBoolean(forcedMirrors.toString())
+    : System.getenv('GITHUB_ACTIONS') != 'true'
+
+def MAVEN_MIRROR = 'https://en-mirror.ir/'
+def MAVEN_FALLBACK_MIRROR = 'https://maven.devneeds.ir/'
+
+def mirrorRewrite = { repo ->
+    if (repo.hasProperty('url') && repo.url != null) {
+        def current = repo.url.toString()
+        def target = null
+        if (current.contains('plugins.gradle.org')) {
+            target = MAVEN_FALLBACK_MIRROR
+        } else if (current.contains('repo1.maven.org') || current.contains('repo.maven.apache.org') ||
+            current.contains('dl.google.com') || current.contains('jitpack.io')) {
+            target = MAVEN_MIRROR
+        }
+        if (target != null) {
+            println "[mirror] ${current} -> ${target}"
+            repo.url = URI.create(target)
+        }
+    }
+}
+
+// Native library modules (e.g. @sentry/react-native) don't pin an NDK, so AGP
+// falls back to its own default revision (27.0.12077973), which isn't installed
+// and can't be fetched from this network. Force every Android module to the
+// project's pinned NDK (rootProject.ext.ndkVersion) instead.
+def NDK_VERSION = "27.1.12297006"
+def pinNdkVersion = { p ->
+    def androidExt = p.extensions.findByName("android")
+    if (androidExt != null && androidExt.hasProperty("ndkVersion")) {
+        androidExt.ndkVersion = NDK_VERSION
+    }
+}
+
+if (useIranMirrors) {
+    println "[mirror] Iranian Maven mirrors ENABLED (GITHUB_ACTIONS=${System.getenv('GITHUB_ACTIONS')})"
+    gradle.settingsEvaluated { settings ->
+        try {
+            settings.pluginManagement.repositories.all { repo -> mirrorRewrite(repo) }
+        } catch (Exception ignored) {}
+        try {
+            settings.dependencyResolutionManagement.repositories.all { repo -> mirrorRewrite(repo) }
+            settings.dependencyResolutionManagement.repositories.maven { repo ->
+                repo.url = URI.create(MAVEN_FALLBACK_MIRROR)
+            }
+        } catch (Exception ignored) {}
+    }
+
+    gradle.beforeProject { project ->
+        project.repositories.all { repo -> mirrorRewrite(repo) }
+        project.buildscript.repositories.all { repo -> mirrorRewrite(repo) }
+        project.buildscript.repositories.maven { repo -> repo.url = URI.create(MAVEN_FALLBACK_MIRROR) }
+    }
+}
+
+gradle.beforeProject { project ->
+    project.plugins.withId("com.android.application") { pinNdkVersion(project) }
+    project.plugins.withId("com.android.library") { pinNdkVersion(project) }
+}
+
+extensions.configure(com.facebook.react.ReactSettingsExtension){ ex -> ex.autolinkLibrariesFromCommand() }
+
+rootProject.name = 'TEA'
+include ':app'
+includeBuild('../node_modules/@react-native/gradle-plugin')

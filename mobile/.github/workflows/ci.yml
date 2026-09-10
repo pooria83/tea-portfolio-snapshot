@@ -1,0 +1,133 @@
+name: CI
+
+on:
+  push:
+    branches: [main, develop, staging]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+env:
+  NODE_VERSION: '22'
+
+jobs:
+  quality:
+    runs-on: [self-hosted, tea-server]
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Restore npm cache
+        uses: actions/cache@v6
+        with:
+          path: ~/.npm
+          key: npm-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            npm-${{ runner.os }}-
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Format check
+        run: npm run format:check
+
+      - name: Type check
+        run: npm run typecheck
+
+      - name: Test
+        run: npm test
+
+  android-build:
+    needs: quality
+    # Build only runs when the workflow is triggered manually (Actions →
+    # "Run workflow"), so pushes/PRs only pay for the quality gates.
+    if: github.event_name == 'workflow_dispatch' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/staging' || github.ref == 'refs/heads/develop')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Determine flavor
+        id: flavor
+        run: |
+          BRANCH="${GITHUB_REF#refs/heads/}"
+          case "$BRANCH" in
+            main)
+              echo "name=production" >> "$GITHUB_OUTPUT"
+              echo "gradle=assembleProductionRelease" >> "$GITHUB_OUTPUT"
+              echo "apk=TEA.apk" >> "$GITHUB_OUTPUT"
+              echo "sentry_dsn=${{ vars.SENTRY_DSN_PROD }}" >> "$GITHUB_OUTPUT"
+              echo "google_client_id=${{ vars.GOOGLE_CLIENT_ID_PROD }}" >> "$GITHUB_OUTPUT"
+              echo "image_optimizer_url=${{ vars.IMAGE_OPTIMIZER_URL_PROD }}" >> "$GITHUB_OUTPUT"
+              ;;
+            staging)
+              echo "name=staging" >> "$GITHUB_OUTPUT"
+              echo "gradle=assembleStagingRelease" >> "$GITHUB_OUTPUT"
+              echo "apk=TEA-staging.apk" >> "$GITHUB_OUTPUT"
+              echo "sentry_dsn=${{ vars.SENTRY_DSN_STAGING }}" >> "$GITHUB_OUTPUT"
+              echo "google_client_id=${{ vars.GOOGLE_CLIENT_ID_STAGING }}" >> "$GITHUB_OUTPUT"
+              echo "image_optimizer_url=${{ vars.IMAGE_OPTIMIZER_URL_STAGING }}" >> "$GITHUB_OUTPUT"
+              ;;
+            develop)
+              echo "name=development" >> "$GITHUB_OUTPUT"
+              echo "gradle=assembleDevRelease" >> "$GITHUB_OUTPUT"
+              echo "apk=TEA-dev.apk" >> "$GITHUB_OUTPUT"
+              echo "sentry_dsn=${{ vars.SENTRY_DSN_DEV }}" >> "$GITHUB_OUTPUT"
+              echo "google_client_id=${{ vars.GOOGLE_CLIENT_ID_DEV }}" >> "$GITHUB_OUTPUT"
+              echo "image_optimizer_url=${{ vars.IMAGE_OPTIMIZER_URL_DEV }}" >> "$GITHUB_OUTPUT"
+              ;;
+          esac
+
+      - name: Set up Java
+        uses: actions/setup-java@v5
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          cache: 'gradle'
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Tune Gradle for CI runner
+        run: |
+          mkdir -p "$HOME/.gradle"
+          cat >> "$HOME/.gradle/gradle.properties" <<'EOF'
+          org.gradle.workers.max=4
+          org.gradle.jvmargs=-Xmx4g -XX:MaxMetaspaceSize=1g
+          kotlin.daemon.jvmargs=-Xmx2g -XX:MaxMetaspaceSize=512m
+          EOF
+
+      - name: Build Android APK
+        env:
+          FLAVOR: ${{ steps.flavor.outputs.name }}
+          API_BASE_URL: ${{ vars.API_BASE_URL }}
+          ENV: ${{ steps.flavor.outputs.name }}
+          GOOGLE_CLIENT_ID: ${{ steps.flavor.outputs.google_client_id }}
+          IMAGE_OPTIMIZER_URL: ${{ steps.flavor.outputs.image_optimizer_url }}
+          SENTRY_DSN: ${{ steps.flavor.outputs.sentry_dsn }}
+          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+        run: cd android && ./gradlew ${{ steps.flavor.outputs.gradle }}
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v7
+        with:
+          name: ${{ steps.flavor.outputs.apk }}
+          path: android/app/build/outputs/apk/${{ steps.flavor.outputs.name }}/release/*.apk
+
+      - name: Upload Problems Report
+        uses: actions/upload-artifact@v7
+        with:
+          name: problems-report-${{ steps.flavor.outputs.name }}
+          path: android/build/reports/problems/problems-report.html
+          if-no-files-found: ignore

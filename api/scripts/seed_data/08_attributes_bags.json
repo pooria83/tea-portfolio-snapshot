@@ -1,0 +1,1069 @@
+{
+  "product_type_code": "bags",
+  "attributes": [
+    {
+      "group_code": "colors-pattern",
+      "code": "primary_color",
+      "name_ar": "اللون الأساسي",
+      "name_en": "Primary Color",
+      "name_fa": "رنگ اصلی",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiDroplet",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "black",
+          "value_ar": "أسود",
+          "value_en": "Black",
+          "value_fa": "مشکی",
+          "color_hex": "#000000",
+          "sort_order": 1,
+          "color_family": "blacks-grays",
+          "is_major": true
+        },
+        {
+          "code": "white",
+          "value_ar": "أبيض",
+          "value_en": "White",
+          "value_fa": "سفید",
+          "color_hex": "#FFFFFF",
+          "sort_order": 2,
+          "color_family": "whites-creams",
+          "is_major": true
+        },
+        {
+          "code": "beige",
+          "value_ar": "بيج",
+          "value_en": "Beige",
+          "value_fa": "بژ",
+          "color_hex": "#F5F5DC",
+          "sort_order": 3,
+          "color_family": "beiges-browns",
+          "is_major": true
+        },
+        {
+          "code": "brown",
+          "value_ar": "بني",
+          "value_en": "Brown",
+          "value_fa": "قهوه‌ای",
+          "color_hex": "#8B4513",
+          "sort_order": 4,
+          "color_family": "beiges-browns",
+          "is_major": true
+        },
+        {
+          "code": "navy",
+          "value_ar": "كحلي",
+          "value_en": "Navy",
+          "value_fa": "سرمه‌ای",
+          "color_hex": "#000080",
+          "sort_order": 5,
+          "color_family": "blues",
+          "is_major": true
+        },
+        {
+          "code": "red",
+          "value_ar": "أحمر",
+          "value_en": "Red",
+          "value_fa": "قرمز",
+          "color_hex": "#FF0000",
+          "sort_order": 6,
+          "color_family": "reds-pinks",
+          "is_major": true
+        },
+        {
+          "code": "pink",
+          "value_ar": "وردي",
+          "value_en": "Pink",
+          "value_fa": "صورتی",
+          "color_hex": "#FFC0CB",
+          "sort_order": 7,
+          "color_family": "reds-pinks",
+          "is_major": true
+        },
+        {
+          "code": "gold",
+          "value_ar": "ذهبي",
+          "value_en": "Gold",
+          "value_fa": "طلایی",
+          "color_hex": "#FFD700",
+          "sort_order": 8,
+          "color_family": "metallics",
+          "is_major": true
+        },
+        {
+          "code": "silver",
+          "value_ar": "فضي",
+          "value_en": "Silver",
+          "value_fa": "نقره‌ای",
+          "color_hex": "#C0C0C0",
+          "sort_order": 9,
+          "color_family": "metallics",
+          "is_major": true
+        },
+        {
+          "code": "green",
+          "value_ar": "أخضر",
+          "value_en": "Green",
+          "value_fa": "سبز",
+          "color_hex": "#008000",
+          "sort_order": 10,
+          "color_family": "greens",
+          "is_major": true
+        },
+        {
+          "code": "blue",
+          "value_ar": "أزرق",
+          "value_en": "Blue",
+          "value_fa": "آبی",
+          "color_hex": "#0000FF",
+          "sort_order": 11,
+          "color_family": "blues",
+          "is_major": false
+        },
+        {
+          "code": "gray",
+          "value_ar": "رمادي",
+          "value_en": "Gray",
+          "value_fa": "خاکستری",
+          "color_hex": "#808080",
+          "sort_order": 12,
+          "color_family": "blacks-grays",
+          "is_major": false
+        },
+        {
+          "code": "taupe",
+          "value_ar": "توب",
+          "value_en": "Taupe",
+          "value_fa": "تاوپ",
+          "color_hex": "#483C32",
+          "sort_order": 13,
+          "color_family": "beiges-browns",
+          "is_major": false
+        },
+        {
+          "code": "camel",
+          "value_ar": "كاميل",
+          "value_en": "Camel",
+          "value_fa": "شتری",
+          "color_hex": "#C19A6B",
+          "sort_order": 14,
+          "color_family": "beiges-browns",
+          "is_major": false
+        },
+        {
+          "code": "multicolor",
+          "value_ar": "متعدد الألوان",
+          "value_en": "Multicolor",
+          "value_fa": "چند رنگ",
+          "color_hex": "#FF00FF",
+          "sort_order": 15,
+          "color_family": "specialty",
+          "is_major": false
+        }
+      ],
+      "validation_rules": [
+        {
+          "type": "min_select",
+          "value": 1,
+          "message": {
+            "en": "Select at least one color",
+            "ar": "اختر لونًا واحدًا على الأقل",
+            "fa": "حداقل یک رنگ انتخاب کنید"
+          }
+        }
+      ]
+    },
+    {
+      "group_code": "bag-materials",
+      "code": "outer_material",
+      "name_ar": "الخامة الخارجية",
+      "name_en": "Outer Material",
+      "name_fa": "جنس بیرونی",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiHandBag",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "leather",
+          "value_ar": "جلد",
+          "value_en": "Leather",
+          "value_fa": "چرم",
+          "sort_order": 1
+        },
+        {
+          "code": "genuine_leather",
+          "value_ar": "جلد طبيعي",
+          "value_en": "Genuine Leather",
+          "value_fa": "چرم اصل",
+          "sort_order": 2
+        },
+        {
+          "code": "suede",
+          "value_ar": "سويد",
+          "value_en": "Suede",
+          "value_fa": "جیر",
+          "sort_order": 3
+        },
+        {
+          "code": "canvas",
+          "value_ar": "كنفا",
+          "value_en": "Canvas",
+          "value_fa": "کانواس",
+          "sort_order": 4
+        },
+        {
+          "code": "nylon",
+          "value_ar": "نايلون",
+          "value_en": "Nylon",
+          "value_fa": "نایلون",
+          "sort_order": 5
+        },
+        {
+          "code": "polyester",
+          "value_ar": "بوليستر",
+          "value_en": "Polyester",
+          "value_fa": "پلی‌استر",
+          "sort_order": 6
+        },
+        {
+          "code": "synthetic",
+          "value_ar": "صناعي",
+          "value_en": "Synthetic",
+          "value_fa": "مصنوعی",
+          "sort_order": 7
+        },
+        {
+          "code": "patent_leather",
+          "value_ar": "جلد لامع",
+          "value_en": "Patent Leather",
+          "value_fa": "چرم براق",
+          "sort_order": 8
+        },
+        {
+          "code": "velvet",
+          "value_ar": "مخمل",
+          "value_en": "Velvet",
+          "value_fa": "مخمل",
+          "sort_order": 9
+        },
+        {
+          "code": "satin",
+          "value_ar": "ساتان",
+          "value_en": "Satin",
+          "value_fa": "ساتن",
+          "sort_order": 10
+        },
+        {
+          "code": "denim",
+          "value_ar": "جينز",
+          "value_en": "Denim",
+          "value_fa": "جین",
+          "sort_order": 11
+        },
+        {
+          "code": "raffia",
+          "value_ar": "رافيا",
+          "value_en": "Raffia",
+          "value_fa": "رافیا",
+          "sort_order": 12
+        },
+        {
+          "code": "straw",
+          "value_ar": "قش",
+          "value_en": "Straw",
+          "value_fa": "کاه",
+          "sort_order": 13
+        },
+        {
+          "code": "acrylic",
+          "value_ar": "أكريليك",
+          "value_en": "Acrylic",
+          "value_fa": "اکریلیک",
+          "sort_order": 14
+        },
+        {
+          "code": "cotton",
+          "value_ar": "قطن",
+          "value_en": "Cotton",
+          "value_fa": "پنبه",
+          "sort_order": 15
+        },
+        {
+          "code": "jute",
+          "value_ar": "جوت",
+          "value_en": "Jute",
+          "value_fa": "جوت",
+          "sort_order": 16
+        },
+        {
+          "code": "PVC",
+          "value_ar": "PVC",
+          "value_en": "PVC",
+          "value_fa": "PVC",
+          "sort_order": 17
+        }
+      ],
+      "validation_rules": [
+        {
+          "type": "required",
+          "message": {
+            "en": "Select the outer material",
+            "ar": "اختر الخامة الخارجية",
+            "fa": "جنس بیرونی را انتخاب کنید"
+          }
+        }
+      ]
+    },
+    {
+      "group_code": "bag-materials",
+      "code": "bag_lining_material",
+      "name_ar": "خامة البطانة",
+      "name_en": "Lining Material",
+      "name_fa": "جنس آستر",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiHandBag",
+      "is_required": false,
+      "is_filterable": false,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "polyester",
+          "value_ar": "بوليستر",
+          "value_en": "Polyester",
+          "value_fa": "پلی‌استر",
+          "sort_order": 1
+        },
+        {
+          "code": "cotton",
+          "value_ar": "قطن",
+          "value_en": "Cotton",
+          "value_fa": "پنبه",
+          "sort_order": 2
+        },
+        {
+          "code": "satin",
+          "value_ar": "ساتان",
+          "value_en": "Satin",
+          "value_fa": "ساتن",
+          "sort_order": 3
+        },
+        {
+          "code": "microfiber",
+          "value_ar": "مايكروفايبر",
+          "value_en": "Microfiber",
+          "value_fa": "میکروفیبر",
+          "sort_order": 4
+        },
+        {
+          "code": "leather",
+          "value_ar": "جلد",
+          "value_en": "Leather",
+          "value_fa": "چرم",
+          "sort_order": 5
+        },
+        {
+          "code": "nylon",
+          "value_ar": "نايلون",
+          "value_en": "Nylon",
+          "value_fa": "نایلون",
+          "sort_order": 6
+        },
+        {
+          "code": "suede",
+          "value_ar": "سويد",
+          "value_en": "Suede",
+          "value_fa": "جیر",
+          "sort_order": 7
+        },
+        {
+          "code": "unlined",
+          "value_ar": "بدون بطانة",
+          "value_en": "Unlined",
+          "value_fa": "بدون آستر",
+          "sort_order": 8
+        }
+      ]
+    },
+    {
+      "group_code": "bag-materials",
+      "code": "hardware_color",
+      "name_ar": "لون الإكسسوارات المعدنية",
+      "name_en": "Hardware Color",
+      "name_fa": "رنگ یراق",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiGoldBar",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "gold_tone",
+          "value_ar": "ذهبي",
+          "value_en": "Gold Tone",
+          "value_fa": "طلایی",
+          "sort_order": 1
+        },
+        {
+          "code": "silver_tone",
+          "value_ar": "فضي",
+          "value_en": "Silver Tone",
+          "value_fa": "نقره‌ای",
+          "sort_order": 2
+        },
+        {
+          "code": "rose_gold_tone",
+          "value_ar": "ذهبي وردي",
+          "value_en": "Rose Gold Tone",
+          "value_fa": "رز گلد",
+          "sort_order": 3
+        },
+        {
+          "code": "brass",
+          "value_ar": "نحاسي",
+          "value_en": "Brass",
+          "value_fa": "برنجی",
+          "sort_order": 4
+        },
+        {
+          "code": "antique_brass",
+          "value_ar": "نحاسي عتيق",
+          "value_en": "Antique Brass",
+          "value_fa": "برنج کهنه",
+          "sort_order": 5
+        },
+        {
+          "code": "nickel",
+          "value_ar": "نيكل",
+          "value_en": "Nickel",
+          "value_fa": "نیکل",
+          "sort_order": 6
+        },
+        {
+          "code": "gunmetal",
+          "value_ar": "رصاصي",
+          "value_en": "Gunmetal",
+          "value_fa": "تیره",
+          "sort_order": 7
+        },
+        {
+          "code": "black_metal",
+          "value_ar": "معدن أسود",
+          "value_en": "Black Metal",
+          "value_fa": "فلز سیاه",
+          "sort_order": 8
+        }
+      ]
+    },
+    {
+      "group_code": "bag-materials",
+      "code": "material_composition",
+      "name_ar": "تركيبة الخامات",
+      "name_en": "Material Composition",
+      "name_fa": "ترکیب مواد",
+      "value_type": "composition",
+      "input_type": "composition",
+      "icon": "GiCottonFlower",
+      "is_required": false,
+      "is_filterable": false,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 4,
+      "options": [
+        {
+          "code": "leather",
+          "value_ar": "جلد",
+          "value_en": "Leather",
+          "value_fa": "چرم",
+          "sort_order": 1
+        },
+        {
+          "code": "polyester",
+          "value_ar": "بوليستر",
+          "value_en": "Polyester",
+          "value_fa": "پلی‌استر",
+          "sort_order": 2
+        },
+        {
+          "code": "nylon",
+          "value_ar": "نايلون",
+          "value_en": "Nylon",
+          "value_fa": "نایلون",
+          "sort_order": 3
+        },
+        {
+          "code": "cotton",
+          "value_ar": "قطن",
+          "value_en": "Cotton",
+          "value_fa": "پنبه",
+          "sort_order": 4
+        },
+        {
+          "code": "canvas",
+          "value_ar": "كنفا",
+          "value_en": "Canvas",
+          "value_fa": "کانواس",
+          "sort_order": 5
+        },
+        {
+          "code": "synthetic",
+          "value_ar": "صناعي",
+          "value_en": "Synthetic",
+          "value_fa": "مصنوعی",
+          "sort_order": 6
+        },
+        {
+          "code": "jute",
+          "value_ar": "جوت",
+          "value_en": "Jute",
+          "value_fa": "جوت",
+          "sort_order": 7
+        },
+        {
+          "code": "raffia",
+          "value_ar": "رافيا",
+          "value_en": "Raffia",
+          "value_fa": "رافیا",
+          "sort_order": 8
+        },
+        {
+          "code": "acrylic",
+          "value_ar": "أكريليك",
+          "value_en": "Acrylic",
+          "value_fa": "اکریلیک",
+          "sort_order": 9
+        }
+      ],
+      "validation_rules": [
+        {
+          "type": "max_entries",
+          "value": 2,
+          "message": {
+            "en": "Maximum 2 materials allowed",
+            "ar": "الحد الأقصى 2 خامات",
+            "fa": "حداکثر 2 ماده مجاز است"
+          }
+        }
+      ]
+    },
+    {
+      "group_code": "bag-style",
+      "code": "bag_type",
+      "name_ar": "نوع الحقيبة",
+      "name_en": "Bag Type",
+      "name_fa": "نوع کیف",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiHandBag",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "tote",
+          "value_ar": "توت",
+          "value_en": "Tote",
+          "value_fa": "توت",
+          "sort_order": 1
+        },
+        {
+          "code": "crossbody",
+          "value_ar": "كروس بودي",
+          "value_en": "Crossbody",
+          "value_fa": "کراس بادی",
+          "sort_order": 2
+        },
+        {
+          "code": "shoulder",
+          "value_ar": "كتف",
+          "value_en": "Shoulder Bag",
+          "value_fa": "دوشی",
+          "sort_order": 3
+        },
+        {
+          "code": "clutch",
+          "value_ar": "كلاتش",
+          "value_en": "Clutch",
+          "value_fa": "کلاچ",
+          "sort_order": 4
+        },
+        {
+          "code": "satchel",
+          "value_ar": "ساتشل",
+          "value_en": "Satchel",
+          "value_fa": "ساتچل",
+          "sort_order": 5
+        },
+        {
+          "code": "hobo",
+          "value_ar": "هوبو",
+          "value_en": "Hobo",
+          "value_fa": "هوبو",
+          "sort_order": 6
+        },
+        {
+          "code": "bucket",
+          "value_ar": "دلو",
+          "value_en": "Bucket Bag",
+          "value_fa": "جامی",
+          "sort_order": 7
+        },
+        {
+          "code": "backpack",
+          "value_ar": "حقيبة ظهر",
+          "value_en": "Backpack",
+          "value_fa": "کوله پشتی",
+          "sort_order": 8
+        },
+        {
+          "code": "duffel",
+          "value_ar": "دفل",
+          "value_en": "Duffel Bag",
+          "value_fa": "دافل",
+          "sort_order": 9
+        },
+        {
+          "code": "messenger",
+          "value_ar": "ماسنجر",
+          "value_en": "Messenger",
+          "value_fa": "مسنجر",
+          "sort_order": 10
+        },
+        {
+          "code": "belt_bag",
+          "value_ar": "حزامية",
+          "value_en": "Belt Bag",
+          "value_fa": "کمری",
+          "sort_order": 11
+        },
+        {
+          "code": "wallet",
+          "value_ar": "محفظة",
+          "value_en": "Wallet",
+          "value_fa": "کیف پول",
+          "sort_order": 12
+        },
+        {
+          "code": "pouch",
+          "value_ar": "حقيبة صغيرة",
+          "value_en": "Pouch",
+          "value_fa": "کیف کوچک",
+          "sort_order": 13
+        },
+        {
+          "code": "mini_bag",
+          "value_ar": "ميني",
+          "value_en": "Mini Bag",
+          "value_fa": "مینی",
+          "sort_order": 14
+        },
+        {
+          "code": "evening",
+          "value_ar": "سهرة",
+          "value_en": "Evening Bag",
+          "value_fa": "مجلسی",
+          "sort_order": 15
+        }
+      ],
+      "validation_rules": [
+        {
+          "type": "min_select",
+          "value": 1,
+          "message": {
+            "en": "Select at least one bag type",
+            "ar": "اختر نوع حقيبة واحد على الأقل",
+            "fa": "حداقل یک نوع کیف انتخاب کنید"
+          }
+        }
+      ]
+    },
+    {
+      "group_code": "bag-style",
+      "code": "bag_closure_type",
+      "name_ar": "نوع الإغلاق",
+      "name_en": "Closure Type",
+      "name_fa": "نوع بستن",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiLock",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "zipper",
+          "value_ar": "سحاب",
+          "value_en": "Zipper",
+          "value_fa": "زیپ",
+          "sort_order": 1
+        },
+        {
+          "code": "magnetic",
+          "value_ar": "مغناطيسي",
+          "value_en": "Magnetic Snap",
+          "value_fa": "مغناطیسی",
+          "sort_order": 2
+        },
+        {
+          "code": "buckle",
+          "value_ar": "إبزيم",
+          "value_en": "Buckle",
+          "value_fa": "سگک",
+          "sort_order": 3
+        },
+        {
+          "code": "drawstring",
+          "value_ar": "رباط",
+          "value_en": "Drawstring",
+          "value_fa": "بندی",
+          "sort_order": 4
+        },
+        {
+          "code": "flap",
+          "value_ar": "غطاء",
+          "value_en": "Flap",
+          "value_fa": "فلپ",
+          "sort_order": 5
+        },
+        {
+          "code": "snap_button",
+          "value_ar": "كبسون",
+          "value_en": "Snap Button",
+          "value_fa": "دکمه فشاری",
+          "sort_order": 6
+        },
+        {
+          "code": "turn_lock",
+          "value_ar": "قفل دوار",
+          "value_en": "Turn Lock",
+          "value_fa": "قفل چرخشی",
+          "sort_order": 7
+        },
+        {
+          "code": "top_handle",
+          "value_ar": "مقبض علوي",
+          "value_en": "Top Handle",
+          "value_fa": "دسته بالایی",
+          "sort_order": 8
+        },
+        {
+          "code": "no_closure",
+          "value_ar": "بدون إغلاق",
+          "value_en": "No Closure",
+          "value_fa": "بدون بست",
+          "sort_order": 9
+        }
+      ]
+    },
+    {
+      "group_code": "bag-style",
+      "code": "bag_shape",
+      "name_ar": "شكل الحقيبة",
+      "name_en": "Bag Shape",
+      "name_fa": "شکل کیف",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiHandBag",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "rectangular",
+          "value_ar": "مستطيل",
+          "value_en": "Rectangular",
+          "value_fa": "مستطیل",
+          "sort_order": 1
+        },
+        {
+          "code": "rounded",
+          "value_ar": "دائري",
+          "value_en": "Rounded",
+          "value_fa": "گرد",
+          "sort_order": 2
+        },
+        {
+          "code": "boxy",
+          "value_ar": "صندوقي",
+          "value_en": "Boxy",
+          "value_fa": "جعبه‌ای",
+          "sort_order": 3
+        },
+        {
+          "code": "hobo_shape",
+          "value_ar": "هوبو",
+          "value_en": "Hobo",
+          "value_fa": "هلالی",
+          "sort_order": 4
+        },
+        {
+          "code": "envelope",
+          "value_ar": "ظرف",
+          "value_en": "Envelope",
+          "value_fa": "پاکتی",
+          "sort_order": 5
+        },
+        {
+          "code": "bucket_shape",
+          "value_ar": "دلو",
+          "value_en": "Bucket",
+          "value_fa": "جامی",
+          "sort_order": 6
+        },
+        {
+          "code": "structured",
+          "value_ar": "منظم",
+          "value_en": "Structured",
+          "value_fa": "ساختاری",
+          "sort_order": 7
+        },
+        {
+          "code": "soft",
+          "value_ar": "ناعم",
+          "value_en": "Soft",
+          "value_fa": "نرم",
+          "sort_order": 8
+        }
+      ]
+    },
+    {
+      "group_code": "bag-features",
+      "code": "bag_waterproof",
+      "name_ar": "مقاوم للماء",
+      "name_en": "Waterproof",
+      "name_fa": "ضد آب",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiUmbrella",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1
+    },
+    {
+      "group_code": "bag-features",
+      "code": "bag_adjustable_strap",
+      "name_ar": "حزام قابل للتعديل",
+      "name_en": "Adjustable Strap",
+      "name_fa": "بند قابل تنظیم",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiSliders",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2
+    },
+    {
+      "group_code": "bag-features",
+      "code": "removable_strap",
+      "name_ar": "حزام قابل للإزالة",
+      "name_en": "Removable Strap",
+      "name_fa": "بند جداشونده",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiTool",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3
+    },
+    {
+      "group_code": "bag-features",
+      "code": "padded",
+      "name_ar": "مبطن",
+      "name_en": "Padded",
+      "name_fa": "پد دار",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiSquare",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 4
+    },
+    {
+      "group_code": "bag-features",
+      "code": "bag_lightweight",
+      "name_ar": "خفيف الوزن",
+      "name_en": "Lightweight",
+      "name_fa": "سبک",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiFeather",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 5
+    },
+    {
+      "group_code": "bag-features",
+      "code": "laptop_compatible",
+      "name_ar": "مناسب للابتوب",
+      "name_en": "Laptop Compatible",
+      "name_fa": "مناسب برای لپ‌تاپ",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiMonitor",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 6
+    },
+    {
+      "group_code": "bag-features",
+      "code": "vegan",
+      "name_ar": "فيغان",
+      "name_en": "Vegan",
+      "name_fa": "وگان",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiLeaf",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 7
+    },
+    {
+      "group_code": "bag-sizing",
+      "code": "bag_dimensions",
+      "name_ar": "الأبعاد",
+      "name_en": "Dimensions",
+      "name_fa": "ابعاد",
+      "value_type": "text",
+      "input_type": "text",
+      "icon": "GiRuler",
+      "is_required": false,
+      "is_filterable": false,
+      "is_searchable": false,
+      "is_variant_defining": false,
+      "sort_order": 1
+    },
+    {
+      "group_code": "bag-sizing",
+      "code": "bag_weight",
+      "name_ar": "الوزن",
+      "name_en": "Weight",
+      "name_fa": "وزن",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiFeather",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "ultra_light",
+          "value_ar": "خفيف جداً",
+          "value_en": "Ultra Light (< 200g)",
+          "value_fa": "خیلی سبک",
+          "sort_order": 1
+        },
+        {
+          "code": "light",
+          "value_ar": "خفيف",
+          "value_en": "Light (200-400g)",
+          "value_fa": "سبک",
+          "sort_order": 2
+        },
+        {
+          "code": "medium",
+          "value_ar": "متوسط",
+          "value_en": "Medium (400-700g)",
+          "value_fa": "متوسط",
+          "sort_order": 3
+        },
+        {
+          "code": "heavy",
+          "value_ar": "ثقيل",
+          "value_en": "Heavy (700g-1kg)",
+          "value_fa": "سنگین",
+          "sort_order": 4
+        },
+        {
+          "code": "very_heavy",
+          "value_ar": "ثقيل جداً",
+          "value_en": "Very Heavy (> 1kg)",
+          "value_fa": "خیلی سنگین",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "group_code": "bag-sizing",
+      "code": "strap_drop",
+      "name_ar": "طول الحزام",
+      "name_en": "Strap Drop",
+      "name_fa": "طول بند",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiRuler",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "short",
+          "value_ar": "قصير 4-6 بوصة",
+          "value_en": "Short (4-6 in)",
+          "value_fa": "کوتاه",
+          "sort_order": 1
+        },
+        {
+          "code": "medium_drop",
+          "value_ar": "متوسط 7-9 بوصة",
+          "value_en": "Medium (7-9 in)",
+          "value_fa": "متوسط",
+          "sort_order": 2
+        },
+        {
+          "code": "long",
+          "value_ar": "طويل 10-12 بوصة",
+          "value_en": "Long (10-12 in)",
+          "value_fa": "بلند",
+          "sort_order": 3
+        },
+        {
+          "code": "extra_long",
+          "value_ar": "طويل جداً 14+ بوصة",
+          "value_en": "Extra Long (14+ in)",
+          "value_fa": "خیلی بلند",
+          "sort_order": 4
+        }
+      ]
+    }
+  ]
+}

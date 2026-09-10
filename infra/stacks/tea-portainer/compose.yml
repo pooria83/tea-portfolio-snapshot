@@ -1,0 +1,25 @@
+services:
+  portainer:
+    image: portainer/portainer-ce:2.44.0
+    command: -H unix:///var/run/docker.sock
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - portainer_data:/data
+    networks:
+      - tea-infra-net
+    security_opt:
+      - no-new-privileges:true
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+      resources:
+        limits:
+          memory: 256M
+
+volumes:
+  portainer_data:
+
+networks:
+  tea-infra-net:
+    external: true
+    name: tea-infra-net

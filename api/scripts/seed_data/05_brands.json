@@ -1,0 +1,692 @@
+{
+  "brands": [
+    {
+      "code": "zara",
+      "name_ar": "زارا",
+      "name_en": "Zara",
+      "name_fa": "زارا",
+      "sort_order": 1,
+      "logo_url": "/static/brands/zara.svg"
+    },
+    {
+      "code": "massimo-dutti",
+      "name_ar": "ماسيمو دوتي",
+      "name_en": "Massimo Dutti",
+      "name_fa": "ماسیمو داوتی",
+      "sort_order": 2,
+      "logo_url": "/static/brands/massimo-dutti.svg"
+    },
+    {
+      "code": "bershka",
+      "name_ar": "بيرشكا",
+      "name_en": "Bershka",
+      "name_fa": "برشکا",
+      "sort_order": 3,
+      "logo_url": "/static/brands/bershka.svg"
+    },
+    {
+      "code": "pull-bear",
+      "name_ar": "بول آند بير",
+      "name_en": "Pull&Bear",
+      "name_fa": "پول اند بیر",
+      "sort_order": 4,
+      "logo_url": "/static/brands/pull-bear.svg"
+    },
+    {
+      "code": "stradivarius",
+      "name_ar": "ستراديفاريوس",
+      "name_en": "Stradivarius",
+      "name_fa": "استرادیواریوس",
+      "sort_order": 5,
+      "logo_url": "/static/brands/stradivarius.svg"
+    },
+    {
+      "code": "oysho",
+      "name_ar": "أويشو",
+      "name_en": "Oysho",
+      "name_fa": "اوایشو",
+      "sort_order": 6,
+      "logo_url": "/static/brands/oysho.svg"
+    },
+    {
+      "code": "zara-home",
+      "name_ar": "زارا هوم",
+      "name_en": "Zara Home",
+      "name_fa": "زارا هوم",
+      "sort_order": 7,
+      "logo_url": "/static/brands/zara-home.svg"
+    },
+    {
+      "code": "hm",
+      "name_ar": "إتش آند إم",
+      "name_en": "H&M",
+      "name_fa": "اچ اند ام",
+      "sort_order": 8,
+      "logo_url": "/static/brands/hm.svg"
+    },
+    {
+      "code": "cos",
+      "name_ar": "سي أو إس",
+      "name_en": "COS",
+      "name_fa": "سی‌او‌اس",
+      "sort_order": 9,
+      "logo_url": "/static/brands/cos.svg"
+    },
+    {
+      "code": "arket",
+      "name_ar": "آركيت",
+      "name_en": "Arket",
+      "name_fa": "آرکت",
+      "sort_order": 10,
+      "logo_url": "/static/brands/arket.svg"
+    },
+    {
+      "code": "other-stories",
+      "name_ar": "آند أذر ستوريز",
+      "name_en": "& Other Stories",
+      "name_fa": "اند اور استوریز",
+      "sort_order": 11,
+      "logo_url": "/static/brands/other-stories.svg"
+    },
+    {
+      "code": "monki",
+      "name_ar": "مونكي",
+      "name_en": "Monki",
+      "name_fa": "مانکی",
+      "sort_order": 12,
+      "logo_url": "/static/brands/monki.svg"
+    },
+    {
+      "code": "mango",
+      "name_ar": "مانجو",
+      "name_en": "Mango",
+      "name_fa": "مانگو",
+      "sort_order": 13,
+      "logo_url": "/static/brands/mango.svg"
+    },
+    {
+      "code": "uniqlo",
+      "name_ar": "يونيكلو",
+      "name_en": "Uniqlo",
+      "name_fa": "یونیکلو",
+      "sort_order": 14,
+      "logo_url": "/static/brands/uniqlo.svg"
+    },
+    {
+      "code": "gap",
+      "name_ar": "غاب",
+      "name_en": "Gap",
+      "name_fa": "گپ",
+      "sort_order": 15,
+      "logo_url": "/static/brands/gap.svg"
+    },
+    {
+      "code": "old-navy",
+      "name_ar": "أولد نيفي",
+      "name_en": "Old Navy",
+      "name_fa": "الد نیوی",
+      "sort_order": 16,
+      "logo_url": "/static/brands/old-navy.svg"
+    },
+    {
+      "code": "forever-21",
+      "name_ar": "فوريفر 21",
+      "name_en": "Forever 21",
+      "name_fa": "فاراور ۲۱",
+      "sort_order": 17,
+      "logo_url": "/static/brands/forever-21.svg"
+    },
+    {
+      "code": "primark",
+      "name_ar": "بريمارك",
+      "name_en": "Primark",
+      "name_fa": "پریمارک",
+      "sort_order": 18,
+      "logo_url": "/static/brands/primark.svg"
+    },
+    {
+      "code": "next",
+      "name_ar": "نايكست",
+      "name_en": "Next",
+      "name_fa": "نکست",
+      "sort_order": 19,
+      "logo_url": "/static/brands/next.svg"
+    },
+    {
+      "code": "ca",
+      "name_ar": "سي آند إيه",
+      "name_en": "C&A",
+      "name_fa": "سی اند ای",
+      "sort_order": 20,
+      "logo_url": "/static/brands/ca.svg"
+    },
+    {
+      "code": "nike",
+      "name_ar": "نايك",
+      "name_en": "Nike",
+      "name_fa": "نایک",
+      "sort_order": 21,
+      "logo_url": "/static/brands/nike.svg"
+    },
+    {
+      "code": "adidas",
+      "name_ar": "أديداس",
+      "name_en": "Adidas",
+      "name_fa": "آدیداس",
+      "sort_order": 22,
+      "logo_url": "/static/brands/adidas.svg"
+    },
+    {
+      "code": "new-balance",
+      "name_ar": "نيو بالانس",
+      "name_en": "New Balance",
+      "name_fa": "نیو بالانس",
+      "sort_order": 23,
+      "logo_url": "/static/brands/new-balance.svg"
+    },
+    {
+      "code": "puma",
+      "name_ar": "بوما",
+      "name_en": "Puma",
+      "name_fa": "پوما",
+      "sort_order": 24,
+      "logo_url": "/static/brands/puma.svg"
+    },
+    {
+      "code": "under-armour",
+      "name_ar": "أندر أرمور",
+      "name_en": "Under Armour",
+      "name_fa": "آندر آرمور",
+      "sort_order": 25,
+      "logo_url": "/static/brands/under-armour.svg"
+    },
+    {
+      "code": "lululemon",
+      "name_ar": "لولوليمون",
+      "name_en": "Lululemon",
+      "name_fa": "لولولیمون",
+      "sort_order": 26,
+      "logo_url": "/static/brands/lululemon.svg"
+    },
+    {
+      "code": "on",
+      "name_ar": "أون",
+      "name_en": "On",
+      "name_fa": "آن",
+      "sort_order": 27,
+      "logo_url": "/static/brands/on.svg"
+    },
+    {
+      "code": "reebok",
+      "name_ar": "ريبوك",
+      "name_en": "Reebok",
+      "name_fa": "ریباک",
+      "sort_order": 28,
+      "logo_url": "/static/brands/reebok.svg"
+    },
+    {
+      "code": "converse",
+      "name_ar": "كونفيرس",
+      "name_en": "Converse",
+      "name_fa": "کانورس",
+      "sort_order": 29,
+      "logo_url": "/static/brands/converse.svg"
+    },
+    {
+      "code": "vans",
+      "name_ar": "فانز",
+      "name_en": "Vans",
+      "name_fa": "وانز",
+      "sort_order": 30,
+      "logo_url": "/static/brands/vans.svg"
+    },
+    {
+      "code": "skechers",
+      "name_ar": "سكيتشرز",
+      "name_en": "Skechers",
+      "name_fa": "اسکچرز",
+      "sort_order": 31,
+      "logo_url": "/static/brands/skechers.svg"
+    },
+    {
+      "code": "asics",
+      "name_ar": "أسيكس",
+      "name_en": "Asics",
+      "name_fa": "آسیکس",
+      "sort_order": 32,
+      "logo_url": "/static/brands/asics.svg"
+    },
+    {
+      "code": "salomon",
+      "name_ar": "سالومون",
+      "name_en": "Salomon",
+      "name_fa": "سالومون",
+      "sort_order": 33,
+      "logo_url": "/static/brands/salomon.svg"
+    },
+    {
+      "code": "columbia",
+      "name_ar": "كولومبيا",
+      "name_en": "Columbia",
+      "name_fa": "کلمبیا",
+      "sort_order": 34,
+      "logo_url": "/static/brands/columbia.svg"
+    },
+    {
+      "code": "the-north-face",
+      "name_ar": "ذا نورث فيس",
+      "name_en": "The North Face",
+      "name_fa": "د نورث فیس",
+      "sort_order": 35,
+      "logo_url": "/static/brands/the-north-face.svg"
+    },
+    {
+      "code": "patagonia",
+      "name_ar": "باتاغونيا",
+      "name_en": "Patagonia",
+      "name_fa": "پاتاگونیا",
+      "sort_order": 36,
+      "logo_url": "/static/brands/patagonia.svg"
+    },
+    {
+      "code": "arcteryx",
+      "name_ar": "أركتركس",
+      "name_en": "Arc'teryx",
+      "name_fa": "آرک‌تریکس",
+      "sort_order": 37,
+      "logo_url": "/static/brands/arcteryx.svg"
+    },
+    {
+      "code": "champion",
+      "name_ar": "تشامبيون",
+      "name_en": "Champion",
+      "name_fa": "چمپیون",
+      "sort_order": 38,
+      "logo_url": "/static/brands/champion.svg"
+    },
+    {
+      "code": "fila",
+      "name_ar": "فيلا",
+      "name_en": "Fila",
+      "name_fa": "فیلا",
+      "sort_order": 39,
+      "logo_url": "/static/brands/fila.svg"
+    },
+    {
+      "code": "ellesse",
+      "name_ar": "إيليسي",
+      "name_en": "Ellesse",
+      "name_fa": "الیسه",
+      "sort_order": 40,
+      "logo_url": "/static/brands/ellesse.svg"
+    },
+    {
+      "code": "kappa",
+      "name_ar": "كابا",
+      "name_en": "Kappa",
+      "name_fa": "کاپا",
+      "sort_order": 41,
+      "logo_url": "/static/brands/kappa.svg"
+    },
+    {
+      "code": "levis",
+      "name_ar": "ليفي",
+      "name_en": "Levi's",
+      "name_fa": "لیوای‌ز",
+      "sort_order": 42,
+      "logo_url": "/static/brands/levis.svg"
+    },
+    {
+      "code": "diesel",
+      "name_ar": "ديزل",
+      "name_en": "Diesel",
+      "name_fa": "دیزل",
+      "sort_order": 43,
+      "logo_url": "/static/brands/diesel.svg"
+    },
+    {
+      "code": "wrangler",
+      "name_ar": "رانجلر",
+      "name_en": "Wrangler",
+      "name_fa": "رنگلر",
+      "sort_order": 44,
+      "logo_url": "/static/brands/wrangler.svg"
+    },
+    {
+      "code": "lee",
+      "name_ar": "لي",
+      "name_en": "Lee",
+      "name_fa": "لی",
+      "sort_order": 45,
+      "logo_url": "/static/brands/lee.svg"
+    },
+    {
+      "code": "gucci",
+      "name_ar": "غوتشي",
+      "name_en": "Gucci",
+      "name_fa": "گوچی",
+      "sort_order": 46,
+      "logo_url": "/static/brands/gucci.svg"
+    },
+    {
+      "code": "prada",
+      "name_ar": "برادا",
+      "name_en": "Prada",
+      "name_fa": "پرادا",
+      "sort_order": 47,
+      "logo_url": "/static/brands/prada.svg"
+    },
+    {
+      "code": "versace",
+      "name_ar": "فيرساتشي",
+      "name_en": "Versace",
+      "name_fa": "ورساچه",
+      "sort_order": 48,
+      "logo_url": "/static/brands/versace.svg"
+    },
+    {
+      "code": "burberry",
+      "name_ar": "بربري",
+      "name_en": "Burberry",
+      "name_fa": "بربری",
+      "sort_order": 49,
+      "logo_url": "/static/brands/burberry.svg"
+    },
+    {
+      "code": "balenciaga",
+      "name_ar": "بالينسياغا",
+      "name_en": "Balenciaga",
+      "name_fa": "بالنسیاگا",
+      "sort_order": 50,
+      "logo_url": "/static/brands/balenciaga.svg"
+    },
+    {
+      "code": "saint-laurent",
+      "name_ar": "سان لوران",
+      "name_en": "Saint Laurent",
+      "name_fa": "سن لوران",
+      "sort_order": 51,
+      "logo_url": "/static/brands/saint-laurent.svg"
+    },
+    {
+      "code": "fendi",
+      "name_ar": "فيندي",
+      "name_en": "Fendi",
+      "name_fa": "فندی",
+      "sort_order": 52,
+      "logo_url": "/static/brands/fendi.svg"
+    },
+    {
+      "code": "givenchy",
+      "name_ar": "جيفنشي",
+      "name_en": "Givenchy",
+      "name_fa": "گیونچی",
+      "sort_order": 53,
+      "logo_url": "/static/brands/givenchy.svg"
+    },
+    {
+      "code": "valentino",
+      "name_ar": "فالنتينو",
+      "name_en": "Valentino",
+      "name_fa": "والنتینو",
+      "sort_order": 54,
+      "logo_url": "/static/brands/valentino.svg"
+    },
+    {
+      "code": "dolce-gabbana",
+      "name_ar": "دولتشي أند غابانا",
+      "name_en": "Dolce & Gabbana",
+      "name_fa": "دولچه اند گابانا",
+      "sort_order": 55,
+      "logo_url": "/static/brands/dolce-gabbana.svg"
+    },
+    {
+      "code": "giorgio-armani",
+      "name_ar": "جورجيو أرماني",
+      "name_en": "Giorgio Armani",
+      "name_fa": "جیورجیو آرمانی",
+      "sort_order": 56,
+      "logo_url": "/static/brands/giorgio-armani.svg"
+    },
+    {
+      "code": "louis-vuitton",
+      "name_ar": "لويس فويتون",
+      "name_en": "Louis Vuitton",
+      "name_fa": "لویی ویتون",
+      "sort_order": 57,
+      "logo_url": "/static/brands/louis-vuitton.svg"
+    },
+    {
+      "code": "dior",
+      "name_ar": "ديور",
+      "name_en": "Dior",
+      "name_fa": "دیور",
+      "sort_order": 58,
+      "logo_url": "/static/brands/dior.svg"
+    },
+    {
+      "code": "chanel",
+      "name_ar": "شانيل",
+      "name_en": "Chanel",
+      "name_fa": "شنل",
+      "sort_order": 59,
+      "logo_url": "/static/brands/chanel.svg"
+    },
+    {
+      "code": "hermes",
+      "name_ar": "إيرميس",
+      "name_en": "Hermès",
+      "name_fa": "ارمـس",
+      "sort_order": 60,
+      "logo_url": "/static/brands/hermes.svg"
+    },
+    {
+      "code": "bottega-veneta",
+      "name_ar": "بوتيغا فينيتا",
+      "name_en": "Bottega Veneta",
+      "name_fa": "بوتیگا ونتا",
+      "sort_order": 61,
+      "logo_url": "/static/brands/bottega-veneta.svg"
+    },
+    {
+      "code": "off-white",
+      "name_ar": "أوف وايت",
+      "name_en": "Off-White",
+      "name_fa": "آف وایت",
+      "sort_order": 62,
+      "logo_url": "/static/brands/off-white.svg"
+    },
+    {
+      "code": "balmain",
+      "name_ar": "بالمين",
+      "name_en": "Balmain",
+      "name_fa": "بالمین",
+      "sort_order": 63,
+      "logo_url": "/static/brands/balmain.svg"
+    },
+    {
+      "code": "alexander-mcqueen",
+      "name_ar": "ألكسندر ماكوين",
+      "name_en": "Alexander McQueen",
+      "name_fa": "الکساندر مک‌کوئین",
+      "sort_order": 64,
+      "logo_url": "/static/brands/alexander-mcqueen.svg"
+    },
+    {
+      "code": "calvin-klein",
+      "name_ar": "كالفن كلاين",
+      "name_en": "Calvin Klein",
+      "name_fa": "کالوین کلاین",
+      "sort_order": 65,
+      "logo_url": "/static/brands/calvin-klein.svg"
+    },
+    {
+      "code": "tommy-hilfiger",
+      "name_ar": "تومي هيلفيغر",
+      "name_en": "Tommy Hilfiger",
+      "name_fa": "تامی هیلفیگر",
+      "sort_order": 66,
+      "logo_url": "/static/brands/tommy-hilfiger.svg"
+    },
+    {
+      "code": "ralph-lauren",
+      "name_ar": "رالف لورين",
+      "name_en": "Ralph Lauren",
+      "name_fa": "رالف لورن",
+      "sort_order": 67,
+      "logo_url": "/static/brands/ralph-lauren.svg"
+    },
+    {
+      "code": "lacoste",
+      "name_ar": "لاكوست",
+      "name_en": "Lacoste",
+      "name_fa": "لاکوست",
+      "sort_order": 68,
+      "logo_url": "/static/brands/lacoste.svg"
+    },
+    {
+      "code": "superdry",
+      "name_ar": "سوبردراي",
+      "name_en": "Superdry",
+      "name_fa": "سوپردرای",
+      "sort_order": 69,
+      "logo_url": "/static/brands/superdry.svg"
+    },
+    {
+      "code": "carhartt",
+      "name_ar": "كارهارت",
+      "name_en": "Carhartt",
+      "name_fa": "کارهارت",
+      "sort_order": 70,
+      "logo_url": "/static/brands/carhartt.svg"
+    },
+    {
+      "code": "fred-perry",
+      "name_ar": "فريد بيري",
+      "name_en": "Fred Perry",
+      "name_fa": "فرد پری",
+      "sort_order": 71,
+      "logo_url": "/static/brands/fred-perry.svg"
+    },
+    {
+      "code": "gant",
+      "name_ar": "غانت",
+      "name_en": "Gant",
+      "name_fa": "گانت",
+      "sort_order": 72,
+      "logo_url": "/static/brands/gant.svg"
+    },
+    {
+      "code": "nautica",
+      "name_ar": "نوتيكا",
+      "name_en": "Nautica",
+      "name_fa": "ناتیکا",
+      "sort_order": 73,
+      "logo_url": "/static/brands/nautica.svg"
+    },
+    {
+      "code": "dockers",
+      "name_ar": "دوكرز",
+      "name_en": "Dockers",
+      "name_fa": "داکرز",
+      "sort_order": 74,
+      "logo_url": "/static/brands/dockers.svg"
+    },
+    {
+      "code": "timberland",
+      "name_ar": "تيمبرلاند",
+      "name_en": "Timberland",
+      "name_fa": "تمبرلند",
+      "sort_order": 75,
+      "logo_url": "/static/brands/timberland.svg"
+    },
+    {
+      "code": "drmartens",
+      "name_ar": "دكتور مارتنز",
+      "name_en": "Dr. Martens",
+      "name_fa": "دکتر مارتنز",
+      "sort_order": 76,
+      "logo_url": "/static/brands/drmartens.svg"
+    },
+    {
+      "code": "ugg",
+      "name_ar": "أوغ",
+      "name_en": "UGG",
+      "name_fa": "آگ",
+      "sort_order": 77,
+      "logo_url": "/static/brands/ugg.svg"
+    },
+    {
+      "code": "crocs",
+      "name_ar": "كروكس",
+      "name_en": "Crocs",
+      "name_fa": "کروکس",
+      "sort_order": 78,
+      "logo_url": "/static/brands/crocs.svg"
+    },
+    {
+      "code": "clarks",
+      "name_ar": "كلاركس",
+      "name_en": "Clarks",
+      "name_fa": "کلارکس",
+      "sort_order": 79,
+      "logo_url": "/static/brands/clarks.svg"
+    },
+    {
+      "code": "gymshark",
+      "name_ar": "جيمشارك",
+      "name_en": "Gymshark",
+      "name_fa": "جیمشارک",
+      "sort_order": 80,
+      "logo_url": "/static/brands/gymshark.svg"
+    },
+    {
+      "code": "alo-yoga",
+      "name_ar": "ألو يوغا",
+      "name_en": "Alo Yoga",
+      "name_fa": "آلو یوگا",
+      "sort_order": 81,
+      "logo_url": "/static/brands/alo-yoga.svg"
+    },
+    {
+      "code": "sweaty-betty",
+      "name_ar": "سويتي بيتي",
+      "name_en": "Sweaty Betty",
+      "name_fa": "سوئیتی بتی",
+      "sort_order": 82,
+      "logo_url": "/static/brands/sweaty-betty.svg"
+    },
+    {
+      "code": "splash",
+      "name_ar": "سبلاش",
+      "name_en": "Splash",
+      "name_fa": "اسپلش",
+      "sort_order": 83,
+      "logo_url": "/static/brands/splash.svg"
+    },
+    {
+      "code": "max-fashion",
+      "name_ar": "ماكس فاشون",
+      "name_en": "Max Fashion",
+      "name_fa": "مکس فشن",
+      "sort_order": 84,
+      "logo_url": "/static/brands/max-fashion.svg"
+    },
+    {
+      "code": "centrepoint",
+      "name_ar": "سنتربوينت",
+      "name_en": "Centrepoint",
+      "name_fa": "سنترپوینت",
+      "sort_order": 85,
+      "logo_url": "/static/brands/centrepoint.svg"
+    },
+    {
+      "code": "red-tag",
+      "name_ar": "ريد تاغ",
+      "name_en": "Red Tag",
+      "name_fa": "رد تگ",
+      "sort_order": 86,
+      "logo_url": "/static/brands/red-tag.svg"
+    }
+  ]
+}

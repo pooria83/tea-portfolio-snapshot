@@ -1,0 +1,724 @@
+{
+  "product_type_code": "boots",
+  "attributes": [
+    {
+      "group_code": "colors-pattern",
+      "code": "primary_color",
+      "name_ar": "اللون الأساسي",
+      "name_en": "Primary Color",
+      "name_fa": "رنگ اصلی",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiDroplet",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": [],
+      "validation_rules": [
+        {
+          "type": "min_select",
+          "value": 1,
+          "message": {
+            "en": "Select at least one color",
+            "ar": "اختر لونًا واحدًا على الأقل",
+            "fa": "حداقل یک رنگ انتخاب کنید"
+          }
+        }
+      ]
+    },
+    {
+      "group_code": "colors-pattern",
+      "code": "pattern",
+      "name_ar": "النقشة",
+      "name_en": "Pattern",
+      "name_fa": "طرح",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiAbstract",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2,
+      "options": []
+    },
+    {
+      "group_code": "footwear-sizing",
+      "code": "shoe_size",
+      "name_ar": "مقاس الحذاء",
+      "name_en": "Shoe Size",
+      "name_fa": "سایز کفش",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiRuler",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": [],
+      "validation_rules": [
+        {
+          "type": "min_select",
+          "value": 1,
+          "message": {
+            "en": "Select at least one size",
+            "ar": "اختر مقاسًا واحدًا على الأقل",
+            "fa": "حداقل یک سایز انتخاب کنید"
+          }
+        }
+      ]
+    },
+    {
+      "group_code": "shoe-materials",
+      "code": "upper_material_boots",
+      "name_ar": "خامة الجزء العلوي",
+      "name_en": "Upper Material",
+      "name_fa": "جنس رویه",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiLeatherBoot",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "leather",
+          "value_ar": "جلد",
+          "value_en": "Leather",
+          "value_fa": "چرم",
+          "sort_order": 1
+        },
+        {
+          "code": "genuine_leather",
+          "value_ar": "جلد طبيعي",
+          "value_en": "Genuine Leather",
+          "value_fa": "چرم طبیعی",
+          "sort_order": 2
+        },
+        {
+          "code": "suede",
+          "value_ar": "سويد",
+          "value_en": "Suede",
+          "value_fa": "جیر",
+          "sort_order": 3
+        },
+        {
+          "code": "nubuck",
+          "value_ar": "نوبوك",
+          "value_en": "Nubuck",
+          "value_fa": "نابوک",
+          "sort_order": 4
+        },
+        {
+          "code": "synthetic",
+          "value_ar": "صناعي",
+          "value_en": "Synthetic",
+          "value_fa": "مصنوعی",
+          "sort_order": 5
+        },
+        {
+          "code": "rubber",
+          "value_ar": "مطاط",
+          "value_en": "Rubber",
+          "value_fa": "لاستیک",
+          "sort_order": 6
+        },
+        {
+          "code": "neoprene",
+          "value_ar": "نيوبرين",
+          "value_en": "Neoprene",
+          "value_fa": "نئوپرن",
+          "sort_order": 7
+        },
+        {
+          "code": "patent_leather",
+          "value_ar": "جلد لامع",
+          "value_en": "Patent Leather",
+          "value_fa": "چرم براق",
+          "sort_order": 8
+        },
+        {
+          "code": "canvas",
+          "value_ar": "كنفا",
+          "value_en": "Canvas",
+          "value_fa": "کانواس",
+          "sort_order": 9
+        }
+      ],
+      "validation_rules": [
+        {
+          "type": "min_select",
+          "value": 1,
+          "message": {
+            "en": "Select at least one material",
+            "ar": "اختر خامة واحدة على الأقل",
+            "fa": "حداقل یک جنس انتخاب کنید"
+          }
+        }
+      ]
+    },
+    {
+      "group_code": "shoe-materials",
+      "code": "shoe_lining_material",
+      "name_ar": "خامة البطانة",
+      "name_en": "Lining Material",
+      "name_fa": "جنس آستر",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiLeatherBoot",
+      "is_required": false,
+      "is_filterable": false,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "leather",
+          "value_ar": "جلد",
+          "value_en": "Leather",
+          "value_fa": "چرم",
+          "sort_order": 1
+        },
+        {
+          "code": "synthetic",
+          "value_ar": "صناعي",
+          "value_en": "Synthetic",
+          "value_fa": "مصنوعی",
+          "sort_order": 2
+        },
+        {
+          "code": "fabric",
+          "value_ar": "قماش",
+          "value_en": "Fabric",
+          "value_fa": "پارچه",
+          "sort_order": 3
+        },
+        {
+          "code": "fleece",
+          "value_ar": "صوف قطبي",
+          "value_en": "Fleece",
+          "value_fa": "پشمک",
+          "sort_order": 4
+        },
+        {
+          "code": "fur",
+          "value_ar": "فرو",
+          "value_en": "Fur",
+          "value_fa": "خز",
+          "sort_order": 5
+        },
+        {
+          "code": "wool",
+          "value_ar": "صوف",
+          "value_en": "Wool",
+          "value_fa": "پشم",
+          "sort_order": 6
+        },
+        {
+          "code": "unlined",
+          "value_ar": "بدون بطانة",
+          "value_en": "Unlined",
+          "value_fa": "بدون آستر",
+          "sort_order": 7
+        }
+      ]
+    },
+    {
+      "group_code": "shoe-materials",
+      "code": "sole_material",
+      "name_ar": "خامة النعل",
+      "name_en": "Sole Material",
+      "name_fa": "جنس کفی",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiLeatherBoot",
+      "is_required": true,
+      "is_filterable": false,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "rubber",
+          "value_ar": "مطاط",
+          "value_en": "Rubber",
+          "value_fa": "لاستیک",
+          "sort_order": 1
+        },
+        {
+          "code": "leather",
+          "value_ar": "جلد",
+          "value_en": "Leather",
+          "value_fa": "چرم",
+          "sort_order": 2
+        },
+        {
+          "code": "tpr",
+          "value_ar": "TPR",
+          "value_en": "TPR",
+          "value_fa": "TPR",
+          "sort_order": 3
+        },
+        {
+          "code": "eva",
+          "value_ar": "EVA",
+          "value_en": "EVA",
+          "value_fa": "EVA",
+          "sort_order": 4
+        },
+        {
+          "code": "crepe",
+          "value_ar": "كريب",
+          "value_en": "Crepe",
+          "value_fa": "کرپ",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "group_code": "shoe-details",
+      "code": "shoe_closure_type",
+      "name_ar": "نوع الإغلاق",
+      "name_en": "Closure Type",
+      "name_fa": "نوع بستن",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiLock",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "lace_up",
+          "value_ar": "رباط",
+          "value_en": "Lace Up",
+          "value_fa": "بندی",
+          "sort_order": 1
+        },
+        {
+          "code": "zip",
+          "value_ar": "سحاب",
+          "value_en": "Zipper",
+          "value_fa": "زیپ",
+          "sort_order": 2
+        },
+        {
+          "code": "side_zip",
+          "value_ar": "سحاب جانبي",
+          "value_en": "Side Zip",
+          "value_fa": "زیپ کناری",
+          "sort_order": 3
+        },
+        {
+          "code": "slip_on",
+          "value_ar": "انزلاق",
+          "value_en": "Slip On",
+          "value_fa": "پوشیدنی",
+          "sort_order": 4
+        },
+        {
+          "code": "buckle",
+          "value_ar": "إبزيم",
+          "value_en": "Buckle",
+          "value_fa": "سگک",
+          "sort_order": 5
+        },
+        {
+          "code": "velcro",
+          "value_ar": "فيلكرو",
+          "value_en": "Velcro",
+          "value_fa": "ولکرو",
+          "sort_order": 6
+        }
+      ]
+    },
+    {
+      "group_code": "shoe-details",
+      "code": "heel_type_boots",
+      "name_ar": "نوع الكعب",
+      "name_en": "Heel Type",
+      "name_fa": "نوع پاشنه",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiHighHeel",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "block",
+          "value_ar": "كتلة",
+          "value_en": "Block",
+          "value_fa": "بلوکی",
+          "sort_order": 1
+        },
+        {
+          "code": "stacked",
+          "value_ar": "مكدس",
+          "value_en": "Stacked",
+          "value_fa": "طبقه‌ای",
+          "sort_order": 2
+        },
+        {
+          "code": "wedge",
+          "value_ar": "وتد",
+          "value_en": "Wedge",
+          "value_fa": "گوه‌ای",
+          "sort_order": 3
+        },
+        {
+          "code": "flat",
+          "value_ar": "مسطح",
+          "value_en": "Flat",
+          "value_fa": "تخت",
+          "sort_order": 4
+        },
+        {
+          "code": "kitten",
+          "value_ar": "كتن",
+          "value_en": "Kitten",
+          "value_fa": "کیتن",
+          "sort_order": 5
+        },
+        {
+          "code": "no_heel",
+          "value_ar": "بدون كعب",
+          "value_en": "No Heel",
+          "value_fa": "بدون پاشنه",
+          "sort_order": 6
+        }
+      ]
+    },
+    {
+      "group_code": "shoe-details",
+      "code": "boot_heel_height",
+      "name_ar": "ارتفاع الكعب",
+      "name_en": "Heel Height",
+      "name_fa": "ارتفاع پاشنه",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiHighHeel",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "flat",
+          "value_ar": "مسطح",
+          "value_en": "Flat",
+          "value_fa": "تخت",
+          "sort_order": 1
+        },
+        {
+          "code": "low",
+          "value_ar": "منخفض",
+          "value_en": "Low",
+          "value_fa": "کوتاه",
+          "sort_order": 2
+        },
+        {
+          "code": "mid",
+          "value_ar": "متوسط",
+          "value_en": "Mid",
+          "value_fa": "متوسط",
+          "sort_order": 3
+        },
+        {
+          "code": "high",
+          "value_ar": "عالٍ",
+          "value_en": "High",
+          "value_fa": "بلند",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "group_code": "boot-specs",
+      "code": "boot_shaft_height",
+      "name_ar": "ارتفاع الساق",
+      "name_en": "Shaft Height",
+      "name_fa": "ارتفاع ساق",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiRuler",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "ankle",
+          "value_ar": "كاحل",
+          "value_en": "Ankle",
+          "value_fa": "مچ پا",
+          "sort_order": 1
+        },
+        {
+          "code": "mid_calf",
+          "value_ar": "منتصف الساق",
+          "value_en": "Mid-Calf",
+          "value_fa": "نیمه ساق",
+          "sort_order": 2
+        },
+        {
+          "code": "knee_high",
+          "value_ar": "الركبة",
+          "value_en": "Knee-High",
+          "value_fa": "تا زانو",
+          "sort_order": 3
+        },
+        {
+          "code": "over_the_knee",
+          "value_ar": "فوق الركبة",
+          "value_en": "Over the Knee",
+          "value_fa": "بالای زانو",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "group_code": "boot-specs",
+      "code": "shaft_circumference",
+      "name_ar": "محيط الساق",
+      "name_en": "Shaft Circumference",
+      "name_fa": "دور ساق",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiRuler",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "narrow",
+          "value_ar": "ضيق",
+          "value_en": "Narrow",
+          "value_fa": "باریک",
+          "sort_order": 1
+        },
+        {
+          "code": "standard",
+          "value_ar": "قياسي",
+          "value_en": "Standard",
+          "value_fa": "استاندارد",
+          "sort_order": 2
+        },
+        {
+          "code": "wide",
+          "value_ar": "عريض",
+          "value_en": "Wide",
+          "value_fa": "پهن",
+          "sort_order": 3
+        },
+        {
+          "code": "adjustable",
+          "value_ar": "قابل تعديل",
+          "value_en": "Adjustable",
+          "value_fa": "قابل تنظیم",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "group_code": "shoe-details",
+      "code": "boot_toe_style",
+      "name_ar": "نمط المقدمة",
+      "name_en": "Toe Style",
+      "name_fa": "سبک پنجه",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiHighHeel",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 4,
+      "options": [
+        {
+          "code": "pointed",
+          "value_ar": "مدبب",
+          "value_en": "Pointed",
+          "value_fa": "تیز",
+          "sort_order": 1
+        },
+        {
+          "code": "rounded",
+          "value_ar": "دائري",
+          "value_en": "Rounded",
+          "value_fa": "گرد",
+          "sort_order": 2
+        },
+        {
+          "code": "square",
+          "value_ar": "مربع",
+          "value_en": "Square",
+          "value_fa": "مربع",
+          "sort_order": 3
+        },
+        {
+          "code": "almond",
+          "value_ar": "لوزي",
+          "value_en": "Almond",
+          "value_fa": "بادامی",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "group_code": "shoe-details",
+      "code": "shoe_width",
+      "name_ar": "عرض الحذاء",
+      "name_en": "Shoe Width",
+      "name_fa": "پهنا کفش",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiRuler",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 5,
+      "options": [
+        {
+          "code": "narrow",
+          "value_ar": "ضيق",
+          "value_en": "Narrow",
+          "value_fa": "باریک",
+          "sort_order": 1
+        },
+        {
+          "code": "standard",
+          "value_ar": "قياسي",
+          "value_en": "Standard",
+          "value_fa": "استاندارد",
+          "sort_order": 2
+        },
+        {
+          "code": "wide",
+          "value_ar": "عريض",
+          "value_en": "Wide",
+          "value_fa": "پهن",
+          "sort_order": 3
+        },
+        {
+          "code": "extra_wide",
+          "value_ar": "عريض جداً",
+          "value_en": "Extra Wide",
+          "value_fa": "خیلی پهن",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "group_code": "boot-specs",
+      "code": "boot_season",
+      "name_ar": "الموسم",
+      "name_en": "Season",
+      "name_fa": "فصل",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiSun",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "spring",
+          "value_ar": "ربيع",
+          "value_en": "Spring",
+          "value_fa": "بهار",
+          "sort_order": 1
+        },
+        {
+          "code": "summer",
+          "value_ar": "صيف",
+          "value_en": "Summer",
+          "value_fa": "تابستان",
+          "sort_order": 2
+        },
+        {
+          "code": "autumn",
+          "value_ar": "خريف",
+          "value_en": "Autumn",
+          "value_fa": "پاییز",
+          "sort_order": 3
+        },
+        {
+          "code": "winter",
+          "value_ar": "شتاء",
+          "value_en": "Winter",
+          "value_fa": "زمستان",
+          "sort_order": 4
+        },
+        {
+          "code": "all_season",
+          "value_ar": "جميع الفصول",
+          "value_en": "All Season",
+          "value_fa": "همه فصول",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "group_code": "shoe-features",
+      "code": "shoe_waterproof",
+      "name_ar": "مقاوم للماء",
+      "name_en": "Waterproof",
+      "name_fa": "ضد آب",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiUmbrella",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1
+    },
+    {
+      "group_code": "shoe-features",
+      "code": "non_slip",
+      "name_ar": "مضاد للانزلاق",
+      "name_en": "Non-Slip",
+      "name_fa": "ضد لغزش",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiShield",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2
+    },
+    {
+      "group_code": "shoe-features",
+      "code": "removable_insole",
+      "name_ar": "نعل داخلي قابل للإزالة",
+      "name_en": "Removable Insole",
+      "name_fa": "کفی قابل جدا شدن",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiTool",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3
+    }
+  ]
+}

@@ -1,0 +1,689 @@
+{
+  "attributes": [
+    {
+      "group_code": "watch-specs",
+      "code": "watch_movement_type",
+      "name_ar": "نوع الحركة",
+      "name_en": "Movement Type",
+      "name_fa": "نوع موتور",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiClock",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "quartz",
+          "value_ar": "كوارتز",
+          "value_en": "Quartz",
+          "value_fa": "کوارتز",
+          "sort_order": 1
+        },
+        {
+          "code": "automatic",
+          "value_ar": "أوتوماتيك",
+          "value_en": "Automatic",
+          "value_fa": "اتوماتیک",
+          "sort_order": 2
+        },
+        {
+          "code": "mechanical",
+          "value_ar": "ميكانيكي",
+          "value_en": "Mechanical",
+          "value_fa": "مکانیکی",
+          "sort_order": 3
+        },
+        {
+          "code": "solar",
+          "value_ar": "شمسي",
+          "value_en": "Solar",
+          "value_fa": "خورشیدی",
+          "sort_order": 4
+        },
+        {
+          "code": "kinetic",
+          "value_ar": "حركي",
+          "value_en": "Kinetic",
+          "value_fa": "جنبشی",
+          "sort_order": 5
+        },
+        {
+          "code": "smart",
+          "value_ar": "ذكي",
+          "value_en": "Smart",
+          "value_fa": "هوشمند",
+          "sort_order": 6
+        },
+        {
+          "code": "digital",
+          "value_ar": "رقمي",
+          "value_en": "Digital",
+          "value_fa": "دیجیتال",
+          "sort_order": 7
+        }
+      ]
+    },
+    {
+      "group_code": "watch-specs",
+      "code": "case_material",
+      "name_ar": "مادة الهيكل",
+      "name_en": "Case Material",
+      "name_fa": "جنس بدنه",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiMetalDisc",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "stainless_steel",
+          "value_ar": "ستانلس ستيل",
+          "value_en": "Stainless Steel",
+          "value_fa": "استیل",
+          "sort_order": 1
+        },
+        {
+          "code": "titanium",
+          "value_ar": "تيتانيوم",
+          "value_en": "Titanium",
+          "value_fa": "تیتانیوم",
+          "sort_order": 2
+        },
+        {
+          "code": "ceramic",
+          "value_ar": "سيراميك",
+          "value_en": "Ceramic",
+          "value_fa": "سرامیک",
+          "sort_order": 3
+        },
+        {
+          "code": "gold",
+          "value_ar": "ذهب",
+          "value_en": "Gold",
+          "value_fa": "طلا",
+          "sort_order": 4
+        },
+        {
+          "code": "rose_gold",
+          "value_ar": "ذهب وردي",
+          "value_en": "Rose Gold",
+          "value_fa": "رز گلد",
+          "sort_order": 5
+        },
+        {
+          "code": "silver",
+          "value_ar": "فضة",
+          "value_en": "Silver",
+          "value_fa": "نقره",
+          "sort_order": 6
+        },
+        {
+          "code": "carbon_fiber",
+          "value_ar": "كربون",
+          "value_en": "Carbon Fiber",
+          "value_fa": "فیبر کربن",
+          "sort_order": 7
+        },
+        {
+          "code": "resin",
+          "value_ar": "راتنج",
+          "value_en": "Resin",
+          "value_fa": "رزین",
+          "sort_order": 8
+        },
+        {
+          "code": "plastic",
+          "value_ar": "بلاستيك",
+          "value_en": "Plastic",
+          "value_fa": "پلاستیک",
+          "sort_order": 9
+        },
+        {
+          "code": "brass",
+          "value_ar": "نحاس",
+          "value_en": "Brass",
+          "value_fa": "برنج",
+          "sort_order": 10
+        },
+        {
+          "code": "aluminum",
+          "value_ar": "ألمنيوم",
+          "value_en": "Aluminum",
+          "value_fa": "آلومینیوم",
+          "sort_order": 11
+        }
+      ]
+    },
+    {
+      "group_code": "watch-specs",
+      "code": "strap_material",
+      "name_ar": "مادة السوار",
+      "name_en": "Strap Material",
+      "name_fa": "جنس بند",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiLeatherBoot",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "leather",
+          "value_ar": "جلد",
+          "value_en": "Leather",
+          "value_fa": "چرم",
+          "sort_order": 1
+        },
+        {
+          "code": "stainless_steel",
+          "value_ar": "ستانلس ستيل",
+          "value_en": "Stainless Steel",
+          "value_fa": "استیل",
+          "sort_order": 2
+        },
+        {
+          "code": "silicone",
+          "value_ar": "سيليكون",
+          "value_en": "Silicone",
+          "value_fa": "سیلیکون",
+          "sort_order": 3
+        },
+        {
+          "code": "rubber",
+          "value_ar": "مطاط",
+          "value_en": "Rubber",
+          "value_fa": "لاستیک",
+          "sort_order": 4
+        },
+        {
+          "code": "textile",
+          "value_ar": "نسيج",
+          "value_en": "Textile",
+          "value_fa": "پارچه",
+          "sort_order": 5
+        },
+        {
+          "code": "nato",
+          "value_ar": "ناتو",
+          "value_en": "NATO",
+          "value_fa": "ناتو",
+          "sort_order": 6
+        },
+        {
+          "code": "mesh",
+          "value_ar": "شبكي",
+          "value_en": "Mesh",
+          "value_fa": "مشبک",
+          "sort_order": 7
+        },
+        {
+          "code": "titanium",
+          "value_ar": "تيتانيوم",
+          "value_en": "Titanium",
+          "value_fa": "تیتانیوم",
+          "sort_order": 8
+        },
+        {
+          "code": "ceramic",
+          "value_ar": "سيراميك",
+          "value_en": "Ceramic",
+          "value_fa": "سرامیک",
+          "sort_order": 9
+        },
+        {
+          "code": "velcro",
+          "value_ar": "فيلكرو",
+          "value_en": "Velcro",
+          "value_fa": "ولکرو",
+          "sort_order": 10
+        },
+        {
+          "code": "resin",
+          "value_ar": "راتنج",
+          "value_en": "Resin",
+          "value_fa": "رزین",
+          "sort_order": 11
+        }
+      ]
+    },
+    {
+      "group_code": "watch-specs",
+      "code": "watch_case_diameter",
+      "name_ar": "قطر الهيكل (مم)",
+      "name_en": "Case Diameter (mm)",
+      "name_fa": "قطر بدنه (میلی‌متر)",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiRuler",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 4,
+      "options": [
+        {
+          "code": "under_28",
+          "value_ar": "28> مم",
+          "value_en": "Under 28 mm",
+          "value_fa": "زیر 28",
+          "sort_order": 1
+        },
+        {
+          "code": "28_32",
+          "value_ar": "28-32 مم",
+          "value_en": "28-32 mm",
+          "value_fa": "28-32",
+          "sort_order": 2
+        },
+        {
+          "code": "32_36",
+          "value_ar": "32-36 مم",
+          "value_en": "32-36 mm",
+          "value_fa": "32-36",
+          "sort_order": 3
+        },
+        {
+          "code": "36_40",
+          "value_ar": "36-40 مم",
+          "value_en": "36-40 mm",
+          "value_fa": "36-40",
+          "sort_order": 4
+        },
+        {
+          "code": "40_44",
+          "value_ar": "40-44 مم",
+          "value_en": "40-44 mm",
+          "value_fa": "40-44",
+          "sort_order": 5
+        },
+        {
+          "code": "44_48",
+          "value_ar": "44-48 مم",
+          "value_en": "44-48 mm",
+          "value_fa": "44-48",
+          "sort_order": 6
+        },
+        {
+          "code": "48_52",
+          "value_ar": "48-52 مم",
+          "value_en": "48-52 mm",
+          "value_fa": "48-52",
+          "sort_order": 7
+        },
+        {
+          "code": "over_52",
+          "value_ar": "52< مم",
+          "value_en": "Over 52 mm",
+          "value_fa": "بالای 52",
+          "sort_order": 8
+        }
+      ]
+    },
+    {
+      "group_code": "watch-features",
+      "code": "watch_water_resistance",
+      "name_ar": "مقاومة الماء",
+      "name_en": "Water Resistance",
+      "name_fa": "مقاومت در برابر آب",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiWaterDrop",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "splash",
+          "value_ar": "رذاذ",
+          "value_en": "Splash Resistant",
+          "value_fa": "مقاوم در برابر پاشش",
+          "sort_order": 1
+        },
+        {
+          "code": "3atm",
+          "value_ar": "3 ATM",
+          "value_en": "3 ATM",
+          "value_fa": "3 ATM",
+          "sort_order": 2
+        },
+        {
+          "code": "5atm",
+          "value_ar": "5 ATM",
+          "value_en": "5 ATM",
+          "value_fa": "5 ATM",
+          "sort_order": 3
+        },
+        {
+          "code": "10atm",
+          "value_ar": "10 ATM",
+          "value_en": "10 ATM",
+          "value_fa": "10 ATM",
+          "sort_order": 4
+        },
+        {
+          "code": "20atm",
+          "value_ar": "20 ATM",
+          "value_en": "20 ATM",
+          "value_fa": "20 ATM",
+          "sort_order": 5
+        },
+        {
+          "code": "30atm",
+          "value_ar": "30 ATM",
+          "value_en": "30 ATM",
+          "value_fa": "30 ATM",
+          "sort_order": 6
+        },
+        {
+          "code": "diver_200m",
+          "value_ar": "غطس 200م",
+          "value_en": "Diver 200m",
+          "value_fa": "غواصی 200م",
+          "sort_order": 7
+        },
+        {
+          "code": "diver_300m",
+          "value_ar": "غطس 300م",
+          "value_en": "Diver 300m",
+          "value_fa": "غواصی 300م",
+          "sort_order": 8
+        }
+      ]
+    },
+    {
+      "group_code": "watch-specs",
+      "code": "dial_color",
+      "name_ar": "لون الميناء",
+      "name_en": "Dial Color",
+      "name_fa": "رنگ صفحه",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "FiDroplet",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 5,
+      "options": [
+        {
+          "code": "black",
+          "value_ar": "أسود",
+          "value_en": "Black",
+          "value_fa": "مشکی",
+          "sort_order": 1
+        },
+        {
+          "code": "white",
+          "value_ar": "أبيض",
+          "value_en": "White",
+          "value_fa": "سفید",
+          "sort_order": 2
+        },
+        {
+          "code": "silver",
+          "value_ar": "فضي",
+          "value_en": "Silver",
+          "value_fa": "نقره‌ای",
+          "sort_order": 3
+        },
+        {
+          "code": "blue",
+          "value_ar": "أزرق",
+          "value_en": "Blue",
+          "value_fa": "آبی",
+          "sort_order": 4
+        },
+        {
+          "code": "green",
+          "value_ar": "أخضر",
+          "value_en": "Green",
+          "value_fa": "سبز",
+          "sort_order": 5
+        },
+        {
+          "code": "gold",
+          "value_ar": "ذهبي",
+          "value_en": "Gold",
+          "value_fa": "طلایی",
+          "sort_order": 6
+        },
+        {
+          "code": "champagne",
+          "value_ar": "شمبانيا",
+          "value_en": "Champagne",
+          "value_fa": "شامپاین",
+          "sort_order": 7
+        },
+        {
+          "code": "skeleton",
+          "value_ar": "هيكلي",
+          "value_en": "Skeleton",
+          "value_fa": "اسکلت",
+          "sort_order": 8
+        },
+        {
+          "code": "mother_of_pearl",
+          "value_ar": "صدف",
+          "value_en": "Mother of Pearl",
+          "value_fa": "مروارید",
+          "sort_order": 9
+        }
+      ]
+    },
+    {
+      "group_code": "watch-specs",
+      "code": "case_shape",
+      "name_ar": "شكل الهيكل",
+      "name_en": "Case Shape",
+      "name_fa": "شکل بدنه",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiAbstract",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 6,
+      "options": [
+        {
+          "code": "round",
+          "value_ar": "دائري",
+          "value_en": "Round",
+          "value_fa": "گرد",
+          "sort_order": 1
+        },
+        {
+          "code": "square",
+          "value_ar": "مربع",
+          "value_en": "Square",
+          "value_fa": "مربع",
+          "sort_order": 2
+        },
+        {
+          "code": "rectangular",
+          "value_ar": "مستطيل",
+          "value_en": "Rectangular",
+          "value_fa": "مستطیل",
+          "sort_order": 3
+        },
+        {
+          "code": "tonneau",
+          "value_ar": "برميلي",
+          "value_en": "Tonneau",
+          "value_fa": "تونی",
+          "sort_order": 4
+        },
+        {
+          "code": "cushion",
+          "value_ar": "وسادي",
+          "value_en": "Cushion",
+          "value_fa": "کوسنی",
+          "sort_order": 5
+        },
+        {
+          "code": "oval",
+          "value_ar": "بيضاوي",
+          "value_en": "Oval",
+          "value_fa": "بیضی",
+          "sort_order": 6
+        },
+        {
+          "code": "asymmetric",
+          "value_ar": "غير متماثل",
+          "value_en": "Asymmetric",
+          "value_fa": "نامتقارن",
+          "sort_order": 7
+        }
+      ]
+    },
+    {
+      "group_code": "watch-specs",
+      "code": "watch_style",
+      "name_ar": "ستايل الساعة",
+      "name_en": "Watch Style",
+      "name_fa": "استایل ساعت",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiStarDress",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 7,
+      "options": [
+        {
+          "code": "dress",
+          "value_ar": "رسمي",
+          "value_en": "Dress",
+          "value_fa": "رسمی",
+          "sort_order": 1
+        },
+        {
+          "code": "casual",
+          "value_ar": "كاجوال",
+          "value_en": "Casual",
+          "value_fa": "کژوال",
+          "sort_order": 2
+        },
+        {
+          "code": "sports",
+          "value_ar": "رياضي",
+          "value_en": "Sports",
+          "value_fa": "ورزشی",
+          "sort_order": 3
+        },
+        {
+          "code": "diver",
+          "value_ar": "غوص",
+          "value_en": "Diver",
+          "value_fa": "غواصی",
+          "sort_order": 4
+        },
+        {
+          "code": "pilot",
+          "value_ar": "طيار",
+          "value_en": "Pilot",
+          "value_fa": "خلبانی",
+          "sort_order": 5
+        },
+        {
+          "code": "field",
+          "value_ar": "ميداني",
+          "value_en": "Field",
+          "value_fa": "میدانی",
+          "sort_order": 6
+        },
+        {
+          "code": "chronograph",
+          "value_ar": "كرونوغراف",
+          "value_en": "Chronograph",
+          "value_fa": "کرونوگراف",
+          "sort_order": 7
+        },
+        {
+          "code": "luxury",
+          "value_ar": "فاخر",
+          "value_en": "Luxury",
+          "value_fa": "لوکس",
+          "sort_order": 8
+        },
+        {
+          "code": "smart",
+          "value_ar": "ذكي",
+          "value_en": "Smart",
+          "value_fa": "هوشمند",
+          "sort_order": 9
+        },
+        {
+          "code": "minimalist",
+          "value_ar": "بسيط",
+          "value_en": "Minimalist",
+          "value_fa": "مینیمال",
+          "sort_order": 10
+        },
+        {
+          "code": "vintage",
+          "value_ar": "كلاسيك",
+          "value_en": "Vintage",
+          "value_fa": "وینتیج",
+          "sort_order": 11
+        },
+        {
+          "code": "military",
+          "value_ar": "عسكري",
+          "value_en": "Military",
+          "value_fa": "نظامی",
+          "sort_order": 12
+        }
+      ]
+    },
+    {
+      "group_code": "watch-specs",
+      "code": "watch_gender_target",
+      "name_ar": "الجنس المستهدف",
+      "name_en": "Gender Target",
+      "name_fa": "جنسیت هدف",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "FiUsers",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 8,
+      "options": [
+        {
+          "code": "male",
+          "value_ar": "رجالي",
+          "value_en": "Male",
+          "value_fa": "مردانه",
+          "sort_order": 1
+        },
+        {
+          "code": "female",
+          "value_ar": "نسائي",
+          "value_en": "Female",
+          "value_fa": "زنانه",
+          "sort_order": 2
+        },
+        {
+          "code": "unisex",
+          "value_ar": "للجنسين",
+          "value_en": "Unisex",
+          "value_fa": "مشترک",
+          "sort_order": 3
+        }
+      ]
+    }
+  ]
+}

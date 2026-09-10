@@ -1,0 +1,405 @@
+{
+  "categories": [
+    {
+      "name_ar": "فساتين",
+      "name_en": "Dresses",
+      "name_fa": "لباس",
+      "icon": "GiDress",
+      "sort_order": 1,
+      "product_type_code": "dresses",
+      "children": [
+        { "name_ar": "فساتين سهرة", "name_en": "Evening Dresses", "name_fa": "لباس مجلسی", "icon": "GiSparkles", "sort_order": 1 },
+        { "name_ar": "فساتين كاجوال", "name_en": "Casual Dresses", "name_fa": "لباس روزمره", "icon": "GiTShirt", "sort_order": 2 },
+        { "name_ar": "فساتين زفاف", "name_en": "Wedding Dresses", "name_fa": "لباس عروس", "icon": "GiDress", "sort_order": 3 },
+        { "name_ar": "فساتين محتشمة", "name_en": "Modest Dresses", "name_fa": "لباس محجبه", "icon": "GiHeadbandKnot", "sort_order": 4 }
+      ]
+    },
+    {
+      "name_ar": "عباءات",
+      "name_en": "Abayas",
+      "name_fa": "عبای",
+      "icon": "FaPersonHalfDress",
+      "sort_order": 2,
+      "product_type_code": "abayas",
+      "children": [
+        { "name_ar": "عباءات سوداء", "name_en": "Black Abayas", "name_fa": "عبای مشکی", "icon": "GiLargeDress", "sort_order": 1 },
+        { "name_ar": "عباءات ملونة", "name_en": "Colored Abayas", "name_fa": "عبای رنگی", "icon": "GiLargeDress", "sort_order": 2 },
+        { "name_ar": "عباءات مشجرة", "name_en": "Embroidered Abayas", "name_fa": "عبای گلدوزی", "icon": "BsFillThreadsFill", "sort_order": 3 },
+        { "name_ar": "عباءات فاخرة", "name_en": "Luxury Abayas", "name_fa": "عبای لوکس", "icon": "GiCrown", "sort_order": 4 }
+      ]
+    },
+    {
+      "name_ar": "القمصان والبلوزات",
+      "name_en": "Tops & Blouses",
+      "name_fa": "تاپ و بلوز",
+      "icon": "GiTShirt",
+      "sort_order": 3,
+      "product_type_code": "tops",
+      "children": [
+        { "name_ar": "بلوزات", "name_en": "Blouses", "name_fa": "بلوز", "icon": "GiTShirt", "sort_order": 1 },
+        { "name_ar": "تيشيرتات", "name_en": "T-Shirts", "name_fa": "تیشرت", "icon": "GiTShirt", "sort_order": 2 },
+        { "name_ar": "قمصان رسمية", "name_en": "Formal Shirts", "name_fa": "پیراهن رسمی", "icon": "GiShirt", "sort_order": 3 },
+        { "name_ar": "بلايز محتشمة", "name_en": "Modest Tops", "name_fa": "تاپ محجبه", "icon": "GiTShirt", "sort_order": 4 },
+        { "name_ar": "بولوس", "name_en": "Polos", "name_fa": "پولو", "icon": "GiTShirt", "sort_order": 5 },
+        { "name_ar": "سويتشرتات", "name_en": "Sweatshirts", "name_fa": "سویشرت", "icon": "GiTShirt", "sort_order": 6 },
+        { "name_ar": "كنزات وبلوفرات", "name_en": "Sweaters & Knitwear", "name_fa": "ژاکت و بافتنی", "icon": "GiWool", "sort_order": 7 },
+        { "name_ar": "فيز وسبت", "name_en": "Vests & Tank Tops", "name_fa": "جلیقه و تانک تاپ", "icon": "GiTShirt", "sort_order": 8 },
+        { "name_ar": "تونيكات", "name_en": "Tunics", "name_fa": "تونیک", "icon": "GiTShirt", "sort_order": 9 }
+      ]
+    },
+    {
+      "name_ar": "البناطيل",
+      "name_en": "Pants & Bottoms",
+      "name_fa": "شلوار",
+      "icon": "GiTrousers",
+      "sort_order": 4,
+      "product_type_code": "bottoms",
+      "children": [
+        { "name_ar": "بناطيل", "name_en": "Pants", "name_fa": "شلوار", "icon": "GiTrousers", "sort_order": 1 },
+        { "name_ar": "جينز", "name_en": "Jeans", "name_fa": "جینز", "icon": "GiArmoredPants", "sort_order": 2 },
+        { "name_ar": "شورتات", "name_en": "Shorts", "name_fa": "شورت", "icon": "GiShorts", "sort_order": 3 },
+        { "name_ar": "ليقنز", "name_en": "Leggings", "name_fa": "لگینگ", "icon": "GiArmoredPants", "sort_order": 4 }
+      ]
+    },
+    {
+      "name_ar": "المعاطف والجاكيتات",
+      "name_en": "Outerwear",
+      "name_fa": "پالتو",
+      "icon": "GiWinterGloves",
+      "sort_order": 5,
+      "product_type_code": "outerwear",
+      "children": [
+        { "name_ar": "جاكيتات", "name_en": "Jackets", "name_fa": "ژاکت", "icon": "GiSleevelessJacket", "sort_order": 1 },
+        { "name_ar": "معاطف", "name_en": "Coats", "name_fa": "پالتو", "icon": "GiWinterGloves", "sort_order": 2 },
+        { "name_ar": "بلايزر", "name_en": "Blazers", "name_fa": "بلیزر", "icon": "FaBlackTie", "sort_order": 3 },
+        { "name_ar": "سترات", "name_en": "Cardigans", "name_fa": "کاردیگان", "icon": "GiWool", "sort_order": 4 },
+        { "name_ar": "جيليهات", "name_en": "Gilets", "name_fa": "جلیقه", "icon": "GiSleevelessJacket", "sort_order": 5 },
+        { "name_ar": "جاكيتات باف", "name_en": "Puffer Jackets", "name_fa": "پافر", "icon": "GiWinterGloves", "sort_order": 6 }
+      ]
+    },
+    {
+      "name_ar": "بدل وملابس رسمية",
+      "name_en": "Suits & Formalwear",
+      "name_fa": "کت و شلوار رسمی",
+      "icon": "GiTie",
+      "sort_order": 6,
+      "product_type_code": "suits_formalwear",
+      "children": [
+        { "name_ar": "بدل", "name_en": "Suits", "name_fa": "کت و شلوار", "icon": "GiTie", "sort_order": 1 },
+        { "name_ar": "توكسيدو", "name_en": "Tuxedos", "name_fa": "تاکسیدو", "icon": "GiTie", "sort_order": 2 },
+        { "name_ar": "صدريات", "name_en": "Waistcoats", "name_fa": "جلیقه", "icon": "GiTShirt", "sort_order": 3 },
+        { "name_ar": "جاكيتات رسمية", "name_en": "Formal Jackets", "name_fa": "ژاکت رسمی", "icon": "GiSleevelessJacket", "sort_order": 4 }
+      ]
+    },
+    {
+      "name_ar": "الملابس الرياضية",
+      "name_en": "Activewear",
+      "name_fa": "لباس ورزشی",
+      "icon": "FaTshirt",
+      "sort_order": 7,
+      "product_type_code": "activewear",
+      "children": [
+        { "name_ar": "طقوم رياضي", "name_en": "Track Suits", "name_fa": "لباس ورزشی", "icon": "GiBasketballJersey", "sort_order": 1 },
+        { "name_ar": "تيشيرتات رياضية", "name_en": "Sports Tops", "name_fa": "تیشرت ورزشی", "icon": "GiBasketballJersey", "sort_order": 2 }
+      ]
+    },
+    {
+      "name_ar": "ملابس السباحة",
+      "name_en": "Swimwear",
+      "name_fa": "لباس شنا",
+      "icon": "BiSwim",
+      "sort_order": 8,
+      "product_type_code": "swimwear",
+      "children": [
+        { "name_ar": "بوركيني", "name_en": "Burkini", "name_fa": "بورکینی", "icon": "BiSwim", "sort_order": 1 },
+        { "name_ar": "مايوه", "name_en": "Swimsuits", "name_fa": "مایو", "icon": "BiSwim", "sort_order": 2 }
+      ]
+    },
+    {
+      "name_ar": "الملابس الداخلية وملابس النوم",
+      "name_en": "Lingerie & Sleepwear",
+      "name_fa": "لباس زیر",
+      "icon": "GiNightSleep",
+      "sort_order": 9,
+      "product_type_code": "lingerie_sleepwear",
+      "children": [
+        { "name_ar": "ملابس نوم", "name_en": "Sleepwear", "name_fa": "لباس خواب", "icon": "GiNightSleep", "sort_order": 1 },
+        { "name_ar": "ملابس داخلية", "name_en": "Lingerie", "name_fa": "لباس زیر", "icon": "GiUnderwear", "sort_order": 2 },
+        { "name_ar": "بيجامات", "name_en": "Pajamas", "name_fa": "پیژاما", "icon": "BiSleepy", "sort_order": 3 },
+        { "name_ar": "ملابس استرخاء", "name_en": "Loungewear", "name_fa": "لباس راحتی", "icon": "GiNightSleep", "sort_order": 4 }
+      ]
+    },
+    {
+      "name_ar": "الأوشحة والحجاب",
+      "name_en": "Scarves & Hijabs",
+      "name_fa": "شال و حجاب",
+      "icon": "GiHeadbandKnot",
+      "sort_order": 10,
+      "product_type_code": "scarves_hijabs",
+      "children": [
+        { "name_ar": "حجاب", "name_en": "Hijabs", "name_fa": "حجاب", "icon": "GiHeadbandKnot", "sort_order": 1 },
+        { "name_ar": "شالات", "name_en": "Shawls", "name_fa": "شال", "icon": "BsTextWrap", "sort_order": 2 }
+      ]
+    },
+    {
+      "name_ar": "تنانير",
+      "name_en": "Skirts",
+      "name_fa": "دامن",
+      "icon": "GiSkirt",
+      "sort_order": 11,
+      "product_type_code": "skirts",
+      "children": [
+        { "name_ar": "تنانير قصيرة", "name_en": "Mini Skirts", "name_fa": "دامن کوتاه", "icon": "GiSkirt", "sort_order": 1 },
+        { "name_ar": "تنانير متوسطة", "name_en": "Midi Skirts", "name_fa": "دامن میدی", "icon": "GiSkirt", "sort_order": 2 },
+        { "name_ar": "تنانير طويلة", "name_en": "Maxi Skirts", "name_fa": "دامن بلند", "icon": "GiSkirt", "sort_order": 3 },
+        { "name_ar": "تنانير ضيقة", "name_en": "Pencil Skirts", "name_fa": "دامن مدادی", "icon": "GiSkirt", "sort_order": 4 },
+        { "name_ar": "تنانير واسعة", "name_en": "A-Line Skirts", "name_fa": "دامن کلوش", "icon": "GiSkirt", "sort_order": 5 }
+      ]
+    },
+    {
+      "name_ar": "أحذية رياضية",
+      "name_en": "Athletic & Sneakers",
+      "name_fa": "کفش ورزشی",
+      "icon": "GiRunningShoe",
+      "sort_order": 12,
+      "product_type_code": "athletic_sneakers",
+      "children": [
+        { "name_ar": "أحذية رياضية", "name_en": "Sneakers", "name_fa": "کفش ورزشی", "icon": "GiRunningShoe", "sort_order": 1 },
+        { "name_ar": "ترينرز", "name_en": "Trainers", "name_fa": "ترینر", "icon": "GiRunningShoe", "sort_order": 2 }
+      ]
+    },
+    {
+      "name_ar": "أحذية طويلة",
+      "name_en": "Boots",
+      "name_fa": "بوت",
+      "icon": "GiBoots",
+      "sort_order": 13,
+      "product_type_code": "boots",
+      "children": [
+        { "name_ar": "بوت", "name_en": "Boots", "name_fa": "بوت", "icon": "GiBoots", "sort_order": 1 }
+      ]
+    },
+    {
+      "name_ar": "كعوب وأحذية رسمية",
+      "name_en": "Heels & Dress Shoes",
+      "name_fa": "پاشنه بلند و کفش رسمی",
+      "icon": "GiHighHeel",
+      "sort_order": 14,
+      "product_type_code": "heels_dress_shoes",
+      "children": [
+        { "name_ar": "كعب عالي", "name_en": "High Heels", "name_fa": "پاشنه بلند", "icon": "GiHighHeel", "sort_order": 1 },
+        { "name_ar": "لوفير", "name_en": "Loafers", "name_fa": "لوفیر", "icon": "GiHighHeel", "sort_order": 2 },
+        { "name_ar": "موكل", "name_en": "Mules", "name_fa": "مول", "icon": "GiHighHeel", "sort_order": 3 },
+        { "name_ar": "بمب", "name_en": "Pumps", "name_fa": "پامپ", "icon": "GiHighHeel", "sort_order": 4 },
+        { "name_ar": "أحذية رسمية", "name_en": "Dress Shoes", "name_fa": "کفش رسمی", "icon": "GiHighHeel", "sort_order": 5 }
+      ]
+    },
+    {
+      "name_ar": "صنادل وشباشب",
+      "name_en": "Sandals & Slippers",
+      "name_fa": "صندل و دمپایی",
+      "icon": "GiSandal",
+      "sort_order": 15,
+      "product_type_code": "sandals_slippers",
+      "children": [
+        { "name_ar": "صنادل", "name_en": "Sandals", "name_fa": "صندل", "icon": "GiSandal", "sort_order": 1 },
+        { "name_ar": "اسبادريل", "name_en": "Espadrilles", "name_fa": "اسپادریل", "icon": "GiSandal", "sort_order": 2 },
+        { "name_ar": "كلوغ", "name_en": "Clogs", "name_fa": "کلوش", "icon": "GiSandal", "sort_order": 3 },
+        { "name_ar": "شباشب", "name_en": "Slippers", "name_fa": "دمپایی", "icon": "GiSandal", "sort_order": 4 }
+      ]
+    },
+    {
+      "name_ar": "الحقائب",
+      "name_en": "Bags & Handbags",
+      "name_fa": "کیف و کوله",
+      "icon": "GiHandBag",
+      "sort_order": 16,
+      "product_type_code": "bags",
+      "children": [
+        { "name_ar": "حقائب يد", "name_en": "Handbags", "name_fa": "کیف دستی", "icon": "GiHandBag", "sort_order": 1 },
+        { "name_ar": "حقائب ظهر", "name_en": "Backpacks", "name_fa": "کوله پشتی", "icon": "GiBackpack", "sort_order": 2 },
+        { "name_ar": "حقائب كتف", "name_en": "Shoulder Bags", "name_fa": "کیف دوشی", "icon": "GiShoulderBag", "sort_order": 3 },
+        { "name_ar": "حقائب صغيرة", "name_en": "Clutches", "name_fa": "کلاچ", "icon": "AiFillWallet", "sort_order": 4 }
+      ]
+    },
+    {
+      "name_ar": "أحزمة وجلود",
+      "name_en": "Belts & Leather Goods",
+      "name_fa": "کمربند و چرم",
+      "icon": "GiBelt",
+      "sort_order": 17,
+      "product_type_code": "belts_leather_goods",
+      "children": [
+        { "name_ar": "أحزمة", "name_en": "Belts", "name_fa": "کمربند", "icon": "GiBelt", "sort_order": 1 },
+        { "name_ar": "محافظ نقود", "name_en": "Wallets", "name_fa": "کیف پول", "icon": "AiFillWallet", "sort_order": 2 },
+        { "name_ar": "سلاسل مفاتيح", "name_en": "Keychains", "name_fa": "جاکلیدی", "icon": "GiKeyring", "sort_order": 3 }
+      ]
+    },
+    {
+      "name_ar": "إكسسوارات الرأس",
+      "name_en": "Head Accessories",
+      "name_fa": "اکسسوری سر",
+      "icon": "GiSunglasses",
+      "sort_order": 18,
+      "product_type_code": "head_accessories",
+      "children": [
+        { "name_ar": "قبعات", "name_en": "Hats", "name_fa": "کلاه", "icon": "GiWinterHat", "sort_order": 1 },
+        { "name_ar": "إكسسوارات شعر", "name_en": "Hair Accessories", "name_fa": "اکسسوری مو", "icon": "GiHeadbandKnot", "sort_order": 2 },
+        { "name_ar": "بروشات ودبابيس", "name_en": "Pins & Brooches", "name_fa": "سنجاق و بروش", "icon": "GiGemPendant", "sort_order": 3 }
+      ]
+    },
+    {
+      "name_ar": "نظارات",
+      "name_en": "Sunglasses & Eyewear",
+      "name_fa": "عینک",
+      "icon": "GiSunglasses",
+      "sort_order": 19,
+      "product_type_code": "eyewear",
+      "children": [
+        { "name_ar": "نظارات شمسية", "name_en": "Sunglasses", "name_fa": "عینک آفتابی", "icon": "GiSunglasses", "sort_order": 1 },
+        { "name_ar": "نظارات طبية", "name_en": "Prescription Glasses", "name_fa": "عینک طبی", "icon": "GiSunglasses", "sort_order": 2 },
+        { "name_ar": "نظارات رياضية", "name_en": "Sports Eyewear", "name_fa": "عینک ورزشی", "icon": "GiSunglasses", "sort_order": 3 }
+      ]
+    },
+    {
+      "name_ar": "إكسسوارات قماشية",
+      "name_en": "Textile Accessories",
+      "name_fa": "اکسسوری پارچه‌ای",
+      "icon": "FaBlackTie",
+      "sort_order": 20,
+      "product_type_code": "textile_accessories",
+      "children": [
+        { "name_ar": "أوشحة", "name_en": "Scarves", "name_fa": "شال", "icon": "GiHeadbandKnot", "sort_order": 1 },
+        { "name_ar": "قفازات", "name_en": "Gloves", "name_fa": "دستکش", "icon": "GiWinterGloves", "sort_order": 2 },
+        { "name_ar": "ربطات عنق", "name_en": "Ties", "name_fa": "کراوات", "icon": "FaBlackTie", "sort_order": 3 },
+        { "name_ar": "بندانا", "name_en": "Bandanas", "name_fa": "بندانا", "icon": "GiHeadbandKnot", "sort_order": 4 },
+        { "name_ar": "عصائب رأس", "name_en": "Headbands", "name_fa": "هدبند", "icon": "GiHeadbandKnot", "sort_order": 5 }
+      ]
+    },
+    {
+      "name_ar": "ساعات",
+      "name_en": "Watches",
+      "name_fa": "ساعت",
+      "icon": "GiPocketWatch",
+      "sort_order": 21,
+      "product_type_code": "watches",
+      "children": [
+        { "name_ar": "ساعات تناظرية", "name_en": "Analog Watches", "name_fa": "ساعت عقربه‌ای", "icon": "GiPocketWatch", "sort_order": 1 },
+        { "name_ar": "ساعات رقمية", "name_en": "Digital Watches", "name_fa": "ساعت دیجیتال", "icon": "GiDigitalWatch", "sort_order": 2 },
+        { "name_ar": "ساعات ذكية", "name_en": "Smart Watches", "name_fa": "ساعت هوشمند", "icon": "GiSmartphone", "sort_order": 3 },
+        { "name_ar": "ساعات فاخرة", "name_en": "Luxury Watches", "name_fa": "ساعت لوکس", "icon": "GiPocketWatch", "sort_order": 4 }
+      ]
+    },
+    {
+      "name_ar": "إكسسوارات متنوعة",
+      "name_en": "Specialty Accessories",
+      "name_fa": "اکسسوری ویژه",
+      "icon": "GiWatch",
+      "sort_order": 22,
+      "product_type_code": "specialty_accessories",
+      "children": [
+        { "name_ar": "مظلات", "name_en": "Umbrellas", "name_fa": "چتر", "icon": "GiUmbrella", "sort_order": 1 },
+        { "name_ar": "أغطية هاتف", "name_en": "Phone Cases", "name_fa": "قاب موبایل", "icon": "GiSmartphone", "sort_order": 2 }
+      ]
+    },
+    {
+      "name_ar": "قلادات",
+      "name_en": "Necklaces & Pendants",
+      "name_fa": "گردنبند",
+      "icon": "GiNecklaceDisplay",
+      "sort_order": 24,
+      "product_type_code": "necklaces_pendants",
+      "children": [
+        { "name_ar": "قلادات", "name_en": "Necklaces", "name_fa": "گردنبند", "icon": "GiNecklaceDisplay", "sort_order": 1 },
+        { "name_ar": "تشوكر", "name_en": "Chokers", "name_fa": "چوکر", "icon": "GiNecklaceDisplay", "sort_order": 2 }
+      ]
+    },
+    {
+      "name_ar": "أساور وخلاخل",
+      "name_en": "Bracelets & Anklets",
+      "name_fa": "دستبند و خلخال",
+      "icon": "GiGemChain",
+      "sort_order": 24,
+      "product_type_code": "bracelets_anklets",
+      "children": [
+        { "name_ar": "أساور", "name_en": "Bracelets", "name_fa": "دستبند", "icon": "GiGemChain", "sort_order": 1 },
+        { "name_ar": "خلاخل", "name_en": "Anklets", "name_fa": "خلخال", "icon": "GiGemChain", "sort_order": 2 }
+      ]
+    },
+    {
+      "name_ar": "أقراط",
+      "name_en": "Earrings",
+      "name_fa": "گوشواره",
+      "icon": "GiEarrings",
+      "sort_order": 25,
+      "product_type_code": "earrings",
+      "children": [
+        { "name_ar": "أقراط", "name_en": "Earrings", "name_fa": "گوشواره", "icon": "GiEarrings", "sort_order": 1 }
+      ]
+    },
+    {
+      "name_ar": "خواتم",
+      "name_en": "Rings",
+      "name_fa": "انگشتر",
+      "icon": "GiRing",
+      "sort_order": 26,
+      "product_type_code": "rings",
+      "children": [
+        { "name_ar": "خواتم", "name_en": "Rings", "name_fa": "انگشتر", "icon": "GiRing", "sort_order": 1 }
+      ]
+    },
+    {
+      "name_ar": "مجوهرات أخرى",
+      "name_en": "Other Jewelry",
+      "name_fa": "جواهر دیگر",
+      "icon": "GiDiamondRing",
+      "sort_order": 27,
+      "product_type_code": "other_jewelry",
+      "children": [
+        { "name_ar": "بروشات ودبابيس", "name_en": "Brooches & Pins", "name_fa": "سنجاق و بروش", "icon": "GiGemPendant", "sort_order": 1 },
+        { "name_ar": "مجوهرات الجسم", "name_en": "Body Jewelry", "name_fa": "جواهر بدن", "icon": "GiDiamondRing", "sort_order": 2 },
+        { "name_ar": "طقم مجوهرات", "name_en": "Jewelry Sets", "name_fa": "ست جواهر", "icon": "GiDiamondRing", "sort_order": 3 }
+      ]
+    },
+    {
+      "name_ar": "عطور",
+      "name_en": "Fragrance & Perfume",
+      "name_fa": "عطر",
+      "icon": "GiSpray",
+      "sort_order": 28,
+      "product_type_code": "fragrance",
+      "children": [
+        { "name_ar": "عطور", "name_en": "Perfumes", "name_fa": "عطر", "icon": "GiPerfumeBottle", "sort_order": 1 },
+        { "name_ar": "بخاخات جسم", "name_en": "Body Sprays", "name_fa": "اسپری بدن", "icon": "GiSpray", "sort_order": 2 },
+        { "name_ar": "طقم هدايا", "name_en": "Gift Sets", "name_fa": "ست هدیه", "icon": "GiPresent", "sort_order": 3 },
+        { "name_ar": "عينات", "name_en": "Sample Sets", "name_fa": "ست نمونه", "icon": "GiGlassBottle", "sort_order": 4 }
+      ]
+    },
+    {
+      "name_ar": "عناية بالجسم",
+      "name_en": "Body Care",
+      "name_fa": "مراقبت از بدن",
+      "icon": "GiCream",
+      "sort_order": 29,
+      "product_type_code": "body_care",
+      "children": [
+        { "name_ar": "لوشن ومرطبات", "name_en": "Lotions & Moisturizers", "name_fa": "لوسیون و مرطوب‌کننده", "icon": "GiCream", "sort_order": 1 },
+        { "name_ar": "غسول جسم", "name_en": "Body Washes", "name_fa": "شوینده بدن", "icon": "GiSoap", "sort_order": 2 },
+        { "name_ar": "واقي شمس", "name_en": "Sunscreens", "name_fa": "ضد آفتاب", "icon": "GiSun", "sort_order": 3 },
+        { "name_ar": "زيوت جسم", "name_en": "Body Oils", "name_fa": "روغن بدن", "icon": "GiDrop", "sort_order": 4 }
+      ]
+    },
+    {
+      "name_ar": "مستحضرات التجميل",
+      "name_en": "Beauty & Cosmetics",
+      "name_fa": "آرایشی و بهداشتی",
+      "icon": "GiLipstick",
+      "sort_order": 30,
+      "product_type_code": "beauty",
+      "children": [
+        { "name_ar": "مكياج", "name_en": "Makeup", "name_fa": "آرایش", "icon": "GiLipstick", "sort_order": 1 },
+        { "name_ar": "عناية بالبشرة", "name_en": "Skincare", "name_fa": "مراقبت از پوست", "icon": "AiOutlineSkin", "sort_order": 2 }
+      ]
+    }
+  ]
+}

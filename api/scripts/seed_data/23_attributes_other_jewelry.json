@@ -1,0 +1,510 @@
+{
+  "attributes": [
+    {
+      "group_code": "colors-pattern",
+      "code": "primary_color",
+      "name_ar": "اللون الأساسي",
+      "name_en": "Primary Color",
+      "name_fa": "رنگ اصلی",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiDroplet",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": []
+    },
+    {
+      "group_code": "metal-gem",
+      "code": "metal_type",
+      "name_ar": "نوع المعدن",
+      "name_en": "Metal Type",
+      "name_fa": "نوع فلز",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiGoldBar",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": []
+    },
+    {
+      "group_code": "metal-gem",
+      "code": "metal_purity",
+      "name_ar": "نقاء المعدن",
+      "name_en": "Metal Purity",
+      "name_fa": "خلوص فلز",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiGoldBar",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2,
+      "options": []
+    },
+    {
+      "group_code": "metal-gem",
+      "code": "gemstone_type",
+      "name_ar": "نوع الحجر الكريم",
+      "name_en": "Gemstone Type",
+      "name_fa": "نوع سنگ قیمتی",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiDiamondRing",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3,
+      "options": []
+    },
+    {
+      "group_code": "metal-gem",
+      "code": "stone_creation_method",
+      "name_ar": "طريقة تصنيع الحجر",
+      "name_en": "Stone Creation Method",
+      "name_fa": "روش ساخت سنگ",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiDiamondRing",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 4,
+      "options": []
+    },
+    {
+      "group_code": "jewelry-specs",
+      "code": "plating",
+      "name_ar": "الطلاء",
+      "name_en": "Plating",
+      "name_fa": "روکش",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiGoldBar",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": []
+    },
+    {
+      "group_code": "jewelry-specs",
+      "code": "jewelry_hypoallergenic",
+      "name_ar": "مضاد للحساسية",
+      "name_en": "Hypoallergenic",
+      "name_fa": "ضد حساسیت",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiShield",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2
+    },
+    {
+      "group_code": "jewelry-specs",
+      "code": "adjustable",
+      "name_ar": "قابل التعديل",
+      "name_en": "Adjustable",
+      "name_fa": "قابل تنظیم",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiSliders",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3
+    },
+    {
+      "group_code": "jewelry-design",
+      "code": "jewelry_style",
+      "name_ar": "ستايل المجوهرات",
+      "name_en": "Jewelry Style",
+      "name_fa": "استایل جواهر",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiDiamondRing",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": []
+    },
+    {
+      "group_code": "other-jewelry-specs",
+      "code": "body_jewelry_type",
+      "name_ar": "نوع مجوهرات الجسم",
+      "name_en": "Body Jewelry Type",
+      "name_fa": "نوع جواهر بدن",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiDiamondRing",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "barbell",
+          "value_ar": "باربل",
+          "value_en": "Barbell",
+          "value_fa": "هالتر",
+          "sort_order": 1
+        },
+        {
+          "code": "nose_piercing",
+          "value_ar": "ثقب الأنف",
+          "value_en": "Nose Piercing",
+          "value_fa": "پیرسینگ بینی",
+          "sort_order": 2
+        },
+        {
+          "code": "lip_ring",
+          "value_ar": "حلقة شفة",
+          "value_en": "Lip Ring",
+          "value_fa": "حلقه لب",
+          "sort_order": 3
+        },
+        {
+          "code": "eyebrow_piercing",
+          "value_ar": "ثقب الحاجب",
+          "value_en": "Eyebrow Piercing",
+          "value_fa": "پیرسینگ ابرو",
+          "sort_order": 4
+        },
+        {
+          "code": "ear_gauge",
+          "value_ar": "موسع أذن",
+          "value_en": "Ear Gauge",
+          "value_fa": "گِیج گوش",
+          "sort_order": 5
+        },
+        {
+          "code": "septum_ring",
+          "value_ar": "حلقة حاجز",
+          "value_en": "Septum Ring",
+          "value_fa": "حلقه سپتوم",
+          "sort_order": 6
+        },
+        {
+          "code": "tongue_piercing",
+          "value_ar": "ثقب اللسان",
+          "value_en": "Tongue Piercing",
+          "value_fa": "پیرسینگ زبان",
+          "sort_order": 7
+        },
+        {
+          "code": "nipple_ring",
+          "value_ar": "حلقة حلمة",
+          "value_en": "Nipple Ring",
+          "value_fa": "حلقه نوک",
+          "sort_order": 8
+        },
+        {
+          "code": "dermal_piercing",
+          "value_ar": "ثقب جلدي",
+          "value_en": "Dermal Piercing",
+          "value_fa": "پیرسینگ پوستی",
+          "sort_order": 9
+        },
+        {
+          "code": "industrial_piercing",
+          "value_ar": "ثقب صناعي",
+          "value_en": "Industrial Piercing",
+          "value_fa": "پیرسینگ صنعتی",
+          "sort_order": 10
+        },
+        {
+          "code": "body_chain",
+          "value_ar": "سلسلة جسم",
+          "value_en": "Body Chain",
+          "value_fa": "زنجیر بدن",
+          "sort_order": 11
+        },
+        {
+          "code": "belly_piercing",
+          "value_ar": "ثقب البطن",
+          "value_en": "Belly Piercing",
+          "value_fa": "پیرسینگ ناف",
+          "sort_order": 12
+        }
+      ]
+    },
+    {
+      "group_code": "other-jewelry-specs",
+      "code": "pin_backing_type",
+      "name_ar": "نوع ظهر الدبوس",
+      "name_en": "Pin Backing Type",
+      "name_fa": "نوع پشت سنجاق",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiDiamondRing",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "butterfly_clutch",
+          "value_ar": "مشبك فراشة",
+          "value_en": "Butterfly Clutch",
+          "value_fa": "پروانه‌ای",
+          "sort_order": 1
+        },
+        {
+          "code": "c_clasp",
+          "value_ar": "مشبك C",
+          "value_en": "C Clasp",
+          "value_fa": "قفل C",
+          "sort_order": 2
+        },
+        {
+          "code": "clip_on",
+          "value_ar": "مشبك",
+          "value_en": "Clip On",
+          "value_fa": "گیره‌ای",
+          "sort_order": 3
+        },
+        {
+          "code": "locking_pin_back",
+          "value_ar": "قفل دبوس",
+          "value_en": "Locking Pin Back",
+          "value_fa": "قفل سنجاق",
+          "sort_order": 4
+        },
+        {
+          "code": "magnetic_clasp",
+          "value_ar": "مغناطيسي",
+          "value_en": "Magnetic Clasp",
+          "value_fa": "مغناطیسی",
+          "sort_order": 5
+        },
+        {
+          "code": "safety_clasp",
+          "value_ar": "مشبك أمان",
+          "value_en": "Safety Clasp",
+          "value_fa": "قفل ایمنی",
+          "sort_order": 6
+        },
+        {
+          "code": "screw_back",
+          "value_ar": "لولبي",
+          "value_en": "Screw Back",
+          "value_fa": "پیچی",
+          "sort_order": 7
+        },
+        {
+          "code": "tie_tack",
+          "value_ar": "ربطة عنق",
+          "value_en": "Tie Tack",
+          "value_fa": "سنجاق کراوات",
+          "sort_order": 8
+        }
+      ]
+    },
+    {
+      "group_code": "other-jewelry-specs",
+      "code": "jewelry_pieces_included",
+      "name_ar": "عدد القطع",
+      "name_en": "Pieces Included",
+      "name_fa": "تعداد قطعات",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "FiPackage",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "2_piece",
+          "value_ar": "قطعتان",
+          "value_en": "2-Piece",
+          "value_fa": "2 تکه",
+          "sort_order": 1
+        },
+        {
+          "code": "3_piece",
+          "value_ar": "3 قطع",
+          "value_en": "3-Piece",
+          "value_fa": "3 تکه",
+          "sort_order": 2
+        },
+        {
+          "code": "4_piece",
+          "value_ar": "4 قطع",
+          "value_en": "4-Piece",
+          "value_fa": "4 تکه",
+          "sort_order": 3
+        },
+        {
+          "code": "5_piece",
+          "value_ar": "5 قطع",
+          "value_en": "5-Piece",
+          "value_fa": "5 تکه",
+          "sort_order": 4
+        },
+        {
+          "code": "6_piece",
+          "value_ar": "6 قطع",
+          "value_en": "6-Piece",
+          "value_fa": "6 تکه",
+          "sort_order": 5
+        },
+        {
+          "code": "7_piece",
+          "value_ar": "7 قطع",
+          "value_en": "7-Piece",
+          "value_fa": "7 تکه",
+          "sort_order": 6
+        },
+        {
+          "code": "8_piece",
+          "value_ar": "8 قطع",
+          "value_en": "8-Piece",
+          "value_fa": "8 تکه",
+          "sort_order": 7
+        },
+        {
+          "code": "9_piece",
+          "value_ar": "9 قطع",
+          "value_en": "9-Piece",
+          "value_fa": "9 تکه",
+          "sort_order": 8
+        },
+        {
+          "code": "10_piece",
+          "value_ar": "10 قطع",
+          "value_en": "10-Piece",
+          "value_fa": "10 تکه",
+          "sort_order": 9
+        },
+        {
+          "code": "12_piece",
+          "value_ar": "12 قطعة",
+          "value_en": "12-Piece",
+          "value_fa": "12 تکه",
+          "sort_order": 10
+        }
+      ]
+    },
+    {
+      "group_code": "other-jewelry-specs",
+      "code": "stone_setting_type",
+      "name_ar": "نوع تثبيت الحجر",
+      "name_en": "Stone Setting Type",
+      "name_fa": "نوع نصب سنگ",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiDiamondRing",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 4,
+      "options": [
+        {
+          "code": "bar",
+          "value_ar": "شريط",
+          "value_en": "Bar",
+          "value_fa": "میله‌ای",
+          "sort_order": 1
+        },
+        {
+          "code": "bezel",
+          "value_ar": "حافة",
+          "value_en": "Bezel",
+          "value_fa": "حاشیه‌ای",
+          "sort_order": 2
+        },
+        {
+          "code": "channel",
+          "value_ar": "قناة",
+          "value_en": "Channel",
+          "value_fa": "کانالی",
+          "sort_order": 3
+        },
+        {
+          "code": "cluster",
+          "value_ar": "عنقود",
+          "value_en": "Cluster",
+          "value_fa": "خوشه‌ای",
+          "sort_order": 4
+        },
+        {
+          "code": "flush",
+          "value_ar": "مسطح",
+          "value_en": "Flush",
+          "value_fa": "مسطح",
+          "sort_order": 5
+        },
+        {
+          "code": "gypsy",
+          "value_ar": "غجري",
+          "value_en": "Gypsy",
+          "value_fa": "کولی",
+          "sort_order": 6
+        },
+        {
+          "code": "invisible",
+          "value_ar": "مخفي",
+          "value_en": "Invisible",
+          "value_fa": "نامرئی",
+          "sort_order": 7
+        },
+        {
+          "code": "pave",
+          "value_ar": "مرصع",
+          "value_en": "Pavé",
+          "value_fa": "پاوه",
+          "sort_order": 8
+        },
+        {
+          "code": "prong",
+          "value_ar": "مخلب",
+          "value_en": "Prong",
+          "value_fa": "چنگکی",
+          "sort_order": 9
+        },
+        {
+          "code": "tension",
+          "value_ar": "توتر",
+          "value_en": "Tension",
+          "value_fa": "کششی",
+          "sort_order": 10
+        }
+      ]
+    },
+    {
+      "group_code": "other-jewelry-specs",
+      "code": "other_jewelry_clasp_type",
+      "name_ar": "نوع الإغلاق",
+      "name_en": "Clasp Type",
+      "name_fa": "نوع قفل",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "FiLock",
+      "is_required": false,
+      "is_filterable": false,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 5,
+      "options": []
+    }
+  ]
+}

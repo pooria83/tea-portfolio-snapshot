@@ -1,0 +1,16 @@
+node_modules/
+.next/
+.git/
+.gitignore
+.env
+.env.example
+e2e/
+docs/
+.husky/
+.github/
+*.md
+docker-compose.yml
+eslint.config.mjs
+playwright.config.ts
+vitest.config.ts
+tsconfig.tsbuildinfo

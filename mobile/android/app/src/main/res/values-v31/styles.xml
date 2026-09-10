@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.BootSplash" parent="Theme.BootSplash.v30">
+        <item name="android:windowSplashScreenBackground">?bootSplashBackground</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/splashscreen_icon_blank</item>
+    </style>
+</resources>

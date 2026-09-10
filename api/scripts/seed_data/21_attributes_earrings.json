@@ -1,0 +1,313 @@
+{
+  "attributes": [
+    {
+      "group_code": "colors-pattern",
+      "code": "primary_color",
+      "name_ar": "اللون الأساسي",
+      "name_en": "Primary Color",
+      "name_fa": "رنگ اصلی",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiDroplet",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": []
+    },
+    {
+      "group_code": "metal-gem",
+      "code": "metal_type",
+      "name_ar": "نوع المعدن",
+      "name_en": "Metal Type",
+      "name_fa": "نوع فلز",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiGoldBar",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": []
+    },
+    {
+      "group_code": "metal-gem",
+      "code": "metal_purity",
+      "name_ar": "نقاء المعدن",
+      "name_en": "Metal Purity",
+      "name_fa": "خلوص فلز",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiGoldBar",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2,
+      "options": []
+    },
+    {
+      "group_code": "metal-gem",
+      "code": "gemstone_type",
+      "name_ar": "نوع الحجر الكريم",
+      "name_en": "Gemstone Type",
+      "name_fa": "نوع سنگ قیمتی",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiDiamondRing",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3,
+      "options": []
+    },
+    {
+      "group_code": "metal-gem",
+      "code": "stone_creation_method",
+      "name_ar": "طريقة تصنيع الحجر",
+      "name_en": "Stone Creation Method",
+      "name_fa": "روش ساخت سنگ",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiDiamondRing",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 4,
+      "options": []
+    },
+    {
+      "group_code": "jewelry-specs",
+      "code": "plating",
+      "name_ar": "الطلاء",
+      "name_en": "Plating",
+      "name_fa": "روکش",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiGoldBar",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": []
+    },
+    {
+      "group_code": "jewelry-specs",
+      "code": "jewelry_hypoallergenic",
+      "name_ar": "مضاد للحساسية",
+      "name_en": "Hypoallergenic",
+      "name_fa": "ضد حساسیت",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiShield",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2
+    },
+    {
+      "group_code": "jewelry-specs",
+      "code": "adjustable",
+      "name_ar": "قابل التعديل",
+      "name_en": "Adjustable",
+      "name_fa": "قابل تنظیم",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiSliders",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3
+    },
+    {
+      "group_code": "jewelry-design",
+      "code": "jewelry_style",
+      "name_ar": "ستايل المجوهرات",
+      "name_en": "Jewelry Style",
+      "name_fa": "استایل جواهر",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiDiamondRing",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": []
+    },
+    {
+      "group_code": "earring-specs",
+      "code": "earring_design",
+      "name_ar": "تصميم القرط",
+      "name_en": "Earring Design",
+      "name_fa": "طرح گوشواره",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiEarrings",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "stud",
+          "value_ar": "مسمار",
+          "value_en": "Stud",
+          "value_fa": "میخ",
+          "sort_order": 1
+        },
+        {
+          "code": "hoop",
+          "value_ar": "حلقة",
+          "value_en": "Hoop",
+          "value_fa": "حلقه",
+          "sort_order": 2
+        },
+        {
+          "code": "dangle",
+          "value_ar": "متأرجح",
+          "value_en": "Dangle",
+          "value_fa": "آویز",
+          "sort_order": 3
+        },
+        {
+          "code": "drop",
+          "value_ar": "منسدل",
+          "value_en": "Drop",
+          "value_fa": "قطره",
+          "sort_order": 4
+        },
+        {
+          "code": "chandelier",
+          "value_ar": "ثريا",
+          "value_en": "Chandelier",
+          "value_fa": "لوستر",
+          "sort_order": 5
+        },
+        {
+          "code": "huggie",
+          "value_ar": "هاغي",
+          "value_en": "Huggie",
+          "value_fa": "هاگی",
+          "sort_order": 6
+        },
+        {
+          "code": "ear_cuff",
+          "value_ar": "كف الأذن",
+          "value_en": "Ear Cuff",
+          "value_fa": "کاف گوش",
+          "sort_order": 7
+        },
+        {
+          "code": "threader",
+          "value_ar": "خيطي",
+          "value_en": "Threader",
+          "value_fa": "نخ",
+          "sort_order": 8
+        },
+        {
+          "code": "climber",
+          "value_ar": "متسلق",
+          "value_en": "Climber",
+          "value_fa": "بالارونده",
+          "sort_order": 9
+        },
+        {
+          "code": "jacket",
+          "value_ar": "جاكيت",
+          "value_en": "Jacket",
+          "value_fa": "ژاکت",
+          "sort_order": 10
+        }
+      ]
+    },
+    {
+      "group_code": "earring-specs",
+      "code": "earring_closure",
+      "name_ar": "نوع الإغلاق",
+      "name_en": "Earring Closure",
+      "name_fa": "نوع بست",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiLock",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "post_push_back",
+          "value_ar": "مسمار وضغط",
+          "value_en": "Post / Push Back",
+          "value_fa": "میخ و پشت",
+          "sort_order": 1
+        },
+        {
+          "code": "fish_hook",
+          "value_ar": "خطاف",
+          "value_en": "Fish Hook",
+          "value_fa": "قلاب",
+          "sort_order": 2
+        },
+        {
+          "code": "leverback",
+          "value_ar": "رافعة",
+          "value_en": "Leverback",
+          "value_fa": "اهرمی",
+          "sort_order": 3
+        },
+        {
+          "code": "latch_back",
+          "value_ar": "مزلاج",
+          "value_en": "Latch Back",
+          "value_fa": "چفتی",
+          "sort_order": 4
+        },
+        {
+          "code": "screw_back",
+          "value_ar": "لولبي",
+          "value_en": "Screw Back",
+          "value_fa": "پیچی",
+          "sort_order": 5
+        },
+        {
+          "code": "clip_on",
+          "value_ar": "مشبك",
+          "value_en": "Clip On",
+          "value_fa": "گیره‌ای",
+          "sort_order": 6
+        },
+        {
+          "code": "magnetic",
+          "value_ar": "مغناطيسي",
+          "value_en": "Magnetic",
+          "value_fa": "مغناطیسی",
+          "sort_order": 7
+        },
+        {
+          "code": "hinged_hoop",
+          "value_ar": "حلقة مفصلية",
+          "value_en": "Hinged Hoop",
+          "value_fa": "حلقه لولایی",
+          "sort_order": 8
+        },
+        {
+          "code": "continuous_hoop",
+          "value_ar": "حلقة مستمرة",
+          "value_en": "Continuous Hoop",
+          "value_fa": "حلقه پیوسته",
+          "sort_order": 9
+        }
+      ]
+    }
+  ]
+}

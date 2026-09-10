@@ -1,0 +1,591 @@
+{
+  "product_type_code": "head_accessories",
+  "attributes": [
+    {
+      "group_code": "colors-pattern",
+      "code": "primary_color",
+      "name_ar": "اللون الأساسي",
+      "name_en": "Primary Color",
+      "name_fa": "رنگ اصلی",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiDroplet",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": [],
+      "validation_rules": [
+        {
+          "type": "min_select",
+          "value": 1,
+          "message": {
+            "en": "Select at least one color",
+            "ar": "اختر لونًا واحدًا على الأقل",
+            "fa": "حداقل یک رنگ انتخاب کنید"
+          }
+        }
+      ]
+    },
+    {
+      "group_code": "colors-pattern",
+      "code": "pattern",
+      "name_ar": "النقشة",
+      "name_en": "Pattern",
+      "name_fa": "طرح",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiAbstract",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2,
+      "options": []
+    },
+    {
+      "group_code": "headwear-specs",
+      "code": "material_headwear",
+      "name_ar": "الخامة",
+      "name_en": "Material",
+      "name_fa": "جنس",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiCottonFlower",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "cotton",
+          "value_ar": "قطن",
+          "value_en": "Cotton",
+          "value_fa": "پنبه",
+          "sort_order": 1
+        },
+        {
+          "code": "polyester",
+          "value_ar": "بوليستر",
+          "value_en": "Polyester",
+          "value_fa": "پلی‌استر",
+          "sort_order": 2
+        },
+        {
+          "code": "wool",
+          "value_ar": "صوف",
+          "value_en": "Wool",
+          "value_fa": "پشم",
+          "sort_order": 3
+        },
+        {
+          "code": "acrylic",
+          "value_ar": "أكريليك",
+          "value_en": "Acrylic",
+          "value_fa": "آکریلیک",
+          "sort_order": 4
+        },
+        {
+          "code": "straw",
+          "value_ar": "قش",
+          "value_en": "Straw",
+          "value_fa": "نی",
+          "sort_order": 5
+        },
+        {
+          "code": "plastic",
+          "value_ar": "بلاستيك",
+          "value_en": "Plastic",
+          "value_fa": "پلاستیک",
+          "sort_order": 6
+        },
+        {
+          "code": "metal",
+          "value_ar": "معدن",
+          "value_en": "Metal",
+          "value_fa": "فلز",
+          "sort_order": 7
+        },
+        {
+          "code": "acetate",
+          "value_ar": "أسيتات",
+          "value_en": "Acetate",
+          "value_fa": "استات",
+          "sort_order": 8
+        },
+        {
+          "code": "leather",
+          "value_ar": "جلد",
+          "value_en": "Leather",
+          "value_fa": "چرم",
+          "sort_order": 9
+        },
+        {
+          "code": "silk",
+          "value_ar": "حرير",
+          "value_en": "Silk",
+          "value_fa": "ابریشم",
+          "sort_order": 10
+        }
+      ],
+      "validation_rules": [
+        {
+          "type": "min_select",
+          "value": 1,
+          "message": {
+            "en": "Select at least one material",
+            "ar": "اختر خامة واحدة على الأقل",
+            "fa": "حداقل یک جنس انتخاب کنید"
+          }
+        }
+      ]
+    },
+    {
+      "group_code": "headwear-specs",
+      "code": "hat_size",
+      "name_ar": "مقاس القبعة",
+      "name_en": "Hat Size",
+      "name_fa": "سایز کلاه",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiRuler",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "s",
+          "value_ar": "S",
+          "value_en": "S",
+          "value_fa": "S",
+          "sort_order": 1
+        },
+        {
+          "code": "m",
+          "value_ar": "M",
+          "value_en": "M",
+          "value_fa": "M",
+          "sort_order": 2
+        },
+        {
+          "code": "l",
+          "value_ar": "L",
+          "value_en": "L",
+          "value_fa": "L",
+          "sort_order": 3
+        },
+        {
+          "code": "xl",
+          "value_ar": "XL",
+          "value_en": "XL",
+          "value_fa": "XL",
+          "sort_order": 4
+        },
+        {
+          "code": "one_size",
+          "value_ar": "مقاس واحد",
+          "value_en": "One Size",
+          "value_fa": "یک سایز",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "group_code": "headwear-specs",
+      "code": "brim_style",
+      "name_ar": "نوع الحافة",
+      "name_en": "Brim Style",
+      "name_fa": "سبک لبه",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiSunglasses",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "wide_brim",
+          "value_ar": "عريض",
+          "value_en": "Wide Brim",
+          "value_fa": "لبه پهن",
+          "sort_order": 1
+        },
+        {
+          "code": "narrow_brim",
+          "value_ar": "ضيق",
+          "value_en": "Narrow Brim",
+          "value_fa": "لبه باریک",
+          "sort_order": 2
+        },
+        {
+          "code": "no_brim",
+          "value_ar": "بدون حافة",
+          "value_en": "No Brim",
+          "value_fa": "بدون لبه",
+          "sort_order": 3
+        },
+        {
+          "code": "curved_brim",
+          "value_ar": "منحني",
+          "value_en": "Curved Brim",
+          "value_fa": "لبه خمیده",
+          "sort_order": 4
+        },
+        {
+          "code": "flat_brim",
+          "value_ar": "مسطح",
+          "value_en": "Flat Brim",
+          "value_fa": "لبه صاف",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "group_code": "headwear-specs",
+      "code": "frame_shape",
+      "name_ar": "شكل الإطار",
+      "name_en": "Frame Shape",
+      "name_fa": "شکل فریم",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiSunglasses",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 4,
+      "options": [
+        {
+          "code": "round",
+          "value_ar": "دائري",
+          "value_en": "Round",
+          "value_fa": "گرد",
+          "sort_order": 1
+        },
+        {
+          "code": "square",
+          "value_ar": "مربع",
+          "value_en": "Square",
+          "value_fa": "مربع",
+          "sort_order": 2
+        },
+        {
+          "code": "cat_eye",
+          "value_ar": "عين القطة",
+          "value_en": "Cat Eye",
+          "value_fa": "چشم گربه‌ای",
+          "sort_order": 3
+        },
+        {
+          "code": "aviator",
+          "value_ar": "طيار",
+          "value_en": "Aviator",
+          "value_fa": "هواپیما",
+          "sort_order": 4
+        },
+        {
+          "code": "rectangular",
+          "value_ar": "مستطيل",
+          "value_en": "Rectangular",
+          "value_fa": "مستطیل",
+          "sort_order": 5
+        },
+        {
+          "code": "oval",
+          "value_ar": "بيضاوي",
+          "value_en": "Oval",
+          "value_fa": "بیضی",
+          "sort_order": 6
+        },
+        {
+          "code": "heart",
+          "value_ar": "قلب",
+          "value_en": "Heart",
+          "value_fa": "قلبی",
+          "sort_order": 7
+        },
+        {
+          "code": "geometric",
+          "value_ar": "هندسي",
+          "value_en": "Geometric",
+          "value_fa": "هندسی",
+          "sort_order": 8
+        }
+      ]
+    },
+    {
+      "group_code": "headwear-specs",
+      "code": "frame_size",
+      "name_ar": "مقاس الإطار",
+      "name_en": "Frame Size",
+      "name_fa": "سایز فریم",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiRuler",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 5,
+      "options": [
+        {
+          "code": "narrow",
+          "value_ar": "ضيق",
+          "value_en": "Narrow",
+          "value_fa": "باریک",
+          "sort_order": 1
+        },
+        {
+          "code": "medium",
+          "value_ar": "متوسط",
+          "value_en": "Medium",
+          "value_fa": "متوسط",
+          "sort_order": 2
+        },
+        {
+          "code": "wide",
+          "value_ar": "عريض",
+          "value_en": "Wide",
+          "value_fa": "پهن",
+          "sort_order": 3
+        }
+      ]
+    },
+    {
+      "group_code": "headwear-specs",
+      "code": "lens_technology",
+      "name_ar": "تقنية العدسات",
+      "name_en": "Lens Technology",
+      "name_fa": "تکنولوژی لنز",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiSparkles",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 6,
+      "options": [
+        {
+          "code": "polarized",
+          "value_ar": "مستقطب",
+          "value_en": "Polarized",
+          "value_fa": "پلاریزه",
+          "sort_order": 1
+        },
+        {
+          "code": "uv_protection",
+          "value_ar": "حماية UV",
+          "value_en": "UV Protection",
+          "value_fa": "محافظ UV",
+          "sort_order": 2
+        },
+        {
+          "code": "photochromic",
+          "value_ar": "متغير",
+          "value_en": "Photochromic",
+          "value_fa": "فتوکرومیک",
+          "sort_order": 3
+        },
+        {
+          "code": "blue_light",
+          "value_ar": "ضوء أزرق",
+          "value_en": "Blue Light Filter",
+          "value_fa": "فیلتر نور آبی",
+          "sort_order": 4
+        },
+        {
+          "code": "mirror",
+          "value_ar": "مرآة",
+          "value_en": "Mirror",
+          "value_fa": "آینه‌ای",
+          "sort_order": 5
+        },
+        {
+          "code": "gradient",
+          "value_ar": "متدرج",
+          "value_en": "Gradient",
+          "value_fa": "گرادیان",
+          "sort_order": 6
+        }
+      ]
+    },
+    {
+      "group_code": "headwear-specs",
+      "code": "hair_accessory_type",
+      "name_ar": "نوع إكسسوار الشعر",
+      "name_en": "Hair Accessory Type",
+      "name_fa": "نوع اکسسوری مو",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiHeadbandKnot",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 7,
+      "options": [
+        {
+          "code": "headband",
+          "value_ar": "عصابة رأس",
+          "value_en": "Headband",
+          "value_fa": "هدبند",
+          "sort_order": 1
+        },
+        {
+          "code": "hair_clip",
+          "value_ar": "مشبك شعر",
+          "value_en": "Hair Clip",
+          "value_fa": "گیره مو",
+          "sort_order": 2
+        },
+        {
+          "code": "hair_tie",
+          "value_ar": "ربطة شعر",
+          "value_en": "Hair Tie",
+          "value_fa": "کش مو",
+          "sort_order": 3
+        },
+        {
+          "code": "barrette",
+          "value_ar": "باريت",
+          "value_en": "Barrette",
+          "value_fa": "بارت",
+          "sort_order": 4
+        },
+        {
+          "code": "scrunchie",
+          "value_ar": "سكرانشي",
+          "value_en": "Scrunchie",
+          "value_fa": "اسکرانچی",
+          "sort_order": 5
+        },
+        {
+          "code": "comb",
+          "value_ar": "مشط",
+          "value_en": "Comb",
+          "value_fa": "شانه",
+          "sort_order": 6
+        }
+      ]
+    },
+    {
+      "group_code": "headwear-specs",
+      "code": "pin_closure",
+      "name_ar": "نوع الإغلاق",
+      "name_en": "Pin Closure",
+      "name_fa": "نوع بستن سنجاق",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiGemPendant",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 8,
+      "options": [
+        {
+          "code": "safety_pin",
+          "value_ar": "دبوس أمان",
+          "value_en": "Safety Pin",
+          "value_fa": "سنجاق قفلی",
+          "sort_order": 1
+        },
+        {
+          "code": "butterfly_clutch",
+          "value_ar": "قفل فراشة",
+          "value_en": "Butterfly Clutch",
+          "value_fa": "گیره پروانه‌ای",
+          "sort_order": 2
+        },
+        {
+          "code": "magnetic",
+          "value_ar": "مغناطيسي",
+          "value_en": "Magnetic",
+          "value_fa": "مغناطیسی",
+          "sort_order": 3
+        },
+        {
+          "code": "pin_back",
+          "value_ar": "دبوس خلفي",
+          "value_en": "Pin Back",
+          "value_fa": "پشت سوزنی",
+          "sort_order": 4
+        },
+        {
+          "code": "clip_on",
+          "value_ar": "مشبك",
+          "value_en": "Clip-On",
+          "value_fa": "گیره‌ای",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "group_code": "headwear-specs",
+      "code": "headwear_uv_protection",
+      "name_ar": "حماية من الأشعة فوق البنفسجية",
+      "name_en": "UV Protection",
+      "name_fa": "محافظت در برابر UV",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiSun",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 9
+    },
+    {
+      "group_code": "headwear-specs",
+      "code": "headwear_one_size",
+      "name_ar": "مقاس واحد",
+      "name_en": "One Size",
+      "name_fa": "یک سایز",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiCheck",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 10
+    },
+    {
+      "group_code": "headwear-specs",
+      "code": "headwear_adjustable_size",
+      "name_ar": "مقاس قابل للتعديل",
+      "name_en": "Adjustable Size",
+      "name_fa": "سایز قابل تنظیم",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiSliders",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 11
+    },
+    {
+      "group_code": "accessory-features",
+      "code": "headwear_hypoallergenic",
+      "name_ar": "مضاد للحساسية",
+      "name_en": "Hypoallergenic",
+      "name_fa": "ضد حساسیت",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiShield",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1
+    }
+  ]
+}

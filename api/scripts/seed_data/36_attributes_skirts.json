@@ -1,0 +1,435 @@
+{
+  "attributes": [
+    {
+      "group_code": "skirt-specs",
+      "code": "skirt_length",
+      "name_ar": "طول التنورة",
+      "name_en": "Skirt Length",
+      "name_fa": "قد دامن",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiRuler",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "mini",
+          "value_ar": "قصيرة",
+          "value_en": "Mini",
+          "value_fa": "کوتاه",
+          "sort_order": 1
+        },
+        {
+          "code": "above_knee",
+          "value_ar": "فوق الركبة",
+          "value_en": "Above Knee",
+          "value_fa": "بالای زانو",
+          "sort_order": 2
+        },
+        {
+          "code": "knee",
+          "value_ar": "طول الركبة",
+          "value_en": "Knee Length",
+          "value_fa": "قد زانو",
+          "sort_order": 3
+        },
+        {
+          "code": "midi",
+          "value_ar": "ميدي",
+          "value_en": "Midi",
+          "value_fa": "میدی",
+          "sort_order": 4
+        },
+        {
+          "code": "calf",
+          "value_ar": "طول الساق",
+          "value_en": "Calf Length",
+          "value_fa": "قد ساق",
+          "sort_order": 5
+        },
+        {
+          "code": "maxi",
+          "value_ar": "طويلة",
+          "value_en": "Maxi",
+          "value_fa": "بلند",
+          "sort_order": 6
+        },
+        {
+          "code": "floor",
+          "value_ar": "طول الأرض",
+          "value_en": "Floor Length",
+          "value_fa": "قد زمین",
+          "sort_order": 7
+        }
+      ]
+    },
+    {
+      "group_code": "skirt-specs",
+      "code": "skirt_silhouette",
+      "name_ar": "شكل التنورة",
+      "name_en": "Skirt Silhouette",
+      "name_fa": "سیلوئت دامن",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiStarDress",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "a_line",
+          "value_ar": "A-line",
+          "value_en": "A-Line",
+          "value_fa": "A-line",
+          "sort_order": 1
+        },
+        {
+          "code": "pencil",
+          "value_ar": "قلم",
+          "value_en": "Pencil",
+          "value_fa": "مدادی",
+          "sort_order": 2
+        },
+        {
+          "code": "pleated",
+          "value_ar": "مطوي",
+          "value_en": "Pleated",
+          "value_fa": "چین دار",
+          "sort_order": 3
+        },
+        {
+          "code": "wrap",
+          "value_ar": "ملتف",
+          "value_en": "Wrap",
+          "value_fa": "چهارخونه",
+          "sort_order": 4
+        },
+        {
+          "code": "circle",
+          "value_ar": "دائري",
+          "value_en": "Circle",
+          "value_fa": "دایره‌ای",
+          "sort_order": 5
+        },
+        {
+          "code": "trumpet",
+          "value_ar": "بوق",
+          "value_en": "Trumpet",
+          "value_fa": "ترومپت",
+          "sort_order": 6
+        },
+        {
+          "code": "tulip",
+          "value_ar": "تيوليب",
+          "value_en": "Tulip",
+          "value_fa": "لاله‌ای",
+          "sort_order": 7
+        },
+        {
+          "code": "asymmetrical",
+          "value_ar": "غير متماثل",
+          "value_en": "Asymmetrical",
+          "value_fa": "نامتقارن",
+          "sort_order": 8
+        },
+        {
+          "code": "peplum",
+          "value_ar": "بيبلم",
+          "value_en": "Peplum",
+          "value_fa": "پپلوم",
+          "sort_order": 9
+        },
+        {
+          "code": "tiered",
+          "value_ar": "طبقات",
+          "value_en": "Tiered",
+          "value_fa": "چند لایه",
+          "sort_order": 10
+        },
+        {
+          "code": "sarong",
+          "value_ar": "سارونغ",
+          "value_en": "Sarong",
+          "value_fa": "سارونگ",
+          "sort_order": 11
+        },
+        {
+          "code": "slip",
+          "value_ar": "منزلقة",
+          "value_en": "Slip",
+          "value_fa": "اسلیپ",
+          "sort_order": 12
+        },
+        {
+          "code": "paneled",
+          "value_ar": "ألواح",
+          "value_en": "Paneled",
+          "value_fa": "پانلی",
+          "sort_order": 13
+        }
+      ]
+    },
+    {
+      "group_code": "skirt-specs",
+      "code": "skirt_waist_rise",
+      "name_ar": "ارتفاع الخصر",
+      "name_en": "Waist Rise",
+      "name_fa": "قد کمر",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiBodyHeight",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "high_waist",
+          "value_ar": "خصر عالي",
+          "value_en": "High Waist",
+          "value_fa": "کمر بلند",
+          "sort_order": 1
+        },
+        {
+          "code": "mid_rise",
+          "value_ar": "خصر متوسط",
+          "value_en": "Mid Rise",
+          "value_fa": "کمر متوسط",
+          "sort_order": 2
+        },
+        {
+          "code": "low_rise",
+          "value_ar": "خصر منخفض",
+          "value_en": "Low Rise",
+          "value_fa": "کمر کوتاه",
+          "sort_order": 3
+        }
+      ]
+    },
+    {
+      "group_code": "skirt-specs",
+      "code": "skirt_waistband_style",
+      "name_ar": "ستايل الخصر",
+      "name_en": "Waistband Style",
+      "name_fa": "استایل کمر",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiClothes",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 4,
+      "options": [
+        {
+          "code": "elastic",
+          "value_ar": "مطاط",
+          "value_en": "Elastic",
+          "value_fa": "کش دار",
+          "sort_order": 1
+        },
+        {
+          "code": "drawstring",
+          "value_ar": "رباط",
+          "value_en": "Drawstring",
+          "value_fa": "بندی",
+          "sort_order": 2
+        },
+        {
+          "code": "belt_loops",
+          "value_ar": "حلقات حزام",
+          "value_en": "Belt Loops",
+          "value_fa": "کمربند",
+          "sort_order": 3
+        },
+        {
+          "code": "pull_on",
+          "value_ar": "لبس",
+          "value_en": "Pull-On",
+          "value_fa": "پوشیدنی",
+          "sort_order": 4
+        },
+        {
+          "code": "fold_over",
+          "value_ar": "مطوي",
+          "value_en": "Fold-Over",
+          "value_fa": "تا خورده",
+          "sort_order": 5
+        },
+        {
+          "code": "paperbag",
+          "value_ar": "ورق",
+          "value_en": "Paperbag",
+          "value_fa": "کاغذی",
+          "sort_order": 6
+        },
+        {
+          "code": "smocked",
+          "value_ar": "مكرمش",
+          "value_en": "Smocked",
+          "value_fa": "چین دار",
+          "sort_order": 7
+        },
+        {
+          "code": "curved",
+          "value_ar": "منحني",
+          "value_en": "Curved",
+          "value_fa": "خمیده",
+          "sort_order": 8
+        },
+        {
+          "code": "straight",
+          "value_ar": "مستقيم",
+          "value_en": "Straight",
+          "value_fa": "مستقیم",
+          "sort_order": 9
+        }
+      ]
+    },
+    {
+      "group_code": "skirt-specs",
+      "code": "skirt_closure_type",
+      "name_ar": "نوع الإغلاق",
+      "name_en": "Closure Type",
+      "name_fa": "نوع بسته شدن",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiClothes",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 5,
+      "options": [
+        {
+          "code": "zipper",
+          "value_ar": "سحاب",
+          "value_en": "Zipper",
+          "value_fa": "زیپ",
+          "sort_order": 1
+        },
+        {
+          "code": "buttons",
+          "value_ar": "أزرار",
+          "value_en": "Buttons",
+          "value_fa": "دکمه",
+          "sort_order": 2
+        },
+        {
+          "code": "drawstring",
+          "value_ar": "رباط",
+          "value_en": "Drawstring",
+          "value_fa": "بندی",
+          "sort_order": 3
+        },
+        {
+          "code": "elastic",
+          "value_ar": "مطاط",
+          "value_en": "Elastic",
+          "value_fa": "کش دار",
+          "sort_order": 4
+        },
+        {
+          "code": "snap",
+          "value_ar": "كبسول",
+          "value_en": "Snap",
+          "value_fa": "دکمه فشاری",
+          "sort_order": 5
+        },
+        {
+          "code": "hook_eye",
+          "value_ar": "خطاف وعروة",
+          "value_en": "Hook & Eye",
+          "value_fa": "قلاب و حلقه",
+          "sort_order": 6
+        },
+        {
+          "code": "pull_on",
+          "value_ar": "لبس",
+          "value_en": "Pull-On",
+          "value_fa": "پوشیدنی",
+          "sort_order": 7
+        },
+        {
+          "code": "side_zip",
+          "value_ar": "سحاب جانبي",
+          "value_en": "Side Zip",
+          "value_fa": "زیپ کناری",
+          "sort_order": 8
+        },
+        {
+          "code": "invisible_zip",
+          "value_ar": "سحاب مخفي",
+          "value_en": "Invisible Zip",
+          "value_fa": "زیپ مخفی",
+          "sort_order": 9
+        }
+      ]
+    },
+    {
+      "group_code": "skirt-specs",
+      "code": "skirt_fit_type",
+      "name_ar": "نوع القصة",
+      "name_en": "Fit Type",
+      "name_fa": "مدل اندام",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiBodyHeight",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 6,
+      "options": [
+        {
+          "code": "slim_fit",
+          "value_ar": "ضيق",
+          "value_en": "Slim Fit",
+          "value_fa": "چسبان",
+          "sort_order": 1
+        },
+        {
+          "code": "straight",
+          "value_ar": "مستقيم",
+          "value_en": "Straight",
+          "value_fa": "مستقیم",
+          "sort_order": 2
+        },
+        {
+          "code": "relaxed",
+          "value_ar": "مريح",
+          "value_en": "Relaxed",
+          "value_fa": "آزاد",
+          "sort_order": 3
+        },
+        {
+          "code": "loose",
+          "value_ar": "واسع",
+          "value_en": "Loose",
+          "value_fa": "گشاد",
+          "sort_order": 4
+        },
+        {
+          "code": "bodycon",
+          "value_ar": "بودي كون",
+          "value_en": "Bodycon",
+          "value_fa": "بدن‌نما",
+          "sort_order": 5
+        },
+        {
+          "code": "fitted",
+          "value_ar": "مضبوط",
+          "value_en": "Fitted",
+          "value_fa": "نسبتاً چسبان",
+          "sort_order": 6
+        }
+      ]
+    }
+  ]
+}

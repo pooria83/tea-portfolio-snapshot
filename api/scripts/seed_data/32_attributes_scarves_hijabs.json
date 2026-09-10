@@ -1,0 +1,369 @@
+{
+  "attributes": [
+    {
+      "group_code": "scarf-specs",
+      "code": "scarf_type",
+      "name_ar": "نوع الإيشارب",
+      "name_en": "Scarf Type",
+      "name_fa": "نوع شال",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiHeadbandKnot",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "hijab",
+          "value_ar": "حجاب",
+          "value_en": "Hijab",
+          "value_fa": "حجاب",
+          "sort_order": 1
+        },
+        {
+          "code": "pashmina",
+          "value_ar": "باشمينا",
+          "value_en": "Pashmina",
+          "value_fa": "پاشمینا",
+          "sort_order": 2
+        },
+        {
+          "code": "shawl",
+          "value_ar": "شال",
+          "value_en": "Shawl",
+          "value_fa": "شال",
+          "sort_order": 3
+        },
+        {
+          "code": "wrap",
+          "value_ar": "لفة",
+          "value_en": "Wrap",
+          "value_fa": "راپ",
+          "sort_order": 4
+        },
+        {
+          "code": "bandana",
+          "value_ar": "عصابة",
+          "value_en": "Bandana",
+          "value_fa": "باندانا",
+          "sort_order": 5
+        },
+        {
+          "code": "square_scarf",
+          "value_ar": "منديل مربع",
+          "value_en": "Square Scarf",
+          "value_fa": "دستمال مربع",
+          "sort_order": 6
+        },
+        {
+          "code": "oblong",
+          "value_ar": "مستطيل",
+          "value_en": "Oblong Scarf",
+          "value_fa": "شال بلند",
+          "sort_order": 7
+        },
+        {
+          "code": "infinity",
+          "value_ar": "لا نهائي",
+          "value_en": "Infinity Scarf",
+          "value_fa": "شال حلقه‌ای",
+          "sort_order": 8
+        },
+        {
+          "code": "snood",
+          "value_ar": "سنود",
+          "value_en": "Snood",
+          "value_fa": "سنود",
+          "sort_order": 9
+        },
+        {
+          "code": "tube",
+          "value_ar": "أنبوبي",
+          "value_en": "Tube Scarf",
+          "value_fa": "شال لوله‌ای",
+          "sort_order": 10
+        },
+        {
+          "code": "kimono",
+          "value_ar": "كيمونو",
+          "value_en": "Kimono Scarf",
+          "value_fa": "شال کیمونو",
+          "sort_order": 11
+        },
+        {
+          "code": "headband",
+          "value_ar": "عصابة رأس",
+          "value_en": "Headband",
+          "value_fa": "هدبند",
+          "sort_order": 12
+        },
+        {
+          "code": "turbans",
+          "value_ar": "عمائم",
+          "value_en": "Turban",
+          "value_fa": "دستار",
+          "sort_order": 13
+        }
+      ]
+    },
+    {
+      "group_code": "scarf-specs",
+      "code": "scarf_size",
+      "name_ar": "حجم الإيشارب",
+      "name_en": "Scarf Size",
+      "name_fa": "سایز شال",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiRuler",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "small",
+          "value_ar": "صغير",
+          "value_en": "Small",
+          "value_fa": "کوچک",
+          "sort_order": 1
+        },
+        {
+          "code": "medium",
+          "value_ar": "متوسط",
+          "value_en": "Medium",
+          "value_fa": "متوسط",
+          "sort_order": 2
+        },
+        {
+          "code": "large",
+          "value_ar": "كبير",
+          "value_en": "Large",
+          "value_fa": "بزرگ",
+          "sort_order": 3
+        },
+        {
+          "code": "extra_large",
+          "value_ar": "كبير جداً",
+          "value_en": "Extra Large",
+          "value_fa": "خیلی بزرگ",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "group_code": "scarf-specs",
+      "code": "scarf_fabric_type",
+      "name_ar": "نوع القماش",
+      "name_en": "Fabric Type",
+      "name_fa": "نوع پارچه",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiCottonFlower",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "chiffon",
+          "value_ar": "شيفون",
+          "value_en": "Chiffon",
+          "value_fa": "شیفون",
+          "sort_order": 1
+        },
+        {
+          "code": "silk",
+          "value_ar": "حرير",
+          "value_en": "Silk",
+          "value_fa": "ابریشم",
+          "sort_order": 2
+        },
+        {
+          "code": "cotton",
+          "value_ar": "قطن",
+          "value_en": "Cotton",
+          "value_fa": "پنبه",
+          "sort_order": 3
+        },
+        {
+          "code": "viscose",
+          "value_ar": "فسكوز",
+          "value_en": "Viscose",
+          "value_fa": "ویسکوز",
+          "sort_order": 4
+        },
+        {
+          "code": "modal",
+          "value_ar": "مودال",
+          "value_en": "Modal",
+          "value_fa": "مودال",
+          "sort_order": 5
+        },
+        {
+          "code": "linen",
+          "value_ar": "كتان",
+          "value_en": "Linen",
+          "value_fa": "کتان",
+          "sort_order": 6
+        },
+        {
+          "code": "wool",
+          "value_ar": "صوف",
+          "value_en": "Wool",
+          "value_fa": "پشم",
+          "sort_order": 7
+        },
+        {
+          "code": "cashmere",
+          "value_ar": "كشمير",
+          "value_en": "Cashmere",
+          "value_fa": "کشمیر",
+          "sort_order": 8
+        },
+        {
+          "code": "polyester",
+          "value_ar": "بوليستر",
+          "value_en": "Polyester",
+          "value_fa": "پلی‌استر",
+          "sort_order": 9
+        },
+        {
+          "code": "nylon",
+          "value_ar": "نايلون",
+          "value_en": "Nylon",
+          "value_fa": "نایلون",
+          "sort_order": 10
+        },
+        {
+          "code": "acrylic",
+          "value_ar": "أكريليك",
+          "value_en": "Acrylic",
+          "value_fa": "اکریلیک",
+          "sort_order": 11
+        },
+        {
+          "code": "rayon",
+          "value_ar": "ريون",
+          "value_en": "Rayon",
+          "value_fa": "ریون",
+          "sort_order": 12
+        },
+        {
+          "code": "lyocell",
+          "value_ar": "ليوسيل",
+          "value_en": "Lyocell",
+          "value_fa": "لیوسل",
+          "sort_order": 13
+        }
+      ]
+    },
+    {
+      "group_code": "scarf-specs",
+      "code": "opacity_level",
+      "name_ar": "مستوى الشفافية",
+      "name_en": "Opacity Level",
+      "name_fa": "میزان شفافیت",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiGlassHeart",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 4,
+      "options": [
+        {
+          "code": "sheer",
+          "value_ar": "شفاف",
+          "value_en": "Sheer",
+          "value_fa": "نازک",
+          "sort_order": 1
+        },
+        {
+          "code": "semi_sheer",
+          "value_ar": "نصف شفاف",
+          "value_en": "Semi-Sheer",
+          "value_fa": "نیمه شفاف",
+          "sort_order": 2
+        },
+        {
+          "code": "opaque",
+          "value_ar": "غير شفاف",
+          "value_en": "Opaque",
+          "value_fa": "ضد نور",
+          "sort_order": 3
+        },
+        {
+          "code": "heavy_opaque",
+          "value_ar": "كثيف",
+          "value_en": "Heavy Opaque",
+          "value_fa": "کاملاً ضخیم",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "group_code": "scarf-specs",
+      "code": "scarf_shape",
+      "name_ar": "شكل الإيشارب",
+      "name_en": "Scarf Shape",
+      "name_fa": "شکل شال",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiAbstract",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 5,
+      "options": [
+        {
+          "code": "rectangular",
+          "value_ar": "مستطيل",
+          "value_en": "Rectangular",
+          "value_fa": "مستطیلی",
+          "sort_order": 1
+        },
+        {
+          "code": "square",
+          "value_ar": "مربع",
+          "value_en": "Square",
+          "value_fa": "مربعی",
+          "sort_order": 2
+        },
+        {
+          "code": "triangle",
+          "value_ar": "مثلث",
+          "value_en": "Triangle",
+          "value_fa": "مثلثی",
+          "sort_order": 3
+        },
+        {
+          "code": "tube",
+          "value_ar": "أنبوبي",
+          "value_en": "Tube",
+          "value_fa": "لوله‌ای",
+          "sort_order": 4
+        },
+        {
+          "code": "round",
+          "value_ar": "دائري",
+          "value_en": "Round",
+          "value_fa": "گرد",
+          "sort_order": 5
+        },
+        {
+          "code": "asymmetric",
+          "value_ar": "غير متماثل",
+          "value_en": "Asymmetric",
+          "value_fa": "نامتقارن",
+          "sort_order": 6
+        }
+      ]
+    }
+  ]
+}

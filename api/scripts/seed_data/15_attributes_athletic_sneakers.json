@@ -1,0 +1,713 @@
+{
+  "product_type_code": "athletic_sneakers",
+  "attributes": [
+    {
+      "group_code": "colors-pattern",
+      "code": "primary_color",
+      "name_ar": "اللون الأساسي",
+      "name_en": "Primary Color",
+      "name_fa": "رنگ اصلی",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiDroplet",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": [],
+      "validation_rules": [
+        {
+          "type": "min_select",
+          "value": 1,
+          "message": {
+            "en": "Select at least one color",
+            "ar": "اختر لونًا واحدًا على الأقل",
+            "fa": "حداقل یک رنگ انتخاب کنید"
+          }
+        }
+      ]
+    },
+    {
+      "group_code": "colors-pattern",
+      "code": "pattern",
+      "name_ar": "النقشة",
+      "name_en": "Pattern",
+      "name_fa": "طرح",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiAbstract",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2,
+      "options": []
+    },
+    {
+      "group_code": "footwear-sizing",
+      "code": "shoe_size",
+      "name_ar": "مقاس الحذاء",
+      "name_en": "Shoe Size",
+      "name_fa": "سایز کفش",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiRuler",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "eu_35",
+          "value_ar": "EU 35",
+          "value_en": "EU 35",
+          "value_fa": "EU ۳۵",
+          "sort_order": 1
+        },
+        {
+          "code": "eu_36",
+          "value_ar": "EU 36",
+          "value_en": "EU 36",
+          "value_fa": "EU ۳۶",
+          "sort_order": 2
+        },
+        {
+          "code": "eu_37",
+          "value_ar": "EU 37",
+          "value_en": "EU 37",
+          "value_fa": "EU ۳۷",
+          "sort_order": 3
+        },
+        {
+          "code": "eu_38",
+          "value_ar": "EU 38",
+          "value_en": "EU 38",
+          "value_fa": "EU ۳۸",
+          "sort_order": 4
+        },
+        {
+          "code": "eu_39",
+          "value_ar": "EU 39",
+          "value_en": "EU 39",
+          "value_fa": "EU ۳۹",
+          "sort_order": 5
+        },
+        {
+          "code": "eu_40",
+          "value_ar": "EU 40",
+          "value_en": "EU 40",
+          "value_fa": "EU ۴۰",
+          "sort_order": 6
+        },
+        {
+          "code": "eu_41",
+          "value_ar": "EU 41",
+          "value_en": "EU 41",
+          "value_fa": "EU ۴۱",
+          "sort_order": 7
+        },
+        {
+          "code": "eu_42",
+          "value_ar": "EU 42",
+          "value_en": "EU 42",
+          "value_fa": "EU ۴۲",
+          "sort_order": 8
+        },
+        {
+          "code": "eu_43",
+          "value_ar": "EU 43",
+          "value_en": "EU 43",
+          "value_fa": "EU ۴۳",
+          "sort_order": 9
+        },
+        {
+          "code": "eu_44",
+          "value_ar": "EU 44",
+          "value_en": "EU 44",
+          "value_fa": "EU ۴۴",
+          "sort_order": 10
+        },
+        {
+          "code": "eu_45",
+          "value_ar": "EU 45",
+          "value_en": "EU 45",
+          "value_fa": "EU ۴۵",
+          "sort_order": 11
+        },
+        {
+          "code": "eu_46",
+          "value_ar": "EU 46",
+          "value_en": "EU 46",
+          "value_fa": "EU ۴۶",
+          "sort_order": 12
+        }
+      ],
+      "validation_rules": [
+        {
+          "type": "min_select",
+          "value": 1,
+          "message": {
+            "en": "Select at least one size",
+            "ar": "اختر مقاسًا واحدًا على الأقل",
+            "fa": "حداقل یک سایز انتخاب کنید"
+          }
+        }
+      ]
+    },
+    {
+      "group_code": "shoe-materials",
+      "code": "gender",
+      "name_ar": "الجنس",
+      "name_en": "Gender",
+      "name_fa": "جنسیت",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "FiUsers",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "men",
+          "value_ar": "رجالي",
+          "value_en": "Men",
+          "value_fa": "مردانه",
+          "sort_order": 1
+        },
+        {
+          "code": "women",
+          "value_ar": "نسائي",
+          "value_en": "Women",
+          "value_fa": "زنانه",
+          "sort_order": 2
+        },
+        {
+          "code": "unisex",
+          "value_ar": "للجنسين",
+          "value_en": "Unisex",
+          "value_fa": "مشترک",
+          "sort_order": 3
+        },
+        {
+          "code": "kids",
+          "value_ar": "أطفال",
+          "value_en": "Kids",
+          "value_fa": "بچگانه",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "group_code": "shoe-materials",
+      "code": "upper_material_athletic",
+      "name_ar": "خامة الجزء العلوي",
+      "name_en": "Upper Material",
+      "name_fa": "جنس رویه",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiLeatherBoot",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "mesh",
+          "value_ar": "شبكة",
+          "value_en": "Mesh",
+          "value_fa": "مش",
+          "sort_order": 1
+        },
+        {
+          "code": "knit",
+          "value_ar": "نسيج",
+          "value_en": "Knit",
+          "value_fa": "بافت",
+          "sort_order": 2
+        },
+        {
+          "code": "leather",
+          "value_ar": "جلد",
+          "value_en": "Leather",
+          "value_fa": "چرم",
+          "sort_order": 3
+        },
+        {
+          "code": "synthetic",
+          "value_ar": "صناعي",
+          "value_en": "Synthetic",
+          "value_fa": "مصنوعی",
+          "sort_order": 4
+        },
+        {
+          "code": "canvas",
+          "value_ar": "كنفا",
+          "value_en": "Canvas",
+          "value_fa": "کانواس",
+          "sort_order": 5
+        },
+        {
+          "code": "suede",
+          "value_ar": "سويد",
+          "value_en": "Suede",
+          "value_fa": "جیر",
+          "sort_order": 6
+        },
+        {
+          "code": "nubuck",
+          "value_ar": "نوبوك",
+          "value_en": "Nubuck",
+          "value_fa": "نابوک",
+          "sort_order": 7
+        },
+        {
+          "code": "neoprene",
+          "value_ar": "نيوبرين",
+          "value_en": "Neoprene",
+          "value_fa": "نئوپرن",
+          "sort_order": 8
+        }
+      ],
+      "validation_rules": [
+        {
+          "type": "min_select",
+          "value": 1,
+          "message": {
+            "en": "Select at least one material",
+            "ar": "اختر خامة واحدة على الأقل",
+            "fa": "حداقل یک جنس انتخاب کنید"
+          }
+        }
+      ]
+    },
+    {
+      "group_code": "shoe-materials",
+      "code": "shoe_lining_material",
+      "name_ar": "خامة البطانة",
+      "name_en": "Lining Material",
+      "name_fa": "جنس آستر",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiLeatherBoot",
+      "is_required": false,
+      "is_filterable": false,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "mesh",
+          "value_ar": "شبكة",
+          "value_en": "Mesh",
+          "value_fa": "مش",
+          "sort_order": 1
+        },
+        {
+          "code": "fabric",
+          "value_ar": "قماش",
+          "value_en": "Fabric",
+          "value_fa": "پارچه",
+          "sort_order": 2
+        },
+        {
+          "code": "leather",
+          "value_ar": "جلد",
+          "value_en": "Leather",
+          "value_fa": "چرم",
+          "sort_order": 3
+        },
+        {
+          "code": "synthetic",
+          "value_ar": "صناعي",
+          "value_en": "Synthetic",
+          "value_fa": "مصنوعی",
+          "sort_order": 4
+        },
+        {
+          "code": "microfiber",
+          "value_ar": "مايكروفايبر",
+          "value_en": "Microfiber",
+          "value_fa": "میکروفیبر",
+          "sort_order": 5
+        },
+        {
+          "code": "unlined",
+          "value_ar": "بدون بطانة",
+          "value_en": "Unlined",
+          "value_fa": "بدون آستر",
+          "sort_order": 6
+        }
+      ]
+    },
+    {
+      "group_code": "shoe-materials",
+      "code": "sole_material",
+      "name_ar": "خامة النعل",
+      "name_en": "Sole Material",
+      "name_fa": "جنس کفی",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiLeatherBoot",
+      "is_required": false,
+      "is_filterable": false,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 4,
+      "options": [
+        {
+          "code": "rubber",
+          "value_ar": "مطاط",
+          "value_en": "Rubber",
+          "value_fa": "لاستیک",
+          "sort_order": 1
+        },
+        {
+          "code": "eva",
+          "value_ar": "EVA",
+          "value_en": "EVA",
+          "value_fa": "EVA",
+          "sort_order": 2
+        },
+        {
+          "code": "phylon",
+          "value_ar": "فايلون",
+          "value_en": "Phylon",
+          "value_fa": "فایلون",
+          "sort_order": 3
+        },
+        {
+          "code": "carbon_rubber",
+          "value_ar": "مطاط كربون",
+          "value_en": "Carbon Rubber",
+          "value_fa": "لاستیک کربن",
+          "sort_order": 4
+        },
+        {
+          "code": "tpu",
+          "value_ar": "TPU",
+          "value_en": "TPU",
+          "value_fa": "TPU",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "group_code": "shoe-details",
+      "code": "shoe_closure_type",
+      "name_ar": "نوع الإغلاق",
+      "name_en": "Closure Type",
+      "name_fa": "نوع بستن",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiLock",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "lace_up",
+          "value_ar": "رباط",
+          "value_en": "Lace Up",
+          "value_fa": "بندی",
+          "sort_order": 1
+        },
+        {
+          "code": "slip_on",
+          "value_ar": "انزلاق",
+          "value_en": "Slip On",
+          "value_fa": "پوشیدنی",
+          "sort_order": 2
+        },
+        {
+          "code": "velcro",
+          "value_ar": "فيلكرو",
+          "value_en": "Velcro",
+          "value_fa": "ولکرو",
+          "sort_order": 3
+        },
+        {
+          "code": "boa",
+          "value_ar": "نظام BOA",
+          "value_en": "BOA Dial",
+          "value_fa": "سیستم BOA",
+          "sort_order": 4
+        },
+        {
+          "code": "zip",
+          "value_ar": "سحاب",
+          "value_en": "Zipper",
+          "value_fa": "زیپ",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "group_code": "athletic-specs",
+      "code": "sports_type",
+      "name_ar": "نوع الرياضة",
+      "name_en": "Sports Type",
+      "name_fa": "نوع ورزش",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiRunningShoe",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "running",
+          "value_ar": "جري",
+          "value_en": "Running",
+          "value_fa": "دویدن",
+          "sort_order": 1
+        },
+        {
+          "code": "training",
+          "value_ar": "تمارين",
+          "value_en": "Training",
+          "value_fa": "تمرینات",
+          "sort_order": 2
+        },
+        {
+          "code": "walking",
+          "value_ar": "مشي",
+          "value_en": "Walking",
+          "value_fa": "پیاده‌روی",
+          "sort_order": 3
+        },
+        {
+          "code": "hiking",
+          "value_ar": "تنزه",
+          "value_en": "Hiking",
+          "value_fa": "کوهنوردی",
+          "sort_order": 4
+        },
+        {
+          "code": "basketball",
+          "value_ar": "كرة سلة",
+          "value_en": "Basketball",
+          "value_fa": "بسکتبال",
+          "sort_order": 5
+        },
+        {
+          "code": "soccer",
+          "value_ar": "كرة قدم",
+          "value_en": "Soccer",
+          "value_fa": "فوتبال",
+          "sort_order": 6
+        },
+        {
+          "code": "tennis",
+          "value_ar": "تنس",
+          "value_en": "Tennis",
+          "value_fa": "تنیس",
+          "sort_order": 7
+        },
+        {
+          "code": "crossfit",
+          "value_ar": "كروس فت",
+          "value_en": "CrossFit",
+          "value_fa": "کراس‌فیت",
+          "sort_order": 8
+        },
+        {
+          "code": "casual",
+          "value_ar": "كاجوال",
+          "value_en": "Casual",
+          "value_fa": "کژوال",
+          "sort_order": 9
+        }
+      ]
+    },
+    {
+      "group_code": "athletic-specs",
+      "code": "cushioning_level",
+      "name_ar": "مستوى الوسادة",
+      "name_en": "Cushioning Level",
+      "name_fa": "سطح بالشتک",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "FiFeather",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "minimal",
+          "value_ar": "أدنى",
+          "value_en": "Minimal",
+          "value_fa": "حداقل",
+          "sort_order": 1
+        },
+        {
+          "code": "moderate",
+          "value_ar": "متوسط",
+          "value_en": "Moderate",
+          "value_fa": "متوسط",
+          "sort_order": 2
+        },
+        {
+          "code": "maximum",
+          "value_ar": "أقصى",
+          "value_en": "Maximum",
+          "value_fa": "حداکثر",
+          "sort_order": 3
+        }
+      ]
+    },
+    {
+      "group_code": "athletic-specs",
+      "code": "arch_support_type",
+      "name_ar": "نوع دعم القوس",
+      "name_en": "Arch Support Type",
+      "name_fa": "نوع قوس کف پا",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiFootsteps",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "neutral",
+          "value_ar": "محايد",
+          "value_en": "Neutral",
+          "value_fa": "خنثی",
+          "sort_order": 1
+        },
+        {
+          "code": "stability",
+          "value_ar": "ثبات",
+          "value_en": "Stability",
+          "value_fa": "پایداری",
+          "sort_order": 2
+        },
+        {
+          "code": "motion_control",
+          "value_ar": "التحكم في الحركة",
+          "value_en": "Motion Control",
+          "value_fa": "کنترل حرکت",
+          "sort_order": 3
+        }
+      ]
+    },
+    {
+      "group_code": "shoe-details",
+      "code": "shoe_width",
+      "name_ar": "عرض الحذاء",
+      "name_en": "Shoe Width",
+      "name_fa": "پهنا کفش",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiRuler",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "narrow",
+          "value_ar": "ضيق",
+          "value_en": "Narrow",
+          "value_fa": "باریک",
+          "sort_order": 1
+        },
+        {
+          "code": "standard",
+          "value_ar": "قياسي",
+          "value_en": "Standard",
+          "value_fa": "استاندارد",
+          "sort_order": 2
+        },
+        {
+          "code": "wide",
+          "value_ar": "عريض",
+          "value_en": "Wide",
+          "value_fa": "پهن",
+          "sort_order": 3
+        },
+        {
+          "code": "extra_wide",
+          "value_ar": "عريض جداً",
+          "value_en": "Extra Wide",
+          "value_fa": "خیلی پهن",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "group_code": "shoe-features",
+      "code": "shoe_waterproof",
+      "name_ar": "مقاوم للماء",
+      "name_en": "Waterproof",
+      "name_fa": "ضد آب",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiUmbrella",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1
+    },
+    {
+      "group_code": "shoe-features",
+      "code": "breathable",
+      "name_ar": "قابل للتنفس",
+      "name_en": "Breathable",
+      "name_fa": "تنفس‌پذیر",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiWind",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2
+    },
+    {
+      "group_code": "shoe-features",
+      "code": "shoe_lightweight",
+      "name_ar": "خفيف الوزن",
+      "name_en": "Lightweight",
+      "name_fa": "سبک",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiFeather",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3
+    },
+    {
+      "group_code": "shoe-features",
+      "code": "non_slip",
+      "name_ar": "مضاد للانزلاق",
+      "name_en": "Non-Slip",
+      "name_fa": "ضد لغزش",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiShield",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 4
+    }
+  ]
+}

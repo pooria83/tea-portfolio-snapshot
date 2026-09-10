@@ -1,0 +1,140 @@
+name: Deploy Infrastructure
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      run_ansible:
+        description: "Force Ansible provisioning (fresh-server bootstrap)"
+        type: boolean
+        required: false
+        default: false
+
+jobs:
+  validate:
+    runs-on: [self-hosted, tea-server]
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Install validators
+        env:
+          SERVER_PASSWORD: ${{ secrets.SERVER_PASSWORD }}
+        run: |
+          printf '%s\n' "$SERVER_PASSWORD" | su -c 'sudo apt-get update -qq && sudo apt-get install -y -qq shellcheck yamllint python3-pip' -s /bin/bash tea
+          curl -sSfL https://github.com/rhysd/actionlint/releases/download/v1.7.7/actionlint_1.7.7_linux_amd64.tar.gz | tar xz
+          mkdir -p "$HOME/.local/bin"
+          mv actionlint "$HOME/.local/bin/"
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Create validation .env
+        run: |
+          cp stacks/tea-app/.env.example .env
+          cat >> .env << 'EOF'
+          PGADMIN_EMAIL=admin@portfolio.example.invalid
+          PGADMIN_PASSWORD=change-me
+          GRAFANA_ADMIN_PASSWORD=change-me
+          CLOUDFLARE_API_TOKEN=change-me
+          REDIS_PASSWORD=change-me
+          EOF
+
+      - name: Validate compose files
+        run: |
+          for f in stacks/*/compose.yml; do
+            echo "--- $f ---"
+            docker compose --env-file .env -f "$f" config -q || exit 1
+          done
+
+      - name: Validate Caddyfile
+        run: |
+          docker run --rm -e CLOUDFLARE_API_TOKEN=change-me-caddy-validate-0000000000 \
+            -v "$PWD/stacks/tea-caddy/Caddyfile:/etc/caddy/Caddyfile:ro" \
+            caddybuilds/caddy-cloudflare:2.11.4-alpine caddy validate --config /etc/caddy/Caddyfile
+
+      - name: Shellcheck scripts
+        run: shellcheck -e SC1090,SC1091 scripts/*.sh
+
+      - name: Yamllint
+        run: yamllint -c .yamllint stacks/ scripts/ .github/workflows/deploy.yml
+
+      - name: Actionlint
+        run: actionlint -color
+
+  deploy:
+    needs: validate
+    runs-on: [self-hosted, tea-server]
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            ansible:
+              - 'ansible/**'
+
+      - name: Install sshpass & rsync
+        env:
+          SERVER_PASSWORD: ${{ secrets.SERVER_PASSWORD }}
+        run: |
+          printf '%s\n' "$SERVER_PASSWORD" | su -c 'sudo apt-get update -qq && sudo apt-get install -y -qq sshpass rsync' -s /bin/bash tea
+          command -v ansible-playbook >/dev/null || printf '%s\n' "$SERVER_PASSWORD" | su -c 'sudo apt-get install -y -qq ansible-core' -s /bin/bash tea
+
+      - name: Copy infra repo to server
+        run: |
+          sshpass -p '${{ secrets.SERVER_PASSWORD }}' ssh -o StrictHostKeyChecking=no tea@192.0.2.10 'mkdir -p /opt/tea-assist/product-graph-infra'
+          sshpass -p '${{ secrets.SERVER_PASSWORD }}' rsync -avz --delete --exclude=.git -e 'ssh -o StrictHostKeyChecking=no' ./ tea@192.0.2.10:/opt/tea-assist/product-graph-infra/
+
+      - name: Run Ansible playbook
+        if: steps.filter.outputs.ansible == 'true' || (github.event_name == 'workflow_dispatch' && inputs.run_ansible == 'true')
+        env:
+          ANSIBLE_HOST_KEY_CHECKING: "false"
+        run: >
+          ansible-playbook
+          -i '192.0.2.10,'
+          ansible/playbook.yml
+          -u tea
+          --extra-vars "ansible_password=${{ secrets.SERVER_PASSWORD }} ansible_become_method=sudo cloudflare_api_token=${{ secrets.CLOUDFLARE_API_TOKEN }} ghcr_token=${{ secrets.GHCR_TOKEN }}"
+          --ssh-common-args="-o StrictHostKeyChecking=no"
+
+      - name: Deploy Docker stacks
+        uses: appleboy/ssh-action@v1.2.5
+        with:
+          host: 192.0.2.10
+          username: tea
+          password: ${{ secrets.SERVER_PASSWORD }}
+          command_timeout: 600s
+          script: |
+            cat > /opt/tea-assist/product-graph-infra/.env << 'EOF'
+            CLOUDFLARE_API_TOKEN=${{ secrets.CLOUDFLARE_API_TOKEN }}
+            GRAFANA_ADMIN_PASSWORD=${{ secrets.GRAFANA_ADMIN_PASSWORD }}
+            POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }}
+            RABBITMQ_PASSWORD=${{ secrets.RABBITMQ_PASSWORD }}
+            MINIO_ROOT_USER=${{ secrets.MINIO_ROOT_USER }}
+            MINIO_ROOT_PASSWORD=${{ secrets.MINIO_ROOT_PASSWORD }}
+            MINIO_PUBLIC_URL=${{ secrets.MINIO_PUBLIC_URL }}
+            API_SECRET_KEY=${{ secrets.API_SECRET_KEY }}
+            API_JWT_SECRET_KEY=${{ secrets.API_JWT_SECRET_KEY }}
+            API_API_KEY=${{ secrets.API_API_KEY }}
+            AI_ENGINE_OPENCODE_ZEN_API_KEY=${{ secrets.AI_ENGINE_OPENCODE_ZEN_API_KEY }}
+            AI_ENGINE_LLM_ENCRYPTION_KEY=${{ secrets.AI_ENGINE_LLM_ENCRYPTION_KEY }}
+            MONGO_URL=${{ secrets.MONGO_URL }}
+            MONGO_DB_NAME=${{ secrets.MONGO_DB_NAME }}
+            QDRANT_API_KEY=${{ secrets.QDRANT_API_KEY }}
+            REDIS_PASSWORD=${{ secrets.REDIS_PASSWORD }}
+            EOF
+            chmod 600 /opt/tea-assist/product-graph-infra/.env
+            cd /opt/tea-assist/product-graph-infra
+            # Serialize stack deploys with the api repo's deploy job (shared flock)
+            DEPLOYED=0
+            for attempt in 1 2 3; do
+              if flock -w 300 /tmp/tea-stack-deploy.lock bash -c 'cd /opt/tea-assist/product-graph-infra && sudo bash scripts/deploy.sh'; then
+                DEPLOYED=1
+                break
+              fi
+              echo "stack deploy lock busy (attempt $attempt/3) - retrying in 30s"
+              sleep 30
+            done
+            if [ "$DEPLOYED" != "1" ]; then
+              echo "stack deploy failed after 3 attempts"
+              exit 1
+            fi

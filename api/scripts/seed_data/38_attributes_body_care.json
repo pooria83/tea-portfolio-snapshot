@@ -1,0 +1,670 @@
+{
+  "attributes": [
+    {
+      "group_code": "bodycare-specs",
+      "code": "bodycare_type",
+      "name_ar": "نوع المنتج",
+      "name_en": "Product Type",
+      "name_fa": "نوع محصول",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiCream",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "body_oil",
+          "value_ar": "زيت جسم",
+          "value_en": "Body Oil",
+          "value_fa": "روغن بدن",
+          "sort_order": 1
+        },
+        {
+          "code": "hand_cream",
+          "value_ar": "كريم يدين",
+          "value_en": "Hand Cream",
+          "value_fa": "کرم دست",
+          "sort_order": 2
+        },
+        {
+          "code": "body_lotion",
+          "value_ar": "لوشن جسم",
+          "value_en": "Body Lotion",
+          "value_fa": "لوسیون بدن",
+          "sort_order": 3
+        },
+        {
+          "code": "body_butter",
+          "value_ar": "زبدة جسم",
+          "value_en": "Body Butter",
+          "value_fa": "کره بدن",
+          "sort_order": 4
+        },
+        {
+          "code": "body_scrub",
+          "value_ar": "مقشر جسم",
+          "value_en": "Body Scrub",
+          "value_fa": "اسکراب بدن",
+          "sort_order": 5
+        },
+        {
+          "code": "bath_salt",
+          "value_ar": "ملح حمام",
+          "value_en": "Bath Salt",
+          "value_fa": "نمک حمام",
+          "sort_order": 6
+        },
+        {
+          "code": "bath_bomb",
+          "value_ar": "قنبلة حمام",
+          "value_en": "Bath Bomb",
+          "value_fa": "بمب حمام",
+          "sort_order": 7
+        },
+        {
+          "code": "body_wash",
+          "value_ar": "غسول جسم",
+          "value_en": "Body Wash",
+          "value_fa": "شستشوی بدن",
+          "sort_order": 8
+        },
+        {
+          "code": "shower_gel",
+          "value_ar": "جل استحمام",
+          "value_en": "Shower Gel",
+          "value_fa": "ژل دوش",
+          "sort_order": 9
+        },
+        {
+          "code": "body_mist",
+          "value_ar": "رذاذ جسم",
+          "value_en": "Body Mist",
+          "value_fa": "اسپری بدن",
+          "sort_order": 10
+        },
+        {
+          "code": "deodorant",
+          "value_ar": "مزيل عرق",
+          "value_en": "Deodorant",
+          "value_fa": "ضد تعریق",
+          "sort_order": 11
+        },
+        {
+          "code": "cuticle_oil",
+          "value_ar": "زيت بشرة",
+          "value_en": "Cuticle Oil",
+          "value_fa": "روغن کوتیکول",
+          "sort_order": 12
+        },
+        {
+          "code": "foot_cream",
+          "value_ar": "كريم قدمين",
+          "value_en": "Foot Cream",
+          "value_fa": "کرم پا",
+          "sort_order": 13
+        },
+        {
+          "code": "hair_mist",
+          "value_ar": "رذاذ شعر",
+          "value_en": "Hair Mist",
+          "value_fa": "اسپری مو",
+          "sort_order": 14
+        }
+      ]
+    },
+    {
+      "group_code": "bodycare-specs",
+      "code": "body_care_volume_ml",
+      "name_ar": "الحجم (مل)",
+      "name_en": "Volume (ml)",
+      "name_fa": "حجم (میلی‌لیتر)",
+      "value_type": "number",
+      "input_type": "number",
+      "icon": "GiRuler",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": false,
+      "is_variant_defining": true,
+      "sort_order": 2,
+      "options": []
+    },
+    {
+      "group_code": "bodycare-specs",
+      "code": "scent_note",
+      "name_ar": "الرائحة",
+      "name_en": "Scent / Fragrance",
+      "name_fa": "رایحه",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiGlassHeart",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "unscented",
+          "value_ar": "بدون رائحة",
+          "value_en": "Unscented",
+          "value_fa": "بدون بو",
+          "sort_order": 1
+        },
+        {
+          "code": "lavender",
+          "value_ar": "لافندر",
+          "value_en": "Lavender",
+          "value_fa": "اسطوخودوس",
+          "sort_order": 2
+        },
+        {
+          "code": "rose",
+          "value_ar": "ورد",
+          "value_en": "Rose",
+          "value_fa": "رز",
+          "sort_order": 3
+        },
+        {
+          "code": "vanilla",
+          "value_ar": "فانيليا",
+          "value_en": "Vanilla",
+          "value_fa": "وانیل",
+          "sort_order": 4
+        },
+        {
+          "code": "coconut",
+          "value_ar": "جوز هند",
+          "value_en": "Coconut",
+          "value_fa": "نارگیل",
+          "sort_order": 5
+        },
+        {
+          "code": "citrus",
+          "value_ar": "حمضي",
+          "value_en": "Citrus",
+          "value_fa": "مرکبات",
+          "sort_order": 6
+        },
+        {
+          "code": "eucalyptus",
+          "value_ar": "أوكالبتوس",
+          "value_en": "Eucalyptus",
+          "value_fa": "اکالیپتوس",
+          "sort_order": 7
+        },
+        {
+          "code": "peppermint",
+          "value_ar": "نعناع",
+          "value_en": "Peppermint",
+          "value_fa": "نعنا",
+          "sort_order": 8
+        },
+        {
+          "code": "chamomile",
+          "value_ar": "بابونج",
+          "value_en": "Chamomile",
+          "value_fa": "بابونه",
+          "sort_order": 9
+        },
+        {
+          "code": "jasmine",
+          "value_ar": "ياسمين",
+          "value_en": "Jasmine",
+          "value_fa": "یاس",
+          "sort_order": 10
+        },
+        {
+          "code": "sandalwood",
+          "value_ar": "صندل",
+          "value_en": "Sandalwood",
+          "value_fa": "صندل",
+          "sort_order": 11
+        },
+        {
+          "code": "musk",
+          "value_ar": "مسك",
+          "value_en": "Musk",
+          "value_fa": "مشک",
+          "sort_order": 12
+        },
+        {
+          "code": "oud",
+          "value_ar": "عود",
+          "value_en": "Oud",
+          "value_fa": "عود",
+          "sort_order": 13
+        }
+      ]
+    },
+    {
+      "group_code": "bodycare-specs",
+      "code": "body_care_skin_type",
+      "name_ar": "نوع البشرة",
+      "name_en": "Skin Type",
+      "name_fa": "نوع پوست",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiDroplet",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 4,
+      "options": [
+        {
+          "code": "all_skin",
+          "value_ar": "جميع أنواع البشرة",
+          "value_en": "All Skin Types",
+          "value_fa": "همه پوست‌ها",
+          "sort_order": 1
+        },
+        {
+          "code": "dry",
+          "value_ar": "جافة",
+          "value_en": "Dry",
+          "value_fa": "خشک",
+          "sort_order": 2
+        },
+        {
+          "code": "oily",
+          "value_ar": "دهنية",
+          "value_en": "Oily",
+          "value_fa": "چرب",
+          "sort_order": 3
+        },
+        {
+          "code": "combination",
+          "value_ar": "مختلطة",
+          "value_en": "Combination",
+          "value_fa": "مختلط",
+          "sort_order": 4
+        },
+        {
+          "code": "normal",
+          "value_ar": "عادية",
+          "value_en": "Normal",
+          "value_fa": "معمولی",
+          "sort_order": 5
+        },
+        {
+          "code": "sensitive",
+          "value_ar": "حساسة",
+          "value_en": "Sensitive",
+          "value_fa": "حساس",
+          "sort_order": 6
+        }
+      ]
+    },
+    {
+      "group_code": "bodycare-specs",
+      "code": "body_care_formulation",
+      "name_ar": "الشكل الصيدلاني",
+      "name_en": "Formulation",
+      "name_fa": "فرمول",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiDrop",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 5,
+      "options": [
+        {
+          "code": "cream",
+          "value_ar": "كريم",
+          "value_en": "Cream",
+          "value_fa": "کرم",
+          "sort_order": 1
+        },
+        {
+          "code": "lotion",
+          "value_ar": "لوشن",
+          "value_en": "Lotion",
+          "value_fa": "لوسیون",
+          "sort_order": 2
+        },
+        {
+          "code": "oil",
+          "value_ar": "زيت",
+          "value_en": "Oil",
+          "value_fa": "روغن",
+          "sort_order": 3
+        },
+        {
+          "code": "balm",
+          "value_ar": "بلسم",
+          "value_en": "Balm",
+          "value_fa": "بالم",
+          "sort_order": 4
+        },
+        {
+          "code": "gel",
+          "value_ar": "جل",
+          "value_en": "Gel",
+          "value_fa": "ژل",
+          "sort_order": 5
+        },
+        {
+          "code": "butter",
+          "value_ar": "زبدة",
+          "value_en": "Butter",
+          "value_fa": "کره",
+          "sort_order": 6
+        },
+        {
+          "code": "foam",
+          "value_ar": "رغوة",
+          "value_en": "Foam",
+          "value_fa": "فوم",
+          "sort_order": 7
+        },
+        {
+          "code": "spray",
+          "value_ar": "رذاذ",
+          "value_en": "Spray",
+          "value_fa": "اسپری",
+          "sort_order": 8
+        },
+        {
+          "code": "powder",
+          "value_ar": "بودرة",
+          "value_en": "Powder",
+          "value_fa": "پودر",
+          "sort_order": 9
+        },
+        {
+          "code": "milk",
+          "value_ar": "حليب",
+          "value_en": "Milk",
+          "value_fa": "شیر",
+          "sort_order": 10
+        }
+      ]
+    },
+    {
+      "group_code": "bodycare-specs",
+      "code": "key_ingredients",
+      "name_ar": "المكونات الرئيسية",
+      "name_en": "Key Ingredients",
+      "name_fa": "مواد اصلی",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiStar",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 6,
+      "options": [
+        {
+          "code": "shea_butter",
+          "value_ar": "زبدة الشيا",
+          "value_en": "Shea Butter",
+          "value_fa": "کره شی",
+          "sort_order": 1
+        },
+        {
+          "code": "cocoa_butter",
+          "value_ar": "زبدة الكاكاو",
+          "value_en": "Cocoa Butter",
+          "value_fa": "کره کاکائو",
+          "sort_order": 2
+        },
+        {
+          "code": "aloe_vera",
+          "value_ar": "صبار",
+          "value_en": "Aloe Vera",
+          "value_fa": "آلوئه ورا",
+          "sort_order": 3
+        },
+        {
+          "code": "vitamin_e",
+          "value_ar": "فيتامين E",
+          "value_en": "Vitamin E",
+          "value_fa": "ویتامین E",
+          "sort_order": 4
+        },
+        {
+          "code": "glycerin",
+          "value_ar": "جلسرين",
+          "value_en": "Glycerin",
+          "value_fa": "گلیسیرین",
+          "sort_order": 5
+        },
+        {
+          "code": "ceramides",
+          "value_ar": "سيراميد",
+          "value_en": "Ceramides",
+          "value_fa": "سرامید",
+          "sort_order": 6
+        },
+        {
+          "code": "collagen",
+          "value_ar": "كولاجين",
+          "value_en": "Collagen",
+          "value_fa": "کلاژن",
+          "sort_order": 7
+        },
+        {
+          "code": "tea_tree",
+          "value_ar": "شجرة الشاي",
+          "value_en": "Tea Tree",
+          "value_fa": "درخت چای",
+          "sort_order": 8
+        },
+        {
+          "code": "niacinamide",
+          "value_ar": "نياسيناميد",
+          "value_en": "Niacinamide",
+          "value_fa": "نیاسینامید",
+          "sort_order": 9
+        },
+        {
+          "code": "hyaluronic_acid",
+          "value_ar": "حمض الهيالورونيك",
+          "value_en": "Hyaluronic Acid",
+          "value_fa": "هیالورونیک اسید",
+          "sort_order": 10
+        },
+        {
+          "code": "squalane",
+          "value_ar": "سكوالان",
+          "value_en": "Squalane",
+          "value_fa": "اسکوالان",
+          "sort_order": 11
+        },
+        {
+          "code": "urea",
+          "value_ar": "يوريا",
+          "value_en": "Urea",
+          "value_fa": "اوره",
+          "sort_order": 12
+        }
+      ]
+    },
+    {
+      "group_code": "bodycare-specs",
+      "code": "key_benefits",
+      "name_ar": "الفوائد الرئيسية",
+      "name_en": "Key Benefits",
+      "name_fa": "مزایای اصلی",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiThumbsUp",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 7,
+      "options": [
+        {
+          "code": "moisturizing",
+          "value_ar": "ترطيب",
+          "value_en": "Moisturizing",
+          "value_fa": "مرطوب کننده",
+          "sort_order": 1
+        },
+        {
+          "code": "nourishing",
+          "value_ar": "تغذية",
+          "value_en": "Nourishing",
+          "value_fa": "مغذی",
+          "sort_order": 2
+        },
+        {
+          "code": "soothing",
+          "value_ar": "تهدئة",
+          "value_en": "Soothing",
+          "value_fa": "آرامش بخش",
+          "sort_order": 3
+        },
+        {
+          "code": "exfoliating",
+          "value_ar": "تقشير",
+          "value_en": "Exfoliating",
+          "value_fa": "لایه بردار",
+          "sort_order": 4
+        },
+        {
+          "code": "brightening",
+          "value_ar": "تفتيح",
+          "value_en": "Brightening",
+          "value_fa": "روشن کننده",
+          "sort_order": 5
+        },
+        {
+          "code": "firming",
+          "value_ar": "شد",
+          "value_en": "Firming",
+          "value_fa": "سفت کننده",
+          "sort_order": 6
+        },
+        {
+          "code": "anti_aging",
+          "value_ar": "مضاد للشيخوخة",
+          "value_en": "Anti-Aging",
+          "value_fa": "ضد پیری",
+          "sort_order": 7
+        },
+        {
+          "code": "calming",
+          "value_ar": "مهدئ",
+          "value_en": "Calming",
+          "value_fa": "آرامش بخش",
+          "sort_order": 8
+        },
+        {
+          "code": "detoxifying",
+          "value_ar": "إزالة السموم",
+          "value_en": "Detoxifying",
+          "value_fa": "سم زدا",
+          "sort_order": 9
+        },
+        {
+          "code": "protective",
+          "value_ar": "وقاية",
+          "value_en": "Protective",
+          "value_fa": "محافظ",
+          "sort_order": 10
+        }
+      ]
+    },
+    {
+      "group_code": "bodycare-specs",
+      "code": "body_care_organic",
+      "name_ar": "عضوي",
+      "name_en": "Organic",
+      "name_fa": "ارگانیک",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiLeaf",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 8,
+      "options": [
+        {
+          "code": "yes",
+          "value_ar": "نعم",
+          "value_en": "Yes",
+          "value_fa": "بله",
+          "sort_order": 1
+        },
+        {
+          "code": "no",
+          "value_ar": "لا",
+          "value_en": "No",
+          "value_fa": "خیر",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "group_code": "bodycare-specs",
+      "code": "body_care_vegan",
+      "name_ar": "نباتي",
+      "name_en": "Vegan",
+      "name_fa": "وگان",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiPlant",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 9,
+      "options": [
+        {
+          "code": "yes",
+          "value_ar": "نعم",
+          "value_en": "Yes",
+          "value_fa": "بله",
+          "sort_order": 1
+        },
+        {
+          "code": "no",
+          "value_ar": "لا",
+          "value_en": "No",
+          "value_fa": "خیر",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "group_code": "bodycare-specs",
+      "code": "body_care_cruelty_free",
+      "name_ar": "خالٍ من القسوة",
+      "name_en": "Cruelty Free",
+      "name_fa": "بدون آزمایش حیوانی",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiHearts",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 10,
+      "options": [
+        {
+          "code": "yes",
+          "value_ar": "نعم",
+          "value_en": "Yes",
+          "value_fa": "بله",
+          "sort_order": 1
+        },
+        {
+          "code": "no",
+          "value_ar": "لا",
+          "value_en": "No",
+          "value_fa": "خیر",
+          "sort_order": 2
+        }
+      ]
+    }
+  ]
+}

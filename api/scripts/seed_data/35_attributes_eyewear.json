@@ -1,0 +1,466 @@
+{
+  "attributes": [
+    {
+      "group_code": "eyewear-specs",
+      "code": "eyewear_frame_shape",
+      "name_ar": "شكل الإطار",
+      "name_en": "Frame Shape",
+      "name_fa": "شکل فریم",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiAbstract",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "round",
+          "value_ar": "دائري",
+          "value_en": "Round",
+          "value_fa": "گرد",
+          "sort_order": 1
+        },
+        {
+          "code": "square",
+          "value_ar": "مربع",
+          "value_en": "Square",
+          "value_fa": "مربع",
+          "sort_order": 2
+        },
+        {
+          "code": "cat_eye",
+          "value_ar": "عين القطة",
+          "value_en": "Cat Eye",
+          "value_fa": "چشمی",
+          "sort_order": 3
+        },
+        {
+          "code": "aviator",
+          "value_ar": "أفييتر",
+          "value_en": "Aviator",
+          "value_fa": "هوانورد",
+          "sort_order": 4
+        },
+        {
+          "code": "wayfarer",
+          "value_ar": "وايفارر",
+          "value_en": "Wayfarer",
+          "value_fa": "وی‌فارر",
+          "sort_order": 5
+        },
+        {
+          "code": "rectangle",
+          "value_ar": "مستطيل",
+          "value_en": "Rectangle",
+          "value_fa": "مستطیل",
+          "sort_order": 6
+        },
+        {
+          "code": "oval",
+          "value_ar": "بيضاوي",
+          "value_en": "Oval",
+          "value_fa": "بیضی",
+          "sort_order": 7
+        },
+        {
+          "code": "butterfly",
+          "value_ar": "فراشة",
+          "value_en": "Butterfly",
+          "value_fa": "پروانه‌ای",
+          "sort_order": 8
+        },
+        {
+          "code": "shield",
+          "value_ar": "درع",
+          "value_en": "Shield",
+          "value_fa": "سپر",
+          "sort_order": 9
+        },
+        {
+          "code": "browline",
+          "value_ar": "خط الحاجب",
+          "value_en": "Browline",
+          "value_fa": "ابرویی",
+          "sort_order": 10
+        },
+        {
+          "code": "geometric",
+          "value_ar": "هندسي",
+          "value_en": "Geometric",
+          "value_fa": "هندسی",
+          "sort_order": 11
+        },
+        {
+          "code": "heart",
+          "value_ar": "قلب",
+          "value_en": "Heart",
+          "value_fa": "قلبی",
+          "sort_order": 12
+        },
+        {
+          "code": "hexagonal",
+          "value_ar": "سداسي",
+          "value_en": "Hexagonal",
+          "value_fa": "شش‌ضلعی",
+          "sort_order": 13
+        }
+      ]
+    },
+    {
+      "group_code": "eyewear-specs",
+      "code": "frame_material",
+      "name_ar": "مادة الإطار",
+      "name_en": "Frame Material",
+      "name_fa": "جنس فریم",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiMetalDisc",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "acetate",
+          "value_ar": "أسيتات",
+          "value_en": "Acetate",
+          "value_fa": "استات",
+          "sort_order": 1
+        },
+        {
+          "code": "metal",
+          "value_ar": "معدن",
+          "value_en": "Metal",
+          "value_fa": "فلز",
+          "sort_order": 2
+        },
+        {
+          "code": "titanium",
+          "value_ar": "تيتانيوم",
+          "value_en": "Titanium",
+          "value_fa": "تیتانیوم",
+          "sort_order": 3
+        },
+        {
+          "code": "stainless_steel",
+          "value_ar": "ستانلس",
+          "value_en": "Stainless Steel",
+          "value_fa": "استیل",
+          "sort_order": 4
+        },
+        {
+          "code": "plastic",
+          "value_ar": "بلاستيك",
+          "value_en": "Plastic",
+          "value_fa": "پلاستیک",
+          "sort_order": 5
+        },
+        {
+          "code": "nylon",
+          "value_ar": "نايلون",
+          "value_en": "Nylon",
+          "value_fa": "نایلون",
+          "sort_order": 6
+        },
+        {
+          "code": "carbon_fiber",
+          "value_ar": "كربون",
+          "value_en": "Carbon Fiber",
+          "value_fa": "فیبر کربن",
+          "sort_order": 7
+        },
+        {
+          "code": "wood",
+          "value_ar": "خشب",
+          "value_en": "Wood",
+          "value_fa": "چوب",
+          "sort_order": 8
+        },
+        {
+          "code": "combination",
+          "value_ar": "مدمج",
+          "value_en": "Combination",
+          "value_fa": "ترکیبی",
+          "sort_order": 9
+        }
+      ]
+    },
+    {
+      "group_code": "eyewear-specs",
+      "code": "lens_material",
+      "name_ar": "مادة العدسة",
+      "name_en": "Lens Material",
+      "name_fa": "جنس لنز",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "FiDroplet",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "glass",
+          "value_ar": "زجاج",
+          "value_en": "Glass",
+          "value_fa": "شیشه",
+          "sort_order": 1
+        },
+        {
+          "code": "polycarbonate",
+          "value_ar": "بولي كربونات",
+          "value_en": "Polycarbonate",
+          "value_fa": "پلی‌کربنات",
+          "sort_order": 2
+        },
+        {
+          "code": "cr39",
+          "value_ar": "CR-39",
+          "value_en": "CR-39 Plastic",
+          "value_fa": "CR-39",
+          "sort_order": 3
+        },
+        {
+          "code": "nylon",
+          "value_ar": "نايلون",
+          "value_en": "Nylon",
+          "value_fa": "نایلون",
+          "sort_order": 4
+        },
+        {
+          "code": "trivex",
+          "value_ar": "ترايفكس",
+          "value_en": "Trivex",
+          "value_fa": "ترایوکس",
+          "sort_order": 5
+        },
+        {
+          "code": "high_index",
+          "value_ar": "عالية المؤشر",
+          "value_en": "High Index",
+          "value_fa": "ایندکس بالا",
+          "sort_order": 6
+        }
+      ]
+    },
+    {
+      "group_code": "eyewear-specs",
+      "code": "eyewear_uv_protection",
+      "name_ar": "الحماية من الأشعة",
+      "name_en": "UV Protection",
+      "name_fa": "محافظت UV",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "FiSun",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 4,
+      "options": [
+        {
+          "code": "uv400",
+          "value_ar": "UV400",
+          "value_en": "UV400",
+          "value_fa": "UV400",
+          "sort_order": 1
+        },
+        {
+          "code": "uv_100_percent",
+          "value_ar": "حماية 100%",
+          "value_en": "100% UV Protection",
+          "value_fa": "محافظت 100% UV",
+          "sort_order": 2
+        },
+        {
+          "code": "uv_protection",
+          "value_ar": "حماية",
+          "value_en": "UV Protection",
+          "value_fa": "محافظت UV",
+          "sort_order": 3
+        },
+        {
+          "code": "none",
+          "value_ar": "بدون",
+          "value_en": "None",
+          "value_fa": "بدون",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "group_code": "eyewear-specs",
+      "code": "lens_color",
+      "name_ar": "لون العدسة",
+      "name_en": "Lens Color",
+      "name_fa": "رنگ لنز",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "FiDroplet",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 5,
+      "options": [
+        {
+          "code": "grey",
+          "value_ar": "رمادي",
+          "value_en": "Grey",
+          "value_fa": "خاکستری",
+          "sort_order": 1
+        },
+        {
+          "code": "brown",
+          "value_ar": "بني",
+          "value_en": "Brown",
+          "value_fa": "قهوه‌ای",
+          "sort_order": 2
+        },
+        {
+          "code": "green",
+          "value_ar": "أخضر",
+          "value_en": "Green",
+          "value_fa": "سبز",
+          "sort_order": 3
+        },
+        {
+          "code": "blue",
+          "value_ar": "أزرق",
+          "value_en": "Blue",
+          "value_fa": "آبی",
+          "sort_order": 4
+        },
+        {
+          "code": "yellow",
+          "value_ar": "أصفر",
+          "value_en": "Yellow",
+          "value_fa": "زرد",
+          "sort_order": 5
+        },
+        {
+          "code": "mirror",
+          "value_ar": "مرآة",
+          "value_en": "Mirror",
+          "value_fa": "آینه‌ای",
+          "sort_order": 6
+        },
+        {
+          "code": "pink",
+          "value_ar": "وردي",
+          "value_en": "Pink",
+          "value_fa": "صورتی",
+          "sort_order": 7
+        },
+        {
+          "code": "purple",
+          "value_ar": "بنفسجي",
+          "value_en": "Purple",
+          "value_fa": "بنفش",
+          "sort_order": 8
+        },
+        {
+          "code": "amber",
+          "value_ar": "عنبر",
+          "value_en": "Amber",
+          "value_fa": "کهربایی",
+          "sort_order": 9
+        },
+        {
+          "code": "clear",
+          "value_ar": "شفاف",
+          "value_en": "Clear",
+          "value_fa": "شفاف",
+          "sort_order": 10
+        },
+        {
+          "code": "gradient",
+          "value_ar": "متدرج",
+          "value_en": "Gradient",
+          "value_fa": "گرادینت",
+          "sort_order": 11
+        },
+        {
+          "code": "photochromic",
+          "value_ar": "متغير",
+          "value_en": "Photochromic",
+          "value_fa": "فتوکرومیک",
+          "sort_order": 12
+        }
+      ]
+    },
+    {
+      "group_code": "eyewear-specs",
+      "code": "polarized",
+      "name_ar": "مستقطب",
+      "name_en": "Polarized",
+      "name_fa": "پلاریزه",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "FiSliders",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 6,
+      "options": [
+        {
+          "code": "yes",
+          "value_ar": "نعم",
+          "value_en": "Yes",
+          "value_fa": "بله",
+          "sort_order": 1
+        },
+        {
+          "code": "no",
+          "value_ar": "لا",
+          "value_en": "No",
+          "value_fa": "خیر",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "group_code": "eyewear-specs",
+      "code": "eyewear_gender_target",
+      "name_ar": "الجنس المستهدف",
+      "name_en": "Gender Target",
+      "name_fa": "جنسیت هدف",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "FiUsers",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 7,
+      "options": [
+        {
+          "code": "male",
+          "value_ar": "رجالي",
+          "value_en": "Male",
+          "value_fa": "مردانه",
+          "sort_order": 1
+        },
+        {
+          "code": "female",
+          "value_ar": "نسائي",
+          "value_en": "Female",
+          "value_fa": "زنانه",
+          "sort_order": 2
+        },
+        {
+          "code": "unisex",
+          "value_ar": "للجنسين",
+          "value_en": "Unisex",
+          "value_fa": "مشترک",
+          "sort_order": 3
+        }
+      ]
+    }
+  ]
+}

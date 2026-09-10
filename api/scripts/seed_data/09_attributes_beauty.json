@@ -1,0 +1,1248 @@
+{
+  "product_type_code": "beauty",
+  "attributes": [
+    {
+      "group_code": "colors-pattern",
+      "code": "primary_color",
+      "name_ar": "اللون الأساسي",
+      "name_en": "Primary Color",
+      "name_fa": "رنگ اصلی",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiDroplet",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "black",
+          "value_ar": "أسود",
+          "value_en": "Black",
+          "value_fa": "مشکی",
+          "color_hex": "#000000",
+          "sort_order": 1,
+          "color_family": "blacks-grays",
+          "is_major": true
+        },
+        {
+          "code": "white",
+          "value_ar": "أبيض",
+          "value_en": "White",
+          "value_fa": "سفید",
+          "color_hex": "#FFFFFF",
+          "sort_order": 2,
+          "color_family": "whites-creams",
+          "is_major": true
+        },
+        {
+          "code": "gold",
+          "value_ar": "ذهبي",
+          "value_en": "Gold",
+          "value_fa": "طلایی",
+          "color_hex": "#FFD700",
+          "sort_order": 3,
+          "color_family": "metallics",
+          "is_major": true
+        },
+        {
+          "code": "silver",
+          "value_ar": "فضي",
+          "value_en": "Silver",
+          "value_fa": "نقره‌ای",
+          "color_hex": "#C0C0C0",
+          "sort_order": 4,
+          "color_family": "metallics",
+          "is_major": true
+        },
+        {
+          "code": "rose_gold",
+          "value_ar": "ذهبي وردي",
+          "value_en": "Rose Gold",
+          "value_fa": "رز گلد",
+          "color_hex": "#B76E79",
+          "sort_order": 5,
+          "color_family": "metallics",
+          "is_major": true
+        },
+        {
+          "code": "pink",
+          "value_ar": "وردي",
+          "value_en": "Pink",
+          "value_fa": "صورتی",
+          "color_hex": "#FFC0CB",
+          "sort_order": 6,
+          "color_family": "reds-pinks",
+          "is_major": true
+        },
+        {
+          "code": "red",
+          "value_ar": "أحمر",
+          "value_en": "Red",
+          "value_fa": "قرمز",
+          "color_hex": "#FF0000",
+          "sort_order": 7,
+          "color_family": "reds-pinks",
+          "is_major": true
+        },
+        {
+          "code": "nude",
+          "value_ar": "نود",
+          "value_en": "Nude",
+          "value_fa": "نود",
+          "color_hex": "#E8C5A0",
+          "sort_order": 8,
+          "color_family": "beiges-browns",
+          "is_major": true
+        },
+        {
+          "code": "clear",
+          "value_ar": "شفاف",
+          "value_en": "Clear",
+          "value_fa": "شفاف",
+          "color_hex": "#FFFFFF",
+          "sort_order": 9,
+          "color_family": "specialty",
+          "is_major": false
+        },
+        {
+          "code": "multicolor",
+          "value_ar": "متعدد الألوان",
+          "value_en": "Multicolor",
+          "value_fa": "چند رنگ",
+          "color_hex": "#FF00FF",
+          "sort_order": 10,
+          "color_family": "specialty",
+          "is_major": false
+        }
+      ],
+      "validation_rules": [
+        {
+          "type": "min_select",
+          "value": 1,
+          "message": {
+            "en": "Select at least one color",
+            "ar": "اختر لونًا واحدًا على الأقل",
+            "fa": "حداقل یک رنگ انتخاب کنید"
+          }
+        }
+      ]
+    },
+    {
+      "group_code": "beauty-category",
+      "code": "beauty_product_type",
+      "name_ar": "نوع المنتج",
+      "name_en": "Product Type",
+      "name_fa": "نوع محصول",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiLipstick",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "perfume",
+          "value_ar": "عطر",
+          "value_en": "Perfume",
+          "value_fa": "عطر",
+          "sort_order": 1
+        },
+        {
+          "code": "body_spray",
+          "value_ar": "بودي سبراي",
+          "value_en": "Body Spray",
+          "value_fa": "اسپری بدن",
+          "sort_order": 2
+        },
+        {
+          "code": "attar",
+          "value_ar": "عطر زيتي",
+          "value_en": "Attar / Oud Oil",
+          "value_fa": "عطر روغنی",
+          "sort_order": 3
+        },
+        {
+          "code": "foundation",
+          "value_ar": "فاونديشن",
+          "value_en": "Foundation",
+          "value_fa": "کرم پودر",
+          "sort_order": 4
+        },
+        {
+          "code": "concealer",
+          "value_ar": "كونسيلر",
+          "value_en": "Concealer",
+          "value_fa": "کانسیلر",
+          "sort_order": 5
+        },
+        {
+          "code": "powder",
+          "value_ar": "بودرة",
+          "value_en": "Powder",
+          "value_fa": "پودر",
+          "sort_order": 6
+        },
+        {
+          "code": "blush",
+          "value_ar": "بلاشر",
+          "value_en": "Blush",
+          "value_fa": "بلاش",
+          "sort_order": 7
+        },
+        {
+          "code": "bronzer",
+          "value_ar": "برونزر",
+          "value_en": "Bronzer",
+          "value_fa": "برنزر",
+          "sort_order": 8
+        },
+        {
+          "code": "highlighter",
+          "value_ar": "هايلايتر",
+          "value_en": "Highlighter",
+          "value_fa": "هایلایتر",
+          "sort_order": 9
+        },
+        {
+          "code": "eyeshadow",
+          "value_ar": "ظلال عيون",
+          "value_en": "Eyeshadow",
+          "value_fa": "سایه چشم",
+          "sort_order": 10
+        },
+        {
+          "code": "eyeliner",
+          "value_ar": "كحل",
+          "value_en": "Eyeliner",
+          "value_fa": "خط چشم",
+          "sort_order": 11
+        },
+        {
+          "code": "mascara",
+          "value_ar": "ماسكارا",
+          "value_en": "Mascara",
+          "value_fa": "ریمل",
+          "sort_order": 12
+        },
+        {
+          "code": "lipstick",
+          "value_ar": "أحمر شفاه",
+          "value_en": "Lipstick",
+          "value_fa": "رژ لب",
+          "sort_order": 13
+        },
+        {
+          "code": "lip_gloss",
+          "value_ar": "لمعان شفاه",
+          "value_en": "Lip Gloss",
+          "value_fa": "برق لب",
+          "sort_order": 14
+        },
+        {
+          "code": "lip_liner",
+          "value_ar": "كحل شفاه",
+          "value_en": "Lip Liner",
+          "value_fa": "خط لب",
+          "sort_order": 15
+        },
+        {
+          "code": "moisturizer",
+          "value_ar": "مرطب",
+          "value_en": "Moisturizer",
+          "value_fa": "مرطوب کننده",
+          "sort_order": 16
+        },
+        {
+          "code": "serum",
+          "value_ar": "سيروم",
+          "value_en": "Serum",
+          "value_fa": "سرم",
+          "sort_order": 17
+        },
+        {
+          "code": "toner",
+          "value_ar": "تونر",
+          "value_en": "Toner",
+          "value_fa": "تونر",
+          "sort_order": 18
+        },
+        {
+          "code": "cleanser",
+          "value_ar": "منظف",
+          "value_en": "Cleanser",
+          "value_fa": "پاک کننده",
+          "sort_order": 19
+        },
+        {
+          "code": "sunscreen",
+          "value_ar": "واقي شمس",
+          "value_en": "Sunscreen",
+          "value_fa": "ضد آفتاب",
+          "sort_order": 20
+        },
+        {
+          "code": "face_mask",
+          "value_ar": "قناع وجه",
+          "value_en": "Face Mask",
+          "value_fa": "ماسک صورت",
+          "sort_order": 21
+        },
+        {
+          "code": "nail_polish",
+          "value_ar": "طلاء أظافر",
+          "value_en": "Nail Polish",
+          "value_fa": "لاک ناخن",
+          "sort_order": 22
+        },
+        {
+          "code": "body_lotion",
+          "value_ar": "لوشن جسم",
+          "value_en": "Body Lotion",
+          "value_fa": "لوسیون بدن",
+          "sort_order": 23
+        },
+        {
+          "code": "hair_oil",
+          "value_ar": "زيت شعر",
+          "value_en": "Hair Oil",
+          "value_fa": "روغن مو",
+          "sort_order": 24
+        },
+        {
+          "code": "shampoo",
+          "value_ar": "شامبو",
+          "value_en": "Shampoo",
+          "value_fa": "شامپو",
+          "sort_order": 25
+        },
+        {
+          "code": "conditioner",
+          "value_ar": "كونديشنر",
+          "value_en": "Conditioner",
+          "value_fa": "نرم کننده",
+          "sort_order": 26
+        },
+        {
+          "code": "hair_mask",
+          "value_ar": "قناع شعر",
+          "value_en": "Hair Mask",
+          "value_fa": "ماسک مو",
+          "sort_order": 27
+        },
+        {
+          "code": "hair_spray",
+          "value_ar": "سبراي شعر",
+          "value_en": "Hair Spray",
+          "value_fa": "اسپری مو",
+          "sort_order": 28
+        },
+        {
+          "code": "soap",
+          "value_ar": "صابون",
+          "value_en": "Soap",
+          "value_fa": "صابون",
+          "sort_order": 29
+        }
+      ],
+      "validation_rules": [
+        {
+          "type": "required",
+          "message": {
+            "en": "Select a product type",
+            "ar": "اختر نوع المنتج",
+            "fa": "نوع محصول را انتخاب کنید"
+          }
+        }
+      ]
+    },
+    {
+      "group_code": "beauty-category",
+      "code": "beauty_skin_type",
+      "name_ar": "نوع البشرة",
+      "name_en": "Skin Type",
+      "name_fa": "نوع پوست",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "AiOutlineSkin",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "all_skin",
+          "value_ar": "جميع أنواع البشرة",
+          "value_en": "All Skin Types",
+          "value_fa": "همه پوست‌ها",
+          "sort_order": 1
+        },
+        {
+          "code": "dry",
+          "value_ar": "جافة",
+          "value_en": "Dry",
+          "value_fa": "خشک",
+          "sort_order": 2
+        },
+        {
+          "code": "oily",
+          "value_ar": "دهنية",
+          "value_en": "Oily",
+          "value_fa": "چرب",
+          "sort_order": 3
+        },
+        {
+          "code": "combination",
+          "value_ar": "مختلطة",
+          "value_en": "Combination",
+          "value_fa": "مختلط",
+          "sort_order": 4
+        },
+        {
+          "code": "normal",
+          "value_ar": "عادية",
+          "value_en": "Normal",
+          "value_fa": "معمولی",
+          "sort_order": 5
+        },
+        {
+          "code": "sensitive",
+          "value_ar": "حساسة",
+          "value_en": "Sensitive",
+          "value_fa": "حساس",
+          "sort_order": 6
+        },
+        {
+          "code": "mature",
+          "value_ar": "ناضجة",
+          "value_en": "Mature",
+          "value_fa": "پیر",
+          "sort_order": 7
+        },
+        {
+          "code": "acne_prone",
+          "value_ar": "عرضة لحب الشباب",
+          "value_en": "Acne Prone",
+          "value_fa": "مستعد جوش",
+          "sort_order": 8
+        }
+      ]
+    },
+    {
+      "group_code": "beauty-category",
+      "code": "hair_type",
+      "name_ar": "نوع الشعر",
+      "name_en": "Hair Type",
+      "name_fa": "نوع مو",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiWavyItalic",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "all_hair",
+          "value_ar": "جميع أنواع الشعر",
+          "value_en": "All Hair Types",
+          "value_fa": "همه موها",
+          "sort_order": 1
+        },
+        {
+          "code": "straight",
+          "value_ar": "ناعم",
+          "value_en": "Straight",
+          "value_fa": "صاف",
+          "sort_order": 2
+        },
+        {
+          "code": "wavy",
+          "value_ar": "مموج",
+          "value_en": "Wavy",
+          "value_fa": "موج دار",
+          "sort_order": 3
+        },
+        {
+          "code": "curly",
+          "value_ar": "مجعد",
+          "value_en": "Curly",
+          "value_fa": "فرفری",
+          "sort_order": 4
+        },
+        {
+          "code": "coily",
+          "value_ar": "حلزوني",
+          "value_en": "Coily",
+          "value_fa": "فرهای ریز",
+          "sort_order": 5
+        },
+        {
+          "code": "dry_hair",
+          "value_ar": "جاف",
+          "value_en": "Dry Hair",
+          "value_fa": "خشک",
+          "sort_order": 6
+        },
+        {
+          "code": "oily_hair",
+          "value_ar": "دهني",
+          "value_en": "Oily Hair",
+          "value_fa": "چرب",
+          "sort_order": 7
+        },
+        {
+          "code": "colored",
+          "value_ar": "مصبغ",
+          "value_en": "Colored Hair",
+          "value_fa": "رنگ شده",
+          "sort_order": 8
+        },
+        {
+          "code": "damaged",
+          "value_ar": "تالف",
+          "value_en": "Damaged",
+          "value_fa": "آسیب دیده",
+          "sort_order": 9
+        },
+        {
+          "code": "fine",
+          "value_ar": "رفيع",
+          "value_en": "Fine",
+          "value_fa": "نازک",
+          "sort_order": 10
+        },
+        {
+          "code": "thick",
+          "value_ar": "كثيف",
+          "value_en": "Thick",
+          "value_fa": "ضخیم",
+          "sort_order": 11
+        }
+      ]
+    },
+    {
+      "group_code": "beauty-details",
+      "code": "finish",
+      "name_ar": "اللمسة النهائية",
+      "name_en": "Finish",
+      "name_fa": "نوع فینیش",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiSparkles",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "matte",
+          "value_ar": "مات",
+          "value_en": "Matte",
+          "value_fa": "مات",
+          "sort_order": 1
+        },
+        {
+          "code": "glossy",
+          "value_ar": "لامع",
+          "value_en": "Glossy",
+          "value_fa": "براق",
+          "sort_order": 2
+        },
+        {
+          "code": "satin",
+          "value_ar": "ساتان",
+          "value_en": "Satin",
+          "value_fa": "ساتن",
+          "sort_order": 3
+        },
+        {
+          "code": "shimmer",
+          "value_ar": "لمعان",
+          "value_en": "Shimmer",
+          "value_fa": "درخشان",
+          "sort_order": 4
+        },
+        {
+          "code": "metallic",
+          "value_ar": "معدني",
+          "value_en": "Metallic",
+          "value_fa": "متالیک",
+          "sort_order": 5
+        },
+        {
+          "code": "dewy",
+          "value_ar": "ندي",
+          "value_en": "Dewy",
+          "value_fa": "مرطوب",
+          "sort_order": 6
+        },
+        {
+          "code": "natural",
+          "value_ar": "طبيعي",
+          "value_en": "Natural",
+          "value_fa": "طبیعی",
+          "sort_order": 7
+        },
+        {
+          "code": "sheer",
+          "value_ar": "شفاف",
+          "value_en": "Sheer",
+          "value_fa": "نیمه شفاف",
+          "sort_order": 8
+        },
+        {
+          "code": "cream",
+          "value_ar": "كريمي",
+          "value_en": "Cream",
+          "value_fa": "کرم",
+          "sort_order": 9
+        }
+      ]
+    },
+    {
+      "group_code": "beauty-details",
+      "code": "coverage",
+      "name_ar": "التغطية",
+      "name_en": "Coverage",
+      "name_fa": "پوشش",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "FiLayers",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "sheer_coverage",
+          "value_ar": "شفافة",
+          "value_en": "Sheer",
+          "value_fa": "سبک",
+          "sort_order": 1
+        },
+        {
+          "code": "light_coverage",
+          "value_ar": "خفيفة",
+          "value_en": "Light",
+          "value_fa": "سبک",
+          "sort_order": 2
+        },
+        {
+          "code": "medium_coverage",
+          "value_ar": "متوسة",
+          "value_en": "Medium",
+          "value_fa": "متوسط",
+          "sort_order": 3
+        },
+        {
+          "code": "full_coverage",
+          "value_ar": "كاملة",
+          "value_en": "Full",
+          "value_fa": "کامل",
+          "sort_order": 4
+        },
+        {
+          "code": "buildable",
+          "value_ar": "قابلة للبناء",
+          "value_en": "Buildable",
+          "value_fa": "قابل افزایش",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "group_code": "beauty-details",
+      "code": "beauty_formulation",
+      "name_ar": "التركيبة",
+      "name_en": "Formulation",
+      "name_fa": "فرمولاسیون",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiSettingsKnobs",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "liquid",
+          "value_ar": "سائل",
+          "value_en": "Liquid",
+          "value_fa": "مایع",
+          "sort_order": 1
+        },
+        {
+          "code": "cream",
+          "value_ar": "كريم",
+          "value_en": "Cream",
+          "value_fa": "کرمی",
+          "sort_order": 2
+        },
+        {
+          "code": "powder",
+          "value_ar": "بودرة",
+          "value_en": "Powder",
+          "value_fa": "پودری",
+          "sort_order": 3
+        },
+        {
+          "code": "stick",
+          "value_ar": "قلم",
+          "value_en": "Stick",
+          "value_fa": "قلمی",
+          "sort_order": 4
+        },
+        {
+          "code": "gel",
+          "value_ar": "جل",
+          "value_en": "Gel",
+          "value_fa": "ژل",
+          "sort_order": 5
+        },
+        {
+          "code": "foam",
+          "value_ar": "رغوة",
+          "value_en": "Foam",
+          "value_fa": "فوم",
+          "sort_order": 6
+        },
+        {
+          "code": "mousse",
+          "value_ar": "موس",
+          "value_en": "Mousse",
+          "value_fa": "موس",
+          "sort_order": 7
+        },
+        {
+          "code": "spray",
+          "value_ar": "رذاذ",
+          "value_en": "Spray",
+          "value_fa": "اسپری",
+          "sort_order": 8
+        },
+        {
+          "code": "oil",
+          "value_ar": "زيت",
+          "value_en": "Oil",
+          "value_fa": "روغنی",
+          "sort_order": 9
+        },
+        {
+          "code": "balm",
+          "value_ar": "بلسم",
+          "value_en": "Balm",
+          "value_fa": "بالم",
+          "sort_order": 10
+        },
+        {
+          "code": "pencil",
+          "value_ar": "قلم رصاص",
+          "value_en": "Pencil",
+          "value_fa": "مدادی",
+          "sort_order": 11
+        },
+        {
+          "code": "roll_on",
+          "value_ar": "دوار",
+          "value_en": "Roll-On",
+          "value_fa": "رولی",
+          "sort_order": 12
+        }
+      ]
+    },
+    {
+      "group_code": "beauty-details",
+      "code": "beauty_fragrance_family",
+      "name_ar": "عائلة العطر",
+      "name_en": "Fragrance Family",
+      "name_fa": "خانواده رایحه",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiPerfumeBottle",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 4,
+      "options": [
+        {
+          "code": "floral",
+          "value_ar": "زهري",
+          "value_en": "Floral",
+          "value_fa": "گل",
+          "sort_order": 1
+        },
+        {
+          "code": "oriental",
+          "value_ar": "شرقي",
+          "value_en": "Oriental",
+          "value_fa": "شرقی",
+          "sort_order": 2
+        },
+        {
+          "code": "woody",
+          "value_ar": "خشبي",
+          "value_en": "Woody",
+          "value_fa": "چوبی",
+          "sort_order": 3
+        },
+        {
+          "code": "fresh",
+          "value_ar": "منعش",
+          "value_en": "Fresh",
+          "value_fa": "تازه",
+          "sort_order": 4
+        },
+        {
+          "code": "citrus",
+          "value_ar": "حمضيات",
+          "value_en": "Citrus",
+          "value_fa": "مرکبات",
+          "sort_order": 5
+        },
+        {
+          "code": "fruity",
+          "value_ar": "فواكه",
+          "value_en": "Fruity",
+          "value_fa": "میوه",
+          "sort_order": 6
+        },
+        {
+          "code": "gourmand",
+          "value_ar": "حلو",
+          "value_en": "Gourmand",
+          "value_fa": "خوراکی",
+          "sort_order": 7
+        },
+        {
+          "code": "aquatic",
+          "value_ar": "بحري",
+          "value_en": "Aquatic",
+          "value_fa": "دریایی",
+          "sort_order": 8
+        },
+        {
+          "code": "green",
+          "value_ar": "أخضر",
+          "value_en": "Green",
+          "value_fa": "سبز",
+          "sort_order": 9
+        },
+        {
+          "code": "powdery",
+          "value_ar": "بودري",
+          "value_en": "Powdery",
+          "value_fa": "پودری",
+          "sort_order": 10
+        },
+        {
+          "code": "oud",
+          "value_ar": "عود",
+          "value_en": "Oud",
+          "value_fa": "عود",
+          "sort_order": 11
+        },
+        {
+          "code": "musk",
+          "value_ar": "مسك",
+          "value_en": "Musk",
+          "value_fa": "مشک",
+          "sort_order": 12
+        },
+        {
+          "code": "amber",
+          "value_ar": "عنبر",
+          "value_en": "Amber",
+          "value_fa": "کهربا",
+          "sort_order": 13
+        }
+      ]
+    },
+    {
+      "group_code": "beauty-details",
+      "code": "applicator_type",
+      "name_ar": "نوع الموزع",
+      "name_en": "Applicator Type",
+      "name_fa": "نوع اپلیکاتور",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "FiTool",
+      "is_required": false,
+      "is_filterable": false,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 5,
+      "options": [
+        {
+          "code": "brush",
+          "value_ar": "فرشاة",
+          "value_en": "Brush",
+          "value_fa": "برس",
+          "sort_order": 1
+        },
+        {
+          "code": "sponge",
+          "value_ar": "إسفنجة",
+          "value_en": "Sponge",
+          "value_fa": "اسفنج",
+          "sort_order": 2
+        },
+        {
+          "code": "wand",
+          "value_ar": "عصا",
+          "value_en": "Wand",
+          "value_fa": "میله",
+          "sort_order": 3
+        },
+        {
+          "code": "dropper",
+          "value_ar": "قطارة",
+          "value_en": "Dropper",
+          "value_fa": "قطره چکان",
+          "sort_order": 4
+        },
+        {
+          "code": "pump",
+          "value_ar": "مضخة",
+          "value_en": "Pump",
+          "value_fa": "پمپ",
+          "sort_order": 5
+        },
+        {
+          "code": "spray_nozzle",
+          "value_ar": "رشاش",
+          "value_en": "Spray Nozzle",
+          "value_fa": "نازل اسپری",
+          "sort_order": 6
+        },
+        {
+          "code": "rollerball",
+          "value_ar": "كرة دوارة",
+          "value_en": "Rollerball",
+          "value_fa": "رولر",
+          "sort_order": 7
+        },
+        {
+          "code": "tube",
+          "value_ar": "أنبوب",
+          "value_en": "Tube",
+          "value_fa": "لوله",
+          "sort_order": 8
+        },
+        {
+          "code": "pot",
+          "value_ar": "علبة",
+          "value_en": "Pot / Jar",
+          "value_fa": "شیشه",
+          "sort_order": 9
+        },
+        {
+          "code": "pencil_sharpener",
+          "value_ar": "قلم",
+          "value_en": "Pencil",
+          "value_fa": "مداد",
+          "sort_order": 10
+        }
+      ]
+    },
+    {
+      "group_code": "beauty-specifications",
+      "code": "beauty_volume_ml",
+      "name_ar": "الحجم (مل)",
+      "name_en": "Volume (ml)",
+      "name_fa": "حجم (میلی لیتر)",
+      "value_type": "number",
+      "input_type": "number",
+      "icon": "FiDroplet",
+      "is_required": false,
+      "is_filterable": false,
+      "is_searchable": false,
+      "is_variant_defining": false,
+      "sort_order": 1
+    },
+    {
+      "group_code": "beauty-specifications",
+      "code": "beauty_weight_g",
+      "name_ar": "الوزن (غم)",
+      "name_en": "Weight (g)",
+      "name_fa": "وزن (گرم)",
+      "value_type": "number",
+      "input_type": "number",
+      "icon": "FiFeather",
+      "is_required": false,
+      "is_filterable": false,
+      "is_searchable": false,
+      "is_variant_defining": false,
+      "sort_order": 2
+    },
+    {
+      "group_code": "beauty-specifications",
+      "code": "shelf_life_months",
+      "name_ar": "مدة الصلاحية (شهور)",
+      "name_en": "Shelf Life (months)",
+      "name_fa": "مدت انقضا (ماه)",
+      "value_type": "number",
+      "input_type": "number",
+      "icon": "FiCalendar",
+      "is_required": false,
+      "is_filterable": false,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3
+    },
+    {
+      "group_code": "beauty-specifications",
+      "code": "spf",
+      "name_ar": "عامل الحماية من الشمس",
+      "name_en": "SPF",
+      "name_fa": "SPF",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "FiSun",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 4,
+      "options": [
+        {
+          "code": "spf_15",
+          "value_ar": "SPF 15",
+          "value_en": "SPF 15",
+          "value_fa": "SPF 15",
+          "sort_order": 1
+        },
+        {
+          "code": "spf_30",
+          "value_ar": "SPF 30",
+          "value_en": "SPF 30",
+          "value_fa": "SPF 30",
+          "sort_order": 2
+        },
+        {
+          "code": "spf_50",
+          "value_ar": "SPF 50",
+          "value_en": "SPF 50",
+          "value_fa": "SPF 50",
+          "sort_order": 3
+        },
+        {
+          "code": "spf_50_plus",
+          "value_ar": "SPF 50+",
+          "value_en": "SPF 50+",
+          "value_fa": "SPF 50+",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "group_code": "beauty-specifications",
+      "code": "ingredients",
+      "name_ar": "المكونات",
+      "name_en": "Ingredients",
+      "name_fa": "مواد تشکیل دهنده",
+      "value_type": "text",
+      "input_type": "textarea",
+      "icon": "FiFileText",
+      "is_required": false,
+      "is_filterable": false,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 5
+    },
+    {
+      "group_code": "beauty-specifications",
+      "code": "beauty_cruelty_free",
+      "name_ar": "خالٍ من القسوة",
+      "name_en": "Cruelty Free",
+      "name_fa": "بدون حیوان‌آزاری",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiHeart",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 6
+    },
+    {
+      "group_code": "beauty-specifications",
+      "code": "beauty_vegan",
+      "name_ar": "فيغان",
+      "name_en": "Vegan",
+      "name_fa": "وگان",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiLeaf",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 7
+    },
+    {
+      "group_code": "beauty-specifications",
+      "code": "beauty_organic",
+      "name_ar": "عضوي",
+      "name_en": "Organic",
+      "name_fa": "ارگانیک",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiSeedling",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 8
+    },
+    {
+      "group_code": "beauty-shade",
+      "code": "shade_name",
+      "name_ar": "اسم الدرجة",
+      "name_en": "Shade Name",
+      "name_fa": "نام سایه",
+      "value_type": "text",
+      "input_type": "text",
+      "icon": "FiDroplet",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1
+    },
+    {
+      "group_code": "beauty-shade",
+      "code": "undertone",
+      "name_ar": "الدرجة اللونية",
+      "name_en": "Undertone",
+      "name_fa": "زیر تن",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "FiDroplet",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "warm",
+          "value_ar": "دافئ",
+          "value_en": "Warm",
+          "value_fa": "گرم",
+          "sort_order": 1
+        },
+        {
+          "code": "cool",
+          "value_ar": "بارد",
+          "value_en": "Cool",
+          "value_fa": "سرد",
+          "sort_order": 2
+        },
+        {
+          "code": "neutral",
+          "value_ar": "محايد",
+          "value_en": "Neutral",
+          "value_fa": "خنثی",
+          "sort_order": 3
+        },
+        {
+          "code": "olive",
+          "value_ar": "زيتوني",
+          "value_en": "Olive",
+          "value_fa": "زیتونی",
+          "sort_order": 4
+        },
+        {
+          "code": "peach",
+          "value_ar": "خوخي",
+          "value_en": "Peach",
+          "value_fa": "هلویی",
+          "sort_order": 5
+        },
+        {
+          "code": "golden",
+          "value_ar": "ذهبي",
+          "value_en": "Golden",
+          "value_fa": "طلایی",
+          "sort_order": 6
+        },
+        {
+          "code": "rosy",
+          "value_ar": "وردي",
+          "value_en": "Rosy",
+          "value_fa": "رز",
+          "sort_order": 7
+        }
+      ]
+    },
+    {
+      "group_code": "beauty-shade",
+      "code": "finish_type",
+      "name_ar": "نوع اللمسة",
+      "name_en": "Finish Type",
+      "name_fa": "نوع فینیش",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiSparkles",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "matte",
+          "value_ar": "مات",
+          "value_en": "Matte",
+          "value_fa": "مات",
+          "sort_order": 1
+        },
+        {
+          "code": "glossy",
+          "value_ar": "لامع",
+          "value_en": "Glossy",
+          "value_fa": "براق",
+          "sort_order": 2
+        },
+        {
+          "code": "satin",
+          "value_ar": "ساتان",
+          "value_en": "Satin",
+          "value_fa": "ساتن",
+          "sort_order": 3
+        },
+        {
+          "code": "shimmer",
+          "value_ar": "لمعان",
+          "value_en": "Shimmer",
+          "value_fa": "درخشان",
+          "sort_order": 4
+        },
+        {
+          "code": "metallic",
+          "value_ar": "معدني",
+          "value_en": "Metallic",
+          "value_fa": "متالیک",
+          "sort_order": 5
+        },
+        {
+          "code": "sheer",
+          "value_ar": "شفاف",
+          "value_en": "Sheer",
+          "value_fa": "نیمه شفاف",
+          "sort_order": 6
+        }
+      ]
+    }
+  ]
+}

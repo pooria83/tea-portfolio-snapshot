@@ -1,0 +1,504 @@
+{
+  "attributes": [
+    {
+      "group_code": "outerwear-specs",
+      "code": "outerwear_neckline",
+      "name_ar": "نوع الياقة",
+      "name_en": "Neckline",
+      "name_fa": "یقه",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiNecklace",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "round",
+          "value_ar": "دائري",
+          "value_en": "Round Neck",
+          "value_fa": "یقه گرد",
+          "sort_order": 1
+        },
+        {
+          "code": "v_neck",
+          "value_ar": "V",
+          "value_en": "V-Neck",
+          "value_fa": "یقه V",
+          "sort_order": 2
+        },
+        {
+          "code": "high_neck",
+          "value_ar": "ياقة عالية",
+          "value_en": "High Neck",
+          "value_fa": "یقه بلند",
+          "sort_order": 3
+        },
+        {
+          "code": "turtle",
+          "value_ar": "ياقة مدورة",
+          "value_en": "Turtleneck",
+          "value_fa": "یقه اسکی",
+          "sort_order": 4
+        },
+        {
+          "code": "collar",
+          "value_ar": "ياقة",
+          "value_en": "Collar",
+          "value_fa": "یقه دار",
+          "sort_order": 5
+        },
+        {
+          "code": "mandarin",
+          "value_ar": "مندارين",
+          "value_en": "Mandarin",
+          "value_fa": "مندارین",
+          "sort_order": 6
+        },
+        {
+          "code": "hooded",
+          "value_ar": "قلنسوة",
+          "value_en": "Hooded",
+          "value_fa": "هودی",
+          "sort_order": 7
+        },
+        {
+          "code": "mock_neck",
+          "value_ar": "ياقة وهمية",
+          "value_en": "Mock Neck",
+          "value_fa": "یقه خزری",
+          "sort_order": 8
+        },
+        {
+          "code": "notch_lapel",
+          "value_ar": "طية مفتوحة",
+          "value_en": "Notch Lapel",
+          "value_fa": "یقه بلیزر",
+          "sort_order": 9
+        },
+        {
+          "code": "shawl_collar",
+          "value_ar": "ياقة شال",
+          "value_en": "Shawl Collar",
+          "value_fa": "یقه شالی",
+          "sort_order": 10
+        },
+        {
+          "code": "stand_collar",
+          "value_ar": "ياقة واقفة",
+          "value_en": "Stand Collar",
+          "value_fa": "یقه ایستاده",
+          "sort_order": 11
+        }
+      ]
+    },
+    {
+      "group_code": "outerwear-specs",
+      "code": "outerwear_sleeve_style",
+      "name_ar": "نمط الكم",
+      "name_en": "Sleeve Style",
+      "name_fa": "سبک آستین",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiArmoredPants",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "long",
+          "value_ar": "طويل",
+          "value_en": "Long Sleeve",
+          "value_fa": "آستین بلند",
+          "sort_order": 1
+        },
+        {
+          "code": "three_quarter",
+          "value_ar": "ثلاثة أرباع",
+          "value_en": "3/4 Sleeve",
+          "value_fa": "سه چهارم",
+          "sort_order": 2
+        },
+        {
+          "code": "short",
+          "value_ar": "قصير",
+          "value_en": "Short Sleeve",
+          "value_fa": "آستین کوتاه",
+          "sort_order": 3
+        },
+        {
+          "code": "sleeveless",
+          "value_ar": "بدون أكمام",
+          "value_en": "Sleeveless",
+          "value_fa": "بدون آستین",
+          "sort_order": 4
+        },
+        {
+          "code": "raglan",
+          "value_ar": "رغلان",
+          "value_en": "Raglan Sleeve",
+          "value_fa": "آستین راگلان",
+          "sort_order": 5
+        },
+        {
+          "code": "dolman",
+          "value_ar": "دولمان",
+          "value_en": "Dolman Sleeve",
+          "value_fa": "آستین دولمن",
+          "sort_order": 6
+        },
+        {
+          "code": "bell",
+          "value_ar": "جرس",
+          "value_en": "Bell Sleeve",
+          "value_fa": "آستین زنگی",
+          "sort_order": 7
+        }
+      ]
+    },
+    {
+      "group_code": "outerwear-specs",
+      "code": "outerwear_closure_type",
+      "name_ar": "نوع الإغلاق",
+      "name_en": "Closure Type",
+      "name_fa": "نوع بسته شدن",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiClothes",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "zipper",
+          "value_ar": "سحاب",
+          "value_en": "Zipper",
+          "value_fa": "زیپ",
+          "sort_order": 1
+        },
+        {
+          "code": "buttons",
+          "value_ar": "أزرار",
+          "value_en": "Buttons",
+          "value_fa": "دکمه",
+          "sort_order": 2
+        },
+        {
+          "code": "hook_eye",
+          "value_ar": "خطاف وعروة",
+          "value_en": "Hook & Eye",
+          "value_fa": "قلاب و حلقه",
+          "sort_order": 3
+        },
+        {
+          "code": "toggle",
+          "value_ar": "تبديل",
+          "value_en": "Toggle",
+          "value_fa": "کلیپس",
+          "sort_order": 4
+        },
+        {
+          "code": "belt",
+          "value_ar": "حزام",
+          "value_en": "Belt",
+          "value_fa": "کمربند",
+          "sort_order": 5
+        },
+        {
+          "code": "snap",
+          "value_ar": "كبسول",
+          "value_en": "Snap",
+          "value_fa": "دکمه فشاری",
+          "sort_order": 6
+        },
+        {
+          "code": "drawstring",
+          "value_ar": "رباط",
+          "value_en": "Drawstring",
+          "value_fa": "بندی",
+          "sort_order": 7
+        },
+        {
+          "code": "slip_on",
+          "value_ar": "لبس",
+          "value_en": "Slip-On",
+          "value_fa": "پوشیدنی",
+          "sort_order": 8
+        }
+      ]
+    },
+    {
+      "group_code": "outerwear-specs",
+      "code": "insulation_type",
+      "name_ar": "نوع العزل",
+      "name_en": "Insulation Type",
+      "name_fa": "نوع عایق",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiThermometer",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 4,
+      "options": [
+        {
+          "code": "down",
+          "value_ar": "ريش",
+          "value_en": "Down",
+          "value_fa": "پر",
+          "sort_order": 1
+        },
+        {
+          "code": "synthetic_polyester",
+          "value_ar": "صناعي بوليستر",
+          "value_en": "Synthetic Polyester",
+          "value_fa": "پلی‌استر",
+          "sort_order": 2
+        },
+        {
+          "code": "fleece",
+          "value_ar": "صوف",
+          "value_en": "Fleece",
+          "value_fa": "پشمک",
+          "sort_order": 3
+        },
+        {
+          "code": "wool",
+          "value_ar": "صوف طبيعي",
+          "value_en": "Wool",
+          "value_fa": "پشم",
+          "sort_order": 4
+        },
+        {
+          "code": "cotton",
+          "value_ar": "قطن",
+          "value_en": "Cotton",
+          "value_fa": "پنبه",
+          "sort_order": 5
+        },
+        {
+          "code": "primaloft",
+          "value_ar": "برايمالوفت",
+          "value_en": "PrimaLoft",
+          "value_fa": "پرایمالافت",
+          "sort_order": 6
+        },
+        {
+          "code": "thinsulate",
+          "value_ar": "ثينسوليت",
+          "value_en": "Thinsulate",
+          "value_fa": "تینسولیت",
+          "sort_order": 7
+        },
+        {
+          "code": "none",
+          "value_ar": "بدون عزل",
+          "value_en": "None",
+          "value_fa": "بدون عایق",
+          "sort_order": 8
+        }
+      ]
+    },
+    {
+      "group_code": "outerwear-specs",
+      "code": "hood_type",
+      "name_ar": "نوع القلنسوة",
+      "name_en": "Hood Type",
+      "name_fa": "نوع هود",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiHood",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 5,
+      "options": [
+        {
+          "code": "attached",
+          "value_ar": "مثبت",
+          "value_en": "Attached",
+          "value_fa": "متصل",
+          "sort_order": 1
+        },
+        {
+          "code": "detachable",
+          "value_ar": "قابل فصل",
+          "value_en": "Detachable",
+          "value_fa": "جداشونده",
+          "sort_order": 2
+        },
+        {
+          "code": "removable_fur",
+          "value_ar": "فرو قابل إزالة",
+          "value_en": "Removable Fur Trim",
+          "value_fa": "خز جداشونده",
+          "sort_order": 3
+        },
+        {
+          "code": "stow_away",
+          "value_ar": "قابل الطي",
+          "value_en": "Stow-Away",
+          "value_fa": "جمع‌شونده",
+          "sort_order": 4
+        },
+        {
+          "code": "no_hood",
+          "value_ar": "بدون قلنسوة",
+          "value_en": "No Hood",
+          "value_fa": "بدون هود",
+          "sort_order": 5
+        },
+        {
+          "code": "convertible_collar",
+          "value_ar": "ياقة قابلة للتحويل",
+          "value_en": "Convertible Collar",
+          "value_fa": "یقه تبدیل‌شونده",
+          "sort_order": 6
+        }
+      ]
+    },
+    {
+      "group_code": "outerwear-specs",
+      "code": "outerwear_fit_type",
+      "name_ar": "نوع القصة",
+      "name_en": "Fit Type",
+      "name_fa": "مدل اندام",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiBodyHeight",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 6,
+      "options": [
+        {
+          "code": "slim_fit",
+          "value_ar": "ضيق",
+          "value_en": "Slim Fit",
+          "value_fa": "چسبان",
+          "sort_order": 1
+        },
+        {
+          "code": "regular_fit",
+          "value_ar": "عادي",
+          "value_en": "Regular Fit",
+          "value_fa": "معمولی",
+          "sort_order": 2
+        },
+        {
+          "code": "relaxed",
+          "value_ar": "مريح",
+          "value_en": "Relaxed Fit",
+          "value_fa": "آزاد",
+          "sort_order": 3
+        },
+        {
+          "code": "oversized",
+          "value_ar": "أوفرサイズ",
+          "value_en": "Oversized",
+          "value_fa": "اورسایز",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "group_code": "outerwear-specs",
+      "code": "outerwear_length",
+      "name_ar": "طول المعطف",
+      "name_en": "Outerwear Length",
+      "name_fa": "قد پالتو",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiRuler",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 7,
+      "options": [
+        {
+          "code": "hip_length",
+          "value_ar": "طول الورك",
+          "value_en": "Hip Length",
+          "value_fa": "قد باسن",
+          "sort_order": 1
+        },
+        {
+          "code": "waist_length",
+          "value_ar": "طول الخصر",
+          "value_en": "Waist Length",
+          "value_fa": "قد کمر",
+          "sort_order": 2
+        },
+        {
+          "code": "knee_length",
+          "value_ar": "طول الركبة",
+          "value_en": "Knee Length",
+          "value_fa": "قد زانو",
+          "sort_order": 3
+        },
+        {
+          "code": "long",
+          "value_ar": "طويل",
+          "value_en": "Long",
+          "value_fa": "بلند",
+          "sort_order": 4
+        },
+        {
+          "code": "full_length",
+          "value_ar": "كامل",
+          "value_en": "Full Length",
+          "value_fa": "تمام قد",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "group_code": "outerwear-specs",
+      "code": "outerwear_water_resistance",
+      "name_ar": "مقاومة الماء",
+      "name_en": "Water Resistance",
+      "name_fa": "مقاومت در برابر آب",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiWaterDrop",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 8,
+      "options": [
+        {
+          "code": "none",
+          "value_ar": "بدون",
+          "value_en": "None",
+          "value_fa": "بدون",
+          "sort_order": 1
+        },
+        {
+          "code": "water_resistant",
+          "value_ar": "مقاوم للماء",
+          "value_en": "Water Resistant",
+          "value_fa": "مقاوم در برابر آب",
+          "sort_order": 2
+        },
+        {
+          "code": "waterproof",
+          "value_ar": "مضاد للماء",
+          "value_en": "Waterproof",
+          "value_fa": "ضد آب",
+          "sort_order": 3
+        }
+      ]
+    }
+  ]
+}

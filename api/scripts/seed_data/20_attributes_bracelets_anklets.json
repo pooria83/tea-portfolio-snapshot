@@ -1,0 +1,386 @@
+{
+  "attributes": [
+    {
+      "group_code": "colors-pattern",
+      "code": "primary_color",
+      "name_ar": "اللون الأساسي",
+      "name_en": "Primary Color",
+      "name_fa": "رنگ اصلی",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiDroplet",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": []
+    },
+    {
+      "group_code": "metal-gem",
+      "code": "metal_type",
+      "name_ar": "نوع المعدن",
+      "name_en": "Metal Type",
+      "name_fa": "نوع فلز",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiGoldBar",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": []
+    },
+    {
+      "group_code": "metal-gem",
+      "code": "metal_purity",
+      "name_ar": "نقاء المعدن",
+      "name_en": "Metal Purity",
+      "name_fa": "خلوص فلز",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiGoldBar",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2,
+      "options": []
+    },
+    {
+      "group_code": "metal-gem",
+      "code": "gemstone_type",
+      "name_ar": "نوع الحجر الكريم",
+      "name_en": "Gemstone Type",
+      "name_fa": "نوع سنگ قیمتی",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiDiamondRing",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3,
+      "options": []
+    },
+    {
+      "group_code": "metal-gem",
+      "code": "stone_creation_method",
+      "name_ar": "طريقة تصنيع الحجر",
+      "name_en": "Stone Creation Method",
+      "name_fa": "روش ساخت سنگ",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiDiamondRing",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 4,
+      "options": []
+    },
+    {
+      "group_code": "jewelry-specs",
+      "code": "plating",
+      "name_ar": "الطلاء",
+      "name_en": "Plating",
+      "name_fa": "روکش",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiGoldBar",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": []
+    },
+    {
+      "group_code": "jewelry-specs",
+      "code": "jewelry_hypoallergenic",
+      "name_ar": "مضاد للحساسية",
+      "name_en": "Hypoallergenic",
+      "name_fa": "ضد حساسیت",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiShield",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2
+    },
+    {
+      "group_code": "jewelry-specs",
+      "code": "adjustable",
+      "name_ar": "قابل التعديل",
+      "name_en": "Adjustable",
+      "name_fa": "قابل تنظیم",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiSliders",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3
+    },
+    {
+      "group_code": "jewelry-design",
+      "code": "jewelry_style",
+      "name_ar": "ستايل المجوهرات",
+      "name_en": "Jewelry Style",
+      "name_fa": "استایل جواهر",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiDiamondRing",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": []
+    },
+    {
+      "group_code": "jewelry-sizing",
+      "code": "bracelet_size",
+      "name_ar": "قياس السوار",
+      "name_en": "Bracelet Size",
+      "name_fa": "سایز دستبند",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiGemChain",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "6in",
+          "value_ar": "6 بوصة",
+          "value_en": "6 in",
+          "value_fa": "6 اینچ",
+          "sort_order": 1
+        },
+        {
+          "code": "6.5in",
+          "value_ar": "6.5 بوصة",
+          "value_en": "6.5 in",
+          "value_fa": "6.5 اینچ",
+          "sort_order": 2
+        },
+        {
+          "code": "7in",
+          "value_ar": "7 بوصة",
+          "value_en": "7 in",
+          "value_fa": "7 اینچ",
+          "sort_order": 3
+        },
+        {
+          "code": "7.5in",
+          "value_ar": "7.5 بوصة",
+          "value_en": "7.5 in",
+          "value_fa": "7.5 اینچ",
+          "sort_order": 4
+        },
+        {
+          "code": "8in",
+          "value_ar": "8 بوصة",
+          "value_en": "8 in",
+          "value_fa": "8 اینچ",
+          "sort_order": 5
+        },
+        {
+          "code": "8.5in",
+          "value_ar": "8.5 بوصة",
+          "value_en": "8.5 in",
+          "value_fa": "8.5 اینچ",
+          "sort_order": 6
+        },
+        {
+          "code": "adjustable",
+          "value_ar": "قابل التعديل",
+          "value_en": "Adjustable",
+          "value_fa": "قابل تنظیم",
+          "sort_order": 7
+        }
+      ]
+    },
+    {
+      "group_code": "bracelet-specs",
+      "code": "bracelet_design",
+      "name_ar": "تصميم السوار",
+      "name_en": "Bracelet Design",
+      "name_fa": "طرح دستبند",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiGemChain",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "bangle",
+          "value_ar": "بنجل",
+          "value_en": "Bangle",
+          "value_fa": "بنگل",
+          "sort_order": 1
+        },
+        {
+          "code": "cuff",
+          "value_ar": "كف",
+          "value_en": "Cuff",
+          "value_fa": "کاف",
+          "sort_order": 2
+        },
+        {
+          "code": "chain",
+          "value_ar": "سلسلة",
+          "value_en": "Chain",
+          "value_fa": "زنجیر",
+          "sort_order": 3
+        },
+        {
+          "code": "charm",
+          "value_ar": "تميمة",
+          "value_en": "Charm",
+          "value_fa": "چرم",
+          "sort_order": 4
+        },
+        {
+          "code": "link",
+          "value_ar": "حلقات",
+          "value_en": "Link",
+          "value_fa": "حلقه‌ای",
+          "sort_order": 5
+        },
+        {
+          "code": "tennis",
+          "value_ar": "تنس",
+          "value_en": "Tennis",
+          "value_fa": "تنیس",
+          "sort_order": 6
+        },
+        {
+          "code": "wrap",
+          "value_ar": "ملتف",
+          "value_en": "Wrap",
+          "value_fa": "پیچی",
+          "sort_order": 7
+        },
+        {
+          "code": "beaded",
+          "value_ar": "خرزي",
+          "value_en": "Beaded",
+          "value_fa": "مهره‌ای",
+          "sort_order": 8
+        },
+        {
+          "code": "slider",
+          "value_ar": "منزلق",
+          "value_en": "Slider",
+          "value_fa": "کشویی",
+          "sort_order": 9
+        }
+      ]
+    },
+    {
+      "group_code": "bracelet-specs",
+      "code": "bracelet_clasp_type",
+      "name_ar": "نوع الإغلاق",
+      "name_en": "Clasp Type",
+      "name_fa": "نوع قفل",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "FiLock",
+      "is_required": false,
+      "is_filterable": false,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "lobster",
+          "value_ar": "جراد البحر",
+          "value_en": "Lobster",
+          "value_fa": "لوبستر",
+          "sort_order": 1
+        },
+        {
+          "code": "spring_ring",
+          "value_ar": "حلقة زنبركية",
+          "value_en": "Spring Ring",
+          "value_fa": "حلقه فنری",
+          "sort_order": 2
+        },
+        {
+          "code": "toggle",
+          "value_ar": "تبديل",
+          "value_en": "Toggle",
+          "value_fa": "تگل",
+          "sort_order": 3
+        },
+        {
+          "code": "magnetic",
+          "value_ar": "مغناطيسي",
+          "value_en": "Magnetic",
+          "value_fa": "مغناطیسی",
+          "sort_order": 4
+        },
+        {
+          "code": "hook_eye",
+          "value_ar": "خطاف وعين",
+          "value_en": "Hook & Eye",
+          "value_fa": "قلاب و حلقه",
+          "sort_order": 5
+        },
+        {
+          "code": "box",
+          "value_ar": "صندوقي",
+          "value_en": "Box",
+          "value_fa": "جعبه‌ای",
+          "sort_order": 6
+        },
+        {
+          "code": "barrel",
+          "value_ar": "برميل",
+          "value_en": "Barrel",
+          "value_fa": "بشکه‌ای",
+          "sort_order": 7
+        },
+        {
+          "code": "screw",
+          "value_ar": "لولبي",
+          "value_en": "Screw",
+          "value_fa": "پیچی",
+          "sort_order": 8
+        },
+        {
+          "code": "fold_over",
+          "value_ar": "قابل للطي",
+          "value_en": "Fold Over",
+          "value_fa": "تاشو",
+          "sort_order": 9
+        },
+        {
+          "code": "slide",
+          "value_ar": "منزلق",
+          "value_en": "Slide",
+          "value_fa": "کشویی",
+          "sort_order": 10
+        },
+        {
+          "code": "no_clasp",
+          "value_ar": "بدون إغلاق",
+          "value_en": "No Clasp",
+          "value_fa": "بدون قفل",
+          "sort_order": 11
+        }
+      ]
+    }
+  ]
+}

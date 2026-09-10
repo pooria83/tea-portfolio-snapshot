@@ -1,0 +1,140 @@
+services:
+  ai-engine:
+    image: ghcr.io/tea-assist/product-graph-ai-engine:main
+    environment:
+      OPENCODE_ZEN_API_KEY: ${AI_ENGINE_OPENCODE_ZEN_API_KEY}
+      EMBEDDING_PROVIDER: sentence_transformer
+      EMBEDDING_MODEL: Qwen/Qwen3-Embedding-0.6B
+      EMBEDDING_DIMENSIONS: "1024"
+      QDRANT_URL: http://qdrant:6333
+      QDRANT_COLLECTION: products
+      QDRANT_API_KEY: ${QDRANT_API_KEY}
+      DATABASE_URL: postgresql+asyncpg://<REDACTED>@localhost/portfolio
+      LLM_ENCRYPTION_KEY: ${AI_ENGINE_LLM_ENCRYPTION_KEY}
+      LLM_MODEL: deepseek-v4-flash-free
+    volumes:
+      - ai_engine_config:/data
+      - ai_engine_cache:/home/appuser/.cache
+      - type: tmpfs
+        target: /tmp
+      - type: tmpfs
+        target: /app/logs
+    networks:
+      - tea-infra-net
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    read_only: true
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 4G
+      update_config:
+        order: start-first
+        failure_action: rollback
+
+  api:
+    image: ghcr.io/tea-assist/product-graph-api:main
+    environment:
+      ENVIRONMENT: production
+      DEBUG: "false"
+      SECRET_KEY: ${API_SECRET_KEY}
+      ALLOWED_ORIGINS: https://portfolio.example.invalid,http://portfolio.example.invalid
+      DATABASE_URL: postgresql+asyncpg://<REDACTED>@localhost/portfolio
+      DATABASE_URL_SYNC: postgresql://<REDACTED>@localhost/portfolio
+      REDIS_URL: redis://:${REDIS_PASSWORD}@redis:6379/0
+      RABBITMQ_URL: amqp://<REDACTED>@localhost/portfolio
+      JWT_SECRET_KEY: ${API_JWT_SECRET_KEY}
+      JWT_ALGORITHM: HS256
+      JWT_AUDIENCE: product-graph-api
+      JWT_ISSUER: product-graph-api
+      ACCESS_TOKEN_EXPIRE_MINUTES: "30"
+      REFRESH_TOKEN_EXPIRE_DAYS: "7"
+      API_KEY: ${API_API_KEY}
+      AI_ENGINE_URL: http://ai-engine:8003
+      AI_ENGINE_LLM_ENCRYPTION_KEY: ${AI_ENGINE_LLM_ENCRYPTION_KEY}
+      LLM_ENCRYPTION_KEY: ${AI_ENGINE_LLM_ENCRYPTION_KEY}
+      MINIO_ENDPOINT: minio:9000
+      MINIO_ACCESS_KEY: ${MINIO_ROOT_USER}
+      MINIO_SECRET_KEY: ${MINIO_ROOT_PASSWORD}
+      MINIO_BUCKET: product-graph
+      MINIO_SECURE: "false"
+      MINIO_PUBLIC_URL: ${MINIO_PUBLIC_URL}
+      MONGO_URL: ${MONGO_URL}
+      MONGO_DB_NAME: ${MONGO_DB_NAME}
+      MAX_UPLOAD_SIZE: "10485760"
+      RATE_LIMIT_DEFAULT: 100/minute
+      LOGIN_MAX_ATTEMPTS: "5"
+      LOGIN_LOCKOUT_MINUTES: "15"
+      LOGIN_LOCKOUT_MULTIPLIER: "2"
+      TWILIO_BYPASS: "true"
+      OTP_CODE_LENGTH: "6"
+      OTP_EXPIRE_SECONDS: "300"
+      OTP_MAX_SEND_PER_PHONE: "3"
+      OTP_MAX_VERIFY_ATTEMPTS: "5"
+    networks:
+      - tea-infra-net
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    read_only: true
+    volumes:
+      - type: tmpfs
+        target: /tmp
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 512M
+      update_config:
+        order: start-first
+        failure_action: rollback
+
+  web-ui:
+    image: ghcr.io/tea-assist/product-graph-web-ui:main
+    environment:
+      NODE_ENV: production
+      PORT: "3000"
+      NEXT_PUBLIC_API_URL: https://portfolio.example.invalid/api/v1
+    healthcheck:
+      test: ["CMD-SHELL", "node -e \"fetch('http://localhost:3000/api/health').then(r => process.exit(r.ok ? 0 : 1)).catch(() => process.exit(1))\""]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    depends_on:
+      - api
+    networks:
+      - tea-infra-net
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    read_only: true
+    volumes:
+      - type: tmpfs
+        target: /tmp
+      - type: volume
+        source: web_ui_image_cache
+        target: /app/.next/cache/images
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 2G
+      update_config:
+        order: start-first
+        failure_action: rollback
+
+volumes:
+  ai_engine_config:
+  ai_engine_cache:
+  web_ui_image_cache:
+
+networks:
+  tea-infra-net:
+    external: true
+    name: tea-infra-net

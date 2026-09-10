@@ -1,0 +1,420 @@
+{
+  "attribute_groups": [
+    {
+      "code": "colors-pattern",
+      "name_ar": "الألوان والنقشات",
+      "name_en": "Colors & Patterns",
+      "name_fa": "رنگ‌ها و طرح‌ها",
+      "icon": "FiPalette",
+      "sort_order": 1
+    },
+    {
+      "code": "materials",
+      "name_ar": "الخامات",
+      "name_en": "Materials",
+      "name_fa": "جنس پارچه",
+      "icon": "GiCottonFlower",
+      "sort_order": 2
+    },
+    {
+      "code": "style-occasion",
+      "name_ar": "الستايل والمناسبة",
+      "name_en": "Style & Occasion",
+      "name_fa": "استایل و موقعیت",
+      "icon": "GiStarDress",
+      "sort_order": 3
+    },
+    {
+      "code": "fit-size",
+      "name_ar": "المقاس والقصّة",
+      "name_en": "Fit & Size",
+      "name_fa": "سایز و مدل",
+      "icon": "GiBodyHeight",
+      "sort_order": 4
+    },
+    {
+      "code": "features-tags",
+      "name_ar": "الميزات والعلامات",
+      "name_en": "Features & Tags",
+      "name_fa": "ویژگی‌ها و برچسب‌ها",
+      "icon": "FiTag",
+      "sort_order": 5
+    },
+    {
+      "code": "metal-gem",
+      "name_ar": "المعدن والأحجار",
+      "name_en": "Metal & Gemstone",
+      "name_fa": "فلز و سنگ",
+      "icon": "GiGoldBar",
+      "sort_order": 10
+    },
+    {
+      "code": "jewelry-specs",
+      "name_ar": "مواصفات المجوهرات",
+      "name_en": "Jewelry Specs",
+      "name_fa": "مشخصات جواهر",
+      "icon": "GiSparklingSabre",
+      "sort_order": 11
+    },
+    {
+      "code": "jewelry-sizing",
+      "name_ar": "قياس المجوهرات",
+      "name_en": "Jewelry Sizing",
+      "name_fa": "اندازه جواهر",
+      "icon": "GiRuler",
+      "sort_order": 12
+    },
+    {
+      "code": "jewelry-design",
+      "name_ar": "تصميم المجوهرات",
+      "name_en": "Jewelry Design",
+      "name_fa": "طرح جواهر",
+      "icon": "GiDiamondRing",
+      "sort_order": 13
+    },
+    {
+      "code": "shoe-materials",
+      "name_ar": "خامات الأحذية",
+      "name_en": "Shoe Materials",
+      "name_fa": "جنس کفش",
+      "icon": "GiLeatherBoot",
+      "sort_order": 14
+    },
+    {
+      "code": "shoe-details",
+      "name_ar": "تفاصيل الأحذية",
+      "name_en": "Shoe Details",
+      "name_fa": "جزئیات کفش",
+      "icon": "GiHighHeel",
+      "sort_order": 15
+    },
+    {
+      "code": "shoe-features",
+      "name_ar": "ميزات الأحذية",
+      "name_en": "Shoe Features",
+      "name_fa": "ویژگی‌های کفش",
+      "icon": "GiRunningShoe",
+      "sort_order": 16
+    },
+    {
+      "code": "bag-materials",
+      "name_ar": "خامات الحقائب",
+      "name_en": "Bag Materials",
+      "name_fa": "جنس کیف",
+      "icon": "GiHandBag",
+      "sort_order": 17
+    },
+    {
+      "code": "bag-style",
+      "name_ar": "ستايل الحقيبة",
+      "name_en": "Bag Style",
+      "name_fa": "استایل کیف",
+      "icon": "GiShoulderBag",
+      "sort_order": 18
+    },
+    {
+      "code": "bag-features",
+      "name_ar": "ميزات الحقيبة",
+      "name_en": "Bag Features",
+      "name_fa": "ویژگی‌های کیف",
+      "icon": "FiPackage",
+      "sort_order": 19
+    },
+    {
+      "code": "bag-sizing",
+      "name_ar": "قياس الحقيبة",
+      "name_en": "Bag Sizing",
+      "name_fa": "اندازه کیف",
+      "icon": "GiRuler",
+      "sort_order": 20
+    },
+    {
+      "code": "beauty-category",
+      "name_ar": "فئة المنتج",
+      "name_en": "Product Category",
+      "name_fa": "دسته محصول",
+      "icon": "GiLipstick",
+      "sort_order": 21
+    },
+    {
+      "code": "beauty-details",
+      "name_ar": "تفاصيل المنتج",
+      "name_en": "Product Details",
+      "name_fa": "جزئیات محصول",
+      "icon": "GiSparkles",
+      "sort_order": 22
+    },
+    {
+      "code": "beauty-specifications",
+      "name_ar": "مواصفات المنتج",
+      "name_en": "Specifications",
+      "name_fa": "مشخصات فنی",
+      "icon": "GiSettingsKnobs",
+      "sort_order": 23
+    },
+    {
+      "code": "beauty-shade",
+      "name_ar": "الدرجة اللونية",
+      "name_en": "Shade",
+      "name_fa": "سایه",
+      "icon": "FiDroplet",
+      "sort_order": 24
+    },
+    {
+      "code": "leather-goods-specs",
+      "name_ar": "مواصفات الجلود",
+      "name_en": "Leather Goods Specs",
+      "name_fa": "مشخصات چرم",
+      "icon": "GiBelt",
+      "sort_order": 25
+    },
+    {
+      "code": "headwear-specs",
+      "name_ar": "مواصفات الرأس",
+      "name_en": "Headwear Specs",
+      "name_fa": "مشخصات سر",
+      "icon": "GiSunglasses",
+      "sort_order": 26
+    },
+    {
+      "code": "textile-specs",
+      "name_ar": "مواصفات القماش",
+      "name_en": "Textile Specs",
+      "name_fa": "مشخصات پارچه",
+      "icon": "GiTie",
+      "sort_order": 27
+    },
+    {
+      "code": "specialty-specs",
+      "name_ar": "مواصفات متنوعة",
+      "name_en": "Specialty Specs",
+      "name_fa": "مشخصات ویژه",
+      "icon": "GiWatch",
+      "sort_order": 28
+    },
+    {
+      "code": "accessory-features",
+      "name_ar": "ميزات الإكسسوار",
+      "name_en": "Accessory Features",
+      "name_fa": "ویژگی‌های اکسسوری",
+      "icon": "FiSettings",
+      "sort_order": 29
+    },
+    {
+      "code": "footwear-sizing",
+      "name_ar": "قياس الأحذية",
+      "name_en": "Footwear Sizing",
+      "name_fa": "سایز کفش",
+      "icon": "GiRuler",
+      "sort_order": 30
+    },
+    {
+      "code": "athletic-specs",
+      "name_ar": "مواصفات رياضية",
+      "name_en": "Athletic Specs",
+      "name_fa": "مشخصات ورزشی",
+      "icon": "GiRunningShoe",
+      "sort_order": 31
+    },
+    {
+      "code": "boot-specs",
+      "name_ar": "مواصفات البوت",
+      "name_en": "Boot Specs",
+      "name_fa": "مشخصات بوت",
+      "icon": "GiBoots",
+      "sort_order": 32
+    },
+    {
+      "code": "heels-dress-specs",
+      "name_ar": "مواصفات الكعوب",
+      "name_en": "Heels & Dress Specs",
+      "name_fa": "مشخصات پاشنه بلند",
+      "icon": "GiHighHeel",
+      "sort_order": 33
+    },
+    {
+      "code": "sandals-specs",
+      "name_ar": "مواصفات الصنادل",
+      "name_en": "Sandals Specs",
+      "name_fa": "مشخصات صندل",
+      "icon": "GiSandal",
+      "sort_order": 34
+    },
+    {
+      "code": "necklace-specs",
+      "name_ar": "مواصفات القلائد",
+      "name_en": "Necklace Specs",
+      "name_fa": "مشخصات گردنبند",
+      "icon": "GiNecklace",
+      "sort_order": 40
+    },
+    {
+      "code": "bracelet-specs",
+      "name_ar": "مواصفات الأساور",
+      "name_en": "Bracelet Specs",
+      "name_fa": "مشخصات دستبند",
+      "icon": "GiGemChain",
+      "sort_order": 41
+    },
+    {
+      "code": "earring-specs",
+      "name_ar": "مواصفات الأقراط",
+      "name_en": "Earring Specs",
+      "name_fa": "مشخصات گوشواره",
+      "icon": "GiEarrings",
+      "sort_order": 42
+    },
+    {
+      "code": "ring-specs",
+      "name_ar": "مواصفات الخواتم",
+      "name_en": "Ring Specs",
+      "name_fa": "مشخصات انگشتر",
+      "icon": "GiRing",
+      "sort_order": 43
+    },
+    {
+      "code": "other-jewelry-specs",
+      "name_ar": "مواصفات مجوهرات أخرى",
+      "name_en": "Other Jewelry Specs",
+      "name_fa": "مشخصات جواهر دیگر",
+      "icon": "GiDiamondRing",
+      "sort_order": 44
+    },
+    {
+      "code": "dress-specs",
+      "name_ar": "مواصفات الفساتين",
+      "name_en": "Dress Specs",
+      "name_fa": "مشخصات لباس",
+      "icon": "GiDress",
+      "sort_order": 50
+    },
+    {
+      "code": "top-specs",
+      "name_ar": "مواصفات القمصان",
+      "name_en": "Top Specs",
+      "name_fa": "مشخصات تاپ",
+      "icon": "GiTShirt",
+      "sort_order": 51
+    },
+    {
+      "code": "bottom-specs",
+      "name_ar": "مواصفات البناطيل والتنانير",
+      "name_en": "Bottom Specs",
+      "name_fa": "مشخصات پایین تنه",
+      "icon": "GiTrousers",
+      "sort_order": 52
+    },
+    {
+      "code": "outerwear-specs",
+      "name_ar": "مواصفات المعاطف",
+      "name_en": "Outerwear Specs",
+      "name_fa": "مشخصات پالتو",
+      "icon": "GiWinterGloves",
+      "sort_order": 53
+    },
+    {
+      "code": "activewear-specs",
+      "name_ar": "مواصفات الرياضية",
+      "name_en": "Activewear Specs",
+      "name_fa": "مشخصات ورزشی",
+      "icon": "GiBasketballJersey",
+      "sort_order": 54
+    },
+    {
+      "code": "swimwear-specs",
+      "name_ar": "مواصفات السباحة",
+      "name_en": "Swimwear Specs",
+      "name_fa": "مشخصات شنا",
+      "icon": "BiSwim",
+      "sort_order": 55
+    },
+    {
+      "code": "lingerie-specs",
+      "name_ar": "مواصفات الملابس الداخلية",
+      "name_en": "Lingerie Specs",
+      "name_fa": "مشخصات لباس زیر",
+      "icon": "GiNightSleep",
+      "sort_order": 56
+    },
+    {
+      "code": "abaya-specs",
+      "name_ar": "مواصفات العباءات",
+      "name_en": "Abaya Specs",
+      "name_fa": "مشخصات عبا",
+      "icon": "FaPersonHalfDress",
+      "sort_order": 57
+    },
+    {
+      "code": "scarf-specs",
+      "name_ar": "مواصفات الأوشحة",
+      "name_en": "Scarf Specs",
+      "name_fa": "مشخصات شال",
+      "icon": "GiHeadbandKnot",
+      "sort_order": 58
+    },
+    {
+      "code": "fragrance-specs",
+      "name_ar": "مواصفات العطر",
+      "name_en": "Fragrance Specs",
+      "name_fa": "مشخصات عطر",
+      "icon": "GiSpray",
+      "sort_order": 59
+    },
+    {
+      "code": "fragrance-notes",
+      "name_ar": "نت العطر",
+      "name_en": "Fragrance Notes",
+      "name_fa": "نت عطر",
+      "icon": "GiGlassHeart",
+      "sort_order": 60
+    },
+    {
+      "code": "watch-specs",
+      "name_ar": "مواصفات الساعة",
+      "name_en": "Watch Specs",
+      "name_fa": "مشخصات ساعت",
+      "icon": "GiPocketWatch",
+      "sort_order": 61
+    },
+    {
+      "code": "watch-features",
+      "name_ar": "ميزات الساعة",
+      "name_en": "Watch Features",
+      "name_fa": "ویژگی‌های ساعت",
+      "icon": "GiSettingsKnobs",
+      "sort_order": 62
+    },
+    {
+      "code": "eyewear-specs",
+      "name_ar": "مواصفات النظارات",
+      "name_en": "Eyewear Specs",
+      "name_fa": "مشخصات عینک",
+      "icon": "GiSunglasses",
+      "sort_order": 63
+    },
+    {
+      "code": "skirt-specs",
+      "name_ar": "مواصفات التنورة",
+      "name_en": "Skirt Specs",
+      "name_fa": "مشخصات دامن",
+      "icon": "GiSkirt",
+      "sort_order": 64
+    },
+    {
+      "code": "suit-specs",
+      "name_ar": "مواصفات البدلة",
+      "name_en": "Suit Specs",
+      "name_fa": "مشخصات کت و شلوار",
+      "icon": "GiTie",
+      "sort_order": 65
+    },
+    {
+      "code": "bodycare-specs",
+      "name_ar": "مواصفات العناية بالجسم",
+      "name_en": "Body Care Specs",
+      "name_fa": "مشخصات مراقبت از بدن",
+      "icon": "GiCream",
+      "sort_order": 66
+    }
+  ]
+}

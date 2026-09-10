@@ -1,0 +1,35 @@
+services:
+  caddy:
+    image: caddybuilds/caddy-cloudflare:2.11.4-alpine
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    environment:
+      CLOUDFLARE_API_TOKEN: ${CLOUDFLARE_API_TOKEN}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+      - type: tmpfs
+        target: /tmp
+    networks:
+      - tea-infra-net
+    security_opt:
+      - no-new-privileges:true
+    read_only: true
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+      resources:
+        limits:
+          memory: 64M
+
+volumes:
+  caddy_data:
+  caddy_config:
+
+networks:
+  tea-infra-net:
+    external: true
+    name: tea-infra-net

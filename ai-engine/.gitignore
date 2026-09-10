@@ -1,0 +1,22 @@
+# Environment / secrets
+.env
+.env.*
+!.env.example
+!*.env.example
+
+build/
+.coverage
+*.db
+dist/
+*.egg-info/
+engine-config.json
+env/
+htmlcov/
+*.log
+logs/
+.mypy_cache/
+__pycache__/
+*.py[cod]
+.ruff_cache/
+.uv/
+.venv/

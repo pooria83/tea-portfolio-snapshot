@@ -1,0 +1,686 @@
+{
+  "attributes": [
+    {
+      "group_code": "colors-pattern",
+      "code": "primary_color",
+      "name_ar": "اللون الأساسي",
+      "name_en": "Primary Color",
+      "name_fa": "رنگ اصلی",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiDroplet",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": []
+    },
+    {
+      "group_code": "metal-gem",
+      "code": "metal_type",
+      "name_ar": "نوع المعدن",
+      "name_en": "Metal Type",
+      "name_fa": "نوع فلز",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiGoldBar",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": []
+    },
+    {
+      "group_code": "metal-gem",
+      "code": "metal_purity",
+      "name_ar": "نقاء المعدن",
+      "name_en": "Metal Purity",
+      "name_fa": "خلوص فلز",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiGoldBar",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2,
+      "options": []
+    },
+    {
+      "group_code": "metal-gem",
+      "code": "gemstone_type",
+      "name_ar": "نوع الحجر الكريم",
+      "name_en": "Gemstone Type",
+      "name_fa": "نوع سنگ قیمتی",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiDiamondRing",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3,
+      "options": []
+    },
+    {
+      "group_code": "metal-gem",
+      "code": "stone_creation_method",
+      "name_ar": "طريقة تصنيع الحجر",
+      "name_en": "Stone Creation Method",
+      "name_fa": "روش ساخت سنگ",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiDiamondRing",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 4,
+      "options": []
+    },
+    {
+      "group_code": "jewelry-specs",
+      "code": "plating",
+      "name_ar": "الطلاء",
+      "name_en": "Plating",
+      "name_fa": "روکش",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiGoldBar",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": []
+    },
+    {
+      "group_code": "jewelry-specs",
+      "code": "jewelry_hypoallergenic",
+      "name_ar": "مضاد للحساسية",
+      "name_en": "Hypoallergenic",
+      "name_fa": "ضد حساسیت",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiShield",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2
+    },
+    {
+      "group_code": "jewelry-specs",
+      "code": "adjustable",
+      "name_ar": "قابل التعديل",
+      "name_en": "Adjustable",
+      "name_fa": "قابل تنظیم",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiSliders",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3
+    },
+    {
+      "group_code": "jewelry-design",
+      "code": "jewelry_style",
+      "name_ar": "ستايل المجوهرات",
+      "name_en": "Jewelry Style",
+      "name_fa": "استایل جواهر",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiDiamondRing",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": []
+    },
+    {
+      "group_code": "jewelry-sizing",
+      "code": "ring_size",
+      "name_ar": "قياس الخاتم",
+      "name_en": "Ring Size",
+      "name_fa": "سایز انگشتر",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiRing",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "3",
+          "value_ar": "3",
+          "value_en": "3",
+          "value_fa": "3",
+          "sort_order": 1
+        },
+        {
+          "code": "3.5",
+          "value_ar": "3.5",
+          "value_en": "3.5",
+          "value_fa": "3.5",
+          "sort_order": 2
+        },
+        {
+          "code": "4",
+          "value_ar": "4",
+          "value_en": "4",
+          "value_fa": "4",
+          "sort_order": 3
+        },
+        {
+          "code": "4.5",
+          "value_ar": "4.5",
+          "value_en": "4.5",
+          "value_fa": "4.5",
+          "sort_order": 4
+        },
+        {
+          "code": "5",
+          "value_ar": "5",
+          "value_en": "5",
+          "value_fa": "5",
+          "sort_order": 5
+        },
+        {
+          "code": "5.5",
+          "value_ar": "5.5",
+          "value_en": "5.5",
+          "value_fa": "5.5",
+          "sort_order": 6
+        },
+        {
+          "code": "6",
+          "value_ar": "6",
+          "value_en": "6",
+          "value_fa": "6",
+          "sort_order": 7
+        },
+        {
+          "code": "6.5",
+          "value_ar": "6.5",
+          "value_en": "6.5",
+          "value_fa": "6.5",
+          "sort_order": 8
+        },
+        {
+          "code": "7",
+          "value_ar": "7",
+          "value_en": "7",
+          "value_fa": "7",
+          "sort_order": 9
+        },
+        {
+          "code": "7.5",
+          "value_ar": "7.5",
+          "value_en": "7.5",
+          "value_fa": "7.5",
+          "sort_order": 10
+        },
+        {
+          "code": "8",
+          "value_ar": "8",
+          "value_en": "8",
+          "value_fa": "8",
+          "sort_order": 11
+        },
+        {
+          "code": "8.5",
+          "value_ar": "8.5",
+          "value_en": "8.5",
+          "value_fa": "8.5",
+          "sort_order": 12
+        },
+        {
+          "code": "9",
+          "value_ar": "9",
+          "value_en": "9",
+          "value_fa": "9",
+          "sort_order": 13
+        },
+        {
+          "code": "9.5",
+          "value_ar": "9.5",
+          "value_en": "9.5",
+          "value_fa": "9.5",
+          "sort_order": 14
+        },
+        {
+          "code": "10",
+          "value_ar": "10",
+          "value_en": "10",
+          "value_fa": "10",
+          "sort_order": 15
+        },
+        {
+          "code": "10.5",
+          "value_ar": "10.5",
+          "value_en": "10.5",
+          "value_fa": "10.5",
+          "sort_order": 16
+        },
+        {
+          "code": "11",
+          "value_ar": "11",
+          "value_en": "11",
+          "value_fa": "11",
+          "sort_order": 17
+        },
+        {
+          "code": "11.5",
+          "value_ar": "11.5",
+          "value_en": "11.5",
+          "value_fa": "11.5",
+          "sort_order": 18
+        },
+        {
+          "code": "12",
+          "value_ar": "12",
+          "value_en": "12",
+          "value_fa": "12",
+          "sort_order": 19
+        },
+        {
+          "code": "adjustable",
+          "value_ar": "قابل التعديل",
+          "value_en": "Adjustable",
+          "value_fa": "قابل تنظیم",
+          "sort_order": 20
+        }
+      ]
+    },
+    {
+      "group_code": "ring-specs",
+      "code": "ring_design",
+      "name_ar": "تصميم الخاتم",
+      "name_en": "Ring Design",
+      "name_fa": "طرح انگشتر",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiRing",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "solitaire",
+          "value_ar": "منفرد",
+          "value_en": "Solitaire",
+          "value_fa": "تک سنگ",
+          "sort_order": 1
+        },
+        {
+          "code": "halo",
+          "value_ar": "هالة",
+          "value_en": "Halo",
+          "value_fa": "هاله",
+          "sort_order": 2
+        },
+        {
+          "code": "band",
+          "value_ar": "عصابة",
+          "value_en": "Band",
+          "value_fa": "نوار",
+          "sort_order": 3
+        },
+        {
+          "code": "eternity",
+          "value_ar": "أبدي",
+          "value_en": "Eternity",
+          "value_fa": "ابداع",
+          "sort_order": 4
+        },
+        {
+          "code": "cocktail",
+          "value_ar": "كوكتيل",
+          "value_en": "Cocktail",
+          "value_fa": "کوکتل",
+          "sort_order": 5
+        },
+        {
+          "code": "signet",
+          "value_ar": "خاتم",
+          "value_en": "Signet",
+          "value_fa": "نگین",
+          "sort_order": 6
+        },
+        {
+          "code": "stackable",
+          "value_ar": "قابل للتكديس",
+          "value_en": "Stackable",
+          "value_fa": "قابل انباشت",
+          "sort_order": 7
+        },
+        {
+          "code": "three_stone",
+          "value_ar": "ثلاثة أحجار",
+          "value_en": "Three Stone",
+          "value_fa": "سه سنگی",
+          "sort_order": 8
+        },
+        {
+          "code": "tennis",
+          "value_ar": "تنس",
+          "value_en": "Tennis",
+          "value_fa": "تنیس",
+          "sort_order": 9
+        },
+        {
+          "code": "cuff",
+          "value_ar": "كف",
+          "value_en": "Cuff",
+          "value_fa": "کاف",
+          "sort_order": 10
+        },
+        {
+          "code": "engagement",
+          "value_ar": "خطوبة",
+          "value_en": "Engagement",
+          "value_fa": "نامزدی",
+          "sort_order": 11
+        },
+        {
+          "code": "wedding_band",
+          "value_ar": "فرح",
+          "value_en": "Wedding Band",
+          "value_fa": "حلقه ازدواج",
+          "sort_order": 12
+        }
+      ]
+    },
+    {
+      "group_code": "ring-specs",
+      "code": "setting_style",
+      "name_ar": "نسبة التثبيت",
+      "name_en": "Setting Style",
+      "name_fa": "سبک نصب",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiDiamondRing",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "prong",
+          "value_ar": "مخالب",
+          "value_en": "Prong",
+          "value_fa": "چنگکی",
+          "sort_order": 1
+        },
+        {
+          "code": "bezel",
+          "value_ar": "حافة",
+          "value_en": "Bezel",
+          "value_fa": "حاشیه‌ای",
+          "sort_order": 2
+        },
+        {
+          "code": "pave",
+          "value_ar": "مرصع",
+          "value_en": "Pavé",
+          "value_fa": "پاوه",
+          "sort_order": 3
+        },
+        {
+          "code": "channel",
+          "value_ar": "قناة",
+          "value_en": "Channel",
+          "value_fa": "کانالی",
+          "sort_order": 4
+        },
+        {
+          "code": "tension",
+          "value_ar": "توتر",
+          "value_en": "Tension",
+          "value_fa": "کششی",
+          "sort_order": 5
+        },
+        {
+          "code": "invisible",
+          "value_ar": "مخفي",
+          "value_en": "Invisible",
+          "value_fa": "نامرئی",
+          "sort_order": 6
+        },
+        {
+          "code": "halo",
+          "value_ar": "هالة",
+          "value_en": "Halo",
+          "value_fa": "هاله",
+          "sort_order": 7
+        },
+        {
+          "code": "cluster",
+          "value_ar": "عنقود",
+          "value_en": "Cluster",
+          "value_fa": "خوشه‌ای",
+          "sort_order": 8
+        },
+        {
+          "code": "cathedral",
+          "value_ar": "كاتدرائي",
+          "value_en": "Cathedral",
+          "value_fa": "کلیسایی",
+          "sort_order": 9
+        },
+        {
+          "code": "solitaire",
+          "value_ar": "منفرد",
+          "value_en": "Solitaire",
+          "value_fa": "تک سنگ",
+          "sort_order": 10
+        },
+        {
+          "code": "three_stone",
+          "value_ar": "ثلاثة أحجار",
+          "value_en": "Three Stone",
+          "value_fa": "سه سنگی",
+          "sort_order": 11
+        }
+      ]
+    },
+    {
+      "group_code": "ring-specs",
+      "code": "stone_cut",
+      "name_ar": "قص الحجر",
+      "name_en": "Stone Cut",
+      "name_fa": "برش سنگ",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiDiamondRing",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "round",
+          "value_ar": "دائري",
+          "value_en": "Round",
+          "value_fa": "دایره",
+          "sort_order": 1
+        },
+        {
+          "code": "oval",
+          "value_ar": "بيضاوي",
+          "value_en": "Oval",
+          "value_fa": "بیضی",
+          "sort_order": 2
+        },
+        {
+          "code": "princess",
+          "value_ar": "أميرة",
+          "value_en": "Princess",
+          "value_fa": "پرنسس",
+          "sort_order": 3
+        },
+        {
+          "code": "emerald",
+          "value_ar": "زمردي",
+          "value_en": "Emerald",
+          "value_fa": "زمردی",
+          "sort_order": 4
+        },
+        {
+          "code": "marquise",
+          "value_ar": "ماركيز",
+          "value_en": "Marquise",
+          "value_fa": "مارکیز",
+          "sort_order": 5
+        },
+        {
+          "code": "pear",
+          "value_ar": "كمثرى",
+          "value_en": "Pear",
+          "value_fa": "گلابی",
+          "sort_order": 6
+        },
+        {
+          "code": "cushion",
+          "value_ar": "وسادة",
+          "value_en": "Cushion",
+          "value_fa": "کوسن",
+          "sort_order": 7
+        },
+        {
+          "code": "heart",
+          "value_ar": "قلب",
+          "value_en": "Heart",
+          "value_fa": "قلب",
+          "sort_order": 8
+        },
+        {
+          "code": "baguette",
+          "value_ar": "باجيت",
+          "value_en": "Baguette",
+          "value_fa": "باگت",
+          "sort_order": 9
+        },
+        {
+          "code": "trillion",
+          "value_ar": "مثلث",
+          "value_en": "Trillion",
+          "value_fa": "مثلث",
+          "sort_order": 10
+        },
+        {
+          "code": "brilliant",
+          "value_ar": "بريليانت",
+          "value_en": "Brilliant",
+          "value_fa": "برلیانت",
+          "sort_order": 11
+        },
+        {
+          "code": "cabochon",
+          "value_ar": "كابوشون",
+          "value_en": "Cabochon",
+          "value_fa": "کابوشن",
+          "sort_order": 12
+        }
+      ]
+    },
+    {
+      "group_code": "ring-specs",
+      "code": "stone_shape",
+      "name_ar": "شكل الحجر",
+      "name_en": "Stone Shape",
+      "name_fa": "شکل سنگ",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiDiamondRing",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 4,
+      "options": [
+        {
+          "code": "round",
+          "value_ar": "دائري",
+          "value_en": "Round",
+          "value_fa": "دایره",
+          "sort_order": 1
+        },
+        {
+          "code": "oval",
+          "value_ar": "بيضاوي",
+          "value_en": "Oval",
+          "value_fa": "بیضی",
+          "sort_order": 2
+        },
+        {
+          "code": "pear",
+          "value_ar": "كمثرى",
+          "value_en": "Pear",
+          "value_fa": "گلابی",
+          "sort_order": 3
+        },
+        {
+          "code": "emerald",
+          "value_ar": "زمردي",
+          "value_en": "Emerald",
+          "value_fa": "زمردی",
+          "sort_order": 4
+        },
+        {
+          "code": "marquise",
+          "value_ar": "ماركيز",
+          "value_en": "Marquise",
+          "value_fa": "مارکیز",
+          "sort_order": 5
+        },
+        {
+          "code": "cushion",
+          "value_ar": "وسادة",
+          "value_en": "Cushion",
+          "value_fa": "کوسن",
+          "sort_order": 6
+        },
+        {
+          "code": "heart",
+          "value_ar": "قلب",
+          "value_en": "Heart",
+          "value_fa": "قلب",
+          "sort_order": 7
+        },
+        {
+          "code": "princess",
+          "value_ar": "أميرة",
+          "value_en": "Princess",
+          "value_fa": "پرنسس",
+          "sort_order": 8
+        },
+        {
+          "code": "radiant",
+          "value_ar": "مشرق",
+          "value_en": "Radiant",
+          "value_fa": "رادیانت",
+          "sort_order": 9
+        },
+        {
+          "code": "asscher",
+          "value_ar": "أشر",
+          "value_en": "Asscher",
+          "value_fa": "آشر",
+          "sort_order": 10
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+services:
+  web-ui:
+    build:
+      context: .
+      target: ${BUILD_TARGET:-dev}
+      args:
+        PORT: ${PORT:-3000}
+    ports:
+      - "${PORT:-3000}:${PORT:-3000}"
+    environment:
+      PORT: ${PORT:-3000}
+      NODE_ENV: ${NODE_ENV:-development}
+      NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:8000/api/v1}
+    volumes:
+      - ${VOLUMES_SRC:-./src}:/app/src
+      - ${VOLUMES_PUBLIC:-./public}:/app/public
+      - ${VOLUMES_MESSAGES:-./messages}:/app/messages
+    healthcheck:
+      test: ["CMD-SHELL", "node -e \"fetch('http://localhost:${PORT:-3000}/api/health').then(r => process.exit(r.ok ? 0 : 1)).catch(() => process.exit(1))\""]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 512M

@@ -1,0 +1,21 @@
+# Portfolio review: never add runtime secrets or generated output
+.env
+.env.*
+**/.env
+**/.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+node_modules/
+.venv/
+__pycache__/
+.pytest_cache/
+.next/
+dist/
+build/
+coverage/
+*.log
+.DS_Store

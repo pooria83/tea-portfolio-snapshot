@@ -1,0 +1,23 @@
+diff --git a/node_modules/@maplibre/maplibre-react-native/android/src/main/java/org/maplibre/reactnative/components/mapview/MLRNMapView.kt b/node_modules/@maplibre/maplibre-react-native/android/src/main/java/org/maplibre/reactnative/components/mapview/MLRNMapView.kt
+index 4ea5c73..9dfbc09 100644
+--- a/node_modules/@maplibre/maplibre-react-native/android/src/main/java/org/maplibre/reactnative/components/mapview/MLRNMapView.kt
++++ b/node_modules/@maplibre/maplibre-react-native/android/src/main/java/org/maplibre/reactnative/components/mapview/MLRNMapView.kt
+@@ -568,6 +568,18 @@ open class MLRNMapView(
+     override fun onTouchEvent(ev: MotionEvent?): Boolean {
+         val result = super.onTouchEvent(ev)
+ 
++        if (ev?.actionMasked == MotionEvent.ACTION_DOWN) {
++            android.util.Log.i("TEA-MapTouch", "DOWN received, scrollEnabled=$scrollEnabled")
++        }
++
++        // Claim the touch on ACTION_DOWN so an enclosing ScrollView can never
++        // intercept the first vertical move before the map's own gesture
++        // detector starts (parent views intercept before children receive it).
++        if (ev?.actionMasked == MotionEvent.ACTION_DOWN && scrollEnabled == true) {
++            requestDisallowInterceptTouchEvent(true)
++            android.util.Log.i("TEA-MapTouch", "DISALLOW set")
++        }
++
+         if (result && scrollEnabled == true) {
+             requestDisallowInterceptTouchEvent(true)
+         }

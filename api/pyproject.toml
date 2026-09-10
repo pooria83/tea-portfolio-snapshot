@@ -1,0 +1,96 @@
+[project]
+name = "product-graph-api"
+version = "0.1.0"
+description = "AI Product Finder - Backend API"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.115.0",
+    "uvicorn[standard]>=0.52.3",
+    "sqlalchemy[asyncio]>=2.0.36",
+    "asyncpg>=0.30.0",
+    "alembic>=1.19.1",
+    "pydantic>=2.10.0",
+    "pydantic-settings>=2.15.0",
+    "redis[hiredis]>=5.2.0",
+    "httpx>=0.28.0",
+    "pyjwt>=2.10.0",
+    "cryptography>=50.0.0",
+    "bcrypt>=4.2.0",
+    "python-multipart>=0.0.19",
+    "websockets>=17.0.1",
+    "aio-pika>=9.5.0",
+    "prometheus-client>=0.26.0",
+    "minio>=7.2.0",
+    "twilio>=9.11.0",
+    "google-auth>=2.56.3",
+    "Pillow>=11.0.0",
+    "curl-cffi>=0.16.0",
+    "loguru>=0.7.3",
+    "rich>=15.0.0",
+    "motor>=3.6.0",
+]
+
+[project.optional-dependencies]
+scrapers = [
+    "playwright>=1.62.0",
+    "curl-cffi>=0.16.0",
+    "camoufox>=0.4.0",
+]
+dev = [
+    "pytest>=8.3.0",
+    "pytest-asyncio>=0.25.0",
+    "pytest-cov>=6.0.0",
+    "ruff>=0.16.3",
+    "mypy>=1.14.0",
+    "aiosqlite>=0.20.0",
+    "testcontainers[postgres]>=4.15.0",
+    "testcontainers[redis]>=4.0.0",
+    "locust>=2.46.3",
+    "pre-commit>=4.6.2",
+    "mongomock-motor>=0.0.36",
+]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 200
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP", "B", "SIM"]
+ignore = ["B008"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_unused_ignores = true
+no_implicit_optional = true
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = ["tests.*"]
+ignore_errors = true
+
+[[tool.mypy.overrides]]
+module = ["camoufox.*"]
+follow_imports = "skip"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_test_loop_scope = "session"
+asyncio_default_fixture_loop_scope = "session"
+testpaths = ["tests"]
+addopts = "-v --cov=app --cov-report=term-missing --cov-fail-under=60"
+
+[tool.hatch.build.targets.wheel]
+packages = ["app", "scripts"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "radon>=6.0.1",
+]

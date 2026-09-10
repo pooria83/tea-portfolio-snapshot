@@ -1,0 +1,375 @@
+{
+  "attributes": [
+    {
+      "group_code": "swimwear-specs",
+      "code": "swimsuit_type",
+      "name_ar": "نوع المايوه",
+      "name_en": "Swimsuit Type",
+      "name_fa": "نوع مایو",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "BiSwim",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "one_piece",
+          "value_ar": "قطعة واحدة",
+          "value_en": "One-Piece",
+          "value_fa": "یک تکه",
+          "sort_order": 1
+        },
+        {
+          "code": "bikini",
+          "value_ar": "بيكيني",
+          "value_en": "Bikini",
+          "value_fa": "بیکینی",
+          "sort_order": 2
+        },
+        {
+          "code": "tankini",
+          "value_ar": "تانكيني",
+          "value_en": "Tankini",
+          "value_fa": "تانکینی",
+          "sort_order": 3
+        },
+        {
+          "code": "burkini",
+          "value_ar": "بوركيني",
+          "value_en": "Burkini",
+          "value_fa": "بورکینی",
+          "sort_order": 4
+        },
+        {
+          "code": "swim_dress",
+          "value_ar": "فستان سباحة",
+          "value_en": "Swim Dress",
+          "value_fa": "لباس شنا",
+          "sort_order": 5
+        },
+        {
+          "code": "rash_guard",
+          "value_ar": "راش جارد",
+          "value_en": "Rash Guard",
+          "value_fa": "رش گارد",
+          "sort_order": 6
+        },
+        {
+          "code": "swim_trunks",
+          "value_ar": "سروال سباحة",
+          "value_en": "Swim Trunks",
+          "value_fa": "شورت شنا",
+          "sort_order": 7
+        },
+        {
+          "code": "board_shorts",
+          "value_ar": "شورت ركوب الأمواج",
+          "value_en": "Board Shorts",
+          "value_fa": "شورت ساحلی",
+          "sort_order": 8
+        }
+      ]
+    },
+    {
+      "group_code": "swimwear-specs",
+      "code": "coverage_level",
+      "name_ar": "مستوى التغطية",
+      "name_en": "Coverage Level",
+      "name_fa": "میزان پوشش",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiBodyHeight",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "minimal",
+          "value_ar": "أقل",
+          "value_en": "Minimal",
+          "value_fa": "کم",
+          "sort_order": 1
+        },
+        {
+          "code": "moderate",
+          "value_ar": "متوسط",
+          "value_en": "Moderate",
+          "value_fa": "متوسط",
+          "sort_order": 2
+        },
+        {
+          "code": "full",
+          "value_ar": "كامل",
+          "value_en": "Full",
+          "value_fa": "کامل",
+          "sort_order": 3
+        },
+        {
+          "code": "maximum",
+          "value_ar": "أقصى",
+          "value_en": "Maximum",
+          "value_fa": "حداکثر",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "group_code": "swimwear-specs",
+      "code": "swimwear_sleeve_style",
+      "name_ar": "نمط الكم",
+      "name_en": "Sleeve Style",
+      "name_fa": "سبک آستین",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiArmoredPants",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "long",
+          "value_ar": "طويل",
+          "value_en": "Long Sleeve",
+          "value_fa": "آستین بلند",
+          "sort_order": 1
+        },
+        {
+          "code": "short",
+          "value_ar": "قصير",
+          "value_en": "Short Sleeve",
+          "value_fa": "آستین کوتاه",
+          "sort_order": 2
+        },
+        {
+          "code": "sleeveless",
+          "value_ar": "بدون أكمام",
+          "value_en": "Sleeveless",
+          "value_fa": "بدون آستین",
+          "sort_order": 3
+        },
+        {
+          "code": "cap",
+          "value_ar": "كاب",
+          "value_en": "Cap Sleeve",
+          "value_fa": "آستین کاپی",
+          "sort_order": 4
+        },
+        {
+          "code": "raglan",
+          "value_ar": "رغلان",
+          "value_en": "Raglan Sleeve",
+          "value_fa": "آستین راگلان",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "group_code": "swimwear-specs",
+      "code": "lining_type",
+      "name_ar": "نوع البطانة",
+      "name_en": "Lining Type",
+      "name_fa": "نوع آستری",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiClothes",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 4,
+      "options": [
+        {
+          "code": "unlined",
+          "value_ar": "غير مبطن",
+          "value_en": "Unlined",
+          "value_fa": "بدون آستری",
+          "sort_order": 1
+        },
+        {
+          "code": "lightly_lined",
+          "value_ar": "مبطن خفيف",
+          "value_en": "Lightly Lined",
+          "value_fa": "آستری کم",
+          "sort_order": 2
+        },
+        {
+          "code": "padded",
+          "value_ar": "مبطن",
+          "value_en": "Padded",
+          "value_fa": "پد دار",
+          "sort_order": 3
+        },
+        {
+          "code": "double_layered",
+          "value_ar": "طبقتان",
+          "value_en": "Double Layered",
+          "value_fa": "دو لایه",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "group_code": "swimwear-specs",
+      "code": "swimwear_set_pieces",
+      "name_ar": "قطع الطقم",
+      "name_en": "Set Pieces Included",
+      "name_fa": "قطعات ست",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiPackage",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 5,
+      "options": [
+        {
+          "code": "top",
+          "value_ar": "قميص علوي",
+          "value_en": "Top",
+          "value_fa": "بالاتنه",
+          "sort_order": 1
+        },
+        {
+          "code": "leggings_pants",
+          "value_ar": "ليقنز/بنطلون",
+          "value_en": "Leggings/Pants",
+          "value_fa": "لگینگ/شلوار",
+          "sort_order": 2
+        },
+        {
+          "code": "hijab_cap",
+          "value_ar": "حجاب/قبعة",
+          "value_en": "Hijab/Cap",
+          "value_fa": "حجاب/کلاه",
+          "sort_order": 3
+        },
+        {
+          "code": "headscarf",
+          "value_ar": "وشاح رأس",
+          "value_en": "Headscarf",
+          "value_fa": "روسری",
+          "sort_order": 4
+        },
+        {
+          "code": "skirt_overlay",
+          "value_ar": "تنورة",
+          "value_en": "Skirt Overlay",
+          "value_fa": "دامن",
+          "sort_order": 5
+        },
+        {
+          "code": "tunic",
+          "value_ar": "تونيك",
+          "value_en": "Tunic",
+          "value_fa": "تونیک",
+          "sort_order": 6
+        },
+        {
+          "code": "dress_overlay",
+          "value_ar": "فستان",
+          "value_en": "Dress Overlay",
+          "value_fa": "لباس",
+          "sort_order": 7
+        },
+        {
+          "code": "full_body_suit",
+          "value_ar": "بدلة كاملة",
+          "value_en": "Full Body Suit",
+          "value_fa": "لباس کامل",
+          "sort_order": 8
+        }
+      ]
+    },
+    {
+      "group_code": "swimwear-specs",
+      "code": "chlorine_resistant",
+      "name_ar": "مقاوم للكلور",
+      "name_en": "Chlorine Resistant",
+      "name_fa": "مقاوم در برابر کلر",
+      "value_type": "boolean",
+      "input_type": "boolean",
+      "icon": "GiWaterDrop",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 6,
+      "options": [
+        {
+          "code": "yes",
+          "value_ar": "نعم",
+          "value_en": "Yes",
+          "value_fa": "بله",
+          "sort_order": 1
+        },
+        {
+          "code": "no",
+          "value_ar": "لا",
+          "value_en": "No",
+          "value_fa": "خیر",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "group_code": "swimwear-specs",
+      "code": "upf_rating",
+      "name_ar": "تصنيف UPF",
+      "name_en": "UPF Rating",
+      "name_fa": "رتبه UPF",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "FiSun",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 7,
+      "options": [
+        {
+          "code": "none",
+          "value_ar": "بدون",
+          "value_en": "None",
+          "value_fa": "بدون",
+          "sort_order": 1
+        },
+        {
+          "code": "upf_15",
+          "value_ar": "UPF 15",
+          "value_en": "UPF 15",
+          "value_fa": "UPF 15",
+          "sort_order": 2
+        },
+        {
+          "code": "upf_30",
+          "value_ar": "UPF 30",
+          "value_en": "UPF 30",
+          "value_fa": "UPF 30",
+          "sort_order": 3
+        },
+        {
+          "code": "upf_50",
+          "value_ar": "UPF 50",
+          "value_en": "UPF 50",
+          "value_fa": "UPF 50",
+          "sort_order": 4
+        },
+        {
+          "code": "upf_50_plus",
+          "value_ar": "UPF 50+",
+          "value_en": "UPF 50+",
+          "value_fa": "UPF 50+",
+          "sort_order": 5
+        }
+      ]
+    }
+  ]
+}

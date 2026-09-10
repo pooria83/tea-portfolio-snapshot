@@ -1,0 +1,500 @@
+{
+  "attributes": [
+    {
+      "group_code": "suit-specs",
+      "code": "suit_type",
+      "name_ar": "نوع البدلة",
+      "name_en": "Suit Type",
+      "name_fa": "نوع کت و شلوار",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiTie",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "single_breasted",
+          "value_ar": "صدر واحد",
+          "value_en": "Single Breasted",
+          "value_fa": "تک سینه",
+          "sort_order": 1
+        },
+        {
+          "code": "double_breasted",
+          "value_ar": "صدر مزدوج",
+          "value_en": "Double Breasted",
+          "value_fa": "دو سینه",
+          "sort_order": 2
+        },
+        {
+          "code": "tuxedo",
+          "value_ar": "توكسيدو",
+          "value_en": "Tuxedo",
+          "value_fa": "تاکسیدو",
+          "sort_order": 3
+        },
+        {
+          "code": "dinner_jacket",
+          "value_ar": "سترة عشاء",
+          "value_en": "Dinner Jacket",
+          "value_fa": "کت شام",
+          "sort_order": 4
+        },
+        {
+          "code": "lounge_suit",
+          "value_ar": "بدلة جلوس",
+          "value_en": "Lounge Suit",
+          "value_fa": "کت و شلوار لانژ",
+          "sort_order": 5
+        },
+        {
+          "code": "morning_suit",
+          "value_ar": "بدلة صباحية",
+          "value_en": "Morning Suit",
+          "value_fa": "کت و شلوار صبح",
+          "sort_order": 6
+        },
+        {
+          "code": "tailcoat",
+          "value_ar": "معطف",
+          "value_en": "Tailcoat",
+          "value_fa": "کت بلند",
+          "sort_order": 7
+        },
+        {
+          "code": "tunic",
+          "value_ar": "تونيك",
+          "value_en": "Tunic",
+          "value_fa": "تونیک",
+          "sort_order": 8
+        }
+      ]
+    },
+    {
+      "group_code": "suit-specs",
+      "code": "suit_fit_type",
+      "name_ar": "نوع القصة",
+      "name_en": "Fit Type",
+      "name_fa": "مدل اندام",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiBodyHeight",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "slim_fit",
+          "value_ar": "ضيق",
+          "value_en": "Slim Fit",
+          "value_fa": "چسبان",
+          "sort_order": 1
+        },
+        {
+          "code": "regular_fit",
+          "value_ar": "عادي",
+          "value_en": "Regular Fit",
+          "value_fa": "معمولی",
+          "sort_order": 2
+        },
+        {
+          "code": "modern_fit",
+          "value_ar": "حديث",
+          "value_en": "Modern Fit",
+          "value_fa": "مدرن",
+          "sort_order": 3
+        },
+        {
+          "code": "athletic_fit",
+          "value_ar": "رياضي",
+          "value_en": "Athletic Fit",
+          "value_fa": "ورزشی",
+          "sort_order": 4
+        },
+        {
+          "code": "tailored_fit",
+          "value_ar": "مفصل",
+          "value_en": "Tailored Fit",
+          "value_fa": "دوخته",
+          "sort_order": 5
+        },
+        {
+          "code": "classic_fit",
+          "value_ar": "كلاسيك",
+          "value_en": "Classic Fit",
+          "value_fa": "کلاسیک",
+          "sort_order": 6
+        },
+        {
+          "code": "relaxed_fit",
+          "value_ar": "واسع",
+          "value_en": "Relaxed Fit",
+          "value_fa": "گشاد",
+          "sort_order": 7
+        }
+      ]
+    },
+    {
+      "group_code": "suit-specs",
+      "code": "num_buttons",
+      "name_ar": "عدد الأزرار",
+      "name_en": "Number of Buttons",
+      "name_fa": "تعداد دکمه",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiClothes",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "1_button",
+          "value_ar": "زر واحد",
+          "value_en": "1 Button",
+          "value_fa": "1 دکمه",
+          "sort_order": 1
+        },
+        {
+          "code": "2_button",
+          "value_ar": "زرين",
+          "value_en": "2 Buttons",
+          "value_fa": "2 دکمه",
+          "sort_order": 2
+        },
+        {
+          "code": "3_button",
+          "value_ar": "3 أزرار",
+          "value_en": "3 Buttons",
+          "value_fa": "3 دکمه",
+          "sort_order": 3
+        },
+        {
+          "code": "4_button",
+          "value_ar": "4 أزرار",
+          "value_en": "4 Buttons",
+          "value_fa": "4 دکمه",
+          "sort_order": 4
+        },
+        {
+          "code": "double_2",
+          "value_ar": "صدر مزدوج 2",
+          "value_en": "Double Breasted 2",
+          "value_fa": "دو سینه 2",
+          "sort_order": 5
+        },
+        {
+          "code": "double_4",
+          "value_ar": "صدر مزدوج 4",
+          "value_en": "Double Breasted 4",
+          "value_fa": "دو سینه 4",
+          "sort_order": 6
+        },
+        {
+          "code": "double_6",
+          "value_ar": "صدر مزدوج 6",
+          "value_en": "Double Breasted 6",
+          "value_fa": "دو سینه 6",
+          "sort_order": 7
+        }
+      ]
+    },
+    {
+      "group_code": "suit-specs",
+      "code": "lapel_style",
+      "name_ar": "ستايل الطية",
+      "name_en": "Lapel Style",
+      "name_fa": "سبک یقه",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiNecklace",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 4,
+      "options": [
+        {
+          "code": "notch",
+          "value_ar": "شق",
+          "value_en": "Notch Lapel",
+          "value_fa": "یقه شکاف دار",
+          "sort_order": 1
+        },
+        {
+          "code": "peak",
+          "value_ar": "مدبب",
+          "value_en": "Peak Lapel",
+          "value_fa": "یقه تیز",
+          "sort_order": 2
+        },
+        {
+          "code": "shawl",
+          "value_ar": "شال",
+          "value_en": "Shawl Lapel",
+          "value_fa": "یقه شالی",
+          "sort_order": 3
+        },
+        {
+          "code": "mandarin",
+          "value_ar": "مندارين",
+          "value_en": "Mandarin",
+          "value_fa": "مندارین",
+          "sort_order": 4
+        },
+        {
+          "code": "slim_notch",
+          "value_ar": "شق نحيف",
+          "value_en": "Slim Notch",
+          "value_fa": "شکاف باریک",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "group_code": "suit-specs",
+      "code": "jacket_length",
+      "name_ar": "طول السترة",
+      "name_en": "Jacket Length",
+      "name_fa": "قد کت",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiRuler",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 5,
+      "options": [
+        {
+          "code": "short",
+          "value_ar": "قصير",
+          "value_en": "Short",
+          "value_fa": "کوتاه",
+          "sort_order": 1
+        },
+        {
+          "code": "regular",
+          "value_ar": "عادي",
+          "value_en": "Regular",
+          "value_fa": "معمولی",
+          "sort_order": 2
+        },
+        {
+          "code": "long",
+          "value_ar": "طويل",
+          "value_en": "Long",
+          "value_fa": "بلند",
+          "sort_order": 3
+        },
+        {
+          "code": "extra_long",
+          "value_ar": "طويل جداً",
+          "value_en": "Extra Long",
+          "value_fa": "بسیار بلند",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "group_code": "suit-specs",
+      "code": "trouser_fit",
+      "name_ar": "قصّة البنطلون",
+      "name_en": "Trouser Fit",
+      "name_fa": "مدل شلوار",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiTrousers",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 6,
+      "options": [
+        {
+          "code": "slim",
+          "value_ar": "ضيق",
+          "value_en": "Slim",
+          "value_fa": "چسبان",
+          "sort_order": 1
+        },
+        {
+          "code": "straight",
+          "value_ar": "مستقيم",
+          "value_en": "Straight",
+          "value_fa": "مستقیم",
+          "sort_order": 2
+        },
+        {
+          "code": "tapered",
+          "value_ar": "مدبب",
+          "value_en": "Tapered",
+          "value_fa": "مخروطی",
+          "sort_order": 3
+        },
+        {
+          "code": "relaxed",
+          "value_ar": "مريح",
+          "value_en": "Relaxed",
+          "value_fa": "آزاد",
+          "sort_order": 4
+        },
+        {
+          "code": "wide_leg",
+          "value_ar": "واسع",
+          "value_en": "Wide Leg",
+          "value_fa": "گشاد",
+          "sort_order": 5
+        },
+        {
+          "code": "pleated",
+          "value_ar": "مطوي",
+          "value_en": "Pleated",
+          "value_fa": "چین دار",
+          "sort_order": 6
+        }
+      ]
+    },
+    {
+      "group_code": "suit-specs",
+      "code": "vent_style",
+      "name_ar": "ستايل التهوية",
+      "name_en": "Vent Style",
+      "name_fa": "سبک شیار",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiClothes",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 7,
+      "options": [
+        {
+          "code": "no_vent",
+          "value_ar": "بدون",
+          "value_en": "No Vent",
+          "value_fa": "بدون شیار",
+          "sort_order": 1
+        },
+        {
+          "code": "single_vent",
+          "value_ar": "شق واحد",
+          "value_en": "Single Vent",
+          "value_fa": "یک شیار",
+          "sort_order": 2
+        },
+        {
+          "code": "double_vent",
+          "value_ar": "شق مزدوج",
+          "value_en": "Double Vent",
+          "value_fa": "دو شیار",
+          "sort_order": 3
+        }
+      ]
+    },
+    {
+      "group_code": "suit-specs",
+      "code": "suit_lining_type",
+      "name_ar": "نوع البطانة",
+      "name_en": "Lining Type",
+      "name_fa": "نوع آستر",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiCottonFlower",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 8,
+      "options": [
+        {
+          "code": "fully_lined",
+          "value_ar": "مبطن بالكامل",
+          "value_en": "Fully Lined",
+          "value_fa": "آستر کامل",
+          "sort_order": 1
+        },
+        {
+          "code": "half_lined",
+          "value_ar": "نصف مبطن",
+          "value_en": "Half Lined",
+          "value_fa": "نیم آستر",
+          "sort_order": 2
+        },
+        {
+          "code": "unlined",
+          "value_ar": "غير مبطن",
+          "value_en": "Unlined",
+          "value_fa": "بدون آستر",
+          "sort_order": 3
+        },
+        {
+          "code": "quilted",
+          "value_ar": "مبطن",
+          "value_en": "Quilted",
+          "value_fa": "لحاف دار",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "group_code": "suit-specs",
+      "code": "set_includes",
+      "name_ar": "مكونات الطقم",
+      "name_en": "Set Includes",
+      "name_fa": "شامل",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiPackage",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 9,
+      "options": [
+        {
+          "code": "jacket_only",
+          "value_ar": "سترة فقط",
+          "value_en": "Jacket Only",
+          "value_fa": "فقط کت",
+          "sort_order": 1
+        },
+        {
+          "code": "jacket_waistcoat",
+          "value_ar": "سترة وصدرية",
+          "value_en": "Jacket + Waistcoat",
+          "value_fa": "کت و جلیقه",
+          "sort_order": 2
+        },
+        {
+          "code": "jacket_trousers",
+          "value_ar": "سترة وبنطلون",
+          "value_en": "Jacket + Trousers",
+          "value_fa": "کت و شلوار",
+          "sort_order": 3
+        },
+        {
+          "code": "three_piece",
+          "value_ar": "ثلاث قطع",
+          "value_en": "Three-Piece",
+          "value_fa": "سه تکه",
+          "sort_order": 4
+        },
+        {
+          "code": "tuxedo_set",
+          "value_ar": "طقم توكسيدو",
+          "value_en": "Tuxedo Set",
+          "value_fa": "ست تاکسیدو",
+          "sort_order": 5
+        }
+      ]
+    }
+  ]
+}

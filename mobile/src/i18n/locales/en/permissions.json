@@ -1,0 +1,18 @@
+{
+  "title": "Permissions",
+  "subtitle": "Manage what the app can access on this device.",
+  "notificationsTitle": "Notifications",
+  "notificationsDesc": "Get notified when new products matching your interests are found.",
+  "locationTitle": "Location",
+  "locationDesc": "Used to show your address on the map when you add it.",
+  "microphoneTitle": "Microphone",
+  "microphoneDesc": "Required for voice messages and voice search.",
+  "granted": "Granted",
+  "denied": "Not granted",
+  "blocked": "Blocked — enable in Settings",
+  "allow": "Allow",
+  "openSettings": "Open Settings",
+  "manage": "Manage permissions",
+  "locationGranted": "Location access granted",
+  "locationBlocked": "Location access blocked - grant it to show your address on the map"
+}

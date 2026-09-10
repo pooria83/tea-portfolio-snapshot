@@ -1,0 +1,835 @@
+{
+  "description": "Portfolio query set from the source golden dataset. Development catalog product identifiers were removed. Add judgments against your own isolated catalog before computing retrieval metrics.",
+  "queries": [
+    {
+      "text": "floral midi dress",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "mini dress",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "black evening dress",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "floral silk dress",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "linen dress",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "midi piqué dress with belt",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "striped halterneck dress",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "blue jeans high waist",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "mom fit jeans",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "white sneakers",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "running shoes",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "barefoot trainers",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "leather ballerina flats",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "tote bag",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "mini bucket bag",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "trench coat",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "double breasted blazer",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "wool jumper",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "silk scarf",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "gold ring",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "perfume",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "فستان ميدي",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "فستان قصير",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "فستان منقوش",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "جينز نسائي",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "حذاء رياضي نسائي",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "حقيبة يد",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "بلوزة نسائية",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "جاكيت نسائي",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "عطر نسائي",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "قبعة نسائية",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "حذاء مسطح نسائي",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "floral dress",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "striped dress",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "satin dress",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "knit dress",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "puff sleeve dress",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "halter dress",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "dress with ruffles",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "embroidered dress",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "sequin dress",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "draped dress",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "shirt dress",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "long dress",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "dress with ties",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "balloon dress",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "sweetheart neckline dress",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "wide leg trousers",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "barrel trousers",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "linen trousers",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "striped trousers",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "flared trousers",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "cargo trousers",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "trousers with pockets",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "palazzo trousers",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "pleated trousers",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "sarouel trousers",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "cropped trousers",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "high waist jeans",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "wide jeans",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "halter top",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "puff sleeve top",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "lace top",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "satin shirt",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "linen shirt",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "striped shirt",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "floral top",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "high neck top",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "asymmetric top",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "t shirt",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "bodysuit",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "corset top",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "crop top",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "knit jumper",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "cardigan",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "ribbed jumper",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "turtleneck jumper",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "mini skirt",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "midi skirt",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "pleated skirt",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "leather skirt",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "denim skirt",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "shorts",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "bermuda shorts",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "denim shorts",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "skort",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "blazer",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "leather jacket",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "denim jacket",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "puffer jacket",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "bomber jacket",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "wool coat",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "cape",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "faux fur jacket",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "overshirt",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "sandals",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "ankle boots",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "heeled sandals",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "ballet flats",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "trainers",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "loafers",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "suede boots",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "leather shoes",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "cowboy boots",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "wedges",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "high heels",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "handbag",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "bucket bag",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "mini bag",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "clutch",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "necklace",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "earrings",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "bracelets",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "scarf",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "belt",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "hat",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "bralette",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "bikini top",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "thong",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "briefs",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "black dress",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "red dress",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "white shirt",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "denim blue jeans",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "polka dot trousers",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "gingham dress",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "animal print top",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "sequin skirt",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "check jacket",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "dreses",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "trowser",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "shirts",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "sandals for summer",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "elegant dresses",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "casual jeans",
+      "locale": "en",
+      "relevant_ids": []
+    },
+    {
+      "text": "فستان",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "فستان مطرز",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "فستان دانتيل",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "فستان حرير",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "فستان مخطط",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "فستان بكم منفوش",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "بنطال واسع",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "بنطال كتان",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "سروال",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "جينز",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "جينز واسع",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "قميص",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "قميص كتان",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "تي شيرت",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "كنزة صوف",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "كنزة محبوكة",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "تنورة قصيرة",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "تنورة ميدي",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "شورت",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "جاكيت",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "جاكيت جلد",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "بليزر",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "معطف",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "حذاء",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "حذاء رياضي",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "صندل",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "حذاء بكعب",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "حقيبة",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "وشاح",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "حزام",
+      "locale": "ar",
+      "relevant_ids": []
+    },
+    {
+      "text": "فستان سهرة",
+      "locale": "ar",
+      "relevant_ids": []
+    }
+  ]
+}

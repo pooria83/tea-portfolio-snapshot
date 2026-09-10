@@ -1,0 +1,480 @@
+{
+  "attributes": [
+    {
+      "group_code": "abaya-specs",
+      "code": "abaya_neckline",
+      "name_ar": "نوع الياقة",
+      "name_en": "Neckline",
+      "name_fa": "یقه",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiNecklace",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "high_neck",
+          "value_ar": "ياقة عالية",
+          "value_en": "High Neck",
+          "value_fa": "یقه بلند",
+          "sort_order": 1
+        },
+        {
+          "code": "round",
+          "value_ar": "دائري",
+          "value_en": "Round Neck",
+          "value_fa": "یقه گرد",
+          "sort_order": 2
+        },
+        {
+          "code": "v_neck",
+          "value_ar": "V",
+          "value_en": "V-Neck",
+          "value_fa": "یقه V",
+          "sort_order": 3
+        },
+        {
+          "code": "mandarin",
+          "value_ar": "مندارين",
+          "value_en": "Mandarin Collar",
+          "value_fa": "مندارین",
+          "sort_order": 4
+        },
+        {
+          "code": "collar",
+          "value_ar": "ياقة",
+          "value_en": "Collar",
+          "value_fa": "یقه دار",
+          "sort_order": 5
+        },
+        {
+          "code": "keyhole",
+          "value_ar": "ثقب",
+          "value_en": "Keyhole",
+          "value_fa": "سوراخ",
+          "sort_order": 6
+        }
+      ]
+    },
+    {
+      "group_code": "abaya-specs",
+      "code": "abaya_sleeve_style",
+      "name_ar": "نمط الكم",
+      "name_en": "Sleeve Style",
+      "name_fa": "سبک آستین",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiArmoredPants",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "long",
+          "value_ar": "طويل",
+          "value_en": "Long Sleeve",
+          "value_fa": "آستین بلند",
+          "sort_order": 1
+        },
+        {
+          "code": "three_quarter",
+          "value_ar": "ثلاثة أرباع",
+          "value_en": "3/4 Sleeve",
+          "value_fa": "سه چهارم",
+          "sort_order": 2
+        },
+        {
+          "code": "short",
+          "value_ar": "قصير",
+          "value_en": "Short Sleeve",
+          "value_fa": "آستین کوتاه",
+          "sort_order": 3
+        },
+        {
+          "code": "sleeveless",
+          "value_ar": "بدون أكمام",
+          "value_en": "Sleeveless",
+          "value_fa": "بدون آستین",
+          "sort_order": 4
+        },
+        {
+          "code": "bell",
+          "value_ar": "جرس",
+          "value_en": "Bell Sleeve",
+          "value_fa": "آستین زنگی",
+          "sort_order": 5
+        },
+        {
+          "code": "butterfly",
+          "value_ar": "فراشة",
+          "value_en": "Butterfly Sleeve",
+          "value_fa": "آستین پروانه‌ای",
+          "sort_order": 6
+        },
+        {
+          "code": "wide",
+          "value_ar": "واسع",
+          "value_en": "Wide Sleeve",
+          "value_fa": "آستین گشاد",
+          "sort_order": 7
+        },
+        {
+          "code": "kimono",
+          "value_ar": "كيمونو",
+          "value_en": "Kimono Sleeve",
+          "value_fa": "آستین کیمونو",
+          "sort_order": 8
+        }
+      ]
+    },
+    {
+      "group_code": "abaya-specs",
+      "code": "abaya_length",
+      "name_ar": "طول العباءة",
+      "name_en": "Abaya Length",
+      "name_fa": "قد عبا",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiRuler",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "ankle_length",
+          "value_ar": "طول الكاحل",
+          "value_en": "Ankle Length",
+          "value_fa": "قد مچ پا",
+          "sort_order": 1
+        },
+        {
+          "code": "floor_length",
+          "value_ar": "طول الأرض",
+          "value_en": "Floor Length",
+          "value_fa": "قد زمین",
+          "sort_order": 2
+        },
+        {
+          "code": "maxi",
+          "value_ar": "ماكسي",
+          "value_en": "Maxi",
+          "value_fa": "ماکسی",
+          "sort_order": 3
+        },
+        {
+          "code": "extra_long",
+          "value_ar": "طويل جدا",
+          "value_en": "Extra Long",
+          "value_fa": "بسیار بلند",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "group_code": "abaya-specs",
+      "code": "abaya_style",
+      "name_ar": "ستايل العباءة",
+      "name_en": "Abaya Style",
+      "name_fa": "استایل عبا",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiStarDress",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 4,
+      "options": [
+        {
+          "code": "open_front",
+          "value_ar": "مفتوحة من الأمام",
+          "value_en": "Open Front",
+          "value_fa": "جلو باز",
+          "sort_order": 1
+        },
+        {
+          "code": "closed_front",
+          "value_ar": "مغلقة",
+          "value_en": "Closed Front",
+          "value_fa": "جلو بسته",
+          "sort_order": 2
+        },
+        {
+          "code": "kimono_sleeve",
+          "value_ar": "كم كيمونو",
+          "value_en": "Kimono Sleeve",
+          "value_fa": "آستین کیمونو",
+          "sort_order": 3
+        },
+        {
+          "code": "classic",
+          "value_ar": "كلاسيك",
+          "value_en": "Classic",
+          "value_fa": "کلاسیک",
+          "sort_order": 4
+        },
+        {
+          "code": "modern",
+          "value_ar": "حديث",
+          "value_en": "Modern",
+          "value_fa": "مدرن",
+          "sort_order": 5
+        },
+        {
+          "code": "embroidered",
+          "value_ar": "مطرزة",
+          "value_en": "Embroidered",
+          "value_fa": "گلدوزی",
+          "sort_order": 6
+        },
+        {
+          "code": "luxury",
+          "value_ar": "فاخرة",
+          "value_en": "Luxury",
+          "value_fa": "لوکس",
+          "sort_order": 7
+        },
+        {
+          "code": "butterfly",
+          "value_ar": "فراشة",
+          "value_en": "Butterfly",
+          "value_fa": "پروانه‌ای",
+          "sort_order": 8
+        }
+      ]
+    },
+    {
+      "group_code": "abaya-specs",
+      "code": "embellishment_type",
+      "name_ar": "نوع الزخرفة",
+      "name_en": "Embellishment Type",
+      "name_fa": "نوع تزئین",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiSparkles",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 5,
+      "options": [
+        {
+          "code": "none",
+          "value_ar": "بدون",
+          "value_en": "None",
+          "value_fa": "بدون",
+          "sort_order": 1
+        },
+        {
+          "code": "embroidery",
+          "value_ar": "تطريز",
+          "value_en": "Embroidery",
+          "value_fa": "گلدوزی",
+          "sort_order": 2
+        },
+        {
+          "code": "beading",
+          "value_ar": "خرز",
+          "value_en": "Beading",
+          "value_fa": "مهره",
+          "sort_order": 3
+        },
+        {
+          "code": "sequins",
+          "value_ar": "ترتر",
+          "value_en": "Sequins",
+          "value_fa": "پولک",
+          "sort_order": 4
+        },
+        {
+          "code": "lace",
+          "value_ar": "دانتيل",
+          "value_en": "Lace",
+          "value_fa": "دانتل",
+          "sort_order": 5
+        },
+        {
+          "code": "crystals",
+          "value_ar": "كريستال",
+          "value_en": "Crystals",
+          "value_fa": "کریستال",
+          "sort_order": 6
+        },
+        {
+          "code": "stones",
+          "value_ar": "أحجار",
+          "value_en": "Stones",
+          "value_fa": "سنگ",
+          "sort_order": 7
+        },
+        {
+          "code": "piping",
+          "value_ar": "زخرفة",
+          "value_en": "Piping",
+          "value_fa": "لبه",
+          "sort_order": 8
+        }
+      ]
+    },
+    {
+      "group_code": "abaya-specs",
+      "code": "abaya_closure_type",
+      "name_ar": "نوع الإغلاق",
+      "name_en": "Closure Type",
+      "name_fa": "نوع بسته شدن",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiClothes",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 6,
+      "options": [
+        {
+          "code": "none_open_front",
+          "value_ar": "مفتوح",
+          "value_en": "None (Open Front)",
+          "value_fa": "بدون (جلو باز)",
+          "sort_order": 1
+        },
+        {
+          "code": "zipper",
+          "value_ar": "سحاب",
+          "value_en": "Zipper",
+          "value_fa": "زیپ",
+          "sort_order": 2
+        },
+        {
+          "code": "buttons",
+          "value_ar": "أزرار",
+          "value_en": "Buttons",
+          "value_fa": "دکمه",
+          "sort_order": 3
+        },
+        {
+          "code": "hook_eye",
+          "value_ar": "خطاف وعروة",
+          "value_en": "Hook & Eye",
+          "value_fa": "قلاب و حلقه",
+          "sort_order": 4
+        },
+        {
+          "code": "belt",
+          "value_ar": "حزام",
+          "value_en": "Belt",
+          "value_fa": "کمربند",
+          "sort_order": 5
+        },
+        {
+          "code": "snap",
+          "value_ar": "كبسول",
+          "value_en": "Snap",
+          "value_fa": "دکمه فشاری",
+          "sort_order": 6
+        }
+      ]
+    },
+    {
+      "group_code": "abaya-specs",
+      "code": "fabric_type",
+      "name_ar": "نوع القماش",
+      "name_en": "Fabric Type",
+      "name_fa": "نوع پارچه",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiCottonFlower",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 7,
+      "options": [
+        {
+          "code": "crepe",
+          "value_ar": "كريب",
+          "value_en": "Crepe",
+          "value_fa": "کرپ",
+          "sort_order": 1
+        },
+        {
+          "code": "chiffon",
+          "value_ar": "شيفون",
+          "value_en": "Chiffon",
+          "value_fa": "شیفون",
+          "sort_order": 2
+        },
+        {
+          "code": "georgette",
+          "value_ar": "جيورجيت",
+          "value_en": "Georgette",
+          "value_fa": "ژرژت",
+          "sort_order": 3
+        },
+        {
+          "code": "nida",
+          "value_ar": "نيدا",
+          "value_en": "Nida",
+          "value_fa": "نیدا",
+          "sort_order": 4
+        },
+        {
+          "code": "viscose",
+          "value_ar": "فسكوز",
+          "value_en": "Viscose",
+          "value_fa": "ویسکوز",
+          "sort_order": 5
+        },
+        {
+          "code": "silk",
+          "value_ar": "حرير",
+          "value_en": "Silk",
+          "value_fa": "ابریشم",
+          "sort_order": 6
+        },
+        {
+          "code": "cotton",
+          "value_ar": "قطن",
+          "value_en": "Cotton",
+          "value_fa": "پنبه",
+          "sort_order": 7
+        },
+        {
+          "code": "polyester",
+          "value_ar": "بوليستر",
+          "value_en": "Polyester",
+          "value_fa": "پلی‌استر",
+          "sort_order": 8
+        },
+        {
+          "code": "jersey",
+          "value_ar": "جيرسي",
+          "value_en": "Jersey",
+          "value_fa": "جرسی",
+          "sort_order": 9
+        },
+        {
+          "code": "satin",
+          "value_ar": "ساتان",
+          "value_en": "Satin",
+          "value_fa": "ساتن",
+          "sort_order": 10
+        },
+        {
+          "code": "lace",
+          "value_ar": "دانتيل",
+          "value_en": "Lace",
+          "value_fa": "دانتل",
+          "sort_order": 11
+        }
+      ]
+    }
+  ]
+}

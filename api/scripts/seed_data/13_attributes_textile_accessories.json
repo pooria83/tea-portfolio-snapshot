@@ -1,0 +1,654 @@
+{
+  "product_type_code": "textile_accessories",
+  "attributes": [
+    {
+      "group_code": "colors-pattern",
+      "code": "primary_color",
+      "name_ar": "اللون الأساسي",
+      "name_en": "Primary Color",
+      "name_fa": "رنگ اصلی",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiDroplet",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": [],
+      "validation_rules": [
+        {
+          "type": "min_select",
+          "value": 1,
+          "message": {
+            "en": "Select at least one color",
+            "ar": "اختر لونًا واحدًا على الأقل",
+            "fa": "حداقل یک رنگ انتخاب کنید"
+          }
+        }
+      ]
+    },
+    {
+      "group_code": "colors-pattern",
+      "code": "pattern",
+      "name_ar": "النقشة",
+      "name_en": "Pattern",
+      "name_fa": "طرح",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiAbstract",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2,
+      "options": []
+    },
+    {
+      "group_code": "textile-specs",
+      "code": "material_textile",
+      "name_ar": "الخامة",
+      "name_en": "Material",
+      "name_fa": "جنس",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiCottonFlower",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "cotton",
+          "value_ar": "قطن",
+          "value_en": "Cotton",
+          "value_fa": "پنبه",
+          "sort_order": 1
+        },
+        {
+          "code": "wool",
+          "value_ar": "صوف",
+          "value_en": "Wool",
+          "value_fa": "پشم",
+          "sort_order": 2
+        },
+        {
+          "code": "cashmere",
+          "value_ar": "كشمير",
+          "value_en": "Cashmere",
+          "value_fa": "کشمیر",
+          "sort_order": 3
+        },
+        {
+          "code": "silk",
+          "value_ar": "حرير",
+          "value_en": "Silk",
+          "value_fa": "ابریشم",
+          "sort_order": 4
+        },
+        {
+          "code": "polyester",
+          "value_ar": "بوليستر",
+          "value_en": "Polyester",
+          "value_fa": "پلی‌استر",
+          "sort_order": 5
+        },
+        {
+          "code": "acrylic",
+          "value_ar": "أكريليك",
+          "value_en": "Acrylic",
+          "value_fa": "آکریلیک",
+          "sort_order": 6
+        },
+        {
+          "code": "linen",
+          "value_ar": "كتان",
+          "value_en": "Linen",
+          "value_fa": "کتان",
+          "sort_order": 7
+        },
+        {
+          "code": "nylon",
+          "value_ar": "نايلون",
+          "value_en": "Nylon",
+          "value_fa": "نایلون",
+          "sort_order": 8
+        },
+        {
+          "code": "satin",
+          "value_ar": "ساتان",
+          "value_en": "Satin",
+          "value_fa": "ساتن",
+          "sort_order": 9
+        },
+        {
+          "code": "leather",
+          "value_ar": "جلد",
+          "value_en": "Leather",
+          "value_fa": "چرم",
+          "sort_order": 10
+        }
+      ],
+      "validation_rules": [
+        {
+          "type": "min_select",
+          "value": 1,
+          "message": {
+            "en": "Select at least one material",
+            "ar": "اختر خامة واحدة على الأقل",
+            "fa": "حداقل یک جنس انتخاب کنید"
+          }
+        }
+      ]
+    },
+    {
+      "group_code": "fit-size",
+      "code": "size",
+      "name_ar": "المقاس",
+      "name_en": "Size",
+      "name_fa": "سایز",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiRuler",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "xs",
+          "value_ar": "XS",
+          "value_en": "XS",
+          "value_fa": "XS",
+          "sort_order": 1
+        },
+        {
+          "code": "s",
+          "value_ar": "S",
+          "value_en": "S",
+          "value_fa": "S",
+          "sort_order": 2
+        },
+        {
+          "code": "m",
+          "value_ar": "M",
+          "value_en": "M",
+          "value_fa": "M",
+          "sort_order": 3
+        },
+        {
+          "code": "l",
+          "value_ar": "L",
+          "value_en": "L",
+          "value_fa": "L",
+          "sort_order": 4
+        },
+        {
+          "code": "xl",
+          "value_ar": "XL",
+          "value_en": "XL",
+          "value_fa": "XL",
+          "sort_order": 5
+        },
+        {
+          "code": "xxl",
+          "value_ar": "XXL",
+          "value_en": "XXL",
+          "value_fa": "XXL",
+          "sort_order": 6
+        },
+        {
+          "code": "one_size",
+          "value_ar": "مقاس واحد",
+          "value_en": "One Size",
+          "value_fa": "یک سایز",
+          "sort_order": 7
+        }
+      ]
+    },
+    {
+      "group_code": "textile-specs",
+      "code": "scarf_length",
+      "name_ar": "طول الوشاح",
+      "name_en": "Scarf Length",
+      "name_fa": "طول شال",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiRuler",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "short",
+          "value_ar": "قصير",
+          "value_en": "Short",
+          "value_fa": "کوتاه",
+          "sort_order": 1
+        },
+        {
+          "code": "medium",
+          "value_ar": "متوسط",
+          "value_en": "Medium",
+          "value_fa": "متوسط",
+          "sort_order": 2
+        },
+        {
+          "code": "long",
+          "value_ar": "طويل",
+          "value_en": "Long",
+          "value_fa": "بلند",
+          "sort_order": 3
+        },
+        {
+          "code": "extra_long",
+          "value_ar": "طويل جداً",
+          "value_en": "Extra Long",
+          "value_fa": "خیلی بلند",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "group_code": "textile-specs",
+      "code": "scarf_width",
+      "name_ar": "عرض الوشاح",
+      "name_en": "Scarf Width",
+      "name_fa": "عرض شال",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiRuler",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 4,
+      "options": [
+        {
+          "code": "narrow",
+          "value_ar": "ضيق",
+          "value_en": "Narrow",
+          "value_fa": "باریک",
+          "sort_order": 1
+        },
+        {
+          "code": "standard",
+          "value_ar": "قياسي",
+          "value_en": "Standard",
+          "value_fa": "استاندارد",
+          "sort_order": 2
+        },
+        {
+          "code": "wide",
+          "value_ar": "عريض",
+          "value_en": "Wide",
+          "value_fa": "پهن",
+          "sort_order": 3
+        }
+      ]
+    },
+    {
+      "group_code": "textile-specs",
+      "code": "tie_width",
+      "name_ar": "عرض ربطة العنق",
+      "name_en": "Tie Width",
+      "name_fa": "پهنای کراوات",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiRuler",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 5,
+      "options": [
+        {
+          "code": "slim",
+          "value_ar": "نحيف",
+          "value_en": "Slim",
+          "value_fa": "باریک",
+          "sort_order": 1
+        },
+        {
+          "code": "standard",
+          "value_ar": "قياسي",
+          "value_en": "Standard",
+          "value_fa": "استاندارد",
+          "sort_order": 2
+        },
+        {
+          "code": "wide",
+          "value_ar": "عريض",
+          "value_en": "Wide",
+          "value_fa": "پهن",
+          "sort_order": 3
+        }
+      ]
+    },
+    {
+      "group_code": "textile-specs",
+      "code": "tie_length",
+      "name_ar": "طول ربطة العنق",
+      "name_en": "Tie Length",
+      "name_fa": "طول کراوات",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiRuler",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 6,
+      "options": [
+        {
+          "code": "standard",
+          "value_ar": "قياسي",
+          "value_en": "Standard",
+          "value_fa": "استاندارد",
+          "sort_order": 1
+        },
+        {
+          "code": "long",
+          "value_ar": "طويل",
+          "value_en": "Long",
+          "value_fa": "بلند",
+          "sort_order": 2
+        },
+        {
+          "code": "extra_long",
+          "value_ar": "طويل جداً",
+          "value_en": "Extra Long",
+          "value_fa": "خیلی بلند",
+          "sort_order": 3
+        }
+      ]
+    },
+    {
+      "group_code": "textile-specs",
+      "code": "tie_fabric",
+      "name_ar": "قماش ربطة العنق",
+      "name_en": "Tie Fabric",
+      "name_fa": "جنس پارچه کراوات",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiCottonFlower",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 7,
+      "options": [
+        {
+          "code": "silk",
+          "value_ar": "حرير",
+          "value_en": "Silk",
+          "value_fa": "ابریشم",
+          "sort_order": 1
+        },
+        {
+          "code": "polyester",
+          "value_ar": "بوليستر",
+          "value_en": "Polyester",
+          "value_fa": "پلی‌استر",
+          "sort_order": 2
+        },
+        {
+          "code": "cotton",
+          "value_ar": "قطن",
+          "value_en": "Cotton",
+          "value_fa": "پنبه",
+          "sort_order": 3
+        },
+        {
+          "code": "wool",
+          "value_ar": "صوف",
+          "value_en": "Wool",
+          "value_fa": "پشم",
+          "sort_order": 4
+        },
+        {
+          "code": "linen",
+          "value_ar": "كتان",
+          "value_en": "Linen",
+          "value_fa": "کتان",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "group_code": "textile-specs",
+      "code": "tie_closure",
+      "name_ar": "نوع الإغلاق",
+      "name_en": "Tie Closure",
+      "name_fa": "نوع بستن",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "FiLock",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 8,
+      "options": [
+        {
+          "code": "self_tie",
+          "value_ar": "ربط ذاتي",
+          "value_en": "Self-Tie",
+          "value_fa": "خود بست",
+          "sort_order": 1
+        },
+        {
+          "code": "clip_on",
+          "value_ar": "مشبك",
+          "value_en": "Clip-On",
+          "value_fa": "گیره‌ای",
+          "sort_order": 2
+        },
+        {
+          "code": "pre_tied",
+          "value_ar": "مربوط مسبقاً",
+          "value_en": "Pre-Tied",
+          "value_fa": "از پیش بسته شده",
+          "sort_order": 3
+        },
+        {
+          "code": "zipper",
+          "value_ar": "سحاب",
+          "value_en": "Zipper",
+          "value_fa": "زیپ",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "group_code": "textile-specs",
+      "code": "glove_type",
+      "name_ar": "نوع القفازات",
+      "name_en": "Glove Type",
+      "name_fa": "نوع دستکش",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiWinterGloves",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 9,
+      "options": [
+        {
+          "code": "fingerless",
+          "value_ar": "بدون أصابع",
+          "value_en": "Fingerless",
+          "value_fa": "بدون انگشت",
+          "sort_order": 1
+        },
+        {
+          "code": "full_finger",
+          "value_ar": "كامل الأصابع",
+          "value_en": "Full Finger",
+          "value_fa": "تمام انگشت",
+          "sort_order": 2
+        },
+        {
+          "code": "mittens",
+          "value_ar": "قفازات صوف",
+          "value_en": "Mittens",
+          "value_fa": "دستکش",
+          "sort_order": 3
+        },
+        {
+          "code": "evening",
+          "value_ar": "سهرة",
+          "value_en": "Evening Gloves",
+          "value_fa": "دستکش مجلسی",
+          "sort_order": 4
+        },
+        {
+          "code": "touchscreen",
+          "value_ar": "شاشة لمس",
+          "value_en": "Touchscreen",
+          "value_fa": "لمسی",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "group_code": "textile-specs",
+      "code": "textile_lining_material",
+      "name_ar": "خامة البطانة",
+      "name_en": "Lining Material",
+      "name_fa": "جنس آستر",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiCottonFlower",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 10,
+      "options": [
+        {
+          "code": "cotton",
+          "value_ar": "قطن",
+          "value_en": "Cotton",
+          "value_fa": "پنبه",
+          "sort_order": 1
+        },
+        {
+          "code": "silk",
+          "value_ar": "حرير",
+          "value_en": "Silk",
+          "value_fa": "ابریشم",
+          "sort_order": 2
+        },
+        {
+          "code": "polyester",
+          "value_ar": "بوليستر",
+          "value_en": "Polyester",
+          "value_fa": "پلی‌استر",
+          "sort_order": 3
+        },
+        {
+          "code": "fleece",
+          "value_ar": "صوف صناعي",
+          "value_en": "Fleece",
+          "value_fa": "پشمک",
+          "sort_order": 4
+        },
+        {
+          "code": "satin",
+          "value_ar": "ساتان",
+          "value_en": "Satin",
+          "value_fa": "ساتن",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "group_code": "textile-specs",
+      "code": "textile_season",
+      "name_ar": "الموسم",
+      "name_en": "Season",
+      "name_fa": "فصل",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiSun",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 11,
+      "options": [
+        {
+          "code": "spring",
+          "value_ar": "ربيع",
+          "value_en": "Spring",
+          "value_fa": "بهار",
+          "sort_order": 1
+        },
+        {
+          "code": "summer",
+          "value_ar": "صيف",
+          "value_en": "Summer",
+          "value_fa": "تابستان",
+          "sort_order": 2
+        },
+        {
+          "code": "autumn",
+          "value_ar": "خريف",
+          "value_en": "Autumn",
+          "value_fa": "پاییز",
+          "sort_order": 3
+        },
+        {
+          "code": "winter",
+          "value_ar": "شتاء",
+          "value_en": "Winter",
+          "value_fa": "زمستان",
+          "sort_order": 4
+        },
+        {
+          "code": "all_season",
+          "value_ar": "جميع الفصول",
+          "value_en": "All Season",
+          "value_fa": "همه فصول",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "group_code": "textile-specs",
+      "code": "textile_adjustable_size",
+      "name_ar": "مقاس قابل للتعديل",
+      "name_en": "Adjustable Size",
+      "name_fa": "سایز قابل تنظیم",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiSliders",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 12
+    },
+    {
+      "group_code": "accessory-features",
+      "code": "textile_hypoallergenic",
+      "name_ar": "مضاد للحساسية",
+      "name_en": "Hypoallergenic",
+      "name_fa": "ضد حساسیت",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiShield",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1
+    }
+  ]
+}

@@ -1,0 +1,663 @@
+{
+  "attributes": [
+    {
+      "group_code": "fragrance-specs",
+      "code": "fragrance_type",
+      "name_ar": "نوع العطر",
+      "name_en": "Fragrance Type",
+      "name_fa": "نوع عطر",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiSpray",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "eau_de_parfum",
+          "value_ar": "ماء عطر",
+          "value_en": "Eau de Parfum (EDP)",
+          "value_fa": "ادو پرفیوم",
+          "sort_order": 1
+        },
+        {
+          "code": "eau_de_toilette",
+          "value_ar": "ماء تواليت",
+          "value_en": "Eau de Toilette (EDT)",
+          "value_fa": "ادو تویلت",
+          "sort_order": 2
+        },
+        {
+          "code": "eau_de_cologne",
+          "value_ar": "كولونيا",
+          "value_en": "Eau de Cologne (EDC)",
+          "value_fa": "ادو کلن",
+          "sort_order": 3
+        },
+        {
+          "code": "parfum_extrait",
+          "value_ar": "خلاصة عطر",
+          "value_en": "Parfum Extrait",
+          "value_fa": "عطر خالص",
+          "sort_order": 4
+        },
+        {
+          "code": "body_spray",
+          "value_ar": "رذاذ جسم",
+          "value_en": "Body Spray",
+          "value_fa": "اسپری بدن",
+          "sort_order": 5
+        },
+        {
+          "code": "perfume_oil",
+          "value_ar": "زيت عطر",
+          "value_en": "Perfume Oil",
+          "value_fa": "روغن عطر",
+          "sort_order": 6
+        },
+        {
+          "code": "attar",
+          "value_ar": "عطر",
+          "value_en": "Attar",
+          "value_fa": "عطر",
+          "sort_order": 7
+        },
+        {
+          "code": "rollerball",
+          "value_ar": "رولربول",
+          "value_en": "Rollerball",
+          "value_fa": "رولربال",
+          "sort_order": 8
+        },
+        {
+          "code": "travel_spray",
+          "value_ar": "رذاذ سفر",
+          "value_en": "Travel Spray",
+          "value_fa": "اسپری مسافرتی",
+          "sort_order": 9
+        }
+      ]
+    },
+    {
+      "group_code": "fragrance-specs",
+      "code": "fragrance_volume_ml",
+      "name_ar": "الحجم (مل)",
+      "name_en": "Volume (ml)",
+      "name_fa": "حجم (میلی‌لیتر)",
+      "value_type": "number",
+      "input_type": "number",
+      "icon": "GiRuler",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": false,
+      "is_variant_defining": true,
+      "sort_order": 2,
+      "options": []
+    },
+    {
+      "group_code": "fragrance-specs",
+      "code": "fragrance_family",
+      "name_ar": "عائلة العطر",
+      "name_en": "Fragrance Family",
+      "name_fa": "خانواده عطر",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiLayers",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "floral",
+          "value_ar": "زهري",
+          "value_en": "Floral",
+          "value_fa": "گلدار",
+          "sort_order": 1
+        },
+        {
+          "code": "woody",
+          "value_ar": "خشبي",
+          "value_en": "Woody",
+          "value_fa": "چوبی",
+          "sort_order": 2
+        },
+        {
+          "code": "oriental",
+          "value_ar": "شرقي",
+          "value_en": "Oriental",
+          "value_fa": "شرقی",
+          "sort_order": 3
+        },
+        {
+          "code": "fresh",
+          "value_ar": "منعش",
+          "value_en": "Fresh",
+          "value_fa": "تازه",
+          "sort_order": 4
+        },
+        {
+          "code": "citrus",
+          "value_ar": "حمضي",
+          "value_en": "Citrus",
+          "value_fa": "مرکبات",
+          "sort_order": 5
+        },
+        {
+          "code": "fruity",
+          "value_ar": "فواكه",
+          "value_en": "Fruity",
+          "value_fa": "میوه‌ای",
+          "sort_order": 6
+        },
+        {
+          "code": "gourmand",
+          "value_ar": "حلوى",
+          "value_en": "Gourmand",
+          "value_fa": "خوراکی",
+          "sort_order": 7
+        },
+        {
+          "code": "aquatic",
+          "value_ar": "بحري",
+          "value_en": "Aquatic",
+          "value_fa": "آبی",
+          "sort_order": 8
+        },
+        {
+          "code": "green",
+          "value_ar": "أخضر",
+          "value_en": "Green",
+          "value_fa": "سبز",
+          "sort_order": 9
+        },
+        {
+          "code": "powdery",
+          "value_ar": "بودرة",
+          "value_en": "Powdery",
+          "value_fa": "پودری",
+          "sort_order": 10
+        },
+        {
+          "code": "oud",
+          "value_ar": "عود",
+          "value_en": "Oud",
+          "value_fa": "عود",
+          "sort_order": 11
+        },
+        {
+          "code": "musk",
+          "value_ar": "مسك",
+          "value_en": "Musk",
+          "value_fa": "مشک",
+          "sort_order": 12
+        },
+        {
+          "code": "amber",
+          "value_ar": "عنبر",
+          "value_en": "Amber",
+          "value_fa": "عنبر",
+          "sort_order": 13
+        }
+      ]
+    },
+    {
+      "group_code": "fragrance-specs",
+      "code": "concentration",
+      "name_ar": "التركيز",
+      "name_en": "Concentration",
+      "name_fa": "غلظت",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiDrop",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 4,
+      "options": [
+        {
+          "code": "parfum_20_30",
+          "value_ar": "عطر 20-30%",
+          "value_en": "Parfum 20-30%",
+          "value_fa": "عطر 20-30%",
+          "sort_order": 1
+        },
+        {
+          "code": "edp_15_20",
+          "value_ar": "EDP 15-20%",
+          "value_en": "EDP 15-20%",
+          "value_fa": "EDP 15-20%",
+          "sort_order": 2
+        },
+        {
+          "code": "edt_5_15",
+          "value_ar": "EDT 5-15%",
+          "value_en": "EDT 5-15%",
+          "value_fa": "EDT 5-15%",
+          "sort_order": 3
+        },
+        {
+          "code": "edc_2_5",
+          "value_ar": "EDC 2-5%",
+          "value_en": "EDC 2-5%",
+          "value_fa": "EDC 2-5%",
+          "sort_order": 4
+        },
+        {
+          "code": "body_mist_under_5",
+          "value_ar": "بخاخ جسم <5%",
+          "value_en": "Body Mist <5%",
+          "value_fa": "اسپری بدن <5%",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "group_code": "fragrance-specs",
+      "code": "gender_target",
+      "name_ar": "الجنس المستهدف",
+      "name_en": "Gender Target",
+      "name_fa": "جنسیت هدف",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "FiUsers",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 5,
+      "options": [
+        {
+          "code": "male",
+          "value_ar": "رجالي",
+          "value_en": "Male",
+          "value_fa": "مردانه",
+          "sort_order": 1
+        },
+        {
+          "code": "female",
+          "value_ar": "نسائي",
+          "value_en": "Female",
+          "value_fa": "زنانه",
+          "sort_order": 2
+        },
+        {
+          "code": "unisex",
+          "value_ar": "للجنسين",
+          "value_en": "Unisex",
+          "value_fa": "مشترک",
+          "sort_order": 3
+        }
+      ]
+    },
+    {
+      "group_code": "fragrance-notes",
+      "code": "top_notes",
+      "name_ar": "النفحات العليا",
+      "name_en": "Top Notes",
+      "name_fa": "نت اولیه",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiArrowUp",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "bergamot",
+          "value_ar": "برغموت",
+          "value_en": "Bergamot",
+          "value_fa": "ترنج",
+          "sort_order": 1
+        },
+        {
+          "code": "lemon",
+          "value_ar": "ليمون",
+          "value_en": "Lemon",
+          "value_fa": "لیمو",
+          "sort_order": 2
+        },
+        {
+          "code": "grapefruit",
+          "value_ar": "جريب فروت",
+          "value_en": "Grapefruit",
+          "value_fa": "گریپ‌فروت",
+          "sort_order": 3
+        },
+        {
+          "code": "orange",
+          "value_ar": "برتقال",
+          "value_en": "Orange",
+          "value_fa": "پرتقال",
+          "sort_order": 4
+        },
+        {
+          "code": "apple",
+          "value_ar": "تفاح",
+          "value_en": "Apple",
+          "value_fa": "سیب",
+          "sort_order": 5
+        },
+        {
+          "code": "pear",
+          "value_ar": "كمثرى",
+          "value_en": "Pear",
+          "value_fa": "گلابی",
+          "sort_order": 6
+        },
+        {
+          "code": "peach",
+          "value_ar": "خوخ",
+          "value_en": "Peach",
+          "value_fa": "هلو",
+          "sort_order": 7
+        },
+        {
+          "code": "raspberry",
+          "value_ar": "توت",
+          "value_en": "Raspberry",
+          "value_fa": "تمشک",
+          "sort_order": 8
+        },
+        {
+          "code": "aldehyde",
+          "value_ar": "ألدهيد",
+          "value_en": "Aldehyde",
+          "value_fa": "آلدئید",
+          "sort_order": 9
+        },
+        {
+          "code": "lavender",
+          "value_ar": "لافندر",
+          "value_en": "Lavender",
+          "value_fa": "اسطوخودوس",
+          "sort_order": 10
+        },
+        {
+          "code": "neroli",
+          "value_ar": "نيرولي",
+          "value_en": "Neroli",
+          "value_fa": "نرولی",
+          "sort_order": 11
+        },
+        {
+          "code": "mint",
+          "value_ar": "نعناع",
+          "value_en": "Mint",
+          "value_fa": "نعنا",
+          "sort_order": 12
+        },
+        {
+          "code": "pink_pepper",
+          "value_ar": "فلفل وردي",
+          "value_en": "Pink Pepper",
+          "value_fa": "فلفل صورتی",
+          "sort_order": 13
+        }
+      ]
+    },
+    {
+      "group_code": "fragrance-notes",
+      "code": "heart_notes",
+      "name_ar": "النفحات الوسطى",
+      "name_en": "Heart Notes",
+      "name_fa": "نت میانی",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiMinus",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "rose",
+          "value_ar": "ورد",
+          "value_en": "Rose",
+          "value_fa": "رز",
+          "sort_order": 1
+        },
+        {
+          "code": "jasmine",
+          "value_ar": "ياسمين",
+          "value_en": "Jasmine",
+          "value_fa": "یاس",
+          "sort_order": 2
+        },
+        {
+          "code": "ylang_ylang",
+          "value_ar": "يلانغ يلانغ",
+          "value_en": "Ylang Ylang",
+          "value_fa": "یلانگ یلانگ",
+          "sort_order": 3
+        },
+        {
+          "code": "iris",
+          "value_ar": "سوسن",
+          "value_en": "Iris",
+          "value_fa": "زنبق",
+          "sort_order": 4
+        },
+        {
+          "code": "violet",
+          "value_ar": "بنفسج",
+          "value_en": "Violet",
+          "value_fa": "بنفشه",
+          "sort_order": 5
+        },
+        {
+          "code": "cinnamon",
+          "value_ar": "قرفة",
+          "value_en": "Cinnamon",
+          "value_fa": "دارچین",
+          "sort_order": 6
+        },
+        {
+          "code": "clove",
+          "value_ar": "قرنفل",
+          "value_en": "Clove",
+          "value_fa": "میخک",
+          "sort_order": 7
+        },
+        {
+          "code": "cardamom",
+          "value_ar": "هال",
+          "value_en": "Cardamom",
+          "value_fa": "هل",
+          "sort_order": 8
+        }
+      ]
+    },
+    {
+      "group_code": "fragrance-notes",
+      "code": "base_notes",
+      "name_ar": "النفحات القاعدية",
+      "name_en": "Base Notes",
+      "name_fa": "نت پایه",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiArrowDown",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "vanilla",
+          "value_ar": "فانيليا",
+          "value_en": "Vanilla",
+          "value_fa": "وانیل",
+          "sort_order": 1
+        },
+        {
+          "code": "musk",
+          "value_ar": "مسك",
+          "value_en": "Musk",
+          "value_fa": "مشک",
+          "sort_order": 2
+        },
+        {
+          "code": "amber",
+          "value_ar": "عنبر",
+          "value_en": "Amber",
+          "value_fa": "عنبر",
+          "sort_order": 3
+        },
+        {
+          "code": "sandalwood",
+          "value_ar": "صندل",
+          "value_en": "Sandalwood",
+          "value_fa": "صندل",
+          "sort_order": 4
+        },
+        {
+          "code": "cedarwood",
+          "value_ar": "أرز",
+          "value_en": "Cedarwood",
+          "value_fa": "سرو",
+          "sort_order": 5
+        },
+        {
+          "code": "patchouli",
+          "value_ar": "باتشولي",
+          "value_en": "Patchouli",
+          "value_fa": "پاچولی",
+          "sort_order": 6
+        },
+        {
+          "code": "oud",
+          "value_ar": "عود",
+          "value_en": "Oud",
+          "value_fa": "عود",
+          "sort_order": 7
+        },
+        {
+          "code": "tonka",
+          "value_ar": "تونكا",
+          "value_en": "Tonka Bean",
+          "value_fa": "تونکا",
+          "sort_order": 8
+        },
+        {
+          "code": "benzoin",
+          "value_ar": "جاوي",
+          "value_en": "Benzoin",
+          "value_fa": "بنجامین",
+          "sort_order": 9
+        },
+        {
+          "code": "leather",
+          "value_ar": "جلد",
+          "value_en": "Leather",
+          "value_fa": "چرم",
+          "sort_order": 10
+        }
+      ]
+    },
+    {
+      "group_code": "fragrance-specs",
+      "code": "longevity",
+      "name_ar": "الثبات",
+      "name_en": "Longevity",
+      "name_fa": "ماندگاری",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiClock",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 6,
+      "options": [
+        {
+          "code": "very_poor",
+          "value_ar": "ضعيف جداً",
+          "value_en": "Very Poor (<1h)",
+          "value_fa": "خیلی کم (<1h)",
+          "sort_order": 1
+        },
+        {
+          "code": "poor",
+          "value_ar": "ضعيف",
+          "value_en": "Poor (1-2h)",
+          "value_fa": "کم (1-2h)",
+          "sort_order": 2
+        },
+        {
+          "code": "moderate",
+          "value_ar": "متوسط",
+          "value_en": "Moderate (2-4h)",
+          "value_fa": "متوسط (2-4h)",
+          "sort_order": 3
+        },
+        {
+          "code": "long_lasting",
+          "value_ar": "طويل",
+          "value_en": "Long Lasting (4-8h)",
+          "value_fa": "طولانی (4-8h)",
+          "sort_order": 4
+        },
+        {
+          "code": "very_long",
+          "value_ar": "طويل جداً",
+          "value_en": "Very Long (8h+)",
+          "value_fa": "خیلی طولانی (8h+)",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "group_code": "fragrance-specs",
+      "code": "sillage",
+      "name_ar": "فوحان",
+      "name_en": "Sillage",
+      "name_fa": "پخش بو",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiSpread",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 7,
+      "options": [
+        {
+          "code": "intimate",
+          "value_ar": "قريب",
+          "value_en": "Intimate",
+          "value_fa": "نزدیک",
+          "sort_order": 1
+        },
+        {
+          "code": "moderate",
+          "value_ar": "متوسط",
+          "value_en": "Moderate",
+          "value_fa": "متوسط",
+          "sort_order": 2
+        },
+        {
+          "code": "strong",
+          "value_ar": "قوي",
+          "value_en": "Strong",
+          "value_fa": "قوی",
+          "sort_order": 3
+        },
+        {
+          "code": "beast",
+          "value_ar": "قوي جداً",
+          "value_en": "Beast Mode",
+          "value_fa": "بسیار قوی",
+          "sort_order": 4
+        }
+      ]
+    }
+  ]
+}

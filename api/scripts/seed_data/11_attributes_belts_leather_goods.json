@@ -1,0 +1,602 @@
+{
+  "product_type_code": "belts_leather_goods",
+  "attributes": [
+    {
+      "group_code": "colors-pattern",
+      "code": "primary_color",
+      "name_ar": "اللون الأساسي",
+      "name_en": "Primary Color",
+      "name_fa": "رنگ اصلی",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "FiDroplet",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": [],
+      "validation_rules": [
+        {
+          "type": "min_select",
+          "value": 1,
+          "message": {
+            "en": "Select at least one color",
+            "ar": "اختر لونًا واحدًا على الأقل",
+            "fa": "حداقل یک رنگ انتخاب کنید"
+          }
+        }
+      ]
+    },
+    {
+      "group_code": "colors-pattern",
+      "code": "pattern",
+      "name_ar": "النقشة",
+      "name_en": "Pattern",
+      "name_fa": "طرح",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiAbstract",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2,
+      "options": []
+    },
+    {
+      "group_code": "leather-goods-specs",
+      "code": "material_leather_goods",
+      "name_ar": "الخامة",
+      "name_en": "Material",
+      "name_fa": "جنس",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiCottonFlower",
+      "is_required": true,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 1,
+      "options": [
+        {
+          "code": "leather",
+          "value_ar": "جلد",
+          "value_en": "Leather",
+          "value_fa": "چرم",
+          "sort_order": 1
+        },
+        {
+          "code": "genuine_leather",
+          "value_ar": "جلد طبيعي",
+          "value_en": "Genuine Leather",
+          "value_fa": "چرم طبیعی",
+          "sort_order": 2
+        },
+        {
+          "code": "synthetic_leather",
+          "value_ar": "جلد صناعي",
+          "value_en": "Synthetic Leather",
+          "value_fa": "چرم مصنوعی",
+          "sort_order": 3
+        },
+        {
+          "code": "metal",
+          "value_ar": "معدن",
+          "value_en": "Metal",
+          "value_fa": "فلز",
+          "sort_order": 4
+        },
+        {
+          "code": "stainless_steel",
+          "value_ar": "فولاذ مقاوم",
+          "value_en": "Stainless Steel",
+          "value_fa": "استیل",
+          "sort_order": 5
+        },
+        {
+          "code": "fabric",
+          "value_ar": "قماش",
+          "value_en": "Fabric",
+          "value_fa": "پارچه",
+          "sort_order": 6
+        },
+        {
+          "code": "nylon",
+          "value_ar": "نايلون",
+          "value_en": "Nylon",
+          "value_fa": "نایلون",
+          "sort_order": 7
+        },
+        {
+          "code": "plastic",
+          "value_ar": "بلاستيك",
+          "value_en": "Plastic",
+          "value_fa": "پلاستیک",
+          "sort_order": 8
+        },
+        {
+          "code": "wood",
+          "value_ar": "خشب",
+          "value_en": "Wood",
+          "value_fa": "چوب",
+          "sort_order": 9
+        },
+        {
+          "code": "resin",
+          "value_ar": "راتينج",
+          "value_en": "Resin",
+          "value_fa": "رزین",
+          "sort_order": 10
+        },
+        {
+          "code": "canvas",
+          "value_ar": "كانفاس",
+          "value_en": "Canvas",
+          "value_fa": "کانواس",
+          "sort_order": 11
+        }
+      ],
+      "validation_rules": [
+        {
+          "type": "min_select",
+          "value": 1,
+          "message": {
+            "en": "Select at least one material",
+            "ar": "اختر خامة واحدة على الأقل",
+            "fa": "حداقل یک جنس انتخاب کنید"
+          }
+        }
+      ]
+    },
+    {
+      "group_code": "leather-goods-specs",
+      "code": "belt_closure_type",
+      "name_ar": "نوع الإغلاق",
+      "name_en": "Closure Type",
+      "name_fa": "نوع بستن",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "FiLock",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 2,
+      "options": [
+        {
+          "code": "buckle",
+          "value_ar": "إبزيم",
+          "value_en": "Buckle",
+          "value_fa": "سگک",
+          "sort_order": 1
+        },
+        {
+          "code": "ratchet",
+          "value_ar": "ترس",
+          "value_en": "Ratchet",
+          "value_fa": "دنده‌ای",
+          "sort_order": 2
+        },
+        {
+          "code": "clip",
+          "value_ar": "مشبك",
+          "value_en": "Clip",
+          "value_fa": "گیره",
+          "sort_order": 3
+        },
+        {
+          "code": "slide",
+          "value_ar": "انزلاق",
+          "value_en": "Slide",
+          "value_fa": "کشویی",
+          "sort_order": 4
+        },
+        {
+          "code": "magnetic",
+          "value_ar": "مغناطيسي",
+          "value_en": "Magnetic",
+          "value_fa": "مغناطیسی",
+          "sort_order": 5
+        },
+        {
+          "code": "zip",
+          "value_ar": "سحاب",
+          "value_en": "Zipper",
+          "value_fa": "زیپ",
+          "sort_order": 6
+        },
+        {
+          "code": "snap_button",
+          "value_ar": "زر ضغط",
+          "value_en": "Snap Button",
+          "value_fa": "دکمه فشاری",
+          "sort_order": 7
+        },
+        {
+          "code": "flap",
+          "value_ar": "غطاء",
+          "value_en": "Flap",
+          "value_fa": "درپوش",
+          "sort_order": 8
+        },
+        {
+          "code": "carabiner",
+          "value_ar": "حلقة تسلق",
+          "value_en": "Carabiner",
+          "value_fa": "کارابین",
+          "sort_order": 9
+        },
+        {
+          "code": "lobster_clasp",
+          "value_ar": "مشبك جراد",
+          "value_en": "Lobster Clasp",
+          "value_fa": "قلاب خرچنگی",
+          "sort_order": 10
+        }
+      ]
+    },
+    {
+      "group_code": "leather-goods-specs",
+      "code": "wallet_type",
+      "name_ar": "نوع المحفظة",
+      "name_en": "Wallet Type",
+      "name_fa": "نوع کیف پول",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "AiFillWallet",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 3,
+      "options": [
+        {
+          "code": "bifold",
+          "value_ar": "مطوي",
+          "value_en": "Bifold",
+          "value_fa": "دوتایی",
+          "sort_order": 1
+        },
+        {
+          "code": "trifold",
+          "value_ar": "مطوي ثلاثي",
+          "value_en": "Trifold",
+          "value_fa": "سه‌تایی",
+          "sort_order": 2
+        },
+        {
+          "code": "card_holder",
+          "value_ar": "حامل بطاقات",
+          "value_en": "Card Holder",
+          "value_fa": "جا کارتی",
+          "sort_order": 3
+        },
+        {
+          "code": "money_clip",
+          "value_ar": "مشبك نقود",
+          "value_en": "Money Clip",
+          "value_fa": "گیره پول",
+          "sort_order": 4
+        },
+        {
+          "code": "travel_wallet",
+          "value_ar": "محفظة سفر",
+          "value_en": "Travel Wallet",
+          "value_fa": "کیف مسافرتی",
+          "sort_order": 5
+        },
+        {
+          "code": "wristlet",
+          "value_ar": "سوار",
+          "value_en": "Wristlet",
+          "value_fa": "مچی",
+          "sort_order": 6
+        }
+      ]
+    },
+    {
+      "group_code": "leather-goods-specs",
+      "code": "belt_size",
+      "name_ar": "مقاس الحزام",
+      "name_en": "Belt Size",
+      "name_fa": "سایز کمربند",
+      "value_type": "select",
+      "input_type": "multi-select",
+      "icon": "GiRuler",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": true,
+      "sort_order": 4,
+      "options": [
+        {
+          "code": "28",
+          "value_ar": "28",
+          "value_en": "28",
+          "value_fa": "۲۸",
+          "sort_order": 1
+        },
+        {
+          "code": "30",
+          "value_ar": "30",
+          "value_en": "30",
+          "value_fa": "۳۰",
+          "sort_order": 2
+        },
+        {
+          "code": "32",
+          "value_ar": "32",
+          "value_en": "32",
+          "value_fa": "۳۲",
+          "sort_order": 3
+        },
+        {
+          "code": "34",
+          "value_ar": "34",
+          "value_en": "34",
+          "value_fa": "۳۴",
+          "sort_order": 4
+        },
+        {
+          "code": "36",
+          "value_ar": "36",
+          "value_en": "36",
+          "value_fa": "۳۶",
+          "sort_order": 5
+        },
+        {
+          "code": "38",
+          "value_ar": "38",
+          "value_en": "38",
+          "value_fa": "۳۸",
+          "sort_order": 6
+        },
+        {
+          "code": "40",
+          "value_ar": "40",
+          "value_en": "40",
+          "value_fa": "۴۰",
+          "sort_order": 7
+        },
+        {
+          "code": "42",
+          "value_ar": "42",
+          "value_en": "42",
+          "value_fa": "۴۲",
+          "sort_order": 8
+        },
+        {
+          "code": "44",
+          "value_ar": "44",
+          "value_en": "44",
+          "value_fa": "۴۴",
+          "sort_order": 9
+        },
+        {
+          "code": "adjustable",
+          "value_ar": "قابل تعديل",
+          "value_en": "Adjustable",
+          "value_fa": "قابل تنظیم",
+          "sort_order": 10
+        }
+      ]
+    },
+    {
+      "group_code": "leather-goods-specs",
+      "code": "belt_width",
+      "name_ar": "عرض الحزام",
+      "name_en": "Belt Width (mm)",
+      "name_fa": "پهنای کمربند (میلی‌متر)",
+      "value_type": "number",
+      "input_type": "number",
+      "icon": "GiRuler",
+      "is_required": false,
+      "is_filterable": false,
+      "is_searchable": false,
+      "is_variant_defining": false,
+      "sort_order": 5
+    },
+    {
+      "group_code": "leather-goods-specs",
+      "code": "card_slots",
+      "name_ar": "عدد فتحات البطاقات",
+      "name_en": "Card Slots",
+      "name_fa": "تعداد جا کارتی",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "FiCreditCard",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": false,
+      "is_variant_defining": false,
+      "sort_order": 6,
+      "options": [
+        {
+          "code": "none",
+          "value_ar": "لا يوجد",
+          "value_en": "None",
+          "value_fa": "ندارد",
+          "sort_order": 1
+        },
+        {
+          "code": "1_3",
+          "value_ar": "1-3",
+          "value_en": "1-3",
+          "value_fa": "۱-۳",
+          "sort_order": 2
+        },
+        {
+          "code": "4_6",
+          "value_ar": "4-6",
+          "value_en": "4-6",
+          "value_fa": "۴-۶",
+          "sort_order": 3
+        },
+        {
+          "code": "7_10",
+          "value_ar": "7-10",
+          "value_en": "7-10",
+          "value_fa": "۷-۱۰",
+          "sort_order": 4
+        },
+        {
+          "code": "10_plus",
+          "value_ar": "أكثر من 10",
+          "value_en": "10+",
+          "value_fa": "۱۰+",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "group_code": "leather-goods-specs",
+      "code": "keychain_type",
+      "name_ar": "نوع سلسلة المفاتيح",
+      "name_en": "Keychain Type",
+      "name_fa": "نوع جاکلیدی",
+      "value_type": "select",
+      "input_type": "select",
+      "icon": "GiKeyring",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 7,
+      "options": [
+        {
+          "code": "carabiner",
+          "value_ar": "حلقة تسلق",
+          "value_en": "Carabiner",
+          "value_fa": "کارابین",
+          "sort_order": 1
+        },
+        {
+          "code": "lobster_clasp",
+          "value_ar": "مشبك جراد",
+          "value_en": "Lobster Clasp",
+          "value_fa": "قلاب خرچنگی",
+          "sort_order": 2
+        },
+        {
+          "code": "lanyard",
+          "value_ar": "رباط عنق",
+          "value_en": "Lanyard",
+          "value_fa": "بند گردنی",
+          "sort_order": 3
+        },
+        {
+          "code": "charm",
+          "value_ar": "دلاية",
+          "value_en": "Charm",
+          "value_fa": "آویز",
+          "sort_order": 4
+        },
+        {
+          "code": "multi_tool",
+          "value_ar": "متعدد الاستخدام",
+          "value_en": "Multi-Tool",
+          "value_fa": "چندکاره",
+          "sort_order": 5
+        },
+        {
+          "code": "key_ring",
+          "value_ar": "حلقة مفاتيح",
+          "value_en": "Key Ring",
+          "value_fa": "حلقه کلید",
+          "sort_order": 6
+        }
+      ]
+    },
+    {
+      "group_code": "leather-goods-specs",
+      "code": "belt_one_size",
+      "name_ar": "مقاس واحد",
+      "name_en": "One Size",
+      "name_fa": "یک سایز",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiCheck",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 8
+    },
+    {
+      "group_code": "leather-goods-specs",
+      "code": "belt_adjustable_size",
+      "name_ar": "مقاس قابل للتعديل",
+      "name_en": "Adjustable Size",
+      "name_fa": "سایز قابل تنظیم",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiSliders",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 9
+    },
+    {
+      "group_code": "leather-goods-specs",
+      "code": "belt_dimensions",
+      "name_ar": "الأبعاد",
+      "name_en": "Dimensions",
+      "name_fa": "ابعاد",
+      "value_type": "text",
+      "input_type": "text",
+      "icon": "GiRuler",
+      "is_required": false,
+      "is_filterable": false,
+      "is_searchable": false,
+      "is_variant_defining": false,
+      "sort_order": 10
+    },
+    {
+      "group_code": "leather-goods-specs",
+      "code": "belt_weight_g",
+      "name_ar": "الوزن (غم)",
+      "name_en": "Weight (g)",
+      "name_fa": "وزن (گرم)",
+      "value_type": "number",
+      "input_type": "number",
+      "icon": "FiFeather",
+      "is_required": false,
+      "is_filterable": false,
+      "is_searchable": false,
+      "is_variant_defining": false,
+      "sort_order": 11
+    },
+    {
+      "group_code": "accessory-features",
+      "code": "belt_waterproof",
+      "name_ar": "مقاوم للماء",
+      "name_en": "Waterproof",
+      "name_fa": "ضد آب",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiUmbrella",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 1
+    },
+    {
+      "group_code": "accessory-features",
+      "code": "belt_hypoallergenic",
+      "name_ar": "مضاد للحساسية",
+      "name_en": "Hypoallergenic",
+      "name_fa": "ضد حساسیت",
+      "value_type": "switch",
+      "input_type": "switch",
+      "icon": "FiShield",
+      "is_required": false,
+      "is_filterable": true,
+      "is_searchable": true,
+      "is_variant_defining": false,
+      "sort_order": 2
+    }
+  ]
+}
